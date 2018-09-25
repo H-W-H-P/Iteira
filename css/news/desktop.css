@@ -1,0 +1,29 @@
+.news-article-preview__h {
+    margin-top: 33.385vw !important;
+    margin-bottom: 40px;
+}
+
+.news-article-preview__date {
+    bottom: 20px;
+}
+
+.legs-article {
+    background-image: linear-gradient(rgba(0, 0, 0, .2), rgba(0, 0, 0, .2)), url('../../img/info/alike/gift-offers.jpg');
+}
+
+.nogtiki-article {
+    background-image: linear-gradient(rgba(0, 0, 0, .2), rgba(0, 0, 0, .2)), url('../../img/info/alike/correction-programm.png');
+}
+
+.article-preview__tag-2 {
+    background-color: #d26666;
+    color: #ffffff;
+}
+
+.news-block-header {
+    width: 800px;
+}
+
+.news-block-header>span {
+    float: left;
+}

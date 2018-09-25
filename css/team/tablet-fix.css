@@ -1,0 +1,39 @@
+@media only screen and (max-width: 1023px) {
+    .section-alike__block-header {
+        margin-top: 40px;
+    }
+    .section-alike__block-header .block-header__elem:nth-child(2) {
+        padding-left: 0;
+    }
+    .one-third-block {
+        width: 100%;
+        height: auto;
+    }
+    .article-preview {
+        position: relative;
+        height: 123.467vw;
+        width: 100vw;
+    }
+    .article-preview__tag {
+        font-size: 16px;
+        height: 20px;
+        line-height: 20px;
+        padding: 0 20px;
+        letter-spacing: 1.4px;
+    }
+    .article-preview__h {
+        position: absolute;
+        height: auto;
+        margin: 0;
+        bottom: calc(110px + 5vw);
+        font-size: 8vw;
+        line-height: 1.2;
+    }
+    .article-preview__date {
+        font-size: 5vw;
+        bottom: 0vw;
+    }
+    .not-mobile {
+        display: none;
+    }
+}

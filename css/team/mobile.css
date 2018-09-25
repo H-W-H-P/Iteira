@@ -1,0 +1,117 @@
+@media only screen and (max-width:1023px) {
+    .team-block-header span {
+        float: none;
+    }
+    .team-block-header {
+        bottom: 0;
+        width: 100%;
+        left: 0;
+        margin: 20px 0 0 0;
+        font-size: 42px;
+    }
+    .team-menu {
+        width: 100vw;
+        margin-top: 15px;
+        padding: 0;
+        overflow-y: hidden;
+        overflow-x: scroll;
+    }
+    .team-menu>div {
+        width: auto;
+    }
+    .one-third-block-second a:first-child .team-article-preview {
+        margin: 0;
+    }
+    .team-menu__dash {
+        display: none;
+    }
+    .team-content-wrapper {
+        position: absolute;
+        top: 257px;
+        margin-bottom: 0;
+        height: calc(100vh - 257px);
+        overflow-y: auto;
+        transition: opacity 1s;
+    }
+    .team-one-third-block {
+        height: auto;
+    }
+    .team-article-preview .article-preview__tag {
+        padding: 0;
+        width: 150px;
+        margin-left: 200vw;
+    }
+    .team-content-item-order-btn {
+        padding: 15px 28px;
+        bottom: 20px;
+    }
+    .team-article-preview__date {
+        margin-bottom: 100px;
+    }
+    .team-article-preview__h {
+        bottom: 140px;
+    }
+    .team-one-third-block {
+        float: left;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width:1023px) {
+    .one-third-block-second .team-article-preview {
+        margin: 0;
+        height: calc(100vh - 370px);
+    }
+    .team-content-wrapper {
+        height: calc(100vh - 370px);
+        top: 370px !important;
+    }
+    .team-one-third-block {
+        width: 50% !important;
+    }
+    .team-article-preview {
+        width: 50vw !important;
+    }
+    .team-block-header {
+        font-size: 80px;
+    }
+    .one-third-block .team-article-preview {
+        margin: 0 !important;
+        height: 700px !important;
+    }
+    .one-third-block-third .team-article-preview {
+        height: 700px !important;
+    }
+    .one-third-block-second a:first-child .team-article-preview:first-child {
+        margin-top: 100px !important;
+    }
+    .team-article-preview__h {
+        font-size: 40px !important;
+    }
+    .team-article-preview__date {
+        font-size: 25px !important;
+    }
+}
+
+.team-menu-mobile {
+    margin-top: 10px;
+}
+
+.team-menu-mobile__item {
+    text-decoration: none;
+    opacity: 0.8;
+    font-family: 'Lato-Regular';
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: 1.3px;
+    color: #dedede;
+}
+
+.owl-item {
+    float: left;
+    text-align: center;
+}
+
+.mobile-chosen {
+    font-size: 24px;
+    color: #d2ab66;
+}

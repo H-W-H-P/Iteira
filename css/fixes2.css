@@ -1,0 +1,91 @@
+.block-header-big {
+    font-size: 76px;
+    margin-left: 7vh;
+}
+
+.main-frame1 {
+    background-image: linear-gradient(rgba(0, 0, 0, .2), rgba(0, 0, 0, .2)), url(../img/info/2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    -ms-background-position-x: right;
+    background-position-x: right;
+    color: #fff;
+    background-position-x: 70%;
+}
+
+.main-frame2 {
+    background: linear-gradient(rgba(0, 0, 0, .2), rgba(0, 0, 0, .2)), url(../img/info/3.jpg);
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    -ms-background-position-x: right;
+    background-position-x: right;
+    color: #fff;
+}
+
+.block-header-big {
+    margin-top: 20vh;
+}
+
+@media screen and (max-width: 1024px) {
+    .block-header-big {
+        margin-top: 5vh;
+    }
+}
+
+.main-frame1 .main-frame__text,
+.main-frame2 .main-frame__text {
+    color: #fff;
+}
+
+.section-main__img {
+    position: relative;
+    z-index: 10;
+}
+
+.word_wrap {
+    word-wrap: break-word;
+}
+
+.section-main__img-float {
+    float: left;
+    padding-right: 79px;
+    padding-bottom: 64px;
+    width: 66.7%;
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+}
+
+@media screen and (max-width: 1279px) {
+    .nav__elem {
+        font-size: 22px;
+    }
+}
+
+@media screen and (max-width: 1023px) {
+    .main-frame1 .block-header,
+    .main-frame2 .block-header {
+        font-size: 7vw;
+    }
+    .block-header-big {
+        margin-left: 0;
+        font-size: 7vw;
+    }
+    .section-main h3 {
+        margin-bottom: 17px;
+    }
+    .main-frame2 {
+        -webkit-background-size: cover;
+        background-size: cover;
+    }
+    .main-frame2,
+    .main-frame1,
+    .main-frame {
+        color: #000;
+    }
+    .endymed-header {
+        margin-top: 15vw;
+        bottom: 33vw;
+    }
+}

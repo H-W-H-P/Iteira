@@ -1,0 +1,137 @@
+.team-block-header span {
+    float: right;
+}
+
+.team-block-header {
+    position: relative;
+    width: 30vw;
+    z-index: 10;
+    margin-left: 8vw;
+    margin-top: calc(105.48px + 4.5vw);
+    line-height: 1;
+}
+
+.team-slider {
+    top: 500px;
+}
+
+.team-content-wrapper {
+    width: 100vw;
+    height: calc(100vh - 150px);
+    max-height: calc(100vh - 150px);
+    top: 150px;
+}
+
+.team-article-preview {
+    width: 100%;
+}
+
+.team-one-third-block>a {
+    width: 100%;
+}
+
+.team-one-third-block {
+    height: auto;
+}
+
+.one-third-block-second .team-article-preview {
+    margin-top: 20px;
+}
+
+.one-third-block-second a:first-child .team-article-preview {
+    margin-top: 10vw;
+}
+
+.one-third-block-third .team-article-preview {
+    margin-top: 20px;
+    margin-bottom: 0;
+}
+
+.one-third-block-third a:first-child .team-article-preview {
+    margin-top: 2vw;
+}
+
+.bender-image {
+    background-image: linear-gradient(rgba(0, 0, 0, .2), rgba(0, 0, 0, .2)), url('../../img/team/bender.jpg');
+}
+
+.ragmanova-image {
+    background-image: linear-gradient(rgba(0, 0, 0, .2), rgba(0, 0, 0, .2)), url('../../img/team/ragmanova.jpg');
+}
+
+.team-article-preview a {
+    width: 100%;
+}
+
+.team-content-item-order-btn {
+    position: absolute;
+    bottom: 1.8vw;
+    left: 50%;
+    transform: translate(-50%);
+    font-size: 26px;
+    padding-top: 0.5vw;
+    padding-bottom: 0.5vw;
+}
+
+.team-article-preview__date {
+    bottom: 6.5vw;
+}
+
+.team-article-preview__h {
+    margin-bottom: 7.5vw;
+}
+
+.team-menu {
+    margin-top: 100px;
+    height: 300px;
+    padding: 0;
+    overflow: hidden;
+}
+
+.team-menu__subheader {
+    margin-left: 270px;
+}
+
+.team-menu__subheader p {
+    position: static;
+}
+
+.team-menu__header {
+    position: static;
+    margin-left: 180px;
+}
+
+@media only screen and (max-width:1500px) {
+    .team-block-header {
+        font-size: 100px;
+    }
+    .team-menu__subheader {
+        margin-left: 150px;
+    }
+    .team-menu__header {
+        margin-left: 60px;
+    }
+}
+
+.one-third-block-third.team-one-third-block .team-article-preview__h {
+    margin-top: calc(33.385vw + 59.8px);
+}
+
+@media only screen and (max-width:1200px) {
+    .team-block-header {
+        font-size: 80px;
+    }
+}
+
+@media only screen and (min-width:0px) {
+    .team-content-wrapper {
+        display: none;
+        opacity: 0;
+    }
+}
+
+@media only screen and (max-height:600px) {
+    .team-menu {
+        margin-top: 50px;
+    }
+}

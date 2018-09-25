@@ -1,0 +1,160 @@
+@media only screen and (max-width:1023px) {
+    body {
+        overflow-y: auto;
+        -webkit-overflow-scrolling: touch;
+    }
+    .service-main {
+        width: 100vw;
+        position: static;
+    }
+    .service-header {
+        height: auto;
+        margin-bottom: 0;
+    }
+    .service-block-header {
+        font-size: 42px;
+        margin: 0;
+        margin-top: 10px;
+        padding: 0;
+        position: static;
+        width: 100vw;
+    }
+    .service-menu {
+        padding-top: 20px;
+        padding-bottom: 0;
+        margin-top: 0;
+        width: auto;
+        height: auto;
+    }
+    .service-menu__subheader {
+        width: calc(100vw - 20px);
+        margin: 0 10px;
+        padding: 25px 23px;
+        border-top: 1px #f6f6f6 solid;
+        border-bottom: 1px #f6f6f6 solid;
+    }
+    .service-menu__subheader p {
+        float: left;
+        width: auto;
+        max-width: 80%;
+        font-size: 18px;
+        font-weight: bold;
+        line-height: 1.11;
+        letter-spacing: 1.8px;
+        color: #0e0e0e;
+        font-family: 'PlayfairDisplay-Bold';
+    }
+    .service-menu__dash {
+        position: absolute;
+        float: right;
+        margin: 0 0 0 15px;
+        padding: 0;
+        top: 50%;
+        right: 20px;
+        left: auto;
+        transform: translateY(-50%);
+    }
+    .service-content-wrapper {
+        width: 100vw;
+        height: auto;
+        position: static;
+        transition: max-height 1s;
+        overflow: hidden;
+        -webkit-overflow-scrolling: touch;
+    }
+    .service-content {
+        width: 100vw;
+        padding: 0 15px;
+        position: static;
+        background-color: #fff;
+        border-spacing: 0 15px;
+    }
+    .service-content th {
+        width: 100%;
+        font-size: 16px;
+        line-height: 1;
+        letter-spacing: 1.6px;
+        text-align: center;
+        color: #0e0e0e;
+        border: none;
+        padding: 15px 0 15px;
+    }
+    .service-content td {
+        border-top: 1px #d2ab66 solid;
+        border-bottom: 1px #d2ab66 solid;
+        margin-bottom: 15px;
+    }
+    .service-content tr td:first-child {
+        border-left: solid 1px #d2ab66;
+        border-right: none;
+        font-size: 18px;
+        font-weight: 300;
+        line-height: 1;
+        letter-spacing: 1.8px;
+        text-align: left;
+        color: #0e0e0e;
+        margin-left: 15px;
+    }
+    .service-content tr td:last-child {
+        border-right: solid 1px #d2ab66;
+        margin-right: 15px;
+    }
+    .service-content tr td:last-child span:first-child:hover {
+        opacity: 1;
+    }
+    .service-content tr td:last-child span:first-child {
+        padding-right: 28px;
+        font-size: 15px;
+        line-height: 1;
+        letter-spacing: 1.5px;
+        text-align: right;
+        color: #0e0e0e;
+    }
+    .service-content tr td:last-child span:last-child:hover {
+        opacity: 0;
+    }
+    .service-content tr td:last-child span {
+        background-color: #fff;
+        cursor: auto;
+    }
+    .service-content tr:first-child {
+        border: none;
+    }
+    .service-content td:first-child div {
+        display: none
+    }
+    .service-content tr:last-child td {
+        border-bottom: solid 1px #d2ab66;
+    }
+    .service-nav-menu__text {
+        top: 40px;
+    }
+    @media only screen and (min-width: 768px) {
+        .service-content tr td:first-child {
+            font-size: 22px;
+            padding: 20px !important;
+        }
+        .service-content tr td:last-child span:first-child {
+            font-size: 20px;
+        }
+        .service-content tr td:last-child span:first-child p {
+            margin-top: 5px;
+        }
+        .service-menu__subheader p {
+            font-size: 26px;
+        }
+        .service-content th {
+            font-size: 26px;
+        }
+        .service-block-header {
+            font-size: 50px;
+        }
+        .service-nav-menu__text {
+            top: 50px;
+            right: 10px;
+        }
+    }
+    .service-footer {
+        float: left;
+    }
+}

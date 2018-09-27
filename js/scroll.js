@@ -136,7 +136,7 @@ jQuery.extend( jQuery.easing,
 
 $(document).ready(function () { 
 	$.fn.scrollTo = function(elem) { 
-		// console.log(this)
+		// console.log($(this).parent())
 		if (elem.length) {
 			$(this).animate({
 		        scrollTop:  $(this).scrollTop() - $(this).offset().top + $(elem).offset().top 
@@ -152,6 +152,7 @@ $(document).ready(function () {
 		}	    
 	};
 	$.fn.scrollTo2 = function(elem) {
+		// console.log($(this).parent())
 		// var offTop = $('.one-third-block-second a:first-child .team-article-preview').css('margin-top');
 		// console.log(offTop)
 		// console.log(this)
@@ -176,15 +177,15 @@ $(document).ready(function () {
 		if (e.originalEvent.wheelDelta < 0) {
 			counter++;
 			$itemTop = $('.one-third-block-third').find('a').eq(counter);
-			$('.one-third-block-third').scrollTo($(this).find('a').eq(counter));
-			$('.one-third-block-second').scrollTo2($itemTop);
+			$('.desktop-opacity .one-third-block-third').scrollTo($(this).find('a').eq(counter));
+			$('.desktop-opacity .one-third-block-second').scrollTo2($itemTop);
 			if (counter > numbOfBlock) counter = numbOfBlock;
 		} else {
 			counter--;
 			if (counter < 1) counter = 0;
 			$itemTop = $('.one-third-block-third').find('a').eq(counter);
-			$('.one-third-block-third').scrollTo($(this).find('a').eq(counter));
-			$('.one-third-block-second').scrollTo2($itemTop);
+			$('.desktop-opacity .one-third-block-third').scrollTo($(this).find('a').eq(counter));
+			$('.desktop-opacity .one-third-block-second').scrollTo2($itemTop);
 		}
 		delayScroll();
 		return false;
@@ -193,23 +194,24 @@ $(document).ready(function () {
 		$('.one-third-block').off('mousewheel', );
 		setTimeout(function() {
 			$('.one-third-block').on('mousewheel', function (e) {
-			if (e.originalEvent.wheelDelta < 0) {
-				counter++;
-				if (counter >= $(this).find('a').length) counter = $(this).find('a').length;
-				$itemTop = $('.one-third-block-third').find('a').eq(counter);
-				$('.one-third-block-third').scrollTo($(this).find('a').eq(counter));
-				$('.one-third-block-second').scrollTo2($(this).find('a').eq(counter));
-				if (counter > numbOfBlock) counter = numbOfBlock;
-			} else {
-				counter--;
-				if (counter < 1) counter = 0;
-				$itemTop = $('.one-third-block-third').find('a').eq(counter);
-				$('.one-third-block-third').scrollTo($(this).find('a').eq(counter));
-				$('.one-third-block-second').scrollTo2($(this).find('a').eq(counter));
-			}
-			delayScroll();
-			return false;
-		});
+				// console.log(this)
+				if (e.originalEvent.wheelDelta < 0) {
+					counter++;
+					if (counter >= $(this).find('a').length) counter = $(this).find('a').length;
+					$itemTop = $('.one-third-block-third').find('a').eq(counter);
+					$('.desktop-opacity .one-third-block-third').scrollTo($(this).find('a').eq(counter));
+					$('.desktop-opacity .one-third-block-second').scrollTo2($(this).find('a').eq(counter));
+					if (counter > numbOfBlock) counter = numbOfBlock;
+				} else {
+					counter--;
+					if (counter < 1) counter = 0;
+					$itemTop = $('.one-third-block-third').find('a').eq(counter);
+					$('.desktop-opacity .one-third-block-third').scrollTo($(this).find('a').eq(counter));
+					$('.desktop-opacity .one-third-block-second').scrollTo2($(this).find('a').eq(counter));
+				}
+				delayScroll();
+				return false;
+			});
 		}, 1500);
 	}
 	$(window).resize(function () {

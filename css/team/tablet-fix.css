@@ -37,3 +37,13 @@
         display: none;
     }
 }
+
+
+.one-third-block-third .team-article-preview {
+    margin-top: 0;
+    margin-bottom: 23px;
+}
+
+.one-third-block-second .team-article-preview {
+    margin-top: 23px;
+}

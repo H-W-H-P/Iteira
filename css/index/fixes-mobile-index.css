@@ -15,11 +15,6 @@
 	    padding: 1vw 0 2vw 2vw;
 	}
 
-	.social {
-	    margin: 5px 0 0 50%;
-	}
-
-
 }
 
 
@@ -61,7 +56,6 @@
 		font-size: 25px;
 		width: 459px;
 	}
-
 
 	/*Title main screen*/
 	.index-sliding-fr__h {
@@ -290,10 +284,6 @@
 	    margin: 0px 0;
 	 }
 
-
-
-
-
 }
 
 
@@ -375,19 +365,11 @@
 	    height: 84px;
 	    padding: 1vw 0 3vw 2vw
 	}
-
-
-
-
-
 	
 }
 
 
 @media only screen and (max-width:480px) {
-
-
-
 	/*Text main screen    */
 	.index-sliding-fr__h {
 		top: 24vh;

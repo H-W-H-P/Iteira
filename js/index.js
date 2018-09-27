@@ -1,7 +1,4 @@
 //slider-index control
-
-
-
 let indexSliderCounter = 1;
 let indexSliderCounterInner = document.querySelector('.index-slider-counter-num__is');
 let indexSliderPrev = document.querySelector('.index-slider__prev');
@@ -14,27 +11,9 @@ let logo = document.querySelector('.logo');
 let whitePages = document.querySelectorAll('[data-theme="dark"]')
 
 let all = document.querySelectorAll('*');
-
-
-
-
-
-
-
-var iOS = navigator.userAgent.match(/iPhone|iPad|iPod/i);
-var eventFix = "click";
-
-    
-
 let indexSliderHandler = function(event) {
-    if(iOS != null) {
-        eventFix = "touchstart";
-    }
-
-    console.log(eventFix)
-
-    indexSliderNext.removeEventListener('touchstart', indexSliderHandler);
-    indexSliderPrev.removeEventListener('touchstart', indexSliderHandler);
+    indexSliderNext.removeEventListener('click', indexSliderHandler);
+    indexSliderPrev.removeEventListener('click', indexSliderHandler);
     indexSliderFrames[indexSliderCounter - 1].classList.add('opacity-false');
     indexSliderFrames[indexSliderCounter - 1].classList.remove('opacity-true');
     if (event.target == indexSliderPrev) {
@@ -91,11 +70,8 @@ let indexSliderHandler = function(event) {
     indexSliderCounterInner.innerHTML = '0' + indexSliderCounter;
     indexSliderFrames[indexSliderCounter - 1].classList.remove('opacity-false');
     indexSliderFrames[indexSliderCounter - 1].classList.add('opacity-true');
-    indexSliderPrev.addEventListener('touchstart', indexSliderHandler);
-    indexSliderNext.addEventListener('touchstart', indexSliderHandler);
+    indexSliderPrev.addEventListener('click', indexSliderHandler);
+    indexSliderNext.addEventListener('click', indexSliderHandler);
 }
-indexSliderPrev.addEventListener('touchstart', indexSliderHandler);
-indexSliderNext.addEventListener('touchstart', indexSliderHandler);
-
-
-
+indexSliderPrev.addEventListener('click', indexSliderHandler);
+indexSliderNext.addEventListener('click', indexSliderHandler);

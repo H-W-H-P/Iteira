@@ -47,36 +47,44 @@
     </header>
     
     <div id="about">
+
         <div class="map">
+            <div class="about-mobile-link about-mobile-link-map">
+                <button class="about-mobile-link-btn about-mobile-link-btn-adress ">Адреса</button>
+                <button class="about-mobile-link-btn about-mobile-link-btn-map active">Карта</button>
+            </div>
             <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Ac4c94cadd43e1d50a5b41f486f8bb1125f75dcb8e9e35ce98b420efc4f901758&amp;source=constructor"   frameborder="0"></iframe>
         </div>
         
-        <div class="wrapp">
+        <div class="wrapp mobile-map">
 
             
 
             <div class="form">
                 <form action="#" method="get">
-                    <div class="group">      
+                    <div class="group group_name">     
+                        <span class="danger">!</span> 
                         <input type="text" required>
                         <span class="highlight"></span>
                         <span class="bar"></span>
                         <label>Имя</label>
                     </div>
-                    <div class="group">      
+                    <div class="group group_tel">   
+                        <span class="danger">!</span>   
                         <input type="tel" required>
                         <span class="highlight"></span>
                         <span class="bar"></span>
                         <label>Телефон</label>
                     </div>
-                    <div class="group group_text">      
+                    <div class="group group_text">    
+                        <span class="danger">!</span>  
                         <input type="text" required>
                         <span class="highlight"></span>
                         <span class="bar"></span>
                         <label>Сообщение</label>
                     </div>
                     <div class="group group_send group_send-massage">
-                     <buttun href="#" class="group__btn-send nav__elem envoke-order-btn button--rayen button--border-thin button--text-thick" data-text="Отправить"><span>Отправить</span></buttun>
+                     <a href="#" class="group__btn-send nav__elem envoke-order-btn button--rayen button--border-thin button--text-thick" data-text="Отправить"><span>Отправить</span></a>
                  </div>
              </form>
          </div>
@@ -91,7 +99,7 @@
                 <div class="about-mobile">
                 <h1>О нас</h1>
                 <div class="about-mobile-link">
-                    <button class="about-mobile-link-btn about-mobile-link-btn-adress">Адреса</button>
+                    <button class="about-mobile-link-btn about-mobile-link-btn-adress active">Адреса</button>
                     <button class="about-mobile-link-btn about-mobile-link-btn-map">Карта</button>
                 </div>
             </div>
@@ -127,7 +135,7 @@
             <h2>
                 Спасибо
             </h2>
-            <p>Ваше сообзение отправлено.</p>
+            <p>Ваше сообщение отправлено.</p>
         </div>
 
 

@@ -14,6 +14,8 @@ body {
 
 }
 
+
+
 .nav-menu__text {
     color: #000;
 }
@@ -112,6 +114,20 @@ input:focus ~ .highlight {
 }
 
 
+.danger {
+    position: absolute;
+    right: 0;
+    bottom: 7px;
+    padding: 1px 6px;
+    background-color: #e86464;
+    color: #fff;
+    border-radius: 50%;
+    font-family: Arial;
+    text-shadow: 0 0 black;
+    font-size: 15px;
+    display: none;
+}
+
 /* ANIMATIONS ================ */
 
 @keyframes inputHighlighter {
@@ -155,7 +171,7 @@ iframe {
 
 /*Header*/
 .about_envoke-order-btn {
-	color: #000;
+	color: #fff;
 	border: 1px solid;
 }
 
@@ -295,14 +311,23 @@ iframe {
 	color: #0e0e0e;
 }
 
+.about-mobile-link-btn.active {
+	color: #d2ab66;
+	border: 1px solid #d2ab66;
+}
+
+.about-mobile-link-btn-adress {
+	margin-right: 16px;
+}
+
+.about-mobile-link-btn:hover { background: rgba(255,255,255,.2); }
+.about-mobile-link-btn:active { background: white; }
 
 
-a.button8:hover { background: rgba(255,255,255,.2); }
-a.button8:active { background: white; }
 
-
-
-
+.about-mobile h1 {
+	text-transform: uppercase;
+}
 
 
 
@@ -314,6 +339,11 @@ a.button8:active { background: white; }
 .about-mobile {
 	display: none;
 }
+
+
+
+
+
 
 
 @media only screen and (max-width:1023px) {
@@ -405,26 +435,239 @@ a.button8:active { background: white; }
 	}
 
 
+	/*Mobile map*/
+
+	
+
+
+
+
+}
+
+@media only screen and (max-width:760px) {
+	.group_write-massage {
+	    bottom: 25px;
+	}
+
+	.about-box {
+		/*
+	    padding-bottom: 126px;*/
+	    padding-top: 400px;
+	}
+
+	.tel p,.time-work p,.address p {
+		font-size: 16px;
+	}
+
+	.time-work {
+		margin-top: 12px;
+	}
+
+	.about-box-wrapper h2 {
+		font-size: 34px;
+	}
+	
+	.about-box h2 {
+	    height: auto;
+	}
+
+	.group__btn-send {
+	    font-size: 24px;
+	    width: 250px;
+	    height: 60px;
+	    line-height: 60px;
+	}
+
+	.nav__elem:first-child {
+	    margin-left: 0px;
+	}
+
+	.about-mobile {
+		margin-bottom: 16px;
+	}
+
+	.about-mobile h1 {
+		font-size: 42px;
+		line-height: 1.14;
+		margin-bottom: 10px;
+	}
+
+	.address, .tel {
+	    margin-top: 13px;
+	}
+
+	
+
+}
+
+@media only screen and (max-width:460px) {
+	.about-box {
+	    padding-bottom: 150px;
+	}
+
+	.nav__elem:first-child {
+	    margin-bottom: 20px;
+	}
+
+}
+
+
+@media only screen and (max-width:460px) {
+	.group_write-massage {
+	    bottom: 25px;
+	}
+
+	.about-box {
+	    padding-bottom: 106px;
+	}
+
+	.tel p,.time-work p,.address p {
+		font-size: 14px;
+	}
+
+	.time-work {
+		margin-top: 12px;
+	}
+
+	.about-box-wrapper h2 {
+		font-size: 24px;
+	}
+	
+	.about-box h2 {
+	    height: auto;
+	}
+
+	.group__btn-send {
+	    font-size: 18px;
+	    width: 190px;
+	    height: 44px;
+	    line-height: 44px;
+	}
+
+	.about-mobile {
+		margin-bottom: 16px;
+	}
+
+	.about-mobile h1 {
+		font-size: 42px;
+		line-height: 1.14;
+		margin-bottom: 10px;
+	}
+
+	.address, .tel {
+	    margin-top: 13px;
+	}
+
+	.nav__elem:first-child {
+	    margin-left: 30px;
+	}
 
 }
 
 
 
 
+@media only screen and (max-width:374px) {
+	.group_write-massage {
+	    bottom: 25px;
+	}
+
+	.about-box {
+	    padding-bottom: 76px;
+	}
+
+	.tel p,.time-work p,.address p {
+		font-size: 14px;
+	}
+
+	.time-work {
+		margin-top: 9px;
+	}
+
+	.about-box-wrapper h2 {
+		font-size: 20px;
+		width: 200px;
+		margin: 0 auto;
+	}
+	
+	.about-box h2 {
+	    height: auto;
+	}
+
+	.group__btn-send {
+	    font-size: 18px;
+	    width: 190px;
+	    height: 44px;
+	    line-height: 44px;
+	}
+
+	.about-mobile {
+		margin-bottom: 6px;
+	}
+
+	.nav__elem:first-child {
+	    margin-bottom: 0px;
+	}
+
+	.about-mobile h1 {
+		font-size: 42px;
+		line-height: 1.14;
+		margin-bottom: 10px;
+	}
+
+	.address, .tel {
+	    margin-top: 13px;
+	}
+
+	.nav__elem:first-child {
+	    margin-left: 30px;
+	}
+
+	.about-mobile-link-btn {
+		padding-top: 9px;
+		padding-bottom: 9px;
+	}
+
+}
+
+
+
+
+.map-mobile-open {
+		display: block;
+		width: 100%;
+		margin-top: 196px;
+	}
+
+.map-mobile-open .about-mobile-link-map {
+		position: absolute;
+		top: 146px;
+		left: 50%;
+		width: 254px;
+		margin-left: -125.2px;
+}
 
 
 
 
 
+/*
+
+==========  Desktop First  ==========
+@media only screen and (max-width : 1200px)
+@media only screen and (max-width : 992px)
+@media only screen and (max-width : 768px)
+@media only screen and (max-width : 480px)
+
+==========  Mobile First  ==========
 
 
+@media only screen and (min-width : 320px)
+@media only screen and (min-width : 480px)
+@media only screen and (min-width : 768px)
+@media only screen and (min-width : 992px)
+@media only screen and (min-width : 1200px)
 
 
-
-
-
-
-
-
-
+*/
 

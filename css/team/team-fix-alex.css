@@ -1,0 +1,148 @@
+.block-header {
+	position: relative;
+	z-index: 11;
+}
+
+.article-preview__tag-2 {
+    background-color: #fff;
+    color: #d2ab66;
+}
+
+.nav-menu__text {
+    color: #000;
+}
+
+/* Btn reverv. hover  */
+span.nav__elem:after {
+    content: "";
+    display: none;
+}
+
+
+@media only screen and (max-width:1023px) {
+	.block-header {
+		position: relative;
+		z-index: -1;
+	}
+
+	.team-content-item-order-btn {
+		position: absolute;
+	}
+
+	/*Logo*/
+	.logo {
+		display: block;
+	}
+
+	.logo-white {
+		display: none;
+	}
+
+	.team-menu-mobile {
+	    margin-bottom: 30px;
+	    width: 50%;
+	    margin-left: 25%;
+	}
+
+	.team-menu-mobile .owl-stage-outer{
+		overflow: visible;
+	}
+
+	.desktop-chosen{
+		color: #dedede;
+		font-size: 100%;
+	}
+
+	.team-menu-mobile .active a{
+		color: #d2ab66;
+		font-size: 24px;
+	}
+
+	.article-preview__tag {
+		font-size: 16px;
+		height: 32px;
+    	line-height: 29px;
+    	width: 170px;
+	}
+
+	.team-menu>div {
+	    width: auto;
+	    overflow: hidden;
+	}
+}
+
+
+@media only screen and (max-width:950px) {
+	.team-content-item-order-btn {
+		position: absolute;
+	}
+}
+
+@media only screen and (max-width:763px) {
+	.one-third-block-second a:first-child .team-article-preview {
+	    margin-top: 18px;
+	}
+
+	.team-menu-mobile {
+	    margin-bottom: 0;
+	}
+}
+
+@media only screen and (max-width:560px) {
+	.article-preview__tag {
+		font-size: 14px;
+	}
+
+	.team-content-item-order-btn {
+		position: absolute;
+	}
+
+	.team-block-header {
+	    margin: 76px 0 0 0;
+	}
+	
+	.team-article-preview .article-preview__tag {
+	    padding: 0;
+	    width: 127px;
+	    margin-left: 200vw;
+	}
+
+	.logo {
+	    margin-top: 17px;
+	}
+}
+
+
+
+/*Reser slider*/
+@media only screen and (max-width:1023px) {
+
+	body {
+	    position: relative;
+	    overflow: auto;
+	    height: auto;
+	}
+	.service-menu .team-menu {
+		overflow: auto;
+	}
+	.team-menu {
+		height: auto;
+		overflow: auto;
+	}
+	.team-one-third-block {
+	    height: auto;
+	}
+	.team-one-third-block {
+	    height: auto;
+	}
+	.team-content-wrapper {
+	    position: static;
+	    top: 257px;
+	    margin-bottom: 0;
+	    height: auto;
+	    overflow: auto;
+	}
+	.service-menu {
+	    max-height: 100%;
+	}
+} 

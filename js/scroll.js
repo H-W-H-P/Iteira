@@ -136,6 +136,7 @@ jQuery.extend( jQuery.easing,
 
 $(document).ready(function () { 
 	$.fn.scrollTo = function(elem) { 
+		// console.log(this)
 		if (elem.length) {
 			$(this).animate({
 		        scrollTop:  $(this).scrollTop() - $(this).offset().top + $(elem).offset().top 
@@ -153,6 +154,7 @@ $(document).ready(function () {
 	$.fn.scrollTo2 = function(elem) {
 		// var offTop = $('.one-third-block-second a:first-child .team-article-preview').css('margin-top');
 		// console.log(offTop)
+		// console.log(this)
 		if (elem.length) {
 			$(this).animate({
 		        scrollTop:  $(this).scrollTop() - $(this).offset().top + $(elem).offset().top
@@ -169,33 +171,39 @@ $(document).ready(function () {
 	};
 	var counter = 0;
 	var numbOfBlock = $('.one-third-block-third').length + 1;
+	var $itemTop = '';
 	$('.one-third-block').on('mousewheel', function (e) {
 		if (e.originalEvent.wheelDelta < 0) {
 			counter++;
+			$itemTop = $('.one-third-block-third').find('a').eq(counter);
 			$('.one-third-block-third').scrollTo($(this).find('a').eq(counter));
-			$('.one-third-block-second').scrollTo2($(this).find('a').eq(counter));
+			$('.one-third-block-second').scrollTo2($itemTop);
 			if (counter > numbOfBlock) counter = numbOfBlock;
 		} else {
 			counter--;
 			if (counter < 1) counter = 0;
+			$itemTop = $('.one-third-block-third').find('a').eq(counter);
 			$('.one-third-block-third').scrollTo($(this).find('a').eq(counter));
-			$('.one-third-block-second').scrollTo2($(this).find('a').eq(counter));
+			$('.one-third-block-second').scrollTo2($itemTop);
 		}
 		delayScroll();
 		return false;
 	});
 	function delayScroll() {
 		$('.one-third-block').off('mousewheel', );
-			setTimeout(function() {
-				$('.one-third-block').on('mousewheel', function (e) {
+		setTimeout(function() {
+			$('.one-third-block').on('mousewheel', function (e) {
 			if (e.originalEvent.wheelDelta < 0) {
 				counter++;
+				if (counter >= $(this).find('a').length) counter = $(this).find('a').length;
+				$itemTop = $('.one-third-block-third').find('a').eq(counter);
 				$('.one-third-block-third').scrollTo($(this).find('a').eq(counter));
 				$('.one-third-block-second').scrollTo2($(this).find('a').eq(counter));
 				if (counter > numbOfBlock) counter = numbOfBlock;
 			} else {
 				counter--;
 				if (counter < 1) counter = 0;
+				$itemTop = $('.one-third-block-third').find('a').eq(counter);
 				$('.one-third-block-third').scrollTo($(this).find('a').eq(counter));
 				$('.one-third-block-second').scrollTo2($(this).find('a').eq(counter));
 			}
@@ -204,7 +212,14 @@ $(document).ready(function () {
 		});
 		}, 1500);
 	}
+	$(window).resize(function () {
+		console.log(counter)
+		$('.one-third-block-third').scrollTo($('.one-third-block').find('a').eq(counter));
+		$('.one-third-block-second').scrollTo2($('.one-third-block').find('a').eq(counter));
+	});
+	$('.one-third-block-third').scrollTo($('.one-third-block').find('a').eq(counter));
+	$('.one-third-block-second').scrollTo2($('.one-third-block').find('a').eq(counter));
 	$('.service-menu__subheader').click(function () {
 		counter = 0;
-	})
+	});
 });

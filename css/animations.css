@@ -1,11 +1,11 @@
 .one-third-block-third .team-article-preview{
-	height: 80%;
+	height: 95%;
 	margin-top: 0;
 }
 .service-content-wrapper .one-third-block-second .team-article-preview,
 .one-third-block-second a:first-child .team-article-preview{
 	/*height: 70vh;*/
-	height: 80%;
+	height: 95%;
 	margin-top: 0;
 }
 
@@ -13,7 +13,7 @@
 	content: '';
 	/*position: static;*/
 	display: block;
-	height: 20%;
+	height: 5%;
 }
 
 .team-one-third-block>a{
@@ -55,4 +55,5 @@
 	.team-one-third-block>a{
 		height: 85vh;
 	}
+
 }

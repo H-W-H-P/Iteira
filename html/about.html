@@ -3,14 +3,16 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Iteira</title>
     <link href="../css/imports.css" rel="stylesheet">
-    <link rel="stylesheet" href="../css/about/about.css">
+    <link rel="stylesheet" href="../css/about/about-fix.css">
+    <link rel="stylesheet" href="../css/about/about-mobile.css">
+    
 </head>
 
-<body>
+<body class="body-info">
 
     <div class="menu-popup closed mobile-only">
         <a class="closure" href='#'></a>
@@ -46,100 +48,111 @@
         </a>
     </header>
     
-    <div id="about">
-        <div class="map">
-            <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Ac4c94cadd43e1d50a5b41f486f8bb1125f75dcb8e9e35ce98b420efc4f901758&amp;source=constructor"   frameborder="0"></iframe>
+    <div class="main">
+
+        <div class="inner">
+
+            <div class="map">
+                <div class="nav__elem envoke-order-btn menu-popup__btn about_envoke-order-btn">ЗАПИСАТЬСЯ</div>
+                <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Ac4c94cadd43e1d50a5b41f486f8bb1125f75dcb8e9e35ce98b420efc4f901758&amp;source=constructor"   frameborder="0"></iframe>
+            </div>
+
+            <div class="mobile-title">
+                <h1>О нас</h1>
+                <div class="about-mobile-tab">
+                    <a href="#" class="about-tab about-tab-adress active">Адреса</a>
+                    <a href="#" class="about-tab about-tab-map ">Карта</a>
+                </div>
+            </div>
+            
+            <div class="about-main-screen">
+                   
+                <div class="title" hidden>
+                    <h1>О НАС</h1>
+                </div> 
+
+                <div class="title-2" >
+                        <h1>О НАС</h1>
+                    </div> 
+
+                <div class="address-main">
+                    
+                    <div class="sensation">
+        
+                        <h2>Салон красоты &laquoИтейра Sensation&raquo</h2>
+                        <div class="info-text">
+                            <p class="address">Платоново, 1Б</p>
+                            <div class="phone-all">
+                                <p class="phone">+375 (29) 608 09 12</p>
+                                <p class="phone">+375 (33) 666 69 12</p>
+                            </div>
+                            <div class="work-wrapp">
+                                <p class="work-thime">пн-сб 8.00-22.00,</p>
+                                <p class="work-thime">вс 10.00-18.00</p>
+                            </div>
+                        </div>
+                        
+                    </div>
+        
+                    <div class="metropol">
+        
+                        <h2>Салон красоты &laquoИтейра Metropol&raquo</h2>
+                        <div class="info-text">
+                            <p class="address">Немига, 5/Ревалючионная, 30</p>
+                            <p class="phone-all">+375 (44) 590 30 30</p>
+                            <p class="work-thime">пн-сб 8.00-21.00</p>
+                        </div>
+        
+                    </div>
+        
+                    <div class="about-btn write-massage">
+                        <a href="#" class="nav__elem envoke-order-btn button--rayen button--border-thin button--text-thick" data-text="Написать"><span>Написать</span></a>
+                    </div>
+                </div>
+
+                <div class="form">
+                    <form action="#" method="get" class="open">
+                        
+                        <div class="bnt-prev"></div>
+                        <div class="group group_name">     
+                            <span class="danger">!</span> 
+                            <span class="dnager-text">введите имя</span> 
+                            <input type="text" required>
+                            <label>Имя</label>
+                        </div>
+                        <div class="group group_tel">   
+                            <span class="danger">!</span> 
+                            <span class="dnager-text">введите номер</span>   
+                            <input type="tel" required>
+                            <label>Телефон</label>
+                        </div>
+                        <div class="group group_text">    
+                            <span class="danger">!</span>
+                            <span class="dnager-text">пусто</span>  
+                            <textarea name="" id="" cols="30" rows="1" required></textarea>
+                            <label>Сообщение</label>
+                        </div>
+                        <div class="about-btn send-massage">
+                            <a href="#" class="nav__elem envoke-order-btn button--rayen button--border-thin button--text-thick" data-text="Отправить"><span>Отправить</span></a>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="about-thanks">
+                    <div class="bnt-prev"></div>
+                    <h3> Спасибо</h3>
+                    <p>Ваше сообщение отправлено.</p>
+                </div>
+
+
+            </div>
+
         </div>
         
-        <div class="wrapp">
-
-            
-
-            <div class="form">
-                <form action="#" method="get">
-                    <div class="group">      
-                        <input type="text" required>
-                        <span class="highlight"></span>
-                        <span class="bar"></span>
-                        <label>Имя</label>
-                    </div>
-                    <div class="group">      
-                        <input type="tel" required>
-                        <span class="highlight"></span>
-                        <span class="bar"></span>
-                        <label>Телефон</label>
-                    </div>
-                    <div class="group group_text">      
-                        <input type="text" required>
-                        <span class="highlight"></span>
-                        <span class="bar"></span>
-                        <label>Сообщение</label>
-                    </div>
-                    <div class="group group_send group_send-massage">
-                     <buttun href="#" class="group__btn-send nav__elem envoke-order-btn button--rayen button--border-thin button--text-thick" data-text="Отправить"><span>Отправить</span></buttun>
-                 </div>
-             </form>
-         </div>
-
-
-         <div class="about-box">
-
-            <div class="about-title">
-                <h1>О нас</h1>
-            </div>
-            <div class="about-box-wrapper">
-                <div class="about-mobile">
-                <h1>О нас</h1>
-                <div class="about-mobile-link">
-                    <button class="about-mobile-link-btn about-mobile-link-btn-adress">Адреса</button>
-                    <button class="about-mobile-link-btn about-mobile-link-btn-map">Карта</button>
-                </div>
-            </div>
-                <h2>Салон красоты &laquoИтейра Sensation&raquo</h2>
-                <div class="address">
-                    <p>Платоново, 1Б</p>
-                </div>
-                <div class="tel">
-                    <p>+375 (29) 608 09 12</p>
-                    <p>+375 (33) 666 69 12</p>
-                </div>
-                <div class="time-work">
-                    <p>пн-сб 8.00-22.00,</p>
-                    <p>вс 10.00-18.00</p>
-                </div>
-                <h2 class="title-metropole">Салон красоты &laquoИтейра Metropol&raquo</h2>
-                <div class="address">
-                    <p>Немига, 5/Ревалючионная, 30</p>
-                </div>
-                <div class="tel">
-                    <p>+375 (44) 590 30 30</p>
-                </div>
-                <div class="time-work">
-                    <p>пн-сб 8.00-21.00</p>
-                </div>
-                <div class="group group_write-massage">
-                    <buttun href="#" class="group__btn-send nav__elem envoke-order-btn button--rayen button--border-thin button--text-thick" data-text="Написать"><span>Написать</span></buttun>
-                </div>
-            </div>
-        </div>
-
-        <div class="about-thanks">
-            <h2>
-                Спасибо
-            </h2>
-            <p>Ваше сообзение отправлено.</p>
-        </div>
-
-
-
 
     </div>
-        
-        
 
-   </div>
-   
-
+    
 
 
 

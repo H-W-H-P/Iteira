@@ -63,3 +63,12 @@
 		bottom: 24%;
 	}
 }
+
+@media screen and (max-width: 767px){
+	.team-article-preview{
+		height: 100% !important;
+	}
+	.one-third-block-third .team-article-preview{
+		margin: 0 !important;
+	}
+}

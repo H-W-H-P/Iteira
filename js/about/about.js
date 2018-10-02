@@ -1,13 +1,19 @@
 
 //Click on Massage
 $('.write-massage').on('click', (EO) => {
-	$('.about-wrapp').addClass('animated fadeOutDown');
-	setTimeout(()=>{
-		$('.about-wrapp').hide();
-		$('.form').show();
-		$('.form').css('display', 'flex');
-	},700)
-})
+
+    $('.address-main').addClass('animated fadeOut');
+    setTimeout(()=>{
+        $('.address-main').hide();
+        $('.address-main').removeClass('animated fadeOut');
+        
+        $('.form').addClass('animated slideInRight');
+        $('.form').show();
+        $('.form').css('display', 'block');
+    },700);
+
+    
+});
 
 
 
@@ -16,42 +22,47 @@ $('.write-massage').on('click', (EO) => {
 
 //======== Toogle Map-Address
 //===========================
-$('.about-mobile-link').on('click', (EO) => {
-	let target = EO.target;
+$('.mobile-title').on('click', (EO) => {
+    EO.preventDefault()
+	  let target = EO.target;
+    
+    if (target.tagName != 'A') {
+        return;
+    }
 
-	if (target.tagName != 'BUTTON') {
-		return;
-	}
+    if ($(target).hasClass('about-tab-adress')) {
+        $('.address-main').show();
+        //$('.address-main').removeClass('animated fadeOutDown');
+        $('.form').hide();
+        $('.about-thanks').hide();
+    }
 
 	
 
-	let adress = $('.about-tab-adress').hasClass('active');
-	let map = $('.about-tab-map').hasClass('active');	
-	let targetHasClass = $(target).hasClass('active');
+	  let adress = $('.about-tab-adress').hasClass('active');
+	  let map = $('.about-tab-map').hasClass('active');	
+	  let targetHasClass = $(target).hasClass('active');
 
-	if (targetHasClass) return;
+	  if (targetHasClass) return;
 
-	if (targetHasClass === adress) {
-		console.log('+');
-		$(target).addClass('active');
-		$('.about-tab-map').removeClass('active');
-	} else {
-		console.log('-')
-		$(target).addClass('active');
-		$('.about-tab-adress').removeClass('active');
-	}
+	  if (targetHasClass === adress) {
+		//console.log('+');
+		    $(target).addClass('active');
+		    $('.about-tab-map').removeClass('active');
+	  } else {
+		//console.log('-')
+		    $(target).addClass('active');
+		    $('.about-tab-adress').removeClass('active');
+	  }
 
-	if (!adress) {
-		$('.about-box').show();
-		$('.map').removeClass('active');
-	} else {
-		$('.about-box').hide();
-		$('.map').addClass('active');
-	}
+	  if (!adress) {
+  		$('.about-main-screen').show();
+  		$('.map').removeClass('active');
+	  } else {
+  		$('.about-main-screen').hide();
+  		$('.map').addClass('active');
+	  }
 });
-
-
-
 
 
 
@@ -59,30 +70,50 @@ $('.about-mobile-link').on('click', (EO) => {
 
 //=========Validation form
 
-$('.send-massage').click(function () {
+$('.send-massage').click(function (EO) {
+  
     var trigger = true;
-	$('.group').removeClass('warm');
+    $('.group').removeClass('warm');
     $('.group input').each(function( index ) {
 		
-	  var _this = this;
-
-
-	  
-      if (!validate(_this, trigger)) {
-
-      	console.log(!validate(_this, trigger))
-        $(this).parent().addClass('warm');
-        trigger = false;
-	  }
+        var _this = this;
+            
+        if (!validate(_this, trigger)) {
+            $(this).parent().addClass('warm');
+            trigger = false;
+        }
 	  
     });
 
-	if (!trigger) return false;
-	
-	$('.form').hide();
-	$('.about-thanks').show();
-	$('.about-thanks').css('display', 'flex');
-  });
+    let areaVal = $('.group textarea').val();
+    if (!trigger) {
+        if (areaVal === '') {
+            $('.group textarea').parent().addClass('warm');
+        }
+        return false;
+    }
+
+    if (areaVal === '') {
+        $('.group textarea').parent().addClass('warm');
+        return false;
+    }
+
+    $('.form').addClass('animated fadeOut')
+    $('.form').hide();
+
+    $('.about-thanks').css('display', 'flex');
+    $('.about-thanks').addClass('animated slideInRight');
+    
+
+
+    setTimeout(()=> {
+        $('.address-main').addClass('animated fadeIn');
+        $('.address-main').show();
+        $('.about-thanks').addClass('animated fadeOut');
+        $('.about-thanks').hide();
+    },5000);
+    
+});
 
   function validate (_this, trigger) {
       var ck_name = /^[А-Яа-яA-Za-z\s]{1,20}$/;
@@ -151,5 +182,31 @@ $('.send-massage').click(function () {
         }
       }
   }
+
+
+
+
+
+/*btn prev*/
+
+$('.bnt-prev').on('click', function(EO) {
+    $('.form').addClass('animated fadeOut');
+    $('.about-thanks').addClass('animated fadeOut');
+    $('.form').hide();
+    $('.about-thanks').hide();
+    $('.address-main').addClass('animated fadeIn');
+    $('.address-main').show();
+});
+
+
+
+
+
+
+
+
+
+
+
 
 

@@ -6,7 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Iteira</title>
+    
+    <link rel="stylesheet" href="../js/popup/air-picker/dist/css/datepicker.min.css">
     <link href="../css/imports.css" rel="stylesheet">
+    
 </head>
 
 <body>
@@ -136,11 +139,876 @@
                 </div>
             </div>    
         </footer>
+
+
        
     </div>
+
+
+    <!-- Popup -->
+
+        <div class="popup-main">
+
+
+            <div class="bar-title">
+            
+
+                <div class="wrap-title">
+                    <div class="screen-wrap">
+
+                        <div class="screen screen-time">
+                            <h2>Выбор услуги</h2>
+                        </div>
+
+                        <div class="screen screen-time">
+                            <h2>Выбор мастера</h2>
+                        </div>
+
+                       <div class="screen screen-service">
+                            <h2>Выбор даты</h2>
+                        </div>
+
+                        <div class="screen screen-service">
+                            <h2>Выбор времени</h2>
+                        </div>
+
+                        <div class="screen screen-service">
+                            <h2>Выбор времени</h2>
+                        </div>
+
+                        <div class="screen screen-service">
+                            <h2>Спасибо</h2>
+                            <p>Наш администратор свяжется с Вами в ближайшее время</p>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+
+            <div class="bar-popup">
+                
+
+                <div class="change-time" hidden>
+                    <div class="part-day part-day-morning">
+                        <h3>Утро</h3>
+                        <a href="#" data-part-day="8-12">
+                            <span>08:00</span> &#8211 <span>12:00</span>
+                        </a>
+                    </div>
+                    <div class="part-day part-day-day"">
+                        <h3>День</h3>
+                        <a href="#" data-part-day="12-17">
+                            <span>12:00</span> &#8211 <span>16:30</span>
+                        </a>
+                    </div>
+                    <div class="part-day part-day-evening"">
+                        <h3>Вечер</h3>
+                        <a href="#" data-part-day="17-21">
+                            <span>16:30</span> &#8211 <span>21:00</span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="change-service" hidden>
+                     <menu class='service-menu'>
+                        
+                        <div>
+
+                            <div class='service-menu__subheader desktop-chosen clearfix'>
+                                <p>Услуги парикмахеров-стилистов</p>
+                                <div class='service-menu__dash'></div>
+                                <div class='service-menu__dash'></div>
+                            </div>
+
+                            <div class="toggle-box">
+                                <table class="service-content clearfix">
+                                    <tbody>     
+                                        <tr>
+                                            <th colspan="2">Уходовые процедуры</th>
+                                        </tr>
+                                        <tr class="change-service-btn">
+                                            <td>Алхимия<br>
+                                                <div>до 25 см / 25-40 см / свыше 40 см</div>
+                                            </td> 
+                                            <td>
+                                                <span>130 - 170 BYN</span>
+                                            </td>
+                                        </tr>
+                                        <tr class="change-service-btn">
+                                            <td>Ламинирование<br>
+                                                <div>до 25 см / 25-40 см / свыше 40 см</div>
+                                            </td> 
+                                            <td>
+                                                <span>120 - 238 BYN</span>
+                                            </td>
+                                        </tr>
+                                        <tr class="change-service-btn">
+                                            <td>Cellophanes-Service<br>
+                                                <div>до 25 см / 25-40 см / свыше 40 см</div>
+                                            </td> 
+                                            <td>
+                                                <span>135 - 242 BYN</span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Абсолютное счастье от Lebel<br>
+                                                <div>до 25 см / 25-40 см / свыше 40 см</div>
+                                            </td> 
+                                            <td>
+                                                <span>190 - 280 BYN</span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Маска для биопилинга кожи головы<br>
+                                                <div>до 25 см / 25-40 см / свыше 40 см</div>
+                                            </td> 
+                                            <td>
+                                                <span>120 - 150 BYN</span>
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <th colspan="2">Окрашивания</th>
+                                        </tr>
+                                        <tr>
+                                            <td>Окрашивание в один тон<br>
+                                                <div>до 25 см / 25-40 см / свыше 40 см</div>
+                                            </td> 
+                                            <td>
+                                                <span>114 - 211 BYN</span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Окрашивание корней до 2 см<br>
+                                                <div>до 25 см / 25-40 см / свыше 40 см</div>
+                                            </td> 
+                                            <td>
+                                                <span>96 BYN</span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Сложное окрашивание<br>
+                                                <div>до 25 см / 25-40 см / свыше 40 см</div>
+                                            </td> 
+                                            <td>
+                                                <span>240 - 290 BYN</span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Тонирование<br>
+                                                <div>до 25 см / 25-40 см / свыше 40 см</div>
+                                            </td> 
+                                            <td>
+                                                <span>98 - 125 BYN</span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Gloss-Service<br>
+                                                <div>до 25 см / 25-40 см / свыше 40 см</div>
+                                            </td> 
+                                            <td>
+                                                <span>55 - 68 BYN</span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Ультрамягкое блондирование<br>
+                                                <div>до 25 см / 25-40 см / свыше 40 см</div>
+                                            </td> 
+                                            <td>
+                                                <span>145 - 260 BYN</span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Мелирование<br>
+                                                <div>до 25 см / 25-40 см / свыше 40 см</div>
+                                            </td> 
+                                            <td>
+                                                <span>125 - 190 BYN</span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Локальное мелирование<br>
+                                                <div>до 25 см / 25-40 см / свыше 40 см</div>
+                                            </td> 
+                                            <td>
+                                                <span>81 - 115 BYN</span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Прикорневое мелирование<br>
+                                                <div>до 25 см / 25-40 см / свыше 40 см</div>
+                                            </td> 
+                                            <td>
+                                                <span>145 BYN</span>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+
+
+
+                            <div class='service-menu__subheader desktop-chosen clearfix'>
+                                <p>Make up, Brow & Lashes-сервисы</p>
+                                <div class='service-menu__dash'></div>
+                                <div class='service-menu__dash'></div>
+                            </div>
+
+                            <div class="toggle-box">
+                                <table class="service-content clearfix">
+                                    <tbody>     
+                                        <tr>
+                                            <th colspan="2">Уходовые процедуры</th>
+                                        </tr>
+                                        <tr>
+                                            <td>Алхимия<br>
+                                                <div>до 25 см / 25-40 см / свыше 40 см</div>
+                                            </td> 
+                                            <td>
+                                                <span>130 - 170 BYN</span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Ламинирование<br>
+                                                <div>до 25 см / 25-40 см / свыше 40 см</div>
+                                            </td> 
+                                            <td>
+                                                <span>120 - 238 BYN</span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Cellophanes-Service<br>
+                                                <div>до 25 см / 25-40 см / свыше 40 см</div>
+                                            </td> 
+                                            <td>
+                                                <span>135 - 242 BYN</span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Абсолютное счастье от Lebel<br>
+                                                <div>до 25 см / 25-40 см / свыше 40 см</div>
+                                            </td> 
+                                            <td>
+                                                <span>190 - 280 BYN</span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Маска для биопилинга кожи головы<br>
+                                                <div>до 25 см / 25-40 см / свыше 40 см</div>
+                                            </td> 
+                                            <td>
+                                                <span>120 - 150 BYN</span>
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <th colspan="2">Окрашивания</th>
+                                        </tr>
+                                        <tr>
+                                            <td>Окрашивание в один тон<br>
+                                                <div>до 25 см / 25-40 см / свыше 40 см</div>
+                                            </td> 
+                                            <td>
+                                                <span>114 - 211 BYN</span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Окрашивание корней до 2 см<br>
+                                                <div>до 25 см / 25-40 см / свыше 40 см</div>
+                                            </td> 
+                                            <td>
+                                                <span>96 BYN</span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Сложное окрашивание<br>
+                                                <div>до 25 см / 25-40 см / свыше 40 см</div>
+                                            </td> 
+                                            <td>
+                                                <span>240 - 290 BYN</span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Тонирование<br>
+                                                <div>до 25 см / 25-40 см / свыше 40 см</div>
+                                            </td> 
+                                            <td>
+                                                <span>98 - 125 BYN</span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Gloss-Service<br>
+                                                <div>до 25 см / 25-40 см / свыше 40 см</div>
+                                            </td> 
+                                            <td>
+                                                <span>55 - 68 BYN</span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Ультрамягкое блондирование<br>
+                                                <div>до 25 см / 25-40 см / свыше 40 см</div>
+                                            </td> 
+                                            <td>
+                                                <span>145 - 260 BYN</span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Мелирование<br>
+                                                <div>до 25 см / 25-40 см / свыше 40 см</div>
+                                            </td> 
+                                            <td>
+                                                <span>125 - 190 BYN</span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Локальное мелирование<br>
+                                                <div>до 25 см / 25-40 см / свыше 40 см</div>
+                                            </td> 
+                                            <td>
+                                                <span>81 - 115 BYN</span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Прикорневое мелирование<br>
+                                                <div>до 25 см / 25-40 см / свыше 40 см</div>
+                                            </td> 
+                                            <td>
+                                                <span>145 BYN</span>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+
+                            <div class='service-menu__subheader desktop-chosen clearfix'>
+                                <p>Make up, Brow & Lashes-сервисы</p>
+                                <div class='service-menu__dash'></div>
+                                <div class='service-menu__dash'></div>
+                            </div>
+
+                            <div class="toggle-box">
+                                <table class="service-content clearfix">
+                                    <tbody>     
+                                        <tr>
+                                            <th colspan="2">Уходовые процедуры</th>
+                                        </tr>
+                                        <tr>
+                                            <td>Алхимия<br>
+                                                <div>до 25 см / 25-40 см / свыше 40 см</div>
+                                            </td> 
+                                            <td>
+                                                <span>130 - 170 BYN</span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Ламинирование<br>
+                                                <div>до 25 см / 25-40 см / свыше 40 см</div>
+                                            </td> 
+                                            <td>
+                                                <span>120 - 238 BYN</span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Cellophanes-Service<br>
+                                                <div>до 25 см / 25-40 см / свыше 40 см</div>
+                                            </td> 
+                                            <td>
+                                                <span>135 - 242 BYN</span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Абсолютное счастье от Lebel<br>
+                                                <div>до 25 см / 25-40 см / свыше 40 см</div>
+                                            </td> 
+                                            <td>
+                                                <span>190 - 280 BYN</span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Маска для биопилинга кожи головы<br>
+                                                <div>до 25 см / 25-40 см / свыше 40 см</div>
+                                            </td> 
+                                            <td>
+                                                <span>120 - 150 BYN</span>
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <th colspan="2">Окрашивания</th>
+                                        </tr>
+                                        <tr>
+                                            <td>Окрашивание в один тон<br>
+                                                <div>до 25 см / 25-40 см / свыше 40 см</div>
+                                            </td> 
+                                            <td>
+                                                <span>114 - 211 BYN</span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Окрашивание корней до 2 см<br>
+                                                <div>до 25 см / 25-40 см / свыше 40 см</div>
+                                            </td> 
+                                            <td>
+                                                <span>96 BYN</span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Сложное окрашивание<br>
+                                                <div>до 25 см / 25-40 см / свыше 40 см</div>
+                                            </td> 
+                                            <td>
+                                                <span>240 - 290 BYN</span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Тонирование<br>
+                                                <div>до 25 см / 25-40 см / свыше 40 см</div>
+                                            </td> 
+                                            <td>
+                                                <span>98 - 125 BYN</span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Gloss-Service<br>
+                                                <div>до 25 см / 25-40 см / свыше 40 см</div>
+                                            </td> 
+                                            <td>
+                                                <span>55 - 68 BYN</span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Ультрамягкое блондирование<br>
+                                                <div>до 25 см / 25-40 см / свыше 40 см</div>
+                                            </td> 
+                                            <td>
+                                                <span>145 - 260 BYN</span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Мелирование<br>
+                                                <div>до 25 см / 25-40 см / свыше 40 см</div>
+                                            </td> 
+                                            <td>
+                                                <span>125 - 190 BYN</span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Локальное мелирование<br>
+                                                <div>до 25 см / 25-40 см / свыше 40 см</div>
+                                            </td> 
+                                            <td>
+                                                <span>81 - 115 BYN</span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Прикорневое мелирование<br>
+                                                <div>до 25 см / 25-40 см / свыше 40 см</div>
+                                            </td> 
+                                            <td>
+                                                <span>145 BYN</span>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+
+                            <div class='service-menu__subheader desktop-chosen clearfix'>
+                                <p>Make up, Brow & Lashes-сервисы</p>
+                                <div class='service-menu__dash'></div>
+                                <div class='service-menu__dash'></div>
+                            </div>
+
+                            <div class="toggle-box">
+                                <table class="service-content clearfix">
+                                    <tbody>     
+                                        <tr>
+                                            <th colspan="2">Уходовые процедуры</th>
+                                        </tr>
+                                        <tr>
+                                            <td>Алхимия<br>
+                                                <div>до 25 см / 25-40 см / свыше 40 см</div>
+                                            </td> 
+                                            <td>
+                                                <span>130 - 170 BYN</span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Ламинирование<br>
+                                                <div>до 25 см / 25-40 см / свыше 40 см</div>
+                                            </td> 
+                                            <td>
+                                                <span>120 - 238 BYN</span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Cellophanes-Service<br>
+                                                <div>до 25 см / 25-40 см / свыше 40 см</div>
+                                            </td> 
+                                            <td>
+                                                <span>135 - 242 BYN</span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Абсолютное счастье от Lebel<br>
+                                                <div>до 25 см / 25-40 см / свыше 40 см</div>
+                                            </td> 
+                                            <td>
+                                                <span>190 - 280 BYN</span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Маска для биопилинга кожи головы<br>
+                                                <div>до 25 см / 25-40 см / свыше 40 см</div>
+                                            </td> 
+                                            <td>
+                                                <span>120 - 150 BYN</span>
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <th colspan="2">Окрашивания</th>
+                                        </tr>
+                                        <tr>
+                                            <td>Окрашивание в один тон<br>
+                                                <div>до 25 см / 25-40 см / свыше 40 см</div>
+                                            </td> 
+                                            <td>
+                                                <span>114 - 211 BYN</span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Окрашивание корней до 2 см<br>
+                                                <div>до 25 см / 25-40 см / свыше 40 см</div>
+                                            </td> 
+                                            <td>
+                                                <span>96 BYN</span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Сложное окрашивание<br>
+                                                <div>до 25 см / 25-40 см / свыше 40 см</div>
+                                            </td> 
+                                            <td>
+                                                <span>240 - 290 BYN</span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Тонирование<br>
+                                                <div>до 25 см / 25-40 см / свыше 40 см</div>
+                                            </td> 
+                                            <td>
+                                                <span>98 - 125 BYN</span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Gloss-Service<br>
+                                                <div>до 25 см / 25-40 см / свыше 40 см</div>
+                                            </td> 
+                                            <td>
+                                                <span>55 - 68 BYN</span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Ультрамягкое блондирование<br>
+                                                <div>до 25 см / 25-40 см / свыше 40 см</div>
+                                            </td> 
+                                            <td>
+                                                <span>145 - 260 BYN</span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Мелирование<br>
+                                                <div>до 25 см / 25-40 см / свыше 40 см</div>
+                                            </td> 
+                                            <td>
+                                                <span>125 - 190 BYN</span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Локальное мелирование<br>
+                                                <div>до 25 см / 25-40 см / свыше 40 см</div>
+                                            </td> 
+                                            <td>
+                                                <span>81 - 115 BYN</span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Прикорневое мелирование<br>
+                                                <div>до 25 см / 25-40 см / свыше 40 см</div>
+                                            </td> 
+                                            <td>
+                                                <span>145 BYN</span>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+
+                            <div class='service-menu__subheader desktop-chosen clearfix'>
+                                <p>Make up, Brow & Lashes-сервисы</p>
+                                <div class='service-menu__dash'></div>
+                                <div class='service-menu__dash'></div>
+                            </div>
+
+                            <div class="toggle-box">
+                                <table class="service-content clearfix">
+                                    <tbody>     
+                                        <tr>
+                                            <th colspan="2">Уходовые процедуры</th>
+                                        </tr>
+                                        <tr>
+                                            <td>Алхимия<br>
+                                                <div>до 25 см / 25-40 см / свыше 40 см</div>
+                                            </td> 
+                                            <td>
+                                                <span>130 - 170 BYN</span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Ламинирование<br>
+                                                <div>до 25 см / 25-40 см / свыше 40 см</div>
+                                            </td> 
+                                            <td>
+                                                <span>120 - 238 BYN</span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Cellophanes-Service<br>
+                                                <div>до 25 см / 25-40 см / свыше 40 см</div>
+                                            </td> 
+                                            <td>
+                                                <span>135 - 242 BYN</span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Абсолютное счастье от Lebel<br>
+                                                <div>до 25 см / 25-40 см / свыше 40 см</div>
+                                            </td> 
+                                            <td>
+                                                <span>190 - 280 BYN</span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Маска для биопилинга кожи головы<br>
+                                                <div>до 25 см / 25-40 см / свыше 40 см</div>
+                                            </td> 
+                                            <td>
+                                                <span>120 - 150 BYN</span>
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <th colspan="2">Окрашивания</th>
+                                        </tr>
+                                        <tr>
+                                            <td>Окрашивание в один тон<br>
+                                                <div>до 25 см / 25-40 см / свыше 40 см</div>
+                                            </td> 
+                                            <td>
+                                                <span>114 - 211 BYN</span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Окрашивание корней до 2 см<br>
+                                                <div>до 25 см / 25-40 см / свыше 40 см</div>
+                                            </td> 
+                                            <td>
+                                                <span>96 BYN</span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Сложное окрашивание<br>
+                                                <div>до 25 см / 25-40 см / свыше 40 см</div>
+                                            </td> 
+                                            <td>
+                                                <span>240 - 290 BYN</span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Тонирование<br>
+                                                <div>до 25 см / 25-40 см / свыше 40 см</div>
+                                            </td> 
+                                            <td>
+                                                <span>98 - 125 BYN</span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Gloss-Service<br>
+                                                <div>до 25 см / 25-40 см / свыше 40 см</div>
+                                            </td> 
+                                            <td>
+                                                <span>55 - 68 BYN</span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Ультрамягкое блондирование<br>
+                                                <div>до 25 см / 25-40 см / свыше 40 см</div>
+                                            </td> 
+                                            <td>
+                                                <span>145 - 260 BYN</span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Мелирование<br>
+                                                <div>до 25 см / 25-40 см / свыше 40 см</div>
+                                            </td> 
+                                            <td>
+                                                <span>125 - 190 BYN</span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Локальное мелирование<br>
+                                                <div>до 25 см / 25-40 см / свыше 40 см</div>
+                                            </td> 
+                                            <td>
+                                                <span>81 - 115 BYN</span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Прикорневое мелирование<br>
+                                                <div>до 25 см / 25-40 см / свыше 40 см</div>
+                                            </td> 
+                                            <td>
+                                                <span>145 BYN</span>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            
+                           
+                            
+                        </div>
+                    </menu>
+                </div>
+
+                <div class="change-master" hidden>
+                    <a href='#'>
+                        <div class='article-preview team-article-preview bender-image clearfix bender-white-4'>
+                            <div class="article-preview__tag article-preview__tag-2">Немига, 5</div>
+                        </div>
+                        <h4 class="article-preview__h team-article-preview__h">ОЛЕСЯ<br>БЕНДЕР</h4>
+                        <span class="article-preview__date team-article-preview__date">Ведущий колорист</span>
+                    </a>
+                    <a href='#'>
+                        <div class='article-preview team-article-preview bender-image clearfix bender-white-4'>
+                            <div class="article-preview__tag article-preview__tag-2">Немига, 5</div>
+                        </div>
+                        <h4 class="article-preview__h team-article-preview__h">ОЛЕСЯ<br>БЕНДЕР</h4>
+                        <span class="article-preview__date team-article-preview__date">Ведущий колорист</span>
+                    </a>
+                    <a href='#'>
+                        <div class='article-preview team-article-preview bender-image clearfix bender-white-4'>
+                            <div class="article-preview__tag article-preview__tag-2">Немига, 5</div>
+                        </div>
+                        <h4 class="article-preview__h team-article-preview__h">ОЛЕСЯ<br>БЕНДЕР</h4>
+                        <span class="article-preview__date team-article-preview__date">Ведущий колорист</span>
+                    </a>
+                    <a href='#'>
+                        <div class='article-preview team-article-preview bender-image clearfix bender-white-4'>
+                            <div class="article-preview__tag article-preview__tag-2">Немига, 5</div>
+                        </div>
+                        <h4 class="article-preview__h team-article-preview__h">ОЛЕСЯ<br>БЕНДЕР</h4>
+                        <span class="article-preview__date team-article-preview__date">Ведущий колорист</span>
+                    </a>
+                     
+
+                </div>
+
+                <div class="calender-wrap"  >
+                    <input type='text' class='datepicker-here' />
+                    <div class="datepicker-here"></div>
+                    
+                </div>
+
+                <div class="contact-info" hidden>
+                    <form action="#" method="get" class="open">
+                        
+                        <div class="bnt-prev"></div>
+                        <div class="group group_name">     
+                            <span class="danger">!</span> 
+                            <span class="dnager-text">введите имя</span> 
+                            <input type="text" required>
+                            <label>Имя</label>
+                        </div>
+                        <div class="group group_tel">   
+                            <span class="danger">!</span> 
+                            <span class="dnager-text">введите номер</span>   
+                            <input type="tel" required>
+                            <label>Телефон</label>
+                        </div>
+                        <div class="group group_text">    
+                            <span class="danger">!</span>
+                            <span class="dnager-text">ваш комментарий</span>  
+                            <textarea name="" id="" cols="30" rows="1" required></textarea>
+                            <label>Комментарий</label>
+                        </div>
+                        <div class="group group-remember">
+                            
+                            <span class="danger">!</span>
+                            <span class="dnager-text">пусто</span>  
+                            <input type="text" required>
+                            <label>За 1 час до визита</label>
+
+                        </div>
+
+                        <div class="group-agreement">
+                            <label>
+                                <input class="checkbox" type="checkbox" name="checkbox-test">
+                                <span class="checkbox-custom"></span>
+                                <span class="label">Я прочитал(-а) и согласен(-а) с</span>
+                            </label>
+
+                            <div class="arg-w">
+                                <label class="btn" for="modal-2">Пользовательсим соглашением</label>  
+                                <input class="modal-state" id="modal-2" type="checkbox" />
+                                <div class="modal">
+                                    <label class="modal__bg" for="modal-2"></label>
+                                    <div class="modal__inner">
+                                        <label class="modal__close" for="modal-2"></label>
+                                        <h2>Sleppy sloth</h2>
+                                        <p>Aliquam in sagittis nulla. Curabitur euismod diam
+                                           eget risus venenatis, sed dictum 
+                                           lectus bibendum. Nunc nunc nisi, hendre
+                                           rit eget nisi id, rhoncus rutrum velit. Nunc vel
+                                           rit eget nisi id, rhoncus rutrum velit. Nunc vel
+                                           rit eget nisi id, rhoncus rutrum velit. Nunc vel
+                                           rit eget nisi id, rhoncus rutrum velit. Nunc vel
+                                           rit eget nisi id, rhoncus rutrum velit. Nunc vel
+                                           rit eget nisi id, rhoncus rutrum velit. Nunc vel
+                                           rit eget nisi id, rhoncus rutrum velit. Nunc vel
+                                           rit eget nisi id, rhoncus rutrum velit. Nunc vel
+                                           rit eget nisi id, rhoncus rutrum velit. Nunc vel
+                                           mauris dolor. Class aptent taciti sociosqu ad lit
+                                           ora torquent per conubia nostra, per inceptos himenaeos. 
+                                       Aliquam fringilla quis nisi eget imperdiet.</p>
+                                   </div>
+                               </div>
+                           </div>
+                       </div>
+
+                        <div class="about-btn send-massage popup-send" >
+                            <a href="#" class="nav__elem envoke-order-btn button--rayen button--border-thin button--text-thick" data-text="Записаться"><span>Записаться</span></a>
+                        </div>
+                    </form>
+                </div>
+
+               
+                
+
+
+            </div>
+        </div>
+
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <script src="../js/index.js"></script>
     <script src="../js/mobile-nav-menu.js"></script>
+    <script src="../js/popup/air-picker/dist/js/datepicker.min.js"></script>
+
+    <script src="../js/popup/popup.js"></script>
+   
 </body>
 
 </html>

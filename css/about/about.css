@@ -11,7 +11,6 @@ body {
 	display: -o-flex;
 	display: flex;
 	position: relative;
-
 }
 
 /*About*/
@@ -65,7 +64,7 @@ iframe {
 /*sensation*/
 .about-wrapp h2 {
 	font-size: 36px;
-	font-family: PlayfairDisplay;
+	font-family: 'PlayfairDisplay-Bold';
 	font-weight: bold;
 	line-height: 1.17;
   	letter-spacing: normal;
@@ -77,14 +76,19 @@ iframe {
 .about-wrapp p {
 	font-size: 20px;
 	text-align: center;
-	font-family: Lato;
+	font-family: 'Lato-Regular' !important;
 }
 
 .phone-wrapp {
 	margin-top: 20px;
 	margin-bottom: 20px;
 }
-
+/*=======================================
+======================================+
+====================================
+=====================================
+=====================================
+==================================*/
 .address {
 	margin-top: 10px;
 }
@@ -124,14 +128,6 @@ iframe {
 
 
 
-#lill {
-	position: absolute;
-	top: 336px;
-	right: 20%;
-	height: 20px;
-	width: 20px;
-	background-color: red;
-}
 
 
 /*About-title*/
@@ -171,19 +167,15 @@ iframe {
 	height: 42px;
 	display: inline-block;
 	text-decoration: none;
-	padding-top: 13px;
-	padding-bottom: 13px;
 	border: 1px solid black;
 	transition: 0.2s;	
 	background-color: transparent;
 	font-size: 18px;
-	font-weight: 300;
-	font-style: normal;
-	font-stretch: normal;
-	line-height: 1;
+	line-height: 42px;
 	letter-spacing: 1.8px;
 	text-align: center;
 	color: #0e0e0e;
+	font-family: "Lato-Regular";
 }
 
 .about-tab.active {
@@ -200,6 +192,7 @@ iframe {
 	flex-direction: column;
 	justify-content: flex-end;
 	align-items: center;
+	margin-bottom: 8px;
 }
 
 .mobile-title h2 {
@@ -289,7 +282,7 @@ iframe {
 
 	.about-box {
 		align-items: flex-start;
-		margin-top: 194px;
+		margin-top: 348px;
 	}
 }
 
@@ -307,35 +300,13 @@ iframe {
 }
 @media only screen and (max-width : 768px) {
 	.about-box {
-		width: 250px;
+		width: 100%;
+		margin-top: 64px;
 	}
 	.about-wrapp {
-		width: 250px;
-	}
-	/*style txt*/
-	/*sensation*/
-	.about-wrapp h2 {
-		font-size: 20px;
 		width: 100%;
-		height:auto;
 	}
 
-	.about-wrapp p {
-		font-size: 16px;
-	}
-
-	.about-btn .nav__elem {
-		width: 200px;
-		height: 47px;
-		line-height: 47px;
-		padding: 0;
-		font-size: 24px;
-	}
-	.about-box {
-		margin-top: 264px;
-	}
-}
-@media only screen and (max-width : 480px) {
 	#about {
 		height: auto;
 	}
@@ -354,37 +325,45 @@ iframe {
 
 	.about-box {
 		align-items: flex-start;
-		margin-top: 64px;	
+		margin-top: 20px;
 		margin-right: auto;
 		margin-left: auto;
 		padding-top: 29px;
 	}
 
-
 	.mobile-title {
-		height: 169px;
+		height: 217px;
 		display: flex;
 	}
 
 	.about-mobile-link {
-		display: block;
-		width: 100%;
-		margin: 0 auto;
-		display: flex;
-		justify-content: center;
-		align-items: flex-end;
-
+	    display: block;
+	    margin-top: 20px;
 	}
 
-	.mobile-title h2 {
-		margin-bottom: 5px;
+	.title-ab {
+		display: none !important;
 	}
+
+
+
+
 
 	/*style txt*/
 	/*sensation*/
+	.about-wrapp h2 {
+		font-size: 36px;
+	  	width: 358px;
+	  	height: 99px;
+	}
+
+	.about-wrapp p {
+		font-size: 20px;
+	}
+
 	.phone-wrapp {
-		margin-top: 15px;
-		margin-bottom: 15px;
+		margin-top: 20px;
+		margin-bottom: 20px;
 	}
 
 	.address {
@@ -398,18 +377,57 @@ iframe {
 
 	/*metropol*/
 	.metropol .phone {
-		margin-top: 15px;
-		margin-bottom: 15px;
+		margin-top: 20px;
+		margin-bottom: 20px;
+	}
+}
+@media only screen and (max-width : 480px) {
+	
+	.about-wrapp{
+		margin: 0 auto;
+		padding-bottom: 29px;
 	}
 
-	/*map*/
-
-	.map.active{
-		
+	.about-box {
+		margin-top: 6px;
+		padding-top: 0;
 	}
-	
 
-	
+	.mobile-title {
+	    height: 195px;
+	}
+
+	/*style txt*/
+	/*sensation*/
+	.about-wrapp h2 {
+	    font-size: 24px;
+	    height: auto;
+	}
+
+	.about-wrapp p {
+		font-size: 14px;
+		text-align: center;
+		font-family: Lato;
+	}
+
+
+	/*metropol*/
+	.metropol .phone {
+		margin-top: 10px;
+		margin-bottom: 10px;
+	}
+
+	.about-btn .nav__elem {
+	    width: 190px;
+	    height: 44px;
+	    line-height: 44px;
+	    font-size: 18px;
+	    padding-bottom: 29px;
+	}
+
+	.about-btn {
+	    margin-top: 26px;
+	}
 	
 }
 
@@ -426,8 +444,18 @@ iframe {
 		padding-top: 0;
 	}
 
+	.mobile-title {
+	    height: 195px;
+	}
+
 	/*style txt*/
 	/*sensation*/
+	.about-wrapp h2 {
+	    font-size: 20px;
+	    width: 100%;
+	    height: auto;
+	}
+
 	.about-wrapp p {
 		font-size: 14px;
 		text-align: center;
@@ -451,6 +479,17 @@ iframe {
 	.metropol .phone {
 		margin-top: 10px;
 		margin-bottom: 10px;
+	}
+
+	.about-btn .nav__elem {
+	    width: 140px;
+	    height: 47px;
+	    line-height: 47px;
+	    font-size: 20px;
+	}
+
+	.about-btn {
+	    margin-top: 18px;
 	}
 }
 
@@ -495,7 +534,7 @@ form {
 }
 
 
-input {
+input, textarea {
 	font-size:24px;
 	padding:10px 10px 10px 0px;
 	margin-bottom: 50px;
@@ -506,11 +545,15 @@ input {
 	border-bottom: 1px solid #d2ab66;
 }
 
+textarea {
+	border: 1px solid;
+}
+
 label 				 {
 	font-size:24px;
 	font-weight:normal;
 	position:absolute;
-	pointer-events:none;
+	z-index: 1;
 	left:5px;
 	top:20px;
 	transition:0.2s ease all; 
@@ -520,14 +563,10 @@ label 				 {
 	color:#d2ab66;
   }
   
-  .highlight {
-	position:absolute;
-	height:4px; 
-	width:100%; 
-	bottom: 0;
-	left:0;
-	pointer-events:none;
-	opacity:0.5;
+  textarea:focus ~ label, textarea:valid ~ label 		{
+	top:-20px;
+	font-size:14px;
+	color:#d2ab66;
   }
   
   
@@ -537,11 +576,7 @@ label 				 {
 	color:#d2ab66;
   }
   
-  input:focus ~ .highlight {
-	-webkit-animation:inputHighlighter 0.3s ease;
-	-moz-animation:inputHighlighter 0.3s ease;
-	animation:inputHighlighter .5s ease;
-  }
+
 
 .danger {
 	display: none;
@@ -576,13 +611,47 @@ label 				 {
 
 
 
-  @keyframes inputHighlighter {
-	  from { background:#d2ab66; }
-	to 	{ width:0; background:transparent; }
-  }
+/*prev*/
+.bnt-prev {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	align-items: center;
+	align-self: center;
+	position: absolute;
+	z-index: 50;
+    left: 17%;
+    top: 34%;
+}
 
+.prev-abbout {
+	height: 24px;
+	width: 24px;
+	background: url(../../img/arrow-bot.png) no-repeat center center / cover;
+	position: relative;
+	transform: rotate(90deg);
+}
 
+.prev-dash {
+	height: 2px;
+    width: 60px;
+    background-color: #000;
+    margin-right: 15px;
+}
 
+.prev-txt {
+	font-family: Lato-Regular;
+	font-size: 26px;
+	font-weight: normal;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 0.67;
+	letter-spacing: 3.6px;
+	text-align: left;
+	color: #0e0e0e;
+}
 
 /*==========  Desktop First  ==========*/
 @media only screen and (max-width : 1900px) {
@@ -612,6 +681,10 @@ label 				 {
 		margin-left: 20px;
 	}
 
+	.bnt-prev {
+	    top: -9%;
+	}
+
 }
 
 
@@ -629,30 +702,53 @@ label 				 {
 	    height: 47px;
 	    line-height: 47px;
 	}
+
+	.bnt-prev {
+	    left: 21%;
+	}
+
+	.prev-txt {
+	    font-size: 22px;
+	}
+
+	.prev-dash {
+	    width: 38px;
+	}
+
+
 }
 @media only screen and (max-width : 768px) {
 	.form {
 		width: 400px;
-		margin-top: 0;
+		margin-top: 79px;
 	}
 
 	.form .group_text {
 	    margin-top: 106px;
 	}
 
-	
-
-	label 				 {
+	label {
 		font-size:16px;
-	  }
+	}
+
+	.bnt-prev {
+	    left: 13%;
+	    top: -13%;
+	}
+
+	.prev-txt {
+	    font-size: 20px;
+	}
 }
+
+
 @media only screen and (max-width : 480px) {
 	.form {
 		width: 100%;
-		padding-right: 0px;
-		padding-left: 0px;
+		padding-left: 36px;
+    	padding-right: 36px;
 		padding-bottom: 0;
-		margin-top: 40px;
+		margin-top: 20%;
 	}
 
 	.group_text {
@@ -661,6 +757,15 @@ label 				 {
 
 	.form .nav__elem:first-child {
 		margin-left: 20px;
+	}
+
+	.bnt-prev {
+	    left: 7%;
+	    top: -9%;
+	}
+
+	.prev-txt {
+	    font-size: 20px;
 	}
 }
 
@@ -677,6 +782,26 @@ label 				 {
 
 	.group_text {
 		margin-top: 0;
+	}
+}
+
+@media only screen and (max-width: 360px) { 
+	.about-box {
+	    margin-top: 23px;
+	}
+}
+
+@media only screen and (max-width: 360px) { 
+	.form {
+	    margin-top: 4px;
+	}
+
+	.form .group_text {
+	    margin-top: 30px;
+	}
+
+	.about-wrapp {
+	    padding-bottom: 0px;
 	}
 }
 
@@ -822,10 +947,111 @@ label 				 {
 
 
 
+
+
+
+
+
+
+
+/*title*/
+
+.title-ab {
+	position: absolute;
+	bottom: 70%;
+	right: 22%;
+	display: block;
+	z-index: 20;
+}
+
+.title-ab h1 {
+	font-size: 130px;
+}
+
+
+@media only screen and (max-width:980px) {
+	.about-box {
+	    
+	}
+
+	.title-ab {
+		position: absolute;
+		top: 10%;
+		right: 22%;
+		display: block;
+		z-index: 20;
+	}
+}
+
+@media only screen and (max-width:760px) {
+	
+
+	.title-ab {
+		top: 10%;
+		right: 22%;
+	}
+
+	.title-ab h1 {
+		font-size: 90px;
+	}
+}
+
+@media only screen and (max-width:480px) {
+	.about-box {
+	    margin-top: 8px;
+	}
+
+	.title-ab {
+		display: none;
+	}
+
+}
+
+
+@media only screen and (orientation:landscape) and (max-width:640px) {
+	
+	.title-ab {
+		display: none;
+	}
+}
+
+
+
+
+/*
+
+==========  Desktop First  ==========
+@media only screen and (max-width : 1200px)
+@media only screen and (max-width : 992px)
+@media only screen and (max-width : 768px)
+@media only screen and (max-width : 480px)
+
+==========  Mobile First  ==========
+
+
+@media only screen and (min-width : 320px)
+@media only screen and (min-width : 480px)
+@media only screen and (min-width : 768px)
+@media only screen and (min-width : 992px)
+@media only screen and (min-width : 1200px)
+
+
+*/
+
+@media only screen and (orientation:landscape) and (max-width:1024px) {
+	.title-ab {
+		
+	}
+}
+
 @media only screen and (orientation:landscape) and (max-width:900px) {
 	.about-box {
 		align-items: flex-start;
 		margin-top: 60px;
+	}
+
+	.title-ab {
+		display: none;
 	}
 
 	/*style txt*/
@@ -861,6 +1087,188 @@ label 				 {
 		display: flex;
 		justify-content: space-around;
 	}
+
+	.form .group_text {
+	    margin-top: 16px;
+	}
+
+	input {
+	    margin-bottom: 38px;
+	}
+
+	.about-btn .nav__elem {
+	    width: 140px;
+	    height: 47px;
+	    line-height: 47px;
+	    font-size: 20px;
+	}
+
+	.about-btn {
+	    margin-top: 18px;
+	}
+}
+
+@media only screen and (orientation:landscape) and (max-width:736px) {
+	.about-wrapp {
+		padding-bottom: 0;
+		flex-direction: row;
+		flex-wrap: wrap;
+	}
+
+	.mobile-title {
+	    height: 142px;
+	}
+
+	.sensation, .metropol {
+		flex: 1;
+		width: 50%;
+	}
+
+	.about-wrapp h2 {
+	    width: 310px;
+	    height: auto;
+	}
+
+	.about-wrapp p {
+	    font-size: 13px;
+	}
+
+
+	.about-btn.write-massage {
+	    margin-top: 15px;
+	}
+
+	.about-box {
+	    margin-top: 0px;
+	}
+
+	.about-btn .nav__elem {
+	    width: 140px;
+	    height: 47px;
+	    line-height: 47px;
+	    font-size: 20px;
+	}
+
+	.about-btn {
+	    margin-top: 18px;
+	}
+}
+
+
+
+
+@media only screen and (orientation:landscape) and (max-width:641px) {
+	.about-wrapp {
+		padding-bottom: 0;
+	}
+
+	.about-btn.write-massage {
+	    margin-top: 16px;
+	}
+}
+
+@media only screen and (orientation:landscape) and (max-width:667px) {
+	.about-wrapp {
+		padding-bottom: 0;
+		flex-direction: row;
+		flex-wrap: wrap;
+	}
+
+	.mobile-title {
+	    height: 142px;
+	}
+
+	.sensation, .metropol {
+		flex: 1;
+		width: 50%;
+	}
+
+	.about-wrapp h2 {
+	    width: 310px;
+	    height: auto;
+	}
+
+	.about-wrapp p {
+	    font-size: 13px;
+	}
+
+
+	.about-btn.write-massage {
+	    margin-top: 15px;
+	}
+
+	.about-box {
+	    margin-top: 0px;
+	}
+
+	.about-btn .nav__elem {
+	    width: 140px;
+	    height: 47px;
+	    line-height: 47px;
+	    font-size: 20px;
+	}
+
+	.about-btn {
+	    margin-top: 18px;
+	}
+}
+
+@media only screen and (orientation:landscape) and (max-width:568px) {
+	.about-box {
+	    width: 386px;
+	}
+
+	.mobile-title {
+	    height: 180px;
+	}
+
+	.about-box {
+	    margin-top: 0px;
+	}
+
+	/**/
+	.about-wrapp {
+		padding-bottom: 0;
+		flex-direction: column;
+		flex-wrap: wrap;
+	}
+
+	.sensation, .metropol {
+		width: 100%;
+	}
+
+	.about-wrapp h2 {
+	    width: 100%;
+	    height: auto;
+	}
+
+	.about-wrapp p {
+	    font-size: 13px;
+	}
+
+
+	.about-btn.write-massage {
+	    margin-top: 15px;
+	}
+
+	.about-box {
+	    margin-top: 0px;
+	}
+
+	.about-btn .nav__elem {
+	    width: 140px;
+	    height: 47px;
+	    line-height: 47px;
+	    font-size: 20px;
+	}
+
+	.about-btn {
+	    margin-top: 18px;
+	}
+
+
+
+
 }
 
 
@@ -872,23 +1280,34 @@ label 				 {
 
 
 
-/*
-
-==========  Desktop First  ==========
-@media only screen and (max-width : 1200px)
-@media only screen and (max-width : 992px)
-@media only screen and (max-width : 768px)
-@media only screen and (max-width : 480px)
-
-==========  Mobile First  ==========
 
 
-@media only screen and (min-width : 320px)
-@media only screen and (min-width : 480px)
-@media only screen and (min-width : 768px)
-@media only screen and (min-width : 992px)
-@media only screen and (min-width : 1200px)
 
 
-*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 

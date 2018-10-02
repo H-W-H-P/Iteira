@@ -279,7 +279,7 @@
         display: block;
         margin: 0 !important;
         text-align: center;
-        /*padding: 0 !important;*/
+        /*padding: 0 !important;*//*
     }
     .service-content tr td:first-child{
         border-right: solid 1px #d2ab66;

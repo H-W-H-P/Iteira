@@ -1,0 +1,422 @@
+
+
+@media only screen and (max-width : 1700px) {
+    .screen h2 {
+        width: 90%;
+        font-size: 50px;
+    }
+
+    .screen-service p {
+        width: 90%;
+        font-size: 30px;
+    }
+
+    .bar-popup {
+        width: 42.48%;
+    }
+
+    .service-menu__subheader {
+        width: 100%;
+        margin: 0 auto;
+        max-width: 100%;
+    }
+
+
+}
+
+@media only screen and (max-width : 1400px) {
+    .part-day h3 {
+        font-size: 40px;
+    }
+
+    .part-day a {
+        height: 44px;
+        font-size: 18px;
+        margin: 0 auto;
+        width: 200px;
+    }
+
+
+    .part-day h3 {
+        height: 50.2px;
+    }
+
+    .bar-popup {
+        width: 52.48%;
+    }
+
+
+}
+
+@media only screen and (max-width: 1200px) {
+    .service-menu__subheader p {
+        font-size: 19px;
+    }
+}
+
+@media only screen and (max-width : 1023px) {
+    .wrap-title {
+
+        height: 85%;
+
+    }
+
+    .service-content-item {
+        margin: 0 4%;
+    }
+
+
+    .part-day h3 {
+        width: 90%;
+        height: auto;
+        font-size: 40px;
+    }
+
+
+
+
+
+    .part-day a {
+        width: 190px;
+        height: 44px;
+        font-size: 18px;
+    }
+/*
+    .bar-popup {
+        width: 40.48%;
+    }
+*/
+    .bar-title {
+        height: 350px;
+    }
+
+    .popup-main {
+        height: auto;
+    }
+
+    .bar-popup {
+        align-items: flex-start;
+    }
+}
+
+@media only screen and (max-width : 1023px) {
+    .popup-main {
+        flex-direction: column;
+        height: 100%;
+    }
+
+    .bar-title, .bar-popup {
+        width: 100%;
+    }
+
+    .service-menu {
+        height: 90%;
+    }
+
+    /*Change-service*/ 
+    .change-service {
+        width: 100%;
+        height: 100%;
+    }
+
+
+
+    .service-menu__subheader {
+        margin: 0 auto;
+    }
+
+    .service-content {
+        margin: 0 auto;
+        width: 70%;
+    }
+
+    .service-menu__subheader {
+        width: 70%;
+        max-width: 100%;
+    }
+
+
+    .change-master a .article-preview {
+        width: 100% !important;
+    }
+
+    .change-master a {
+        background-position: top;
+    }
+
+    .team-article-preview__date {
+        bottom: 30px;
+    }
+
+    .article-preview__h {
+        bottom: 60px
+    }
+
+
+    /*calender*/ 
+    .calender-wrap {
+        display: block;
+    }
+
+    #datepicker {
+        margin-top: 10%;
+        width: 100%;
+    }
+
+    .ui-widget.ui-widget-content {
+        width: 78%;
+        margin: 0 auto;
+    }
+
+    .service-content {
+        padding-right: 2%;
+        padding-left: 2%;
+    }
+
+    /**/
+    .article-preview__h {
+        bottom: 177px;
+    }
+
+    .team-article-preview__date {
+        bottom: 0px;
+    }
+
+    .change-master {
+        height: auto;
+        overflow: hidden;
+    }
+
+    .change-master a {
+        height: 882px;
+    }
+
+
+    /*form*/
+    form {
+        margin-bottom: 0;
+        margin-top: 10%;
+    }
+
+    .contact-info {
+        width: 60%;
+    }
+
+    .group input, .group textarea {
+        font-size: 16px;
+        padding: 9px 10px 2px 5px;
+        margin-bottom: 40px;
+    }
+
+    .group label {
+        font-size: 16px;
+        left: 5px;
+        top: -1px;
+    }
+
+}
+
+
+
+
+@media screen and (max-width: 767px) {
+    .service-content tr td:first-child div {
+        display: none;
+    }
+
+    .team-article-preview__date {
+        bottom: 30px;
+    }
+
+    .article-preview__h {
+        bottom: 60px
+    }
+
+}
+
+
+@media only screen and (max-width : 768px) {
+    .service-content {
+        width: 90%;
+    }
+
+    tr {
+        display: flex;
+        margin-bottom: 15px;
+    }
+
+    .service-content tr td:last-child span:last-child:hover {
+        opacity: 1;
+    }
+
+
+    .service-menu__subheader {
+        width: 90%;
+    }
+
+
+    .service-content tr td:first-child {
+        border-left: solid 1px #d2ab66;
+        border-right: none;
+    }
+
+    .service-content {
+        max-height: 450px;
+    }
+
+        /**/
+    .article-preview__h {
+        bottom: 177px;
+        font-size: 6.4vw;
+
+    }
+
+    .team-article-preview__date {
+        bottom: 0px;
+        font-size: 4vw;
+    }
+
+
+}
+
+
+
+
+@media only screen and (max-width : 480px) {
+    
+    .bar-title {
+        height: 213px;
+    }
+
+    .wrap-title {
+        height: 100%;
+    }
+
+    .screen h2 {
+        font-size: 42px;
+    }
+
+    .part-day h3 {
+        font-size: 36px;
+    }
+
+    .part-day a {
+        width: 124px;
+        height: 28px;
+        font-size: 14px;
+    }
+
+    .part-day {
+        margin-bottom: 30px;
+    }
+
+    /*100%*/
+
+    .popup-main {
+        height: 100%;
+    }
+
+    .service-menu__subheader {
+        width: 90%;
+        max-width: 100%;
+        padding: 10px 0px 10px 10px;
+        border-bottom: 1px solid #f6f6f6;
+    }
+
+    .service-menu__subheader p {
+        font-size: 18px;
+    }
+
+    .service-menu, .change-service {
+        background-color: #fff;
+    }
+
+    .service-menu__dash {
+        width: 19px;
+        background-color: #0e0e0e;
+        height: 0.6px;
+    }
+
+    .service-content tr td:first-child {
+        padding-right: 0;
+    }
+
+    .service-content tr td:last-child span:first-child {
+        height: 100%;
+
+    }
+
+    .service-content {
+        width: 100%;
+    }
+
+    .service-menu {
+        padding-top: 10px;
+        height: 100%;
+    }
+
+    .service-content, .service-content tr td:last-child span {
+        background-color: transparent;
+    }
+
+
+    .team-article-preview__date {
+        bottom: 30px;
+    }
+
+    .article-preview__h {
+        bottom: 60px
+    }
+
+
+    .change-master {
+        height: 100%;
+        overflow: inherit;
+    }
+
+    .change-master a .article-preview {
+        width: 100vw !important;
+    }
+
+    .ui-widget.ui-widget-content {
+        width: 100%;
+        padding-right: 0;
+        padding-left: 0;
+    }
+
+    .ui-state-default, .ui-widget-content .ui-state-default {
+        font-size: 16px;      
+    }
+
+    .ui-datepicker td span, .ui-datepicker td a, .ui-datepicker th {
+        text-align: center;
+    }
+
+
+    /*form*/
+    .contact-info {
+        width: 86%;
+    }
+
+    .group label {
+        top: 6px;
+    }
+
+    .nav__elem {
+        font-size: 18px;
+    }
+
+    .envoke-order-btn {
+        padding: 15px 47px 11px;
+    }
+
+    .group_text {
+        margin-top: 22vw;
+    }
+}
+
+
+
+
+
+

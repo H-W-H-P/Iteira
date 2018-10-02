@@ -15,3 +15,5 @@
 @import url('index/fixes-index.css');
 @import url('index/fixes-mobile-index.css');
 @import url('animations.css');
+@import url('../css/popup/popup.css');
+@import url('../css/popup/popup-mobile.css');

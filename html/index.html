@@ -8,11 +8,12 @@
     <title>Iteira</title>
     
     <link rel="stylesheet" href="../js/popup/air-picker/dist/css/datepicker.min.css">
+    <link rel="stylesheet" type="text/css" href="../css/component.css" />
     <link href="../css/imports.css" rel="stylesheet">
     
 </head>
 
-<body>
+<body class="main_page">
     <div class='wrapper'>
         <div class="menu-popup closed mobile-only">
             <a class="closure" href='#'></a>
@@ -35,7 +36,7 @@
         <header class="header">
             <a href='#' class="header__logo-link">
                 <img class="logo" src='../img/logo.svg'>
-                <img src="../img/logo-white.svg" alt="logo-white" class="logo-white">
+                <!-- <img src="../img/logo-white.svg" alt="logo-white" class="logo-white"> -->
             </a>
             <!-- 
      button button--rayen button--border-thin button--text-thick button--text-upper button--size-s
@@ -54,6 +55,8 @@
         <main class="index-sliding-frs">
             <div class='index-sliding-fr opacity-true' data-theme='white'>
                 <div class="index-sliding-fr__pic"></div>
+                <img src="../img/index/frames/1st.jpg" alt="" class="slide-item__image index-sliding-fr__pic">
+                <!-- </div> -->
                 <span class="block-header index-sliding-fr__h ">
                     HIFU 
                     <br class='desktop-only'> &nbsp&nbsp&nbsp&nbsp&nbsp SMAS
@@ -69,6 +72,7 @@
 
             <div class='index-sliding-fr opacity-false' data-theme='dark'>
                 <div class="index-sliding-fr__pic"></div>
+                <img src="../img/index/frames/2nd.jpg" alt="" class="slide-item__image index-sliding-fr__pic">
                 <span class="block-header index-sliding-fr__h">
                     Технология <br class='desktop-only'> &nbsp&nbsp&nbsp&nbsp&nbsp микро<br class='desktop-only'> &nbsp&nbsp&nbsp нидлинга
                 </span>
@@ -81,6 +85,7 @@
             </div>
             <div class='index-sliding-fr opacity-false' data-theme='white'>
                 <div class="index-sliding-fr__pic"></div>
+                <img src="../img/index/frames/3rd.jpg" alt="" class="slide-item__image index-sliding-fr__pic">
                 <span class="block-header index-sliding-fr__h">
                     Soprano <br class='desktop-only'> &nbsp&nbsp&nbsp&nbsp&nbsp ICE<br class='desktop-only'> &nbsp&nbsp&nbsp Platinum
                 </span>
@@ -93,14 +98,14 @@
             </div>
         </main>
         <div class='index-slider'>
-            <a class='index-slider__prev index-slider__arrow' onclick=""></a>
+            <a class='index-slider__prev index-slider__arrow scene-nav scene-nav--prev' data-nav="previous" onclick=""></a>
             <div class='index-slider__dash'></div>
-            <a class='index-slider__next index-slider__arrow' onclick=""></a>
+            <a class='index-slider__next index-slider__arrow scene-nav scene-nav--next' data-nav="next" onclick=""></a>
         </div>
         <div class='index-slider-counter'>
             <div class='index-slider-counter__dash'></div>
             <div class='index-slider-counter-num'>
-                <span class='index-slider-counter-num__is'>01</span>
+                <span class='index-slider-counter-num__is'>0<span class="numbChange">1</span></span>
                 <span class='index-slider-counter-of'>/03</span>
             </div>
         </div>
@@ -1001,8 +1006,15 @@
 
             </div>
         </div>
-
+    <div id="canv_wr"></div>
+    
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="../js/demo.js"></script>
+    <script src="../js/pixi.min.js"></script>
+    <script src="../js/TweenMax.min.js"></script>
+    <script src="../js/main.js"></script>
+    <script src="../js/imagesloaded.pkgd.min.js"></script>
+
     <script src="../js/index.js"></script>
     <script src="../js/mobile-nav-menu.js"></script>
     <script src="../js/popup/air-picker/dist/js/datepicker.min.js"></script>

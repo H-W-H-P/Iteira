@@ -18,14 +18,14 @@
       options.pixiSprites         = options.hasOwnProperty('sprites') ? options.sprites : [];
       options.centerSprites       = options.hasOwnProperty('centerSprites') ? options.centerSprites : false;
       options.texts               = options.hasOwnProperty('texts') ? options.texts : [];
-      options.autoPlay            = options.hasOwnProperty('autoPlay') ? options.autoPlay : true;
+      options.autoPlay            = options.hasOwnProperty('autoPlay') ? options.autoPlay : false;
       options.autoPlaySpeed       = options.hasOwnProperty('autoPlaySpeed') ? options.autoPlaySpeed : [10, 3];
       options.fullScreen          = options.hasOwnProperty('fullScreen') ? options.fullScreen : true;
       options.displaceScale       = options.hasOwnProperty('displaceScale') ? options.displaceScale : [200, 70];
       options.displacementImage   = options.hasOwnProperty('displacementImage') ? options.displacementImage : '';
       options.navElement          = options.hasOwnProperty('navElement')  ?  options.navElement : document.querySelectorAll( '.scene-nav' ); 
       options.displaceAutoFit     = options.hasOwnProperty('displaceAutoFit')  ?  options.displaceAutoFit : false; 
-      options.wacky               = options.hasOwnProperty('wacky') ? options.wacky : false;
+      options.wacky               = options.hasOwnProperty('wacky') ? options.wacky : true;
       options.interactive         = options.hasOwnProperty('interactive') ? options.interactive : false;
       options.interactionEvent    = options.hasOwnProperty('interactionEvent') ? options.interactionEvent : '';
       options.displaceScaleTo     = ( options.autoPlay === false ) ? [ 0, 0 ] : [ 20, 20 ];
@@ -84,8 +84,8 @@
         // Fit renderer to the screen
         if ( options.fullScreen === true ) {
           renderer.view.style.objectFit = 'cover';
-          renderer.view.style.width     = '100%';
-          renderer.view.style.height    = '100%';
+          // renderer.view.style.width     = '100%';
+          // renderer.view.style.height    = '100%';
           // renderer.view.style.top       = '50%';
           // renderer.view.style.left      = '50%';
           // renderer.view.style.webkitTransform = 'translate( -50%, -50% ) scale(1.2)';           
@@ -98,12 +98,39 @@
           // renderer.view.style.transform = 'translate( -50%, -50% )';          
         }
         
+        var displacementSprite11 = PIXI.Sprite.fromImage('../img/index/frames/gradient4.png');
+        displacementSprite11.texture.baseTexture.wrapMode=PIXI.WRAP_MODES.CLAMP; //REPEAT // MIRRORED_REPEAT //CLAMP
+        var displacementFilter11 = new PIXI.filters.DisplacementFilter(displacementSprite11);
+
+        // var container11 = new PIXI.Container();
+        // stage.addChild(slidesContainer);
+
+        stage.addChild( displacementSprite11 );
+        // slidesContainer.filters = [displacementFilter11];
+
+        displacementSprite11.scale.x = 1;
+        displacementSprite11.scale.y = 1;
+        displacementSprite11.anchor.set(0.5);
+
+        stage
+          .on('mousemove', onPointerMove11)
+          .on('touchmove', onPointerMove11);
+
+        $( document ).on( "mousemove", function( event ) {
+          console.log(event.pageX)
+        });
+
+        function onPointerMove11(eventData)
+        {
+          console.log(eventData.data.global.x)
+          displacementSprite11.position.set(eventData.data.global.x, eventData.data.global.y);
+        }
   
         displacementSprite.texture.baseTexture.wrapMode = PIXI.WRAP_MODES.REPEAT;
 
 
         // Set the filter to stage and set some default values for the animation
-        stage.filters = [displacementFilter];        
+        stage.filters = [displacementFilter, displacementFilter11];        
 
         if ( options.autoPlay === false ) {
           displacementFilter.scale.x = 0;
@@ -116,7 +143,7 @@
           displacementSprite.x = renderer.width / 2;
           displacementSprite.y = renderer.height / 2; 
         }
-
+        // console.log(displacementSprite, displacementSprite11)
         displacementSprite.scale.x = 2;
         displacementSprite.scale.y = 2;
   
@@ -224,8 +251,8 @@
          },onUpdate: function() {
           
             if ( options.wacky === true ) {
-              displacementSprite.rotation += baseTimeline.progress() * 0.02;      
-              displacementSprite.scale.set( baseTimeline.progress() * 3 );
+              displacementSprite.rotation += baseTimeline.progress() * 1;      
+              displacementSprite.scale.set( baseTimeline.progress() * 19 );
             }
       
         } });
@@ -297,6 +324,30 @@
         
         that.initPixi();
         that.loadPixiSprites( options.pixiSprites );
+
+        // var displacementSprite11 = PIXI.Sprite.fromImage('../img/index/frames/gradient4.png');
+        // displacementSprite11.texture.baseTexture.wrapMode=PIXI.WRAP_MODES.CLAMP; //REPEAT // MIRRORED_REPEAT //CLAMP
+        // var displacementFilter11 = new PIXI.filters.DisplacementFilter(displacementSprite11);
+
+        // var container11 = new PIXI.Container();
+        // slidesContainer.addChild(container11);
+
+        // slidesContainer.addChild(displacementSprite11);
+        // container11.filters = [displacementFilter11];
+
+        // displacementSprite11.scale.x = 110;
+        // displacementSprite11.scale.y = 10;
+        // // displacementFilter11.anchor.set(0.5);
+
+        // slidesContainer
+        //   .on('mousemove', onPointerMove11)
+        //   .on('touchmove', onPointerMove11);
+
+        // function onPointerMove11(eventData)
+        // {
+        //   console.log('wokred!')
+        //   displacementSprite11.position.set(eventData.data.global.x - 25, eventData.data.global.y);
+        // }
 
         /*
         if ( options.fullScreen === true ) {

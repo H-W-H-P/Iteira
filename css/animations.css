@@ -57,8 +57,12 @@
 
 .main_page canvas{
 	transform-origin: right;
-	z-index: 2;
+	z-index: 1;
 	object-position: 11%;
+	width: 110%;
+	height: 110%;
+	top: -5%;
+	left: -5%;
 /*	top: 0 !important;
 	left: 0 !important;
 	-webkit-transform: scale(1,02, 1,02) !important;

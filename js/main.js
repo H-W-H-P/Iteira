@@ -42,6 +42,12 @@
       var slidesContainer     = new PIXI.Container();
       var displacementSprite  = new PIXI.Sprite.fromImage( options.displacementImage );
       var displacementFilter  = new PIXI.filters.DisplacementFilter( displacementSprite );
+      var displacementSprite11 = PIXI.Sprite.fromImage('../img/index/frames/gradient4.png');
+      displacementSprite11.texture.baseTexture.wrapMode=PIXI.WRAP_MODES.CLAMP; //REPEAT // MIRRORED_REPEAT //CLAMP
+      var displacementFilter11 = new PIXI.filters.DisplacementFilter(displacementSprite11);
+
+      var attributs = {};
+      var mousePos = {};
 
 
 
@@ -83,47 +89,60 @@
   
         // Fit renderer to the screen
         if ( options.fullScreen === true ) {
-          renderer.view.style.objectFit = 'cover';
-          // renderer.view.style.width     = '100%';
-          // renderer.view.style.height    = '100%';
-          // renderer.view.style.top       = '50%';
-          // renderer.view.style.left      = '50%';
-          // renderer.view.style.webkitTransform = 'translate( -50%, -50% ) scale(1.2)';           
-          // renderer.view.style.transform = 'translate( -50%, -50% ) scale(1.2)';           
+          renderer.view.style.objectFit = 'cover';        
         } else {
-          renderer.view.style.maxWidth  = '100%';
-          // renderer.view.style.top       = '50%';
-          // renderer.view.style.left      = '50%';
-          // renderer.view.style.webkitTransform = 'translate( -50%, -50% )';           
-          // renderer.view.style.transform = 'translate( -50%, -50% )';          
+          renderer.view.style.maxWidth  = '100%';    
         }
         
-        var displacementSprite11 = PIXI.Sprite.fromImage('../img/index/frames/gradient4.png');
-        displacementSprite11.texture.baseTexture.wrapMode=PIXI.WRAP_MODES.CLAMP; //REPEAT // MIRRORED_REPEAT //CLAMP
-        var displacementFilter11 = new PIXI.filters.DisplacementFilter(displacementSprite11);
-
-        // var container11 = new PIXI.Container();
-        // stage.addChild(slidesContainer);
 
         stage.addChild( displacementSprite11 );
-        // slidesContainer.filters = [displacementFilter11];
+        // stage.removeChild( displacementSprite11 );
 
-        displacementSprite11.scale.x = 1;
+        displacementFilter11.scale.x = 50;
+        displacementFilter11.scale.y = 0;
+
+        displacementSprite11.scale.x = .2;
         displacementSprite11.scale.y = 1;
         displacementSprite11.anchor.set(0.5);
 
-        stage
-          .on('mousemove', onPointerMove11)
-          .on('touchmove', onPointerMove11);
+        var mousePosX = 0;
+        var ancien_delta = 0;
+        var windHeight = $(window).height();
 
         $( document ).on( "mousemove", function( event ) {
-          console.log(event.pageX)
+          // console.log($(window).height())
+          windHeight = $(window).height();
+          mousePosX = event.pageX + 250;
+          if ($(window).height() > 900) mousePosX = event.pageX + 150;
+          easeing();
         });
 
-        function onPointerMove11(eventData)
-        {
-          console.log(eventData.data.global.x)
-          displacementSprite11.position.set(eventData.data.global.x, eventData.data.global.y);
+        $(document).mouseleave(function () {
+          easeing();
+        });
+        $(document).mouseenter(function () {
+          easeing();
+        });
+
+        function easeing () {
+          mousePos.x = displacementSprite11.x;
+          mousePos.intensite = displacementFilter11.scale.x;
+          mousePos.largeur = displacementSprite11.scale.x;          
+
+          TweenMax.to(mousePos, 0.4, {
+              x: mousePosX,
+              //y: currentMousePos.y,
+              intensite: (mousePosX - ancien_delta) * 10,
+              largeur: Math.abs(((mousePosX - ancien_delta) / 80) - 0.2),
+              onUpdate: function () {
+                  displacementSprite11.x = mousePos.x;
+                  displacementFilter11.scale.x = mousePos.intensite;
+                  displacementSprite11.scale.x = mousePos.largeur;
+              },
+              ease: Linear.easeNone
+          });
+
+          ancien_delta = mousePosX;
         }
   
         displacementSprite.texture.baseTexture.wrapMode = PIXI.WRAP_MODES.REPEAT;
@@ -302,7 +321,7 @@
             if ( that.currentIndex > 0 && that.currentIndex < slideImages.length ) {
               that.moveSlider( that.currentIndex - 1 );
             } else {
-              that.moveSlider( spriteImages.length - 1 );
+              that.moveSlider( slideImages.length - 1 );
             }            
 
           }
@@ -324,30 +343,6 @@
         
         that.initPixi();
         that.loadPixiSprites( options.pixiSprites );
-
-        // var displacementSprite11 = PIXI.Sprite.fromImage('../img/index/frames/gradient4.png');
-        // displacementSprite11.texture.baseTexture.wrapMode=PIXI.WRAP_MODES.CLAMP; //REPEAT // MIRRORED_REPEAT //CLAMP
-        // var displacementFilter11 = new PIXI.filters.DisplacementFilter(displacementSprite11);
-
-        // var container11 = new PIXI.Container();
-        // slidesContainer.addChild(container11);
-
-        // slidesContainer.addChild(displacementSprite11);
-        // container11.filters = [displacementFilter11];
-
-        // displacementSprite11.scale.x = 110;
-        // displacementSprite11.scale.y = 10;
-        // // displacementFilter11.anchor.set(0.5);
-
-        // slidesContainer
-        //   .on('mousemove', onPointerMove11)
-        //   .on('touchmove', onPointerMove11);
-
-        // function onPointerMove11(eventData)
-        // {
-        //   console.log('wokred!')
-        //   displacementSprite11.position.set(eventData.data.global.x - 25, eventData.data.global.y);
-        // }
 
         /*
         if ( options.fullScreen === true ) {

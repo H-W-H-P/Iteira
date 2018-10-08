@@ -10,9 +10,15 @@
     <link href="../css/owl.theme.default.min.css" rel="stylesheet">
     <link href="../css/imports.css" rel="stylesheet">
     <link href="../css/team/tablet-fix.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css">
+
+    <link rel="stylesheet" href="../css/news/new-fix-al.css">
+    <link rel="stylesheet" href="../css/news/news-mobile-fix.css">
 </head>
 
-<body class='body-info body-service'>
+<body class='body-info body-service body-service-news'>
     <div class="menu-popup closed mobile-only">
         <a class="closure" href='#'></a>
         <a>
@@ -29,7 +35,7 @@
         </a>
         <div class="nav__elem envoke-order-btn menu-popup__btn">ЗАПИСАТЬСЯ</div>
     </div>
-    <header class="header service-header">
+    <header class="header service-header header-news">
         <a href='#'><img class="logo service-logo" src='../img/logo.svg'></a>
         <nav class="nav desktop-only">
             <a href="#" class="nav__elem envoke-order-btn">ЗАПИСАТЬСЯ</a>
@@ -43,7 +49,7 @@
         </a>
     </header>
 
-    <main class="service-main">
+    <main class="service-main news">
         <h1 class='block-header service-block-header team-block-header news-block-header clearfix'>
             <span>Новости</span> <br> <span>и Акции</span>
         </h1>
@@ -55,392 +61,370 @@
         <menu class='service-menu team-menu'>
             <div>
                 <div class='team-menu-mobile owl-carousel mobile-only'>
-                    <a href='#' class='team-menu-mobile__item mobile-chosen' data-hash=''>Косметологи</a>
-                    <a href='#' class='team-menu-mobile__item' data-hash=''>Колористы</a>
-                    <a href='#' class='team-menu-mobile__item' data-hash=''>Парикмахеры</a>
+                    <a href='#' class='team-menu-mobile__item mobile-chosen' data-hash=''>Акция</a>
+                    <a href='#' class='team-menu-mobile__item' data-hash=''>Здоровье</a>
+                    <a href='#' class='team-menu-mobile__item' data-hash=''>Красота</a>
+                    <a href='#' class='team-menu-mobile__item' data-hash=''>Полезное</a>
                 </div>
                 <h6 class="service-menu__header team-menu__header desktop-only">— Категории </h6>
                 <div>
+
                     <div class='service-menu__subheader team-menu__subheader desktop-chosen clearfix desktop-only'>
                         <p>Акции</p>
                         <div class='service-menu__dash team-menu__dash'></div>
                         <div class='service-menu__dash team-menu__dash'></div>
                     </div>
-                    <div class="service-content-wrapper team-content-wrapper desktop-opened">
-                        <div class='one-third-block one-third-block-empty not-mobile'></div>
-                        <div class='one-third-block one-third-block-second team-one-third-block clearfix'>
-                            <a href='#'>
-                                <div class='article-preview team-article-preview legs-article clearfix'>
-                                    <div class="article-preview__tag article-preview__tag-2">Акция</div>
-                                    <h4 class="article-preview__h team-article-preview__h news-article-preview__h">ПОДАРОЧНЫЕ<br>ПРЕДЛОЖЕНИЯ</h4>
-                                    <span class="article-preview__date team-article-preview__date news-article-preview__date">15 Марта 2018</span>
-
-                                </div>
-                            </a>
-                            <a href='#'>
-                                <div class='article-preview team-article-preview legs-article clearfix'>
-                                    <div class="article-preview__tag article-preview__tag-2">Акция</div>
-                                    <h4 class="article-preview__h team-article-preview__h news-article-preview__h">ПОДАРОЧНЫЕ<br>ПРЕДЛОЖЕНИЯ</h4>
-                                    <span class="article-preview__date team-article-preview__date news-article-preview__date">15 Марта 2018</span>
-
-                                </div>
-                            </a>
-                            <a href='#'>
-                                <div class='article-preview team-article-preview legs-article clearfix'>
-
-                                    <div class="article-preview__tag article-preview__tag-2">Акция</div>
-                                    <h4 class="article-preview__h team-article-preview__h news-article-preview__h">ПОДАРОЧНЫЕ<br>ПРЕДЛОЖЕНИЯ</h4>
-                                    <span class="article-preview__date team-article-preview__date news-article-preview__date">15 Марта 2018</span>
-
-                                </div>
-                            </a>
-                            <a href='#'>
-                                <div class='article-preview team-article-preview legs-article clearfix'>
-                                    <div class="article-preview__tag article-preview__tag-2">Акция</div>
-                                    <h4 class="article-preview__h team-article-preview__h news-article-preview__h">ПОДАРОЧНЫЕ<br>ПРЕДЛОЖЕНИЯ</h4>
-                                    <span class="article-preview__date team-article-preview__date news-article-preview__date">15 Марта 2018</span>
-
-                                </div>
-                            </a>
-                            <a href='#'>
-                                <div class='article-preview team-article-preview legs-article clearfix'>
-                                    <div class="article-preview__tag article-preview__tag-2">Акция</div>
-                                    <h4 class="article-preview__h team-article-preview__h news-article-preview__h">ПОДАРОЧНЫЕ<br>ПРЕДЛОЖЕНИЯ</h4>
-                                    <span class="article-preview__date team-article-preview__date news-article-preview__date">15 Марта 2018</span>
-
-                                </div>
-                            </a>
-
+                    <div class="service-content-wrapper team-content-wrapper desktop-opened wrap-action">   
+                        <div class='one-third-block one-third-block-second team-one-third-block clearfix'>                         
+                        	<div class="slideshow">
+                        		<div class="slider slideshow-left">
+                        			<div class="item">
+                        				<a href='#' class="item-news">
+			                                <div class='article-preview team-article-preview legs-article clearfix '>
+			                                    <div class="article-preview__tag article-preview__tag-2">1Акция</div>
+			                                    <h4 class="article-preview__h team-article-preview__h news-article-preview__h">ПОДАРОЧНЫЕ<br>ПРЕДЛОЖЕНИЯ</h4>
+			                                    <span class="article-preview__date team-article-preview__date news-article-preview__date">15 Марта 2018</span>
+			                                </div>
+			                            </a>
+                        			</div>
+                        			<div class="item">
+                        				<a href='#' class="item-news">
+			                                <div class='article-preview team-article-preview legs-article clearfix'>
+			                                    <div class="article-preview__tag article-preview__tag-2">2Акция</div>
+			                                    <h4 class="article-preview__h team-article-preview__h news-article-preview__h">ПОДАРОЧНЫЕ<br>ПРЕДЛОЖЕНИЯ</h4>
+			                                    <span class="article-preview__date team-article-preview__date news-article-preview__date">15 Марта 2018</span>
+			                                </div>
+			                            </a>
+                        			</div>
+                        			<div class="item" >
+                        				<a href='#' class="item-news">
+			                                <div class='article-preview team-article-preview legs-article clearfix'>
+			                                    <div class="article-preview__tag article-preview__tag-2">3Акция</div>
+			                                    <h4 class="article-preview__h team-article-preview__h news-article-preview__h">ПОДАРОЧНЫЕ<br>ПРЕДЛОЖЕНИЯ</h4>
+			                                    <span class="article-preview__date team-article-preview__date news-article-preview__date">15 Марта 2018</span>
+			                                </div>
+			                            </a>
+                        			</div>
+                        			<div class="item" >
+                        				<a href='#' class="item-news">
+			                                <div class='article-preview team-article-preview legs-article clearfix'>
+			                                    <div class="article-preview__tag article-preview__tag-2">4Акция</div>
+			                                    <h4 class="article-preview__h team-article-preview__h news-article-preview__h">ПОДАРОЧНЫЕ<br>ПРЕДЛОЖЕНИЯ</h4>
+			                                    <span class="article-preview__date team-article-preview__date news-article-preview__date">15 Марта 2018</span>
+			                                </div>
+			                            </a>
+                        			</div>
+                        		</div>
+                        	</div>
                         </div>
                         <div class='one-third-block one-third-block-third team-one-third-block clearfix'>
-                            <a href='#'>
-                                <div class='article-preview team-article-preview nogtiki-article clearfix'>
-                                    <div class="article-preview__tag">Красота</div>
-                                    <h4 class="article-preview__h team-article-preview__h news-article-preview__h">ПРОГРАММА ПО<br>КОРРЕКЦИИ</h4>
-                                    <span class="article-preview__date team-article-preview__date news-article-preview__date">15 Марта 2018</span>
-
-                                </div>
-                            </a>
-                            <a href='#'>
-                                <div class='article-preview team-article-preview nogtiki-article clearfix'>
-                                    <div class="article-preview__tag">Красота</div>
-                                    <h4 class="article-preview__h team-article-preview__h news-article-preview__h">ПРОГРАММА ПО<br>КОРРЕКЦИИ</h4>
-                                    <span class="article-preview__date team-article-preview__date news-article-preview__date">15 Марта 2018</span>
-
-                                </div>
-                            </a>
-                            <a href='#'>
-                                <div class='article-preview team-article-preview nogtiki-article clearfix'>
-                                    <div class="article-preview__tag">Красота</div>
-                                    <h4 class="article-preview__h team-article-preview__h news-article-preview__h">ПРОГРАММА ПО<br>КОРРЕКЦИИ</h4>
-                                    <span class="article-preview__date team-article-preview__date news-article-preview__date">15 Марта 2018</span>
-
-                                </div>
-                            </a>
-                            <a href='#'>
-                                <div class='article-preview team-article-preview nogtiki-article clearfix'>
-                                    <div class="article-preview__tag">Красота</div>
-                                    <h4 class="article-preview__h team-article-preview__h news-article-preview__h">ПРОГРАММА ПО<br>КОРРЕКЦИИ</h4>
-                                    <span class="article-preview__date team-article-preview__date news-article-preview__date">15 Марта 2018</span>
-
-                                </div>
-                            </a>
-                            <a href='#'>
-                                <div class='article-preview team-article-preview nogtiki-article clearfix'>
-                                    <div class="article-preview__tag">Красота</div>
-                                    <h4 class="article-preview__h team-article-preview__h news-article-preview__h">ПРОГРАММА ПО<br>КОРРЕКЦИИ</h4>
-                                    <span class="article-preview__date team-article-preview__date news-article-preview__date">15 Марта 2018</span>
-
-                                </div>
-                            </a>
+                        	<div class="slideshow">
+                        		<div class="slider slideshow-right">
+                        			<div class="item">
+                        				<a href='#' class="item-news">
+			                                <div class='article-preview team-article-preview legs-article clearfix'>
+			                                    <div class="article-preview__tag article-preview__tag-2">1Акция</div>
+			                                    <h4 class="article-preview__h team-article-preview__h news-article-preview__h">ПОДАРОЧНЫЕ<br>ПРЕДЛОЖЕНИЯ</h4>
+			                                    <span class="article-preview__date team-article-preview__date news-article-preview__date">15 Марта 2018</span>
+			                                </div>
+			                            </a>
+                        			</div>
+                        			<div class="item">
+                        				<a href='#' class="item-news">
+			                                <div class='article-preview team-article-preview legs-article clearfix'>
+			                                    <div class="article-preview__tag article-preview__tag-2">2Акция</div>
+			                                    <h4 class="article-preview__h team-article-preview__h news-article-preview__h">ПОДАРОЧНЫЕ<br>ПРЕДЛОЖЕНИЯ</h4>
+			                                    <span class="article-preview__date team-article-preview__date news-article-preview__date">15 Марта 2018</span>
+			                                </div>
+			                            </a>
+                        			</div>
+                        			<div class="item">
+                        				<a href='#' class="item-news">
+			                                <div class='article-preview team-article-preview legs-article clearfix'>
+			                                    <div class="article-preview__tag article-preview__tag-2">3Акция</div>
+			                                    <h4 class="article-preview__h team-article-preview__h news-article-preview__h">ПОДАРОЧНЫЕ<br>ПРЕДЛОЖЕНИЯ</h4>
+			                                    <span class="article-preview__date team-article-preview__date news-article-preview__date">15 Марта 2018</span>
+			                                </div>
+			                            </a>
+                        			</div>
+                        			
+                        		</div>
+                        	</div>
                         </div>
                     </div>
+
+
                     <div class='service-menu__subheader team-menu__subheader desktop-only clearfix'>
                         <p>Здоровье</p>
                         <div class='service-menu__dash team-menu__dash'></div>
                         <div class='service-menu__dash team-menu__dash'></div>
                     </div>
-                    <div class="service-content-wrapper team-content-wrapper desktop-opened">
-                        <div class='one-third-block one-third-block-empty not-mobile'></div>
+                    <div class="service-content-wrapper team-content-wrapper desktop-opened wrap-health wrap-entry">
                         <div class='one-third-block one-third-block-second team-one-third-block clearfix'>
-                            <a href='#'>
-                                <div class='article-preview team-article-preview legs-article clearfix'>
-                                    <div class="article-preview__tag article-preview__tag-2">Акция</div>
-                                    <h4 class="article-preview__h team-article-preview__h news-article-preview__h">ПОДАРОЧНЫЕ<br>ПРЕДЛОЖЕНИЯ</h4>
-                                    <span class="article-preview__date team-article-preview__date news-article-preview__date">15 Марта 2018</span>
-
-                                </div>
-                            </a>
-                            <a href='#'>
-                                <div class='article-preview team-article-preview legs-article clearfix'>
-                                    <div class="article-preview__tag article-preview__tag-2">Акция</div>
-                                    <h4 class="article-preview__h team-article-preview__h news-article-preview__h">ПОДАРОЧНЫЕ<br>ПРЕДЛОЖЕНИЯ</h4>
-                                    <span class="article-preview__date team-article-preview__date news-article-preview__date">15 Марта 2018</span>
-
-                                </div>
-                            </a>
-                            <a href='#'>
-                                <div class='article-preview team-article-preview legs-article clearfix'>
-                                    <div class="article-preview__tag article-preview__tag-2">Акция</div>
-                                    <h4 class="article-preview__h team-article-preview__h news-article-preview__h">ПОДАРОЧНЫЕ<br>ПРЕДЛОЖЕНИЯ</h4>
-                                    <span class="article-preview__date team-article-preview__date news-article-preview__date">15 Марта 2018</span>
-
-                                </div>
-                            </a>
-                            <a href='#'>
-                                <div class='article-preview team-article-preview legs-article clearfix'>
-                                    <div class="article-preview__tag article-preview__tag-2">Акция</div>
-                                    <h4 class="article-preview__h team-article-preview__h news-article-preview__h">ПОДАРОЧНЫЕ<br>ПРЕДЛОЖЕНИЯ</h4>
-                                    <span class="article-preview__date team-article-preview__date news-article-preview__date">15 Марта 2018</span>
-
-                                </div>
-                            </a>
-                            <a href='#'>
-                                <div class='article-preview team-article-preview legs-article clearfix'>
-                                    <div class="article-preview__tag article-preview__tag-2">Акция</div>
-                                    <h4 class="article-preview__h team-article-preview__h news-article-preview__h">ПОДАРОЧНЫЕ<br>ПРЕДЛОЖЕНИЯ</h4>
-                                    <span class="article-preview__date team-article-preview__date news-article-preview__date">15 Марта 2018</span>
-
-                                </div>
-                            </a>
-
+                           <div class="slideshow">
+                        		<div class="slider slideshow-left">
+                        			<div class="item">
+                        				<a href='#' class="item-news">
+			                                <div class='article-preview team-article-preview legs-article clearfix '>
+			                                    <div class="article-preview__tag article-preview__tag-2">Здоровье</div>
+			                                    <h4 class="article-preview__h team-article-preview__h news-article-preview__h">ПОДАРОЧНЫЕ<br>ПРЕДЛОЖЕНИЯ</h4>
+			                                    <span class="article-preview__date team-article-preview__date news-article-preview__date">15 Марта 2018</span>
+			                                </div>
+			                            </a>
+                        			</div>
+                        			<div class="item">
+                        				<a href='#' class="item-news">
+			                                <div class='article-preview team-article-preview legs-article clearfix'>
+			                                    <div class="article-preview__tag article-preview__tag-2">2Акция</div>
+			                                    <h4 class="article-preview__h team-article-preview__h news-article-preview__h">ПОДАРОЧНЫЕ<br>ПРЕДЛОЖЕНИЯ</h4>
+			                                    <span class="article-preview__date team-article-preview__date news-article-preview__date">15 Марта 2018</span>
+			                                </div>
+			                            </a>
+                        			</div>
+                        			<div class="item" >
+                        				<a href='#' class="item-news">
+			                                <div class='article-preview team-article-preview legs-article clearfix'>
+			                                    <div class="article-preview__tag article-preview__tag-2">3Акция</div>
+			                                    <h4 class="article-preview__h team-article-preview__h news-article-preview__h">ПОДАРОЧНЫЕ<br>ПРЕДЛОЖЕНИЯ</h4>
+			                                    <span class="article-preview__date team-article-preview__date news-article-preview__date">15 Марта 2018</span>
+			                                </div>
+			                            </a>
+                        			</div>
+                        			<div class="item" >
+                        				<a href='#' class="item-news">
+			                                <div class='article-preview team-article-preview legs-article clearfix'>
+			                                    <div class="article-preview__tag article-preview__tag-2">4Акция</div>
+			                                    <h4 class="article-preview__h team-article-preview__h news-article-preview__h">ПОДАРОЧНЫЕ<br>ПРЕДЛОЖЕНИЯ</h4>
+			                                    <span class="article-preview__date team-article-preview__date news-article-preview__date">15 Марта 2018</span>
+			                                </div>
+			                            </a>
+                        			</div>
+                        		</div>
+                        	</div>
                         </div>
                         <div class='one-third-block one-third-block-third team-one-third-block clearfix'>
-                            <a href='#'>
-                                <div class='article-preview team-article-preview nogtiki-article clearfix'>
-                                    <div class="article-preview__tag">Красота</div>
-                                    <h4 class="article-preview__h team-article-preview__h news-article-preview__h">ПРОГРАММА ПО<br>КОРРЕКЦИИ</h4>
-                                    <span class="article-preview__date team-article-preview__date news-article-preview__date">15 Марта 2018</span>
-
-                                </div>
-                            </a>
-                            <a href='#'>
-                                <div class='article-preview team-article-preview nogtiki-article clearfix'>
-                                    <div class="article-preview__tag">Красота</div>
-                                    <h4 class="article-preview__h team-article-preview__h news-article-preview__h">ПРОГРАММА ПО<br>КОРРЕКЦИИ</h4>
-                                    <span class="article-preview__date team-article-preview__date news-article-preview__date">15 Марта 2018</span>
-
-                                </div>
-                            </a>
-                            <a href='#'>
-                                <div class='article-preview team-article-preview nogtiki-article clearfix'>
-                                    <div class="article-preview__tag">Красота</div>
-                                    <h4 class="article-preview__h team-article-preview__h news-article-preview__h">ПРОГРАММА ПО<br>КОРРЕКЦИИ</h4>
-                                    <span class="article-preview__date team-article-preview__date news-article-preview__date">15 Марта 2018</span>
-
-                                </div>
-                            </a>
-                            <a href='#'>
-                                <div class='article-preview team-article-preview nogtiki-article clearfix'>
-                                    <div class="article-preview__tag">Красота</div>
-                                    <h4 class="article-preview__h team-article-preview__h news-article-preview__h">ПРОГРАММА ПО<br>КОРРЕКЦИИ</h4>
-                                    <span class="article-preview__date team-article-preview__date news-article-preview__date">15 Марта 2018</span>
-
-                                </div>
-                            </a>
-                            <a href='#'>
-                                <div class='article-preview team-article-preview nogtiki-article clearfix'>
-                                    <div class="article-preview__tag">Красота</div>
-                                    <h4 class="article-preview__h team-article-preview__h news-article-preview__h">ПРОГРАММА ПО<br>КОРРЕКЦИИ</h4>
-                                    <span class="article-preview__date team-article-preview__date news-article-preview__date">15 Марта 2018</span>
-
-                                </div>
-                            </a>
+                           <div class="slideshow">
+                        		<div class="slider slideshow-right">
+                        			<div class="item">
+                        				<a href='#' class="item-news">
+			                                <div class='article-preview team-article-preview legs-article clearfix'>
+			                                    <div class="article-preview__tag article-preview__tag-2">1Акция</div>
+			                                    <h4 class="article-preview__h team-article-preview__h news-article-preview__h">ПОДАРОЧНЫЕ<br>ПРЕДЛОЖЕНИЯ</h4>
+			                                    <span class="article-preview__date team-article-preview__date news-article-preview__date">15 Марта 2018</span>
+			                                </div>
+			                            </a>
+                        			</div>
+                        			<div class="item">
+                        				<a href='#' class="item-news">
+			                                <div class='article-preview team-article-preview legs-article clearfix'>
+			                                    <div class="article-preview__tag article-preview__tag-2">2Акция</div>
+			                                    <h4 class="article-preview__h team-article-preview__h news-article-preview__h">ПОДАРОЧНЫЕ<br>ПРЕДЛОЖЕНИЯ</h4>
+			                                    <span class="article-preview__date team-article-preview__date news-article-preview__date">15 Марта 2018</span>
+			                                </div>
+			                            </a>
+                        			</div>
+                        			<div class="item">
+                        				<a href='#' class="item-news">
+			                                <div class='article-preview team-article-preview legs-article clearfix'>
+			                                    <div class="article-preview__tag article-preview__tag-2">3Акция</div>
+			                                    <h4 class="article-preview__h team-article-preview__h news-article-preview__h">ПОДАРОЧНЫЕ<br>ПРЕДЛОЖЕНИЯ</h4>
+			                                    <span class="article-preview__date team-article-preview__date news-article-preview__date">15 Марта 2018</span>
+			                                </div>
+			                            </a>
+                        			</div>
+                        			
+                        		</div>
+                        	</div>
                         </div>
                     </div>
+
+
                     <div class='service-menu__subheader team-menu__subheader desktop-only clearfix'>
                         <p>Красота</p>
                         <div class='service-menu__dash team-menu__dash'></div>
                         <div class='service-menu__dash team-menu__dash'></div>
                     </div>
-                    <div class="service-content-wrapper team-content-wrapper desktop-opened">
-                        <div class='one-third-block one-third-block-empty not-mobile'></div>
+                    <div class="service-content-wrapper team-content-wrapper desktop-opened wrap-beauty wrap-entry">           
                         <div class='one-third-block one-third-block-second team-one-third-block clearfix'>
-                            <a href='#'>
-                                <div class='article-preview team-article-preview legs-article clearfix'>
-                                    <div class="article-preview__tag article-preview__tag-2">Акция</div>
-                                    <h4 class="article-preview__h team-article-preview__h news-article-preview__h">ПОДАРОЧНЫЕ<br>ПРЕДЛОЖЕНИЯ</h4>
-                                    <span class="article-preview__date team-article-preview__date news-article-preview__date">15 Марта 2018</span>
-
-                                </div>
-                            </a>
-                            <a href='#'>
-                                <div class='article-preview team-article-preview legs-article clearfix'>
-                                    <div class="article-preview__tag article-preview__tag-2">Акция</div>
-                                    <h4 class="article-preview__h team-article-preview__h news-article-preview__h">ПОДАРОЧНЫЕ<br>ПРЕДЛОЖЕНИЯ</h4>
-                                    <span class="article-preview__date team-article-preview__date news-article-preview__date">15 Марта 2018</span>
-
-                                </div>
-                            </a>
-                            <a href='#'>
-                                <div class='article-preview team-article-preview legs-article clearfix'>
-                                    <div class="article-preview__tag article-preview__tag-2">Акция</div>
-                                    <h4 class="article-preview__h team-article-preview__h news-article-preview__h">ПОДАРОЧНЫЕ<br>ПРЕДЛОЖЕНИЯ</h4>
-                                    <span class="article-preview__date team-article-preview__date news-article-preview__date">15 Марта 2018</span>
-
-                                </div>
-                            </a>
-                            <a href='#'>
-                                <div class='article-preview team-article-preview legs-article clearfix'>
-                                    <div class="article-preview__tag article-preview__tag-2">Акция</div>
-                                    <h4 class="article-preview__h team-article-preview__h news-article-preview__h">ПОДАРОЧНЫЕ<br>ПРЕДЛОЖЕНИЯ</h4>
-                                    <span class="article-preview__date team-article-preview__date news-article-preview__date">15 Марта 2018</span>
-
-                                </div>
-                            </a>
-                            <a href='#'>
-                                <div class='article-preview team-article-preview legs-article clearfix'>
-                                    <div class="article-preview__tag article-preview__tag-2">Акция</div>
-                                    <h4 class="article-preview__h team-article-preview__h news-article-preview__h">ПОДАРОЧНЫЕ<br>ПРЕДЛОЖЕНИЯ</h4>
-                                    <span class="article-preview__date team-article-preview__date news-article-preview__date">15 Марта 2018</span>
-
-                                </div>
-                            </a>
+                            <div class="slideshow">
+                        		<div class="slider slideshow-left">
+                        			<div class="item">
+                        				<a href='#' class="item-news">
+			                                <div class='article-preview team-article-preview legs-article clearfix '>
+			                                    <div class="article-preview__tag article-preview__tag-2">Красота</div>
+			                                    <h4 class="article-preview__h team-article-preview__h news-article-preview__h">ПОДАРОЧНЫЕ<br>ПРЕДЛОЖЕНИЯ</h4>
+			                                    <span class="article-preview__date team-article-preview__date news-article-preview__date">15 Марта 2018</span>
+			                                </div>
+			                            </a>
+                        			</div>
+                        			<div class="item">
+                        				<a href='#' class="item-news">
+			                                <div class='article-preview team-article-preview legs-article clearfix'>
+			                                    <div class="article-preview__tag article-preview__tag-2">2Акция</div>
+			                                    <h4 class="article-preview__h team-article-preview__h news-article-preview__h">ПОДАРОЧНЫЕ<br>ПРЕДЛОЖЕНИЯ</h4>
+			                                    <span class="article-preview__date team-article-preview__date news-article-preview__date">15 Марта 2018</span>
+			                                </div>
+			                            </a>
+                        			</div>
+                        			<div class="item" >
+                        				<a href='#' class="item-news">
+			                                <div class='article-preview team-article-preview legs-article clearfix'>
+			                                    <div class="article-preview__tag article-preview__tag-2">3Акция</div>
+			                                    <h4 class="article-preview__h team-article-preview__h news-article-preview__h">ПОДАРОЧНЫЕ<br>ПРЕДЛОЖЕНИЯ</h4>
+			                                    <span class="article-preview__date team-article-preview__date news-article-preview__date">15 Марта 2018</span>
+			                                </div>
+			                            </a>
+                        			</div>
+                        			<div class="item" >
+                        				<a href='#' class="item-news">
+			                                <div class='article-preview team-article-preview legs-article clearfix'>
+			                                    <div class="article-preview__tag article-preview__tag-2">4Акция</div>
+			                                    <h4 class="article-preview__h team-article-preview__h news-article-preview__h">ПОДАРОЧНЫЕ<br>ПРЕДЛОЖЕНИЯ</h4>
+			                                    <span class="article-preview__date team-article-preview__date news-article-preview__date">15 Марта 2018</span>
+			                                </div>
+			                            </a>
+                        			</div>
+                        		</div>
+                        	</div>
                         </div>
                         <div class='one-third-block one-third-block-third team-one-third-block clearfix'>
-                            <a href='#'>
-                                <div class='article-preview team-article-preview nogtiki-article clearfix'>
-                                    <div class="article-preview__tag">Красота</div>
-                                    <h4 class="article-preview__h team-article-preview__h news-article-preview__h">ПРОГРАММА ПО<br>КОРРЕКЦИИ</h4>
-                                    <span class="article-preview__date team-article-preview__date news-article-preview__date">15 Марта 2018</span>
-
-                                </div>
-                            </a>
-                            <a href='#'>
-                                <div class='article-preview team-article-preview nogtiki-article clearfix'>
-                                    <div class="article-preview__tag">Красота</div>
-                                    <h4 class="article-preview__h team-article-preview__h news-article-preview__h">ПРОГРАММА ПО<br>КОРРЕКЦИИ</h4>
-                                    <span class="article-preview__date team-article-preview__date news-article-preview__date">15 Марта 2018</span>
-
-                                </div>
-                            </a>
-                            <a href='#'>
-                                <div class='article-preview team-article-preview nogtiki-article clearfix'>
-                                    <div class="article-preview__tag">Красота</div>
-                                    <h4 class="article-preview__h team-article-preview__h news-article-preview__h">ПРОГРАММА ПО<br>КОРРЕКЦИИ</h4>
-                                    <span class="article-preview__date team-article-preview__date news-article-preview__date">15 Марта 2018</span>
-
-                                </div>
-                            </a>
-                            <a href='#'>
-                                <div class='article-preview team-article-preview nogtiki-article clearfix'>
-                                    <div class="article-preview__tag">Красота</div>
-                                    <h4 class="article-preview__h team-article-preview__h news-article-preview__h">ПРОГРАММА ПО<br>КОРРЕКЦИИ</h4>
-                                    <span class="article-preview__date team-article-preview__date news-article-preview__date">15 Марта 2018</span>
-
-                                </div>
-                            </a>
-                            <a href='#'>
-                                <div class='article-preview team-article-preview nogtiki-article clearfix'>
-                                    <div class="article-preview__tag">Красота</div>
-                                    <h4 class="article-preview__h team-article-preview__h news-article-preview__h">ПРОГРАММА ПО<br>КОРРЕКЦИИ</h4>
-                                    <span class="article-preview__date team-article-preview__date news-article-preview__date">15 Марта 2018</span>
-
-                                </div>
-                            </a>
+                           <div class="slideshow">
+                        		<div class="slider slideshow-right">
+                        			<div class="item">
+                        				<a href='#' class="item-news">
+			                                <div class='article-preview team-article-preview legs-article clearfix'>
+			                                    <div class="article-preview__tag article-preview__tag-2">Акция</div>
+			                                    <h4 class="article-preview__h team-article-preview__h news-article-preview__h">ПОДАРОЧНЫЕ<br>ПРЕДЛОЖЕНИЯ</h4>
+			                                    <span class="article-preview__date team-article-preview__date news-article-preview__date">15 Марта 2018</span>
+			                                </div>
+			                            </a>
+                        			</div>
+                        			<div class="item">
+                        				<a href='#' class="item-news">
+			                                <div class='article-preview team-article-preview legs-article clearfix'>
+			                                    <div class="article-preview__tag article-preview__tag-2">Акция</div>
+			                                    <h4 class="article-preview__h team-article-preview__h news-article-preview__h">ПОДАРОЧНЫЕ<br>ПРЕДЛОЖЕНИЯ</h4>
+			                                    <span class="article-preview__date team-article-preview__date news-article-preview__date">15 Марта 2018</span>
+			                                </div>
+			                            </a>
+                        			</div>
+                        			<div class="item">
+                        				<a href='#' class="item-news">
+			                                <div class='article-preview team-article-preview legs-article clearfix'>
+			                                    <div class="article-preview__tag article-preview__tag-2">Акция</div>
+			                                    <h4 class="article-preview__h team-article-preview__h news-article-preview__h">ПОДАРОЧНЫЕ<br>ПРЕДЛОЖЕНИЯ</h4>
+			                                    <span class="article-preview__date team-article-preview__date news-article-preview__date">15 Марта 2018</span>
+			                                </div>
+			                            </a>
+                        			</div>
+                        			
+                        		</div>
+                        	</div>
                         </div>
                     </div>
+
+
                     <div class='service-menu__subheader team-menu__subheader desktop-only clearfix'>
                         <p>Полезное</p>
                         <div class='service-menu__dash team-menu__dash'></div>
                         <div class='service-menu__dash team-menu__dash'></div>
                     </div>
-                    <div class="service-content-wrapper team-content-wrapper desktop-opened">
-                        <div class='one-third-block one-third-block-empty not-mobile'></div>
+                    <div class="service-content-wrapper team-content-wrapper desktop-opened wrap-useful wrap-entry">                      
                         <div class='one-third-block one-third-block-second team-one-third-block clearfix'>
-                            <a href='#'>
-                                <div class='article-preview team-article-preview legs-article clearfix'>
-                                    <div class="article-preview__tag article-preview__tag-2">Акция</div>
-                                    <h4 class="article-preview__h team-article-preview__h news-article-preview__h">ПОДАРОЧНЫЕ<br>ПРЕДЛОЖЕНИЯ</h4>
-                                    <span class="article-preview__date team-article-preview__date news-article-preview__date">15 Марта 2018</span>
-
-                                </div>
-                            </a>
-                            <a href='#'>
-                                <div class='article-preview team-article-preview legs-article clearfix'>
-                                    <div class="article-preview__tag article-preview__tag-2">Акция</div>
-                                    <h4 class="article-preview__h team-article-preview__h news-article-preview__h">ПОДАРОЧНЫЕ<br>ПРЕДЛОЖЕНИЯ</h4>
-                                    <span class="article-preview__date team-article-preview__date news-article-preview__date">15 Марта 2018</span>
-
-                                </div>
-                            </a>
-                            <a href='#'>
-                                <div class='article-preview team-article-preview legs-article clearfix'>
-                                    <div class="article-preview__tag article-preview__tag-2">Акция</div>
-                                    <h4 class="article-preview__h team-article-preview__h news-article-preview__h">ПОДАРОЧНЫЕ<br>ПРЕДЛОЖЕНИЯ</h4>
-                                    <span class="article-preview__date team-article-preview__date news-article-preview__date">15 Марта 2018</span>
-
-                                </div>
-                            </a>
-                            <a href='#'>
-                                <div class='article-preview team-article-preview legs-article clearfix'>
-                                    <div class="article-preview__tag article-preview__tag-2">Акция</div>
-                                    <h4 class="article-preview__h team-article-preview__h news-article-preview__h">ПОДАРОЧНЫЕ<br>ПРЕДЛОЖЕНИЯ</h4>
-                                    <span class="article-preview__date team-article-preview__date news-article-preview__date">15 Марта 2018</span>
-
-                                </div>
-                            </a>
-                            <a href='#'>
-                                <div class='article-preview team-article-preview legs-article clearfix'>
-                                    <div class="article-preview__tag article-preview__tag-2">Акция</div>
-                                    <h4 class="article-preview__h team-article-preview__h news-article-preview__h">ПОДАРОЧНЫЕ<br>ПРЕДЛОЖЕНИЯ</h4>
-                                    <span class="article-preview__date team-article-preview__date news-article-preview__date">15 Марта 2018</span>
-
-                                </div>
-                            </a>
+                           <div class="slideshow">
+                        		<div class="slider slideshow-left">
+                        			<div class="item">
+                        				<a href='#' class="item-news">
+			                                <div class='article-preview team-article-preview legs-article clearfix '>
+			                                    <div class="article-preview__tag article-preview__tag-2">Полезное</div>
+			                                    <h4 class="article-preview__h team-article-preview__h news-article-preview__h">ПОДАРОЧНЫЕ<br>ПРЕДЛОЖЕНИЯ</h4>
+			                                    <span class="article-preview__date team-article-preview__date news-article-preview__date">15 Марта 2018</span>
+			                                </div>
+			                            </a>
+                        			</div>
+                        			<div class="item">
+                        				<a href='#' class="item-news">
+			                                <div class='article-preview team-article-preview legs-article clearfix'>
+			                                    <div class="article-preview__tag article-preview__tag-2">2Акция</div>
+			                                    <h4 class="article-preview__h team-article-preview__h news-article-preview__h">ПОДАРОЧНЫЕ<br>ПРЕДЛОЖЕНИЯ</h4>
+			                                    <span class="article-preview__date team-article-preview__date news-article-preview__date">15 Марта 2018</span>
+			                                </div>
+			                            </a>
+                        			</div>
+                        			<div class="item" >
+                        				<a href='#' class="item-news">
+			                                <div class='article-preview team-article-preview legs-article clearfix'>
+			                                    <div class="article-preview__tag article-preview__tag-2">3Акция</div>
+			                                    <h4 class="article-preview__h team-article-preview__h news-article-preview__h">ПОДАРОЧНЫЕ<br>ПРЕДЛОЖЕНИЯ</h4>
+			                                    <span class="article-preview__date team-article-preview__date news-article-preview__date">15 Марта 2018</span>
+			                                </div>
+			                            </a>
+                        			</div>
+                        			<div class="item" >
+                        				<a href='#' class="item-news">
+			                                <div class='article-preview team-article-preview legs-article clearfix'>
+			                                    <div class="article-preview__tag article-preview__tag-2">4Акция</div>
+			                                    <h4 class="article-preview__h team-article-preview__h news-article-preview__h">ПОДАРОЧНЫЕ<br>ПРЕДЛОЖЕНИЯ</h4>
+			                                    <span class="article-preview__date team-article-preview__date news-article-preview__date">15 Марта 2018</span>
+			                                </div>
+			                            </a>
+                        			</div>
+                        		</div>
+                        	</div>
                         </div>
                         <div class='one-third-block one-third-block-third team-one-third-block clearfix'>
-                            <a href='#'>
-                                <div class='article-preview team-article-preview nogtiki-article clearfix'>
-                                    <div class="article-preview__tag">Красота</div>
-                                    <h4 class="article-preview__h team-article-preview__h news-article-preview__h">ПРОГРАММА ПО<br>КОРРЕКЦИИ</h4>
-                                    <span class="article-preview__date team-article-preview__date news-article-preview__date">15 Марта 2018</span>
-
-                                </div>
-                            </a>
-                            <a href='#'>
-                                <div class='article-preview team-article-preview nogtiki-article clearfix'>
-                                    <div class="article-preview__tag">Красота</div>
-                                    <h4 class="article-preview__h team-article-preview__h news-article-preview__h">ПРОГРАММА ПО<br>КОРРЕКЦИИ</h4>
-                                    <span class="article-preview__date team-article-preview__date news-article-preview__date">15 Марта 2018</span>
-
-                                </div>
-                            </a>
-                            <a href='#'>
-                                <div class='article-preview team-article-preview nogtiki-article clearfix'>
-                                    <div class="article-preview__tag">Красота</div>
-                                    <h4 class="article-preview__h team-article-preview__h news-article-preview__h">ПРОГРАММА ПО<br>КОРРЕКЦИИ</h4>
-                                    <span class="article-preview__date team-article-preview__date news-article-preview__date">15 Марта 2018</span>
-
-                                </div>
-                            </a>
-                            <a href='#'>
-                                <div class='article-preview team-article-preview nogtiki-article clearfix'>
-                                    <div class="article-preview__tag">Красота</div>
-                                    <h4 class="article-preview__h team-article-preview__h news-article-preview__h">ПРОГРАММА ПО<br>КОРРЕКЦИИ</h4>
-                                    <span class="article-preview__date team-article-preview__date news-article-preview__date">15 Марта 2018</span>
-
-                                </div>
-                            </a>
-                            <a href='#'>
-                                <div class='article-preview team-article-preview nogtiki-article clearfix'>
-                                    <div class="article-preview__tag">Красота</div>
-                                    <h4 class="article-preview__h team-article-preview__h news-article-preview__h">ПРОГРАММА ПО<br>КОРРЕКЦИИ</h4>
-                                    <span class="article-preview__date team-article-preview__date news-article-preview__date">15 Марта 2018</span>
-
-                                </div>
-                            </a>
+                            <div class="slideshow">
+                        		<div class="slider slideshow-right">
+                        			<div class="item">
+                        				<a href='#' class="item-news">
+			                                <div class='article-preview team-article-preview legs-article clearfix'>
+			                                    <div class="article-preview__tag article-preview__tag-2">Акция</div>
+			                                    <h4 class="article-preview__h team-article-preview__h news-article-preview__h">ПОДАРОЧНЫЕ<br>ПРЕДЛОЖЕНИЯ</h4>
+			                                    <span class="article-preview__date team-article-preview__date news-article-preview__date">15 Марта 2018</span>
+			                                </div>
+			                            </a>
+                        			</div>
+                        			<div class="item">
+                        				<a href='#' class="item-news">
+			                                <div class='article-preview team-article-preview legs-article clearfix'>
+			                                    <div class="article-preview__tag article-preview__tag-2">Акция</div>
+			                                    <h4 class="article-preview__h team-article-preview__h news-article-preview__h">ПОДАРОЧНЫЕ<br>ПРЕДЛОЖЕНИЯ</h4>
+			                                    <span class="article-preview__date team-article-preview__date news-article-preview__date">15 Марта 2018</span>
+			                                </div>
+			                            </a>
+                        			</div>
+                        			<div class="item">
+                        				<a href='#' class="item-news">
+			                                <div class='article-preview team-article-preview legs-article clearfix'>
+			                                    <div class="article-preview__tag article-preview__tag-2">Акция</div>
+			                                    <h4 class="article-preview__h team-article-preview__h news-article-preview__h">ПОДАРОЧНЫЕ<br>ПРЕДЛОЖЕНИЯ</h4>
+			                                    <span class="article-preview__date team-article-preview__date news-article-preview__date">15 Марта 2018</span>
+			                                </div>
+			                            </a>
+                        			</div>
+                        			
+                        		</div>
+                        	</div>
                         </div>
                     </div>
                 </div>
             </div>
         </menu>
+  
+        
 
     </main>
-    <script src="../js/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="../js/owl.carousel.min.js"></script>
-    <script src="../js/team.js"></script>
+    <script src="../js/news/news-slide.js"></script>
+
     <script src="../js/mobile-nav-menu.js"></script>
+
+
+	
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.12/jquery.mousewheel.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.js"></script>
+    <script src="../js/news/news.js"></script>
 </body>
 
 </html>

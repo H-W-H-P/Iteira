@@ -222,6 +222,33 @@
     margin-top: 136px;
 }
 
+/*.owl-carousel .item{
+    width: 200px;
+}*/
+/*.owl-stage-outer{
+    margin-left: 0 !important;
+}
+
+.owl-item{
+    width: 33% !important;
+    margin: 0 !important;
+    text-align: center !important;
+}*/
+
+.owl-carousel .owl-stage-outer{
+    overflow: visible;
+    margin-left: 0 !important;
+}
+
+.owl-carousel{
+    width: 40%;
+    margin-left: 30%;
+}
+
+.calender-wrap{
+    overflow: hidden;
+}
+
 @media screen and (max-width: 1440px) {
     .service-content th{
         font-size: 28px;
@@ -279,7 +306,7 @@
         display: block;
         margin: 0 !important;
         text-align: center;
-        /*padding: 0 !important;*//*
+        /*padding: 0 !important;*/
     }
     .service-content tr td:first-child{
         border-right: solid 1px #d2ab66;

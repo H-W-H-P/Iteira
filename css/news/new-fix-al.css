@@ -1,0 +1,85 @@
+.body-info:after {
+    content: none;
+}
+
+.owl-carousel.owl-loaded {
+	display: none;
+}
+
+.news .service-content-wrapper {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex !important;
+}
+
+.news .one-third-block {
+	width: 100%;
+}
+
+.news .one-third-block-second {
+	margin-top: 70px;
+}
+
+.slick-list {
+	overflow: inherit;
+}
+
+.slick-vertical .slick-slide {
+    border: none;
+}
+
+.item-news {
+    height: 820px;
+    width: 100%;
+    margin-bottom: 120px;
+}
+
+.news .article-preview {
+	height: 100%;
+}
+
+.news .one-third-block-third.team-one-third-block .team-article-preview__h, .article-preview__h {
+    bottom: 7%;
+}
+
+.wrap-action .article-preview {
+	background: url(../../img/info/alike/_correction-programm.png) no-repeat center center / cover;
+}
+
+.wrap-entry .article-preview {
+	background: url(../../img/info/alike/_gift-offers.jpg) no-repeat center center / cover;
+}
+
+
+
+/*tabs*/
+.news .mobile-chosen {
+    color: #dedede;
+}
+
+.news .owl-item.active a{
+	color: #d2ab66;
+	font-size: 40px;
+}
+
+
+.menu-popup  {
+	display: none;
+}
+
+
+/*VISIBILYTI CONTROL*/
+.news-hide {
+	display: none;
+}
+
+.news-show {
+	display: block;
+}
+
+
+.header-control {
+	display: none;
+}

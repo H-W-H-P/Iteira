@@ -1,0 +1,143 @@
+.news .service-content-wrapper {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex !important;
+}
+
+.news .one-third-block {
+	width: 100%;
+}
+
+.news .one-third-block-second {
+	margin-top: 148px;
+}
+
+.slick-list {
+	overflow: inherit;
+}
+
+.item-news {
+    height: 820px;
+    width: 100%;
+    margin-bottom: 120px;
+}
+
+.news .article-preview {
+	height: 100%;
+}
+
+.news .one-third-block-third.team-one-third-block .team-article-preview__h, .article-preview__h {
+    bottom: 7%;
+}
+
+.wrap-action .article-preview {
+	background: url(../../img/info/alike/_correction-programm.png) no-repeat center center / cover;
+}
+
+.wrap-entry .article-preview {
+	background: url(../../img/info/alike/_gift-offers.jpg) no-repeat center center / cover;
+}
+
+
+
+
+/*
+.service-content-wrapper {
+    overflow-y: inherit;
+}
+
+.one-third-block {
+    overflow: inherit !important;
+}*/
+
+
+.news-mobile-action {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.news-mobile-action .item-news {
+	width: 50%;
+}
+
+.news-mobile-action .item-news {
+    height: 520px;
+    margin-bottom: 12px;
+}
+
+.news-mobile-action .article-preview__h {
+    bottom: 13%;
+    font-size: 37px !important;
+}
+
+.news-mobile-action .team-article-preview__date {
+    margin-bottom: 26px;
+}
+
+
+.news-mobile-action, .news-mobile-news {
+	min-height: 120px;
+	width: 100%;
+}
+
+
+/*Tab link*/
+.news-mobile .news-mobile-title {
+	padding-top: 30px;
+	padding-bottom: 25px;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: center;
+}
+
+.news-mobile .news-tab {
+	width: 170px;
+    height: 48px;
+	display: inline-block;
+	text-decoration: none;
+	border: 1px solid black;
+	transition: 0.2s;	
+	background-color: transparent;
+	font-size: 20px;
+	line-height: 42px;
+	letter-spacing: 1.8px;	color: #0e0e0e;
+	font-family: "Lato-Regular";
+	text-align: center;
+}
+
+.news-mobile-title a:nth-of-type(1){
+    margin-right: 15px;
+}
+
+.news-mobile .news-tab.active {
+	color: #d2ab66;
+	border: 1px solid #d2ab66;
+}
+
+
+
+.menu-popup  {
+	display: none;
+}
+
+
+/*VISIBILYTI CONTROL*/
+.news-hide {
+	display: none;
+}
+
+.news-show {
+	display: block;
+}
+
+
+

@@ -1,9 +1,7 @@
-
-
 @media only screen and (max-width : 1700px) {
     .screen h2 {
         width: 90%;
-        font-size: 50px;
+        font-size: 70px;
     }
 
     .screen-service p {
@@ -11,23 +9,86 @@
         font-size: 30px;
     }
 
-    .bar-popup {
-        width: 42.48%;
+    .screen-service  h2 {
+        font-size: 49px;
     }
 
-    .service-menu__subheader {
+    .title-main h2 {
+        font-size: 70px;
+        width: 500px;
+    }
+
+    .title-main .title-change {
+        width: 100%;
+    }
+
+    [data-title="6"] h2 {
+        width: 100%;
+    }
+
+    .title-main p {
+        font-size: 34px;
+    }
+
+    /*servic*/
+    .popup-main .service-menu__subheader {
         width: 100%;
         margin: 0 auto;
         max-width: 100%;
     }
 
+    /*calender*/
+    .popup-main .owl-item {
+        font-size: 30px;
+    }
 
+    .owl-item.active {
+        font-size: 50px !important;
+        line-height: 50px;
+    }
+
+    .popup-main .owl-carousel {
+        margin-bottom: 60px;
+    }
+
+    .popup-main .owl-nav {
+        margin-top: 20px;
+    }
+
+    .popup-main .owl-item.active {
+        font-size: 54px !important;
+    }
+
+    
 }
 
 @media only screen and (max-width : 1400px) {
-    .part-day h3 {
-        font-size: 40px;
+    /*calender*/
+    .datepicker-here {
+        padding-bottom: 80px;
     }
+
+    .popup-main .owl-carousel {
+        margin-bottom: 60px;
+    }
+
+    .popup-main .owl-nav {
+        margin-top: 20px;
+    }
+    /*title*/
+    .bar-title {
+        width: 30%;
+    }
+
+    .bar-popup {
+        width: 45%;
+    }
+
+    .title-main p {
+        font-size: 29px;
+    }
+
+    /*time*/
 
     .part-day a {
         height: 44px;
@@ -36,105 +97,233 @@
         width: 200px;
     }
 
-
     .part-day h3 {
         height: 50.2px;
+        font-size: 50px;
+        margin-bottom: 20px;
     }
 
-    .bar-popup {
-        width: 52.48%;
+
+
+    /*servis*/
+    .popup-main .service-menu__subheader {
+
+        max-width: 100%;
     }
 
+    /*form*/
+    .group_text {
+        margin-top: 5vw;
+    }
 
+    .popup-main .group_text {
+        margin-top: 5vw;
+    }
+
+    /*thenks*/
+    .wrap-thanks h2 {
+      font-size: 60px;
+    }
+
+    .wrap-thanks p {
+      font-size: 30px;
+      padding-right: 5%;
+      padding-left: 5%;
+    }
+
+    /*title-2*/
+    .title-main .title-change {
+        width: 100%;
+    }
+
+    .title-main h2 {
+        font-size: 55px;
+    }
+
+    
+    /*prev*/
+    .popup-main .prev-txt {
+        font-size: 20px;
+    }
+
+    .popup-main .prev-abbout {
+        height: 20px;
+        width: 20px;
+    }
+
+    .popup-main .prev-dash {
+        width: 43px;
+        margin-right: 13px;
+    }
+
+    .popup-main .bnt-prev {
+        top: 55px;
+        left: 18px;
+    }
+    
+    /*cencel*/
+    .popup-main .cancel {
+      top: 55px;
+      right: 70px;
+    }
 }
 
-@media only screen and (max-width: 1200px) {
-    .service-menu__subheader p {
+@media only screen and (max-width : 1359px) {
+    .part-day h3 {
+        font-size: 60px;
+    }
+
+    .title-main h2 {
+        font-size: 46px;
+    }
+
+    .title-main .title-change {
+        width: 100%;
+    }
+
+    [data-title="6"] h2 {
+        width: 100%;
+    }
+
+    [data-title="6"] p {
+        width: 100%;
+        font-size: 27px;
+    }
+
+    .popup-main .owl-carousel {
+        margin-bottom: 80px;
+    }
+
+
+
+    
+
+    
+}
+
+@media only screen and (max-width : 1280px) {
+    .datepicker-here {
+        
+    }
+
+    .popup-main .owl-carousel {
+        margin-bottom: 50px;
+    }
+
+    .popup-main .group input, .popup-main .group textarea, select {
+        margin-bottom: 30px;
+    }
+
+    .popup-main .group_text {
+        margin-top: 6vw;
+    }
+}
+
+@media only screen and (max-width : 1200px) {
+    /*servic*/
+    .popup-main .service-menu__subheader p {
         font-size: 19px;
     }
-}
 
-@media only screen and (max-width : 1023px) {
-    .wrap-title {
-
-        height: 85%;
-
+    .popup-main .service-menu__subheader {
+        margin: 0 auto;
+        width: 90%;
+        max-width: 100%;
     }
 
-    .service-content-item {
+    .popup-main .service-content-item {
         margin: 0 4%;
     }
 
-
-    .part-day h3 {
+    .popup-main .service-content {
+        margin: 0 auto;
         width: 90%;
-        height: auto;
+    }
+
+    .popup-main .service-menu {
+        height: 90%;
+    }
+
+    .popup-main .change-service {
+        width: 100%;
+        height: 100%;
+    }
+
+
+
+    /*title*/
+    .screen h2 {
         font-size: 40px;
     }
 
-
-
-
-
-    .part-day a {
-        width: 190px;
-        height: 44px;
-        font-size: 18px;
-    }
-/*
-    .bar-popup {
-        width: 40.48%;
-    }
-*/
-    .bar-title {
-        height: 350px;
-    }
-
-    .popup-main {
-        height: auto;
-    }
-
-    .bar-popup {
-        align-items: flex-start;
+    .title-main h2 {
+        font-size: 48px;
     }
 }
 
 @media only screen and (max-width : 1023px) {
+
     .popup-main {
         flex-direction: column;
-        height: 100%;
+        min-height: 100%;
+        height: auto;
+        background-color: #fff;
+    }
+
+    .bar-popup {
+        flex: 1;
+    }
+
+    .popup-main .change-pop-up.change-service  {
+        flex: 1;
+        height: auto;
+        min-height: 100%;
+    }
+
+    /*title*/
+
+    .active-title {
+      display: none;
+    }
+
+
+    .screen-wrap {
+        margin-top: 120px;
     }
 
     .bar-title, .bar-popup {
         width: 100%;
     }
 
-    .service-menu {
-        height: 90%;
+    .bar-title {
+        height: 260px;
     }
 
-    /*Change-service*/ 
-    .change-service {
-        width: 100%;
+    .wrap-title {
         height: 100%;
     }
 
 
-
-    .service-menu__subheader {
-        margin: 0 auto;
+    /*service*/
+    .popup-main .change-service, .popup-main .service-content, .popup-main .service-content tr td:last-child span {
+        background-color: #fff ;
     }
 
-    .service-content {
-        margin: 0 auto;
-        width: 70%;
+    .popup-main .change-service .btn-reserv:hover, .popup-main .change-service .btn-reserv:hover span{
+      background-color: transparent !important;
     }
 
-    .service-menu__subheader {
-        width: 70%;
-        max-width: 100%;
+   
+
+    .popup-main .service-menu {
+       padding-top: 0;
     }
 
+    /*master*/
+    .change-master {
+        height: auto;
+        overflow: hidden;
+    }
 
     .change-master a .article-preview {
         width: 100% !important;
@@ -144,36 +333,6 @@
         background-position: top;
     }
 
-    .team-article-preview__date {
-        bottom: 30px;
-    }
-
-    .article-preview__h {
-        bottom: 60px
-    }
-
-
-    /*calender*/ 
-    .calender-wrap {
-        display: block;
-    }
-
-    #datepicker {
-        margin-top: 10%;
-        width: 100%;
-    }
-
-    .ui-widget.ui-widget-content {
-        width: 78%;
-        margin: 0 auto;
-    }
-
-    .service-content {
-        padding-right: 2%;
-        padding-left: 2%;
-    }
-
-    /**/
     .article-preview__h {
         bottom: 177px;
     }
@@ -182,118 +341,386 @@
         bottom: 0px;
     }
 
-    .change-master {
-        height: auto;
-        overflow: hidden;
-    }
-
     .change-master a {
         height: 882px;
+        display: block;
     }
 
+    .change-master a:hover {
+      transform: inherit;
+    }
+
+
+    /*time*/
+
+    .part-day .btn-reserv:hover {
+      background-color: inherit;
+    }
+    .change-time {
+        align-self: flex-start;
+        margin-top: 32px;
+    }
+
+    .part-day h3 {
+        width: 90%;
+        height: auto;
+        font-size: 40px;
+    }
+
+    .part-day a {
+        width: 190px;
+        height: 44px;
+        font-size: 18px;
+    }
+
+    .part-day-evening {
+        margin-bottom: 10px;
+    }
 
     /*form*/
-    form {
+   .popup-main form {
         margin-bottom: 0;
-        margin-top: 10%;
+        margin-top: 0;
     }
 
-    .contact-info {
+    .popup-main .form-wrap {
         width: 60%;
+        margin: 0 auto;
+        justify-content: flex-start;
     }
 
-    .group input, .group textarea {
+    .popup-main .contact-info {
+        width: 100%;
+        background-color: #fff;
+    }
+
+    .popup-main .group input, .group textarea {
         font-size: 16px;
         padding: 9px 10px 2px 5px;
         margin-bottom: 40px;
     }
 
-    .group label {
+   .popup-main .group label {
         font-size: 16px;
         left: 5px;
         top: -1px;
     }
 
+    /*thenks*/
+    .small-screen {
+      display: none;
+    }
+
+    .wrap-thanks {
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        z-index: 78;
+    }
+
+    .full-screen {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        justify-content: center;
+        background: #fff;
+        width: 100%;
+    }
+
+
+    .full-screen h2, .full-screen p{
+      display: block;
+    }
+
+    .full-screen p {
+       padding-right: 10%;
+       padding-left: 10%;
+    }
+
+    /*calender*/
+    .popup-main .owl-carousel {
+        margin-top: 20px;
+        margin-bottom: 70px;
+    }
+
+    .datepicker {
+        width: 70%;
+    }
+
+    .datepicker--cell-day:hover {
+      color: inherit;
+    }
+
+    .datepicker-here {
+        padding-bottom: 0px;
+        padding-top: 50px;
+        justify-content: flex-start;
+    }
+
+
+    /*prev*/
+    .popup-main .prev-txt {
+      font-size: 18px;
+    }
+
+    .popup-main .prev-dash {
+        width: 42px;
+    }
+
+    .popup-main .bnt-prev {
+        top: 45px;
+        left: 18px;
+    }
+
+    .popup-main .prev-abbout {
+      height: 20px;
+      width: 20px;
+    }
+
+    /*btn hover*/
+    .button--rayen::before {
+        content: none;
+    }
+
+    /*cancel*/
+    path {
+      fill: black;
+    }
+
+    .popup-main .cancel {
+        top: 55px;
+        right: 5%;
+    }
 }
 
-
-
-
 @media screen and (max-width: 767px) {
-    .service-content tr td:first-child div {
+    /*resirv*/
+    .popup-main .service-content tr td:first-child div {
         display: none;
     }
 
-    .team-article-preview__date {
-        bottom: 30px;
+    .popup-main .service-content {
+        width: 90%;
+        max-height: 450px ;
     }
 
-    .article-preview__h {
-        bottom: 60px
+   .popup-main .service-menu {
+        height: auto;
     }
 
-}
+    .popup-main tr {
+        display: flex !important;
+        margin-bottom: 15px !important;
+    }
 
+    .popup-main .service-content tr td:last-child span:first-child {
+        display: inline-block !important;
+    }
 
-@media only screen and (max-width : 768px) {
-    .service-content {
+    .popup-main .service-content tr td:first-child {
+        width: 50%;
+        padding-right: 0 !important;
+    }
+
+    .popup-main .service-content tr td:last-child {
+        border-top: solid 1px #d2ab66!important;
+        border-bottom: solid 1px #d2ab66!important;
+        border-right: solid 1px #d2ab66!important;
+        position: static;
+        width: 50%;
+    }
+
+    
+    .popup-main .service-menu__subheader {
         width: 90%;
     }
 
-    tr {
-        display: flex;
-        margin-bottom: 15px;
-    }
-
-    .service-content tr td:last-child span:last-child:hover {
-        opacity: 1;
-    }
-
-
-    .service-menu__subheader {
-        width: 90%;
-    }
-
-
-    .service-content tr td:first-child {
+    .popup-main .service-content tr td:first-child {
         border-left: solid 1px #d2ab66;
         border-right: none;
     }
 
-    .service-content {
-        max-height: 450px;
+
+   .popup-main .service-menu__subheader {
+        min-height: 70px;
     }
 
-        /**/
-    .article-preview__h {
-        bottom: 177px;
-        font-size: 6.4vw;
 
+    /*time*/
+    .change-time {
+        align-self: flex-start;
+        margin-top: 32px;
+    }
+    .part-day {
+        margin-bottom: 30px;
     }
 
-    .team-article-preview__date {
-        bottom: 0px;
-        font-size: 4vw;
+    .part-day:last-child {
+        margin-bottom: 0px;
     }
+
+    .part-day .btn-reserv {
+        margin-bottom: 10px;
+    }
+
+    /*=========form======*/
+    .popup-main .about-btn {
+        margin-bottom: 10px;
+    }
+    
+
+
+    /*cancel*/
+    .popup-main .cancel {
+        top: 45px;
+        right: 40px;
+        height: 17px;
+        width: 17px;
+    }
+
 
 
 }
 
 
 
+@media only screen and (max-width : 700px) {
+    /*CALENDER*/
+    .popup-main .owl-stage-outer {
+        margin-left: 0;
+    }
+
+    .popup-main .change-master a {
+	    height: 782px;
+	}
+
+	.popup-main .team-article-preview__date {
+	    margin-bottom: 38px;
+	}
+
+	.popup-main .article-preview__h {
+	    bottom: 100px;
+	}
+
+
+}
+
 
 @media only screen and (max-width : 480px) {
-    
+
+    /*title*/
+    .wrap-title {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .title-main h2 {
+	    font-size: 42px;
+	    line-height: 1.12;
+	}
+
+    .screen h2 {
+        width: 100%;
+        font-size: 42px;
+    }
+
     .bar-title {
         height: 213px;
     }
 
-    .wrap-title {
+    .screen-wrap {
+        margin-top: 98px;
+    }
+
+    .title-main .title-change {
+        margin-top: 20px;
+    }
+
+    /*service*/
+    .popup-main .service-menu__subheader {
+        width: 90%;
+        max-width: 100%;
+        padding: 10px 0px 10px 10px;
+    }
+
+    .popup-main .service-menu__subheader p {
+        font-size: 18px;
+    }
+
+    .popup-main .service-menu__dash {
+        width: 19px;
+        background-color: #0e0e0e;
+        height: 0.6px;
+    }
+
+    .popup-main .service-content tr td:first-child {
+        padding-right: 0;
+    }
+
+    .popup-main .service-content {
+        width: 100%;
+    }
+
+   .popup-main .service-menu {
+        padding-top: 10px;
         height: 100%;
     }
 
-    .screen h2 {
-        font-size: 42px;
+    .popup-main .service-content, .service-content tr td:last-child span {
+        background-color: transparent;
+    }
+
+   .popup-main .toggle-box {
+        padding: 0px 15px 0px 15px;
+    }
+
+    .popup-main .service-content tr td:last-child span:first-child {
+        height: auto;
+        display: block !important;
+        position: relative;
+    }
+
+
+    /*master*/
+    .popup-main .team-article-preview .article-preview__tag {
+        width: 127px;
+    }
+
+    .popup-main .article-preview__tag {
+        height: 25px;
+        width: 127px;
+        line-height: 25px;
+        font-size: 14px;
+    }
+
+    .popup-main .change-master {
+        height: 100%;
+        overflow: inherit;
+    }
+
+    .popup-main .change-master a .article-preview {
+        width: 100vw !important;
+    }
+
+    .popup-main .change-master a {
+        height: 520px;
+        display: block;
+    }
+
+    .popup-main .team-article-preview__date {
+        margin-bottom: 52px;
+    }
+
+    .popup-main.article-preview__h {
+        bottom: 87px;
+    }
+
+    /*time*/
+    .change-time {
+        align-self: flex-start;
+        margin-top: 32px;
     }
 
     .part-day h3 {
@@ -306,117 +733,218 @@
         font-size: 14px;
     }
 
-    .part-day {
-        margin-bottom: 30px;
-    }
-
-    /*100%*/
-
-    .popup-main {
-        height: 100%;
-    }
-
-    .service-menu__subheader {
-        width: 90%;
-        max-width: 100%;
-        padding: 10px 0px 10px 10px;
-        border-bottom: 1px solid #f6f6f6;
-    }
-
-    .service-menu__subheader p {
-        font-size: 18px;
-    }
-
-    .service-menu, .change-service {
-        background-color: #fff;
-    }
-
-    .service-menu__dash {
-        width: 19px;
-        background-color: #0e0e0e;
-        height: 0.6px;
-    }
-
-    .service-content tr td:first-child {
-        padding-right: 0;
-    }
-
-    .service-content tr td:last-child span:first-child {
-        height: 100%;
-
-    }
-
-    .service-content {
-        width: 100%;
-    }
-
-    .service-menu {
-        padding-top: 10px;
-        height: 100%;
-    }
-
-    .service-content, .service-content tr td:last-child span {
-        background-color: transparent;
-    }
-
-
-    .team-article-preview__date {
-        bottom: 30px;
-    }
-
-    .article-preview__h {
-        bottom: 60px
-    }
-
-
-    .change-master {
-        height: 100%;
-        overflow: inherit;
-    }
-
-    .change-master a .article-preview {
-        width: 100vw !important;
-    }
-
-    .ui-widget.ui-widget-content {
-        width: 100%;
-        padding-right: 0;
-        padding-left: 0;
-    }
-
-    .ui-state-default, .ui-widget-content .ui-state-default {
-        font-size: 16px;      
-    }
-
-    .ui-datepicker td span, .ui-datepicker td a, .ui-datepicker th {
-        text-align: center;
-    }
-
 
     /*form*/
-    .contact-info {
-        width: 86%;
+    .popup-main form {
+        margin-top: 0;
     }
 
-    .group label {
-        top: 6px;
+    .popup-main .group.group_text {
+        margin-top: 0;
     }
 
-    .nav__elem {
+    .popup-main .group.group_tel .input {
+        margin-bottom: 0;
+    }
+
+   .popup-main .form-wrap {
+        width: 85%;
+    }
+
+    .popup-main .contact-info {
+        width: 100%;
+    }
+
+    .popup-main .datepicker-here {
+        padding-bottom: 0;
+    }
+
+    .popup-main .group label {
+        top: 11px;
+    }
+
+   .popup-main .group textarea + label {
+        top: 100px;
+    }
+
+    .popup-main .nav__elem {
         font-size: 18px;
     }
 
-    .envoke-order-btn {
-        padding: 15px 47px 11px;
+    .popup-main form .nav__elem {
+      text-transform: uppercase;
+      margin-bottom: 20px;
     }
 
-    .group_text {
-        margin-top: 22vw;
+    .popup-main .envoke-order-btn {
+        padding: 10px 18px 7px;
+    }
+
+    .popup-main .group-agreement span {
+        font-size: 14px;
+    }
+
+    .popup-main .group-agreement .label {
+        margin-left: 11px;
+    }
+
+    .popup-main .group textarea {
+        padding: 40px 10px 2px 5px;
+    }
+
+    .popup-main textarea:valid ~ label {
+        top: 22px !important;
+    }
+
+   .popup-main  textarea:focus ~ label, textarea:valid ~ label {
+        top:10px;
+    }
+
+  .popup-main  form .nav__elem {
+        font-size: 18px;
+    }
+
+   .popup-main  select {
+        font-size: 18px;
+        padding: 10px 10px 1px 5px;
+        margin-bottom: 41px;
+    }
+
+    /*thanks*/
+    .wrap-thanks h2 {
+        font-size: 40px;
+    }
+
+    .full-screen p {
+        font-size: 24px;
+    }
+
+    /*calender*/
+    .datepicker {
+        width: 90%;
+    }
+
+    .datepicker-here {
+        padding-top: 0px;
+    }
+
+
+    .datepicker--content {
+        height: auto;
+    }
+
+    .datepicker-here {
+        justify-content: flex-start;
+    }
+
+
+
+    .popup-main .owl-carousel {
+        margin-top: 40px;
+        margin-bottom: 44px;
+    }
+
+    .popup-main .owl-prev:after {
+        top: 7px;
+        right: -30px;
+        width: 22px;
+        height: 1px;
+    }
+
+    .popup-main .owl-prev:before, .owl-next:before  {
+        width: 16px;
+        height: 16px;
+    }
+
+    .popup-main .owl-nav {
+        width: 85px;
+    }
+
+    .popup-main .owl-carousel .owl-nav.disabled {
+        padding-right: 10px;
+    }
+
+    .popup-main .datepicker--day-name {
+        font-size: 15px !important;
+    }
+
+    .datepicker--cell-day {
+        font-size: 17px;
+        font-weight: normal;
+        padding-top: 15px;
+        padding-bottom: 11px;
+    }
+
+    .popup-main .owl-theme .owl-nav {
+        margin-top: 4px;
+    }
+
+    .popup-main .owl-item {
+        font-size: 30px;
+    }
+
+    .popup-main .owl-item.active {
+         font-size: 40px !important;
+          line-height: 50px;
+    }
+
+    .popup-main .owl-next:before {
+        width: 16px;
+    }
+
+
+    /*prev*/
+    .popup-main .prev-dash {
+        width: 22px;
+        height: 1px;
+        margin-right: 11px;
+    }
+
+    .popup-main .bnt-prev {
+        top: 32px;
+        left: 18px;
+    }
+
+
+
+    .popup-main .prev-abbout {
+      height: 14px;
+      width: 14px;
+    }
+
+    /*cencel*/
+    .popup-main .cancel {
+        top: 34px;
+        right: 20px;
     }
 }
 
+@media only screen and (max-width: 378px){ 
+    .popup-main form {
+        margin-top: -14px;
+    }
 
+    .popup-main form .nav__elem {
+        margin-bottom: 19px;
+    }
 
+    .popup-main .group textarea, select {
+        margin-bottom: 47px;
+    }
+    .popup-main .about-btn {
+        margin-bottom: 0px;
+    }
 
+    .part-day h3 {
+	    margin-bottom: 37px;
+	}
 
+	.popup-main select {
+	    padding: 0px 10px 1px 5px;
+	    margin-bottom: 37px;
+	}
 
+	.popup-main .group textarea, select {
+	    margin-bottom: 39px;
+	}
+}

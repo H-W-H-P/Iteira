@@ -1,42 +1,12 @@
-
-/*
-
-@media only screen and (max-width : 1200px)
-@media only screen and (max-width : 992px)
-@media only screen and (max-width : 768px)
-@media only screen and (max-width : 480px)
-
-*/
-
-
-
-
 @media only screen and (max-width: 1919px) {
-	.title {
-		width: 702px;
-		margin-top: 153px;
-		margin-bottom: 17px;
-	}
-/*
-	.title h1{
-		position: relative;
-		left: -50%;
-		font-size: 90px;		
-	}*/
-	.title h1 {
-		position: relative;
-		left: -14%;
-		font-size: 95px;
-	}
-	
 	.title-2 {
-		z-index: 2;
-		padding-top: 30%;
+		z-index: 0;
+		padding-top: 140px;
 	}
 
 	.title-2 h1 {
 		font-size: 86px;
-		position: static;
+		left: 1%;
 	}
 
 	.about-main-screen h2 {
@@ -59,11 +29,11 @@
 		font-size: 20px;
 	}
 
-
 	/*thenks*/
 	.about-thanks  {
 		padding-left: 6px;
-		padding-right: 6px;
+		padding-right: 0px;
+		padding-top: 120px;
 	}
 
 	.about-thanks h3 {
@@ -83,18 +53,72 @@
 	}
 }
 
+@media only screen and (max-width : 1400px) {
+	.about {
+	    padding-left: 20px;
+	    padding-right: 20px;
+	}
 
-@media only screen and (max-width : 1200px) {
+	form {
+	    margin-bottom: 20px;
+	}
 
+	.title-2 {
+		z-index: 0;
+	    padding-top: 90px;
+	}
 
-	.about-main-screen {
-		width: 33.33%;
-		text-align: center;
-		/*display: block;*/
+	.about-thanks .bnt-prev {
+	    top: 37px;
+	    right: 65px;
+	}	
+
+	.bnt-prev-n {
+	    right: 1%;
+	    top: 30%;
+	}
+}
+
+@media only screen and (max-width : 1280px) {
+	input, textarea {
+	    margin-bottom: 22px;
+	}
+
+	.title-2 {
+	    z-index: 0;
+	    padding-top: 100px;
+	    width: 100%;
+	    text-align: center;
+	}
+
+	.title-2 h1 {
+	    font-size: 86px;
+	    position: relative;
+	    left: -43%;
+	}
+
+	.about-thanks .bnt-prev {
+	    top: 37px;
+	    right: 65px;
 	}
 
 	.address-main {
-		margin-bottom: 60px;
+	    margin-bottom: 0;
+	}
+
+	.group_text textarea {
+	    margin-bottom: 40px;
+	}
+
+	.about-btn {
+		margin-bottom: 20px;
+	}
+}
+
+@media only screen and (max-width : 1200px) {
+	.about-main-screen {
+		width: 33.33%;
+		text-align: center;
 	}
 
 	.title h1{
@@ -107,34 +131,18 @@
 		margin-bottom: 5%;
 	}
 
-
-/*
-	.title h1{
-		position: relative;
-		left: -50%;
-		font-size: 90px;		
-	}*/
-/*
-	.title h1 {
-		position: relative;
-		left: -4%;
-		font-size: 90px;
-	}*/
+	.about-thanks {
+	    padding-top: 120px;
+	}
 
 	.title-2 {
-		width: 702px;
-		margin-bottom: 19%;
 		position: static;
-		margin-top: 32%;
-		flex: 0;
+		flex: 1;
 	}
 
 	.title-2 h1 {
-		font-size: 70px;
-		left: -22%;
-		position: static;
+		font-size: 80px;
 	}
-
 
 	.about-main-screen h2 {
 		font-size: 30px;
@@ -148,6 +156,7 @@
 	.about-btn {
 		width: 190px;
 		height: 44px;
+		margin-bottom: 20px;
 	}
 	
 	.about-btn .nav__elem  {
@@ -158,18 +167,29 @@
 
 	/*form*/
 	.form {
-		width: 90%;
-		padding-left: 6px;
-		padding-right: 6px;
-		padding-top: 70px;	
-		margin-bottom: 62px;
+		width: 100%;
+		padding-left: 16px;
+		padding-right: 16px;
+		padding-top: 0;
+		margin-bottom: 22px;
 		flex: 3;
    		align-items: center;
 	}
 
-	.about-thanks .bnt-prev {
+	.about-thanks .about-bnt-prev {
 		right: 15%;
     	top: -2%;
+	}
+
+	/*fix*/
+	.phone-all {
+	    margin-top: 10px;
+	    margin-bottom: 10px;
+	}
+
+	.info-text {
+	    margin-top: 12px;
+	    margin-bottom: 20px;
 	}
 
 }
@@ -226,7 +246,13 @@
 	.form label {
 		font-size: 17px;
 		left: 22px;
-		top: 20px;
+		top: 21px;
+	}
+
+	.form .group_text label {
+		font-size: 17px;
+		left: 22px;
+		top: 75px;
 	}
 
 	input, textarea {
@@ -245,26 +271,21 @@
 	.header__logo-link::after {
 	    content: "";
 	    display: none;
-	}
-	
-	
-}
+	}	
 
-@media only screen and (max-width: 480px){ 
-	.logo {
-		margin-left: 10px;
-		margin-top: 10px;
-		width: 90px;
-		height: 52.74px;
+	.bnt-prev-n {
+	    right: 21%;
+	    top: 13%;
 	}
 }
-
-
 
 @media only screen and (max-width: 1024px) {
-
 	body {
 		overflow-y: auto;
+	}
+
+	.class-show-btn {
+		display: none;
 	}
 
 	.title-2 {
@@ -278,16 +299,9 @@
 	.map {
 		width: 100%;
 		flex: 2;
-		height: 400px;
+		height: 397px;
 		overflow: inherit;
 	}
-
-	.map .nav__elem {
-		display: block;
-		/*left: 50%;*/
-	   /*margin-left: -125px;*/
-	}
-
 
 	.about-main-screen {
 		width: 100%;
@@ -332,9 +346,13 @@
 
 	.form {
 		padding-bottom: 16px;
-		padding-top: 9px;
+		padding-top: 16px;
 		height: 320px;	
 		align-items: center;
+		margin: 0 auto; 
+		height: 320px;
+		position: relative;
+   		z-index: 1
 	}
 
 	/*thenks*/
@@ -351,14 +369,9 @@
 		font-size: 20px;
 	}
 
-	.about-thanks .bnt-prev {
+	.about-thanks .about-bnt-prev {
 		right: 15%;
     	top: -7%;
-	}
-
-	.form {
-		margin: 0 auto; 
-		height: 320px;
 	}
 
 	.form form {
@@ -377,18 +390,14 @@
 		width: 90%;
 		padding-right: 2.5%;
 		padding-left: 2.5%;
-	}
-
-	form .group_text {
-		margin-top: 60px;
+		margin-top: 0px;
 		margin-bottom: 0px;
 	}
 
-	.form .bnt-prev {
-	    right: 0;
+	.form .about-bnt-prev {
+	    right: 47px;
 	    top: -10%;
 	}
-
 
 	.group.warm .danger {
 	    width: 16px;
@@ -399,18 +408,42 @@
 	    line-height: 17px;
 	}
 
-	.group.warm .dnager-text {
-	    right: 20px;
-	    bottom: 23px;
-	    font-size: 15px;
+	.about .group.warm .dnager-text {
+	    right: 18px;
+	    bottom: 28px;
 	}
 
-}
+	.about .group.warm .danger {
+	    right: 19px;
+	    bottom: 29px;
+	    font-size: 15px;
+	    line-height: 21px;
+	}
 
+	.about .group.warm .dnager-text {
+	    right: 18px;
+	    bottom: 3px;
+	}
+
+	.about .warm.group_text span.danger {
+	    right: 19px;
+	    bottom: 48px;
+	    font-size: 15px;
+	    line-height: 21px;
+	}
+
+	.about .warm.group_text .dnager-text {
+		bottom: 18px;
+	}
+}
 
 @media only screen and (max-width : 690px) {
 	.mobile-title, .about-mobile-tab {
 		display: block;
+	}
+
+	.class-show-btn {
+		display: none;
 	}
 
 	.map {
@@ -442,18 +475,20 @@
 	    font-size:20px;
 	}
 
+	.about.form .group_text label {
+	    left: 6px;
+	}
 
-	.bnt-prev {
+	.about.form label {
+	    left: 6px;
+	}
+
+	.about-bnt-prev {
 		display: none;
 	}
 
 	.form {
 		margin: 0 auto;
-		padding-top: 153px;
-	}
-
-	.form {
-		margin: 0 auto; 
 		height: auto;
 	}
 
@@ -478,29 +513,57 @@
 		margin-bottom: 0px;
 	}
 
-	.form .bnt-prev {
+	.form .about-bnt-prev {
 	    right: 0;
 	    top: -10%;
 	}
+
+	.map .nav__elem {
+		display: block;
+	}
+
+	.about-btn {
+	    margin-bottom: 10px;
+	}
+
+	.about .group.warm .dnager-text {
+	    right: 0px;
+	    bottom: -20px;
+	}
+
+	.about .group.warm .danger {
+	    right: 2px;
+	    bottom: 6px;
+	}
+
+	.about .group.warm.group_text span.danger {
+	    right: 0px;
+	    bottom: 6px;
+	}
+
+	.about.form {
+		overflow-y: hidden;
+	}
 	
-
 	/*thenks*/
-
 	.about-thanks {
 		padding-top: 24%;
 	}
 
-
 	.about-main-screen {
 	    height: auto !important;
-	}
-
-	
-	
+	}	
 }
 
 
 @media only screen and (max-width : 480px) {
+	.logo {
+		margin-left: 10px;
+		margin-top: 10px;
+		width: 90px;
+		height: 52.74px;
+	}
+
 	.about-main-screen h2 {
 		font-size: 24px;
 		height: 64px;
@@ -520,12 +583,8 @@
 	}
 
 	/*form*/
-	.form {
+	.about.form {
 		padding-top: 41px;
-	}
-
-	input, textarea {
-		font-size:18px;
 	}
 
 	.form label {
@@ -534,13 +593,26 @@
 	    font-size:18px;
 	}
 
-	input, textarea {
+	.about  input, .about  textarea {
 	    margin-bottom: 30px;
+	    font-size:18px;
 	}
 
-	form .group_text {
-	    margin-top: 117px;
+	.about  form .group_text {
+	    margin-top: 58px;
 	    margin-bottom: 80px;
+	}
+
+	.about form {
+	    margin-bottom: 16px;   
+	}
+
+	.about.form {
+	    padding-bottom: 13px;
+	}
+
+	textarea:focus ~ label, textarea:valid ~ label {
+		top:-10px;
 	}
 
 	.group.warm .dnager-text {
@@ -558,7 +630,6 @@
 	}
 
 	/*thenks*/
-
 	.about-thanks  {
 		padding-top: 30%;
 		margin-bottom: 5%;
@@ -572,7 +643,14 @@
 		font-size: 16px;
 	}
 
-	
+	.mobile-title h1 {
+	    font-size: 42px;
+	    margin-bottom: 7%;
+	}
+
+	.form .group_text label {
+	    font-size: 18px;
+	}
 }
 
 @media only screen and (max-width : 360px) {
@@ -592,7 +670,6 @@
 	}
 
 	/*form*/
-
 	.form {
 		padding-top: 33px;
 	}
@@ -601,7 +678,6 @@
 	    margin-top: 90px;
 	    margin-bottom: 20px;
 	}
-
 
 	.group_text {
 		margin-top: 57px;
@@ -619,34 +695,3 @@
 	    font-size: 17px;
 	}
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

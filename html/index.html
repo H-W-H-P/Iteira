@@ -6,9 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Iteira</title>
-    
+
+    <!-- scroll-->
+    <link rel="stylesheet" href="../js/scroll/jquery.mCustomScrollbar.min.css">
     <link rel="stylesheet" href="../js/popup/air-picker/dist/css/datepicker.min.css">
+    
+     <!-- owl-->
+    <link href="../css/owl.carousel.min.css" rel="stylesheet">
+    <link href="../css/owl.theme.default.min.css" rel="stylesheet">
+    
+     <!-- import-->
     <link href="../css/imports.css" rel="stylesheet">
+    
+    
     
 </head>
 
@@ -28,7 +38,7 @@
             <a>
                 <div class="menu-popup__elem">Новости<br> и Акции</div>
             </a>
-            <div class="nav__elem envoke-order-btn menu-popup__btn ">ЗАПИСАТЬСЯ</div>
+            <div class="nav__elem envoke-order-btn menu-popup__btn btn-popup">ЗАПИСАТЬСЯ</div>
         </div>
 
 
@@ -41,7 +51,7 @@
      button button--rayen button--border-thin button--text-thick button--text-upper button--size-s
             -->
             <nav class="nav desktop-only">
-                <a href="#" class="nav__elem envoke-order-btn button--rayen button--border-thin button--text-thick" data-text="ЗАПИСАТЬСЯ"><span>ЗАПИСАТЬСЯ</span></a>
+                <a href="#" class=" btn-popup nav__elem envoke-order-btn button--rayen button--border-thin button--text-thick" data-text="ЗАПИСАТЬСЯ"><span>ЗАПИСАТЬСЯ</span></a>
                 <a href="#" class="nav__elem nav__black">УСЛУГИ</a>
                 <a href="#" class="nav__elem nav__black">КОМАНДА</a>
                 <a href="#" class="nav__elem nav__black">НОВОСТИ И АКЦИИ</a>
@@ -126,7 +136,7 @@
                         <a class='social__insta' href="#"></a>
                     </li>
                     <li>
-                        <a href="#" class="nav__elem envoke-order-btn envoke-order-btn-mob button--rayen button--border-thin button--text-thick" data-text="ЗАПИСАТЬСЯ"><span>ЗАПИСАТЬСЯ</span></a>
+                        <a href="#" class="nav__elem envoke-order-btn envoke-order-btn-mob button--rayen button--border-thin button--text-thick btn-popup" data-text="ЗАПИСАТЬСЯ"><span>ЗАПИСАТЬСЯ</span></a>
                     </li>
                     <li>
                         <a class='social__tel' href="#"></a>
@@ -147,15 +157,42 @@
 
     <!-- Popup -->
 
-        <div class="popup-main">
+        <div class="popup-main  hidden">
 
-
-            <div class="bar-title">
             
 
+            <div class="bar-title ">
+                <div class="bnt-prev ">
+                    <div class="prev-abbout"></div>
+                    <div class="prev-dash"></div>
+                    <div class="prev-txt"> Назад</div>
+                 </div>
+                 <div class="cancel">
+                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 64 64" xmlns:xlink="http://www.w3.org/1999/xlink" enable-background="new 0 0 64 64">
+                        <g>
+                            <path fill="#1D1D1B" d="M28.941,31.786L0.613,60.114c-0.787,0.787-0.787,2.062,0,2.849c0.393,0.394,0.909,0.59,1.424,0.59   c0.516,0,1.031-0.196,1.424-0.59l28.541-28.541l28.541,28.541c0.394,0.394,0.909,0.59,1.424,0.59c0.515,0,1.031-0.196,1.424-0.59   c0.787-0.787,0.787-2.062,0-2.849L35.064,31.786L63.41,3.438c0.787-0.787,0.787-2.062,0-2.849c-0.787-0.786-2.062-0.786-2.848,0   L32.003,29.15L3.441,0.59c-0.787-0.786-2.061-0.786-2.848,0c-0.787,0.787-0.787,2.062,0,2.849L28.941,31.786z"/>
+                        </g>
+                    </svg>
+                </div>
+                
                 <div class="wrap-title">
-                    <div class="screen-wrap">
 
+                    <div class="title-main" >
+                        <h2 data-title="1"  class="title-change ">Выбор<br>услуги</h2>
+                        <h2 data-title="2"  class="title-change ">Выбор<br>мастера</h2>
+                        <h2 data-title="3"  class="title-change">Выбор<br>даты</h2>
+                        <h2 data-title="4"  class="title-change">Выбор<br>времени</h2>
+                        <h2 data-title="5"  class="title-change">Контактные<br>данные</h2>
+                        <div  data-title="6"  class="title-change">
+                            <h2>Спасибо</h2>
+                            <p>Наш администратор свяжется с Вами в ближайшее время</p>
+                        </div>
+                    </div>
+  <!-- 
+                    <div class="screen-wrap">
+                        
+
+                        
                         <div class="screen screen-time">
                             <h2>Выбор услуги</h2>
                         </div>
@@ -173,7 +210,7 @@
                         </div>
 
                         <div class="screen screen-service">
-                            <h2>Выбор времени</h2>
+                            <h2>Контактные данные</h2>
                         </div>
 
                         <div class="screen screen-service">
@@ -181,39 +218,16 @@
                             <p>Наш администратор свяжется с Вами в ближайшее время</p>
                         </div>
 
-                    </div>
+                    </div>-->
                 </div>
 
             </div>
 
 
             <div class="bar-popup">
-                
 
-                <div class="change-time" hidden>
-                    <div class="part-day part-day-morning">
-                        <h3>Утро</h3>
-                        <a href="#" data-part-day="8-12">
-                            <span>08:00</span> &#8211 <span>12:00</span>
-                        </a>
-                    </div>
-                    <div class="part-day part-day-day"">
-                        <h3>День</h3>
-                        <a href="#" data-part-day="12-17">
-                            <span>12:00</span> &#8211 <span>16:30</span>
-                        </a>
-                    </div>
-                    <div class="part-day part-day-evening"">
-                        <h3>Вечер</h3>
-                        <a href="#" data-part-day="17-21">
-                            <span>16:30</span> &#8211 <span>21:00</span>
-                        </a>
-                    </div>
-                </div>
-
-                <div class="change-service" hidden>
-                     <menu class='service-menu'>
-                        
+                <div class="change-pop-up change-service hidden" data-popup="1">
+                     <menu class='service-menu'>    
                         <div>
 
                             <div class='service-menu__subheader desktop-chosen clearfix'>
@@ -221,172 +235,37 @@
                                 <div class='service-menu__dash'></div>
                                 <div class='service-menu__dash'></div>
                             </div>
-
                             <div class="toggle-box">
                                 <table class="service-content clearfix">
                                     <tbody>     
                                         <tr>
                                             <th colspan="2">Уходовые процедуры</th>
                                         </tr>
-                                        <tr class="change-service-btn">
-                                            <td>Алхимия<br>
+                                        <tr class="btn-reserv" data-value="Алхимия">
+                                            <td >Алхимия<br>
                                                 <div>до 25 см / 25-40 см / свыше 40 см</div>
                                             </td> 
                                             <td>
                                                 <span>130 - 170 BYN</span>
                                             </td>
                                         </tr>
-                                        <tr class="change-service-btn">
-                                            <td>Ламинирование<br>
+                                        <tr class="btn-reserv" data-value="Ламинирование">
+                                            <td >Ламинирование<br>
                                                 <div>до 25 см / 25-40 см / свыше 40 см</div>
                                             </td> 
                                             <td>
                                                 <span>120 - 238 BYN</span>
                                             </td>
                                         </tr>
-                                        <tr class="change-service-btn">
-                                            <td>Cellophanes-Service<br>
+                                        <tr class="btn-reserv" data-value="CellophanesService">
+                                            <td >Cellophanes-Service<br>
                                                 <div>до 25 см / 25-40 см / свыше 40 см</div>
                                             </td> 
                                             <td>
                                                 <span>135 - 242 BYN</span>
                                             </td>
                                         </tr>
-                                        <tr>
-                                            <td>Абсолютное счастье от Lebel<br>
-                                                <div>до 25 см / 25-40 см / свыше 40 см</div>
-                                            </td> 
-                                            <td>
-                                                <span>190 - 280 BYN</span>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>Маска для биопилинга кожи головы<br>
-                                                <div>до 25 см / 25-40 см / свыше 40 см</div>
-                                            </td> 
-                                            <td>
-                                                <span>120 - 150 BYN</span>
-                                            </td>
-                                        </tr>
-
-                                        <tr>
-                                            <th colspan="2">Окрашивания</th>
-                                        </tr>
-                                        <tr>
-                                            <td>Окрашивание в один тон<br>
-                                                <div>до 25 см / 25-40 см / свыше 40 см</div>
-                                            </td> 
-                                            <td>
-                                                <span>114 - 211 BYN</span>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>Окрашивание корней до 2 см<br>
-                                                <div>до 25 см / 25-40 см / свыше 40 см</div>
-                                            </td> 
-                                            <td>
-                                                <span>96 BYN</span>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>Сложное окрашивание<br>
-                                                <div>до 25 см / 25-40 см / свыше 40 см</div>
-                                            </td> 
-                                            <td>
-                                                <span>240 - 290 BYN</span>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>Тонирование<br>
-                                                <div>до 25 см / 25-40 см / свыше 40 см</div>
-                                            </td> 
-                                            <td>
-                                                <span>98 - 125 BYN</span>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>Gloss-Service<br>
-                                                <div>до 25 см / 25-40 см / свыше 40 см</div>
-                                            </td> 
-                                            <td>
-                                                <span>55 - 68 BYN</span>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>Ультрамягкое блондирование<br>
-                                                <div>до 25 см / 25-40 см / свыше 40 см</div>
-                                            </td> 
-                                            <td>
-                                                <span>145 - 260 BYN</span>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>Мелирование<br>
-                                                <div>до 25 см / 25-40 см / свыше 40 см</div>
-                                            </td> 
-                                            <td>
-                                                <span>125 - 190 BYN</span>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>Локальное мелирование<br>
-                                                <div>до 25 см / 25-40 см / свыше 40 см</div>
-                                            </td> 
-                                            <td>
-                                                <span>81 - 115 BYN</span>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>Прикорневое мелирование<br>
-                                                <div>до 25 см / 25-40 см / свыше 40 см</div>
-                                            </td> 
-                                            <td>
-                                                <span>145 BYN</span>
-                                            </td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div>
-
-
-
-                            <div class='service-menu__subheader desktop-chosen clearfix'>
-                                <p>Make up, Brow & Lashes-сервисы</p>
-                                <div class='service-menu__dash'></div>
-                                <div class='service-menu__dash'></div>
-                            </div>
-
-                            <div class="toggle-box">
-                                <table class="service-content clearfix">
-                                    <tbody>     
-                                        <tr>
-                                            <th colspan="2">Уходовые процедуры</th>
-                                        </tr>
-                                        <tr>
-                                            <td>Алхимия<br>
-                                                <div>до 25 см / 25-40 см / свыше 40 см</div>
-                                            </td> 
-                                            <td>
-                                                <span>130 - 170 BYN</span>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>Ламинирование<br>
-                                                <div>до 25 см / 25-40 см / свыше 40 см</div>
-                                            </td> 
-                                            <td>
-                                                <span>120 - 238 BYN</span>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>Cellophanes-Service<br>
-                                                <div>до 25 см / 25-40 см / свыше 40 см</div>
-                                            </td> 
-                                            <td>
-                                                <span>135 - 242 BYN</span>
-                                            </td>
-                                        </tr>
-                                        <tr>
+                                        <tr data-service="Lebel">
                                             <td>Абсолютное счастье от Lebel<br>
                                                 <div>до 25 см / 25-40 см / свыше 40 см</div>
                                             </td> 
@@ -487,7 +366,6 @@
                                 <div class='service-menu__dash'></div>
                                 <div class='service-menu__dash'></div>
                             </div>
-
                             <div class="toggle-box">
                                 <table class="service-content clearfix">
                                     <tbody>     
@@ -619,7 +497,6 @@
                                 <div class='service-menu__dash'></div>
                                 <div class='service-menu__dash'></div>
                             </div>
-
                             <div class="toggle-box">
                                 <table class="service-content clearfix">
                                     <tbody>     
@@ -751,7 +628,137 @@
                                 <div class='service-menu__dash'></div>
                                 <div class='service-menu__dash'></div>
                             </div>
+                            <div class="toggle-box">
+                                <table class="service-content clearfix">
+                                    <tbody>     
+                                        <tr>
+                                            <th colspan="2">Уходовые процедуры</th>
+                                        </tr>
+                                        <tr>
+                                            <td>Алхимия<br>
+                                                <div>до 25 см / 25-40 см / свыше 40 см</div>
+                                            </td> 
+                                            <td>
+                                                <span>130 - 170 BYN</span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Ламинирование<br>
+                                                <div>до 25 см / 25-40 см / свыше 40 см</div>
+                                            </td> 
+                                            <td>
+                                                <span>120 - 238 BYN</span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Cellophanes-Service<br>
+                                                <div>до 25 см / 25-40 см / свыше 40 см</div>
+                                            </td> 
+                                            <td>
+                                                <span>135 - 242 BYN</span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Абсолютное счастье от Lebel<br>
+                                                <div>до 25 см / 25-40 см / свыше 40 см</div>
+                                            </td> 
+                                            <td>
+                                                <span>190 - 280 BYN</span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Маска для биопилинга кожи головы<br>
+                                                <div>до 25 см / 25-40 см / свыше 40 см</div>
+                                            </td> 
+                                            <td>
+                                                <span>120 - 150 BYN</span>
+                                            </td>
+                                        </tr>
 
+                                        <tr>
+                                            <th colspan="2">Окрашивания</th>
+                                        </tr>
+                                        <tr>
+                                            <td>Окрашивание в один тон<br>
+                                                <div>до 25 см / 25-40 см / свыше 40 см</div>
+                                            </td> 
+                                            <td>
+                                                <span>114 - 211 BYN</span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Окрашивание корней до 2 см<br>
+                                                <div>до 25 см / 25-40 см / свыше 40 см</div>
+                                            </td> 
+                                            <td>
+                                                <span>96 BYN</span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Сложное окрашивание<br>
+                                                <div>до 25 см / 25-40 см / свыше 40 см</div>
+                                            </td> 
+                                            <td>
+                                                <span>240 - 290 BYN</span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Тонирование<br>
+                                                <div>до 25 см / 25-40 см / свыше 40 см</div>
+                                            </td> 
+                                            <td>
+                                                <span>98 - 125 BYN</span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Gloss-Service<br>
+                                                <div>до 25 см / 25-40 см / свыше 40 см</div>
+                                            </td> 
+                                            <td>
+                                                <span>55 - 68 BYN</span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Ультрамягкое блондирование<br>
+                                                <div>до 25 см / 25-40 см / свыше 40 см</div>
+                                            </td> 
+                                            <td>
+                                                <span>145 - 260 BYN</span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Мелирование<br>
+                                                <div>до 25 см / 25-40 см / свыше 40 см</div>
+                                            </td> 
+                                            <td>
+                                                <span>125 - 190 BYN</span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Локальное мелирование<br>
+                                                <div>до 25 см / 25-40 см / свыше 40 см</div>
+                                            </td> 
+                                            <td>
+                                                <span>81 - 115 BYN</span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Прикорневое мелирование<br>
+                                                <div>до 25 см / 25-40 см / свыше 40 см</div>
+                                            </td> 
+                                            <td>
+                                                <span>145 BYN</span>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+
+                            <div class='service-menu__subheader desktop-chosen clearfix'>
+                                <p>Make up, Brow & Lashes-сервисы</p>
+                                <div class='service-menu__dash'></div>
+                                <div class='service-menu__dash'></div>
+                            </div>
                             <div class="toggle-box">
                                 <table class="service-content clearfix">
                                     <tbody>     
@@ -884,29 +891,29 @@
                     </menu>
                 </div>
 
-                <div class="change-master" hidden>
-                    <a href='#'>
+                <div class="change-pop-up change-master hidden" id="mcs_container" data-mcs-theme="dark" data-popup="2">
+                    <a href='#' class="btn-reserv" data-value="ОЛЕСЯ">
                         <div class='article-preview team-article-preview bender-image clearfix bender-white-4'>
                             <div class="article-preview__tag article-preview__tag-2">Немига, 5</div>
                         </div>
                         <h4 class="article-preview__h team-article-preview__h">ОЛЕСЯ<br>БЕНДЕР</h4>
                         <span class="article-preview__date team-article-preview__date">Ведущий колорист</span>
                     </a>
-                    <a href='#'>
+                    <a href='#' class="btn-reserv" data-value="БЕНДЕР">
                         <div class='article-preview team-article-preview bender-image clearfix bender-white-4'>
                             <div class="article-preview__tag article-preview__tag-2">Немига, 5</div>
                         </div>
                         <h4 class="article-preview__h team-article-preview__h">ОЛЕСЯ<br>БЕНДЕР</h4>
                         <span class="article-preview__date team-article-preview__date">Ведущий колорист</span>
                     </a>
-                    <a href='#'>
+                    <a href='#' class="btn-reserv">
                         <div class='article-preview team-article-preview bender-image clearfix bender-white-4'>
                             <div class="article-preview__tag article-preview__tag-2">Немига, 5</div>
                         </div>
                         <h4 class="article-preview__h team-article-preview__h">ОЛЕСЯ<br>БЕНДЕР</h4>
                         <span class="article-preview__date team-article-preview__date">Ведущий колорист</span>
                     </a>
-                    <a href='#'>
+                    <a href='#' class="btn-reserv">
                         <div class='article-preview team-article-preview bender-image clearfix bender-white-4'>
                             <div class="article-preview__tag article-preview__tag-2">Немига, 5</div>
                         </div>
@@ -917,86 +924,120 @@
 
                 </div>
 
-                <div class="calender-wrap"  >
-                    <input type='text' class='datepicker-here' />
-                    <div class="datepicker-here"></div>
+                <div class="change-pop-up calender-wrap hidden"  data-popup="3">
                     
+                    <div class="datepicker-here animated fadeIn">
+                        <div class="owl-carousel owl-theme">
+                            <div data-number="1" class="item"><h4>1</h4></div>
+                            <div data-number="2" class="item"><h4>2</h4></div>
+                            <div data-number="3" class="item"><h4>3</h4></div>
+
+                        </div>
+                    </div>                  
                 </div>
 
-                <div class="contact-info" hidden>
-                    <form action="#" method="get" class="open">
-                        
-                        <div class="bnt-prev"></div>
-                        <div class="group group_name">     
-                            <span class="danger">!</span> 
-                            <span class="dnager-text">введите имя</span> 
-                            <input type="text" required>
-                            <label>Имя</label>
-                        </div>
-                        <div class="group group_tel">   
-                            <span class="danger">!</span> 
-                            <span class="dnager-text">введите номер</span>   
-                            <input type="tel" required>
-                            <label>Телефон</label>
-                        </div>
-                        <div class="group group_text">    
-                            <span class="danger">!</span>
-                            <span class="dnager-text">ваш комментарий</span>  
-                            <textarea name="" id="" cols="30" rows="1" required></textarea>
-                            <label>Комментарий</label>
-                        </div>
-                        <div class="group group-remember">
+                <div class="change-pop-up change-time hidden" data-popup="4">
+                    <div class="part-day part-day-morning">
+                        <h3>Утро</h3>
+                        <a href="#" data-value="8-12" class="btn-reserv">
+                            <span>08:00</span> &#8211 <span>12:00</span>
+                        </a>
+                    </div>
+                    <div class="part-day part-day-day"  >
+                        <h3>День</h3>
+                        <a href="#" data-value="12-17" class="btn-reserv">
+                            <span>12:00</span> &#8211 <span>16:30</span>
+                        </a>
+                    </div>
+                    <div class="part-day part-day-evening"" >
+                        <h3>Вечер</h3>
+                        <a href="#" data-value="17-21" class="btn-reserv">
+                            <span>16:30</span> &#8211 <span>21:00</span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="change-pop-up contact-info  hidden "  data-popup="5">
+
+                    <div class="form-wrap">
+                        <form action="#" method="get" class="open">
                             
-                            <span class="danger">!</span>
-                            <span class="dnager-text">пусто</span>  
-                            <input type="text" required>
-                            <label>За 1 час до визита</label>
+                            <div class="bnt-prev"></div>
+                            <div class="group group_name">     
+                                <span class="danger">!</span> 
+                                <span class="dnager-text">введите имя</span> 
+                                <input type="text" class="input input-value" required name="name">
+                                <label>Имя</label>
+                            </div>
+                            <div class="group group_tel">   
+                                <span class="danger">!</span> 
+                                <span class="dnager-text">введите номер</span>   
+                                <input type="tel" class="input input-value" required name="tel">
+                                <label>Телефон</label>
+                            </div>
+                            <div class="group group_text">    
+                                <span class="danger">!</span>
+                                <span class="dnager-text">ваш комментарий</span>  
+                                <textarea class="input input-value"  id="" cols="30"  required name="text"></textarea>
+                                <label>Комментарий</label>
+                            </div>
+                            <div class="group group-remember">
+                                
+                                <span>Напоминание</span>
+                                <select class="input-value">
+                                  <option>За 1 час до визита</option>
+                                  <option>За 2 час до визита</option>
+                                  <option>За 3 час до визита</option>
+                                </select>
 
-                        </div>
+                            </div>
 
-                        <div class="group-agreement">
-                            <label>
-                                <input class="checkbox" type="checkbox" name="checkbox-test">
-                                <span class="checkbox-custom"></span>
-                                <span class="label">Я прочитал(-а) и согласен(-а) с</span>
-                            </label>
+                            <div class="form-hidden-content">
+                                <input type="text" class="hidden-input input-value" data-value="">
+                                <input type="text" class="hidden-input input-value" data-value="">
+                                <input type="text" class="hidden-input input-value" data-value="" >
+                                <input type="text" class="hidden-input input-value" data-value="">
+                                <input type="text" class="hidden-input data-manth" data-value="">
+                            </div>
 
-                            <div class="arg-w">
-                                <label class="btn" for="modal-2">Пользовательсим соглашением</label>  
-                                <input class="modal-state" id="modal-2" type="checkbox" />
-                                <div class="modal">
-                                    <label class="modal__bg" for="modal-2"></label>
-                                    <div class="modal__inner">
-                                        <label class="modal__close" for="modal-2"></label>
-                                        <h2>Sleppy sloth</h2>
-                                        <p>Aliquam in sagittis nulla. Curabitur euismod diam
-                                           eget risus venenatis, sed dictum 
-                                           lectus bibendum. Nunc nunc nisi, hendre
-                                           rit eget nisi id, rhoncus rutrum velit. Nunc vel
-                                           rit eget nisi id, rhoncus rutrum velit. Nunc vel
-                                           rit eget nisi id, rhoncus rutrum velit. Nunc vel
-                                           rit eget nisi id, rhoncus rutrum velit. Nunc vel
-                                           rit eget nisi id, rhoncus rutrum velit. Nunc vel
-                                           rit eget nisi id, rhoncus rutrum velit. Nunc vel
-                                           rit eget nisi id, rhoncus rutrum velit. Nunc vel
-                                           rit eget nisi id, rhoncus rutrum velit. Nunc vel
-                                           rit eget nisi id, rhoncus rutrum velit. Nunc vel
-                                           mauris dolor. Class aptent taciti sociosqu ad lit
-                                           ora torquent per conubia nostra, per inceptos himenaeos. 
-                                       Aliquam fringilla quis nisi eget imperdiet.</p>
-                                   </div>
+                            <div class="group-agreement">
+                                <label>
+
+                                    <input class="checkbox agreement" type="checkbox" name="checkbox-test">
+                                    <span class="checkbox-custom"></span>
+                                    <span class="label">Я прочитал(-а) и согласен(-а) с</span>
+                                    <span class="danger">!</span> 
+                                </label>
+
+                                <div class="arg-w">
+                                    <a class="btn" href="#">Пользовательсим соглашением</a>  
+
                                </div>
                            </div>
-                       </div>
 
-                        <div class="about-btn send-massage popup-send" >
-                            <a href="#" class="nav__elem envoke-order-btn button--rayen button--border-thin button--text-thick" data-text="Записаться"><span>Записаться</span></a>
-                        </div>
-                    </form>
-                </div>
+                            <div class="about-btn send-massage popup-send" >
+                                <input type="submit" class="nav__elem envoke-order-btn button--rayen button--border-thin button--text-thick" data-text="Записаться" value="записаться">
+                            </div>
+                        </form>
+                    </div>
 
                
-                
+                </div>   
+
+
+
+                <div class="change-pop-up contact-thanks hidden">
+                    <div class="wrap-thanks">
+                        <div class="full-screen">
+                            <h2>Спасибо</h2>
+                            <p>Наш администратор вяжется с Вами в ближайшее время</p>
+                        </div>
+                        <div class="small-screen">
+                            <h2>Спасибо</h2>
+                            <p>Наш администратор вяжется с Вами в ближайшее время</p>
+                        </div>
+                    </div>
+                </div>
 
 
             </div>
@@ -1006,9 +1047,20 @@
     <script src="../js/index.js"></script>
     <script src="../js/mobile-nav-menu.js"></script>
     <script src="../js/popup/air-picker/dist/js/datepicker.min.js"></script>
-
+    <script src="../js/owl.carousel.min.js"></script>
+    
+    
     <script src="../js/popup/popup.js"></script>
-   
+    <!-- scroll-->
+
+    <script src="../js/scroll/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $("#mcs_container").mCustomScrollbar({
+                scrollInertia:500
+            });
+        });
+    </script>
 </body>
 
 </html>

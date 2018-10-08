@@ -14,11 +14,25 @@
 	    height: 58px;
 	    padding: 1vw 0 2vw 2vw;
 	}
-
 }
 
 
 @media only screen and (max-width:1023px) {
+	.button--rayen:hover::before {
+	    transform: inherit;
+	}
+	.button--rayen:hover > span {
+	    transform: inherit;
+	}
+
+	.index-slider__prev:hover {
+	    transform: scale(1, -1);
+	}
+
+	.index-slider__next:hover {
+	    transform: scale(1) ;
+	}
+
 	/**/
 	.index-sliding-fr__pic {
 		width: 100%;
@@ -73,7 +87,6 @@
 		height: 118px;
 	}
 
-
 	/*main screen bg*/
 	.index-sliding-frs .index-sliding-fr:nth-child(1) .index-sliding-fr__pic {
 	    background-position: center center;
@@ -86,7 +99,6 @@
 	.index-sliding-frs .index-sliding-fr:nth-child(3) .index-sliding-fr__pic {
 	    background-position: 30% center;
 	}
-
 
 	/*Slider btn controls*/
 	.index-slider {
@@ -128,7 +140,6 @@
 		background-color: #fff;
 	}
 
-
 	/*footrr*/
 	.a-black {
 		color: #fff;
@@ -137,7 +148,6 @@
 	.footer__desktop {
 		display: none;
 	}
-
 
 	.footer-mobile {
 	    display: block;
@@ -164,7 +174,6 @@
 		align-items: center;
 		height: 100%;
 	}
-
 	
 	.social__insta,.social__tel {
 		width: 44px;
@@ -179,23 +188,18 @@
 		overflow: hidden;
 	}
 
-
 	/*social btn*/
 	.social__insta {background-image: url('../../img/social/insta-w.svg');transition: all .4s ease;}
 
 	.social__insta:hover {
-		background-image: url('../../img/social/insta-h.svg');
-		transition: all .4s ease;
+		background-image: url('../../img/social/insta-w.svg');
 	}
 	.social__tel {background-image: url('../../img/social/tel-w.svg');}
 
 	.social__tel:hover {
-		background-image: url('../../img/social/tel-h.svg');
-		transition: all .4s ease;
+		background-image: url('../../img/social/tel-w.svg');
 	}
 }
-
-
 
 @media only screen and (orientation:landscape) and (max-width:900px) {
 	.index-sliding-fr__h-mobile {
@@ -250,7 +254,6 @@
 		margin: 0px 7px;
 	}
 	    
-
 	.envoke-order-btn-mob {
 	    margin-left: 20%;
 	    position: absolute;
@@ -271,7 +274,6 @@
 	}	
 
 	.index-slider-counter {
-	   
 	    margin-left: -120.5px;
 	}
 
@@ -282,12 +284,8 @@
 
 	.index-slider__dash {
 	    margin: 0px 0;
-	 }
-
+	}
 }
-
-
-
 
 @media only screen and (max-width:650px) {
 	.header__logo-link::after {
@@ -329,7 +327,6 @@
 
 
 @media only screen and (orientation:landscape) and (max-width:584px) {
-	
 	.copyright {
 	    margin: 5px 0 12px 0;
 	}
@@ -365,7 +362,6 @@
 	    height: 84px;
 	    padding: 1vw 0 3vw 2vw
 	}
-	
 }
 
 
@@ -437,10 +433,7 @@
 
 	.copyright a {
 		font-size: 12px;
-	}
-
-	
-	
+	}	
 }
 
 @media only screen and (max-width:374px) {
@@ -468,8 +461,6 @@
 	.index-sliding-fr__text {
 	    top: 43vh;
 	}
-
-
 }
 
 

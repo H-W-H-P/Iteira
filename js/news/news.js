@@ -5,33 +5,32 @@ $( function() {
 
 	
 
-	let slide_1 = $('.slideshow-left').slick({
-		swipe: true,
-		vertical: true,		
-		infinite: false,
-		speed: 800,
-		cssEase: 'ease-in-out'
+	let slide_1;
+	let slide_2;
 
-	});
+	function initSclick() {
+		slide_2 = $('.slideshow-right').slick({
+			swipe: true,
+			vertical: true,
+			infinite: false,
+			speed: 800,
+			cssEase: 'ease-out'
 
-	let slide_2 = $('.slideshow-right').slick({
-		swipe: true,
-		vertical: true,
-		infinite: false,
-		speed: 800,
-		cssEase: 'ease-out'
+		});
 
-	});
+		slide_1 = $('.slideshow-left').slick({
+			swipe: true,
+			vertical: true,		
+			infinite: false,
+			speed: 800,
+			cssEase: 'ease-in-out'
 
-	$('.logo').on('click', function() {
-		slide_1 = null;
-		slide_2 = null;
-	});
+		});
+	}
 
+	
 
 	let counterWheel = 0;
-
-
 	let activeSlick_1;
 	let activeSlick_2;
 
@@ -74,97 +73,67 @@ $( function() {
 
 	
 	$('.service-content-wrapper').on('mousewheel', function(e) {
-	//	setTimeout(()=>{
-	//		counterWheel = 0;
-	//	},1400);
-	//	if (counterWheel > 0) return;
-	//	counterWheel++;
-	
 		let event = e;
 		setMouseWonSlidshow( event, 'slideshow-left', 'slideshow-right');
-
-	})
-
-
-	$('.service-content-wrappers').on("mousewheel ", function(event) {
-		event.preventDefault();
-
-		
-		let chilItemLengLeft = $('.desktop-opened .slideshow-left').find('.item').length;
-		chilItemLengLeft--;
-		activeSlick_1 = $('.slick-active').index();
-
-		let chilItemLengRight = $('.desktop-opened .slideshow-right').find('.item').length;
-		chilItemLengRight;
-		activeSlick_2 = $('.slick-active').index();
-		
-
-		if (event.deltaX > 0 || event.deltaY < 0) {
-			let rightBool = activeSlick_1 >= chilItemLengLeft;
-			let leftBool = activeSlick_2 >= chilItemLengRight;
-
-			if (!rightBool) {
-				slide_1.slick('slickNext');
-			}
-
-			if (!leftBool) {
-				slide_2.slick('slickNext');
-			}	
-			
-		} else if (event.deltaX < 0 || event.deltaY > 0) {
-			if (activeSlick_1 !== 0) {
-				slide_1.slick('slickPrev');	
-			}
-
-			if (activeSlick_2 !== 0) {
-				slide_2.slick('slickPrev');	
-			}
-			
-		};
-
-		
 	});
 
 
 
+	let stateResize = 1;
+	let stateSclick = true;
+	let loadres = 1;
+	function changeResize()	{
 
-
-
-	let counterResizeMobile = 0;
-	let counterResizeDes = 0;
-
-	function resizeChange() {
 		if ( $(window).width() <= 1023 ) {
-        	if (counterResizeMobile === 0) {
-        		$('.service-menu').removeClass('news-show').addClass('news-hide');
-	            $('.news-mobile').removeClass('news-hide').addClass('news-show');
-	            $('.news-mobile-action').html('');
-	            let itemAction = $('.wrap-action').find('.item-news').each( (index, elem) => {
-	           		let c = $(elem).clone();
+			if (!stateResize) {
+				$('.slideshow-left').slick('unslick');
+				$('.slideshow-right').slick('unslick');
+				slide_1.slick('unslick');
+				slide_2.slick('unslick');
+				$('.service-content-wrapper').off();
+				stateResize = 1;
+				stateSclick = false;
+			} 
 
-	           		$('.news-mobile-action').append(c);
-	           });  
-	           counterResizeDes = 0;
-	           counterResizeMobile++; 
-        	} else {
-        		return;
-        	}
-        } else {
-        	if (counterResizeDes === 0) {      		
-        		$('.service-menu').removeClass('news-hide').addClass('news-show');
-        		$('.news-mobile').removeClass('news-show').addClass('news-hide');
-        		counterResizeMobile = 0;
-        		counterResizeDes++;
-        	} else {
-        		return;
-        	}
-        }
-	}
+			if (loadres) {
+				$('.slideshow-left').slick('unslick');
+				$('.slideshow-right').slick('unslick');
+				slide_1.slick('unslick');
+				slide_2.slick('unslick');
+				$('.service-content-wrapper').off();
+				stateResize = 1;
+				stateSclick = false;
+				loadres = 0;
+			}
 
-	resizeChange();
+			return
+							
+		} else {
 
-    $(window).resize(resizeChange);
+			if (stateResize) {
+				if (stateSclick) {
+					stateResize = 0;
+					return;
+				} 
 
+				$('.service-content-wrapper').on('mousewheel', function(e) {
+					let event = e;
+					setMouseWonSlidshow( event, 'slideshow-left', 'slideshow-right');
+				});
+
+				initSclick();
+				stateResize = 0;
+				stateSclick = true;				
+			}
+
+			return;	
+		}
+	};
+
+	initSclick();
+	changeResize();
+
+	$(window).resize(changeResize);
 
 
 });

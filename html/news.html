@@ -18,7 +18,7 @@
     <link rel="stylesheet" href="../css/news/news-mobile-fix.css">
 </head>
 
-<body class='body-info body-service'>
+<body class='body-info body-service body-service-news'>
     <div class="menu-popup closed mobile-only">
         <a class="closure" href='#'></a>
         <a>
@@ -60,7 +60,12 @@
         </div>
         <menu class='service-menu team-menu'>
             <div>
-                
+                <div class='team-menu-mobile owl-carousel mobile-only'>
+                    <a href='#' class='team-menu-mobile__item mobile-chosen' data-hash=''>Акция</a>
+                    <a href='#' class='team-menu-mobile__item' data-hash=''>Здоровье</a>
+                    <a href='#' class='team-menu-mobile__item' data-hash=''>Красота</a>
+                    <a href='#' class='team-menu-mobile__item' data-hash=''>Полезное</a>
+                </div>
                 <h6 class="service-menu__header team-menu__header desktop-only">— Категории </h6>
                 <div>
 
@@ -161,7 +166,7 @@
                         			<div class="item">
                         				<a href='#' class="item-news">
 			                                <div class='article-preview team-article-preview legs-article clearfix '>
-			                                    <div class="article-preview__tag article-preview__tag-2">1Акция</div>
+			                                    <div class="article-preview__tag article-preview__tag-2">Здоровье</div>
 			                                    <h4 class="article-preview__h team-article-preview__h news-article-preview__h">ПОДАРОЧНЫЕ<br>ПРЕДЛОЖЕНИЯ</h4>
 			                                    <span class="article-preview__date team-article-preview__date news-article-preview__date">15 Марта 2018</span>
 			                                </div>
@@ -246,7 +251,7 @@
                         			<div class="item">
                         				<a href='#' class="item-news">
 			                                <div class='article-preview team-article-preview legs-article clearfix '>
-			                                    <div class="article-preview__tag article-preview__tag-2">1Акция</div>
+			                                    <div class="article-preview__tag article-preview__tag-2">Красота</div>
 			                                    <h4 class="article-preview__h team-article-preview__h news-article-preview__h">ПОДАРОЧНЫЕ<br>ПРЕДЛОЖЕНИЯ</h4>
 			                                    <span class="article-preview__date team-article-preview__date news-article-preview__date">15 Марта 2018</span>
 			                                </div>
@@ -331,7 +336,7 @@
                         			<div class="item">
                         				<a href='#' class="item-news">
 			                                <div class='article-preview team-article-preview legs-article clearfix '>
-			                                    <div class="article-preview__tag article-preview__tag-2">1Акция</div>
+			                                    <div class="article-preview__tag article-preview__tag-2">Полезное</div>
 			                                    <h4 class="article-preview__h team-article-preview__h news-article-preview__h">ПОДАРОЧНЫЕ<br>ПРЕДЛОЖЕНИЯ</h4>
 			                                    <span class="article-preview__date team-article-preview__date news-article-preview__date">15 Марта 2018</span>
 			                                </div>
@@ -405,21 +410,14 @@
                 </div>
             </div>
         </menu>
-    
-        <div class="news-mobile news-hide">
-            <div class="news-mobile-title ">
-                <a href="#" class="news-tab news-tab-adress active">Адреса</a>
-                <a href="#" class="news-tab news-tab-map ">Карта</a> 
-            </div> 
-            <div class="news-mobile-action wrap-action"></div>
-            <div class="news-mobile-news wrap-entry news-hide"></div>
-        </div>
+  
         
 
     </main>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="../js/owl.carousel.min.js"></script>
-    <script src="../js/team.js"></script>
+    <script src="../js/news/news-slide.js"></script>
+
     <script src="../js/mobile-nav-menu.js"></script>
 
 

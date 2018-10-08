@@ -42,7 +42,7 @@
         font-size: 30px;
     }
 
-    .owl-item.active {
+    .popup-main .owl-item.active {
         font-size: 50px !important;
         line-height: 50px;
     }

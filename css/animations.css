@@ -27,10 +27,6 @@
 	/*position: static;*/
 }
 
-.one-third-block-third a:first-child .team-article-preview{
-	margin-top: 0;
-}
-
 .one-third-block-third.team-one-third-block .team-article-preview__h,
 .article-preview__h{
 	margin: 0;
@@ -59,16 +55,5 @@
 	.team-one-third-block>a{
 		height: 85vh;
 	}
-	.one-third-block-third.team-one-third-block .team-article-preview__h, .article-preview__h{
-		bottom: 24%;
-	}
-}
 
-@media screen and (max-width: 767px){
-	.team-article-preview{
-		height: 100% !important;
-	}
-	.one-third-block-third .team-article-preview{
-		margin: 0 !important;
-	}
 }

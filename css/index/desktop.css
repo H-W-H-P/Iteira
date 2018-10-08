@@ -161,18 +161,53 @@ body {
     color: #0e0e0e;
 }
 
-.white-theme {
-    color: white;
-    border-color: white;
-}
-
-.white-theme a:hover {
+.opacity-true[data-theme="dark"] a:hover {
     color: #d2ab66;
 }
 
-.white-theme-arrows {
+.white .index-slider__prev,
+.white .index-slider__next{
     background-image: url('../../img/arrow-bot_white.png');
 }
+
+.opacity-true[data-theme="dark"] .index-sliding-fr__h,
+.opacity-true[data-theme="dark"] .index-sliding-fr__text,
+.white .index-slider-counter-num,
+.white .copyright,
+.white .a-black
+{
+    color: #fff;
+}
+
+.white .index-slider__dash,
+.white .index-slider-counter__dash{
+    background-color: #fff;
+}
+
+.logo-white{
+    display: none;
+}
+
+.white .logo{
+    display: none;
+}
+
+.white .logo-white{
+    display: block;
+}
+
+.white .social__insta{
+    background-image: url('../../img/social/insta-w.svg');
+}
+
+.white .social__tel{
+    background-image: url('../../img/social/tel-w.svg');
+}
+
+
+/*.white-theme-arrows {
+    background-image: url('../../img/arrow-bot_white.png');
+}*/
 
 .white-theme-insta {
     background-image: url('../../img/social/insta-w.svg');

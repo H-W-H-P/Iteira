@@ -86,6 +86,7 @@ window.onload = function() {
             content[i].classList.remove('desktop-opened');
             content[i].classList.remove('desktop-opacity');
             subheader[i].classList.remove('desktop-chosen');
+
         }
         curI ? dash[curI].classList.add('dash-rotate') : dash[0].classList.add('dash-rotate');
         curSub.classList.add('desktop-chosen');
@@ -94,6 +95,7 @@ window.onload = function() {
         if ($(window).width() >= 1024) {
             subheaderHandler = function(i, event) {
                 if (curSub != subheader[i]) {
+
                     curSub.classList.remove('desktop-chosen');
                     curSub.classList.remove('mobile-chosen');
                     curContent.classList.remove('desktop-opacity');
@@ -106,6 +108,15 @@ window.onload = function() {
                     }
                     subheader[i].classList.add('desktop-chosen');;
                     content[i].classList.add('desktop-opened');
+
+                    //SLICK
+                    let openItem =  $(subheader[i]).parent().find(subheader[i]).index();
+                    $('.slideshow-left').slick('slickGoTo', 0);
+                    $('.slideshow-right').slick('slickGoTo', 0);
+                    
+
+                    
+
                     backupContent = content[i];
                     setTimeout(() => {
                         backupContent.classList.add('desktop-opacity');

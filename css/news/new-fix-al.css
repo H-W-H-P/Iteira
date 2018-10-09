@@ -52,7 +52,16 @@
 	background: url(../../img/info/alike/_gift-offers.jpg) no-repeat center center / cover;
 }
 
+.service-content-wrapper .one-third-block-second .team-article-preview, .one-third-block-second a:first-child .team-article-preview {
+    /* height: 70vh; */
+    height: 100%;
+}
 
+.item-news {
+    height: 720px;
+    width: 100%;
+    margin-bottom: 146px;
+}
 
 /*tabs*/
 .news .mobile-chosen {

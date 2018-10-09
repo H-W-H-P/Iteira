@@ -3,7 +3,7 @@
 
 $( function() {
 
-	
+
 
 	let slide_1;
 	let slide_2;
@@ -14,7 +14,7 @@ $( function() {
 			vertical: true,
 			infinite: false,
 			speed: 800,
-			cssEase: 'ease-out'
+			cssEase: 'cubic-bezier(.17, 0, .58, 1)'
 
 		});
 
@@ -23,7 +23,7 @@ $( function() {
 			vertical: true,		
 			infinite: false,
 			speed: 800,
-			cssEase: 'ease-in-out'
+			cssEase: 'cubic-bezier(.69, .01, .58, 1)'
 
 		});
 	}
@@ -43,10 +43,24 @@ $( function() {
 		chilItemLengLeft--;
 		activeSlick_1 = $('.slideshow-left .slick-active').index();
 
+		let indexItemLeft =   $('.slideshow-left .slick-active').index();
+		let indexItemRight =  $('.slideshow-right .slick-active').index();
+		
+		let activeItemStr = `${indexItemLeft}-${indexItemRight}`;
+
+			//$('.body-info').attr('data-left', 'fff');
+			//$('.desktop-chosen').data('left', `${indexItemLeft}`);
+
+		console.log($('.desktop-chosen'));
+		//console.log()
+		
+
+
+
 		let chilItemLengRight = $(`.desktop-opened .${nameSlide2}`).find('.item').length;
 		chilItemLengRight--;
 		activeSlick_2 = $('.slideshow-right .slick-active').index();
-		console.log(activeSlick_2)
+		
 
 		if (event.deltaX > 0 || event.deltaY < 0) {
 			let rightBool = activeSlick_1 >= chilItemLengLeft;
@@ -134,6 +148,12 @@ $( function() {
 	changeResize();
 
 	$(window).resize(changeResize);
+
+
+	$('.service-menu__subheader').on('click', function() {
+
+		//console.log($('.desktop-chosen'))
+	})
 
 
 });

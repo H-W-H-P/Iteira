@@ -9,6 +9,10 @@
 		left: 1%;
 	}
 
+	.bnt-prev-n {
+	    top: 13%;
+	}
+
 	.about-main-screen h2 {
 		font-size: 30px;
 		height: 70px;
@@ -34,7 +38,15 @@
 		padding-left: 6px;
 		padding-right: 0px;
 		padding-top: 120px;
+		width: 332px;
+		margin: 0 auto; 
+	}	
+
+	.about-thanks .bnt-prev{
+		right: 0;
+		top: 0;
 	}
+
 
 	.about-thanks h3 {
 		font-size: 60px;
@@ -51,32 +63,44 @@
 	.group_text {
 		margin-top: 130px;
 	}
+
+	
+
+
 }
 
 @media only screen and (max-width : 1400px) {
+	.wrap-main-form-thanks {
+	    margin-bottom: 20px;
+	}
+
 	.about {
 	    padding-left: 20px;
 	    padding-right: 20px;
 	}
 
-	form {
-	    margin-bottom: 20px;
+	.bnt-prev-n {
+	    top: -5%;
 	}
+
+	
 
 	.title-2 {
 		z-index: 0;
 	    padding-top: 90px;
 	}
 
+	.about-thanks {
+	    padding-right: 20px;
+	    width: 60%;
+	}
+
 	.about-thanks .bnt-prev {
-	    top: 37px;
-	    right: 65px;
+	    top: 9px;
+	    right: 20px;
 	}	
 
-	.bnt-prev-n {
-	    right: 1%;
-	    top: 30%;
-	}
+	
 }
 
 @media only screen and (max-width : 1280px) {
@@ -97,10 +121,11 @@
 	    left: -43%;
 	}
 
-	.about-thanks .bnt-prev {
-	    top: 37px;
-	    right: 65px;
+	.form {
+	    margin-bottom: 0px;
 	}
+
+
 
 	.address-main {
 	    margin-bottom: 0;
@@ -156,7 +181,7 @@
 	.about-btn {
 		width: 190px;
 		height: 44px;
-		margin-bottom: 20px;
+		margin-bottom: 0px;
 	}
 	
 	.about-btn .nav__elem  {
@@ -171,8 +196,7 @@
 		padding-left: 16px;
 		padding-right: 16px;
 		padding-top: 0;
-		margin-bottom: 22px;
-		flex: 3;
+		margin-bottom: 0px;
    		align-items: center;
 	}
 
@@ -196,9 +220,19 @@
 
 /*logo menu*/
 @media only screen and (max-width: 1024px) { 
+
+
+	.bnt-prev-n {
+	    right: 13%;
+	    top: 0%;
+	}
+	
+
 	.desktop-only {
 		display: none;
 	}
+
+	
 	.mobile-only {
 		display: initial;
 	}
@@ -273,10 +307,6 @@
 	    display: none;
 	}	
 
-	.bnt-prev-n {
-	    right: 21%;
-	    top: 13%;
-	}
 }
 
 @media only screen and (max-width: 1024px) {
@@ -284,8 +314,10 @@
 		overflow-y: auto;
 	}
 
-	.class-show-btn {
-		display: none;
+	.wrap-main-form-thanks {
+	    width: 700px;
+	    margin: 0 auto;
+	    
 	}
 
 	.title-2 {
@@ -344,6 +376,7 @@
 		margin-top: 100px;
 	}
 
+	
 	.form {
 		padding-bottom: 16px;
 		padding-top: 16px;
@@ -435,9 +468,19 @@
 	.about .warm.group_text .dnager-text {
 		bottom: 18px;
 	}
+
+	.popup-main .form-wrap {
+	    justify-content: center;
+	}
+
 }
 
 @media only screen and (max-width : 690px) {
+	
+	.wrap-main-form-thanks {
+	    width: 100%;
+	}
+
 	.mobile-title, .about-mobile-tab {
 		display: block;
 	}
@@ -513,6 +556,10 @@
 		margin-bottom: 0px;
 	}
 
+	.form .group_text label {
+	    font-size: 20px;
+	}
+
 	.form .about-bnt-prev {
 	    right: 0;
 	    top: -10%;
@@ -564,6 +611,10 @@
 		height: 52.74px;
 	}
 
+	.about-thanks {
+	    width: 81%;
+	}
+
 	.about-main-screen h2 {
 		font-size: 24px;
 		height: 64px;
@@ -604,11 +655,11 @@
 	}
 
 	.about form {
-	    margin-bottom: 16px;   
+	    margin-bottom: 0px;   
 	}
 
 	.about.form {
-	    padding-bottom: 13px;
+	    padding-bottom: 0px;
 	}
 
 	textarea:focus ~ label, textarea:valid ~ label {

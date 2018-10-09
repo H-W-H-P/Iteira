@@ -202,8 +202,16 @@
 }
 
 @media only screen and (max-width : 1280px) {
-    .datepicker-here {
-        
+    .part-day h3 {
+        font-size: 54px;
+    }
+
+    [data-title="6"] p {
+        font-size: 25px;
+    }
+
+    .part-day a {
+        width: 190px;
     }
 
     .popup-main .owl-carousel {
@@ -260,6 +268,21 @@
         font-size: 48px;
     }
 }
+
+@media only screen and (max-width : 1024px) {
+    .popup-main .form-wrap {
+        justify-content: center;
+    }
+
+    .datepicker-here {
+        justify-content: center;
+    }
+
+    .datepicker-here {
+        padding-bottom: 21px;
+    }
+}
+
 
 @media only screen and (max-width : 1023px) {
 
@@ -920,6 +943,10 @@
 }
 
 @media only screen and (max-width: 378px){ 
+    .popup-main .owl-carousel {
+        margin-bottom: 30px;
+    }
+
     .popup-main form {
         margin-top: -14px;
     }

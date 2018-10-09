@@ -51,8 +51,8 @@ body {
 }
 
 .address-main {
-	margin-bottom: 10%;
-	flex: 3;
+	
+	
 }
 
 .inner {
@@ -248,7 +248,6 @@ form {
     padding-left: 86px;
     padding-right: 86px;
 	align-items: flex-end;
-	flex: 3;
     align-items: center;
 }
 
@@ -368,12 +367,13 @@ input[type="submit"] {
 
 /*prev*/
 /**/
+
 .bnt-prev-n {
-	opacity: 0;
+	/*opacity: 0;*/
 	position: absolute;
     z-index: 150;
-    right: 6%;
-    top: 30%;
+    right: 5%;
+    top: -10%;
     height: 17px;
     width: 17px;
     background: url(../../img/cancel.png) no-repeat center center / 100%;
@@ -448,15 +448,16 @@ input[type="submit"] {
 .about-thanks .bnt-prev {
 	background: url(../../img/cancel.png) no-repeat center center / cover;
 	position: absolute;
-	top: 0;
-	right: 150px;
-	height: 20px;
-	width: 20px;
+	top: -5px;
+	right: 100px;
+	height: 17px;
+	width: 17px;
 	cursor: pointer;
 }
 
 .about-main-screen {
 	height: 100% !important;
+	position: relative;
 
 }
 
@@ -469,8 +470,10 @@ input[type="submit"] {
 .about-thanks {
 	position: relative;
     z-index: 20000000;
-    flex: 2;
+    flex: 3;
     padding-top: 0;
+    width: 583px;
+    margin: 0 auto;
 }
 
 /*VISIBILITY CONTROL*/
@@ -513,4 +516,25 @@ input[type="submit"] {
 	display: block;
 	opacity: 1;
 	transition: opacity .5s ease;
+}
+
+.bnt-prev-n-2 {
+	display: none;
+}
+
+
+
+/**/
+.wrap-main-form-thanks {
+	flex: 3;
+	width: 100%;
+	position: relative;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	margin-bottom: 70px;
 }

@@ -68,7 +68,7 @@ $(document).ready(function () {
             $('.address-main').removeClass('animated fadeOut').addClass('class-hide');
             $('.form').removeClass('class-hide').addClass('animated fadeIn class-show');
             $('.bnt-prev-n').removeClass('class-hide').addClass('class-show-btn');
-            $('.bnt-prev-n-2').removeClass('class-hide').addClass('class-show-btn-2');
+           // $('.bnt-prev-n-2').removeClass('class-hide').addClass('class-show-btn-2');
         },700);
 
        
@@ -90,7 +90,7 @@ $(document).ready(function () {
             }
         });
 
-        if (!trigger) return false;
+       // if (!trigger) return false;
 
         $('.input').each( (i)=> {
             formValue.push($('.input').eq(i).val());
@@ -103,13 +103,16 @@ $(document).ready(function () {
         $('.about-thanks').removeClass('class-hide').addClass('class-show-flex');
         $('.about-thanks').addClass('animated slideInRight');
 
+
+
         timer = setTimeout(()=> {
             $('.form').removeClass('class-show fadeOut').addClass('class-hide');
             $('.address-main').removeClass('class-hide').addClass('animated fadeIn class-show');   
             $('.about-thanks').removeClass('class-show-flex').addClass('animated fadeOut class-hide');
-            $('.class-show-btn-2 ').removeClass('class-show-btn-2').addClass('class-hide');
+            $('.bnt-prev-n').removeClass('class-show-btn').addClass('class-hide'); 
 
-        },4000);
+
+        },400000000000);
 
         setTimeout(()=> {
             $('.about-thanks').removeClass('fadeOut');
@@ -126,40 +129,22 @@ $(document).ready(function () {
 
 
     /*btn prev*/
-    $('.about-cancel').on('click', function(EO) {
-        clearTimeout(timer)
-        $('.form').removeClass('class-show fadeIn').addClass('animated fadeOut class-hide');
-        $('.about-thanks').removeClass('class-show-flex').addClass('animated fadeOut');
-        $('.address-main').removeClass('class-hide').addClass('animated fadeIn class-show');
-    });
- 
     $('.bnt-prev-n').on('click', function(EO) {
         clearTimeout(timer)
         $('.form').removeClass('class-show fadeIn').addClass('animated fadeOut class-hide');
         $('.about-thanks').removeClass('class-show-flex').addClass('animated fadeOut');
         $('.address-main').removeClass('class-hide').addClass('animated fadeIn class-show');
         $('.bnt-prev-n').removeClass('class-show-btn').addClass('class-hide');
-        setTimeout(()=>{
-           $('.form').removeClass('fadeOut');
-           $('.about-thanks').removeClass('fadeOut');
-        },700);
+        setTimeout(() => {
+            $('.form').removeClass('fadeOut');
+        },400);
     });
-
-    $('.bnt-prev-n-2').on('click', function(EO) {
-        clearTimeout(timer)
-        $('.form').removeClass('class-show fadeIn').addClass('animated fadeOut class-hide');
-        $('.about-thanks').removeClass('class-show-flex').addClass('animated fadeOut');
-        $('.address-main').removeClass('class-hide').addClass('animated fadeIn class-show');
-        $('.bnt-prev-n-2').removeClass('class-show-btn-2').addClass('class-hide');
-        setTimeout(()=>{
-           $('.form').removeClass('fadeOut');
-           $('.about-thanks').removeClass('fadeOut');
-        },700);
-    });
+ 
+  
 
 
 
-    $(window).resize(function(EO){
+    $(window).resize(function(EO) {
         
         if ( $(window).width() >= 690 ) {
             if ($('.map ').hasClass('active')) {
@@ -191,6 +176,7 @@ $(document).ready(function () {
             $('.address-main').removeClass('class-hide').addClass('class-show');
             $('.form').removeClass('class-show');
             $('.about-thanks').removeClass('class-show');
+            $('.bnt-prev-n').removeClass('class-show-btn').addClass('class-hide');
         }
 
         let adress = $('.about-tab-adress').hasClass('active');

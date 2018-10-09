@@ -1,11 +1,11 @@
 .one-third-block-third .team-article-preview{
-	height: 95%;
+	height: 100%;
 	margin-top: 0;
 }
 .service-content-wrapper .one-third-block-second .team-article-preview,
 .one-third-block-second a:first-child .team-article-preview{
 	/*height: 70vh;*/
-	height: 95%;
+	height: 100%;
 	margin-top: 0;
 }
 
@@ -109,6 +109,86 @@
 	animation: dissRight 1s ease;
 }
 
+.hover_info{
+	height: 100%;
+	width: 100%;
+	background-color: #fcfcfc;
+	-webkit-transition: all ease .8s;
+	-o-transition: all ease .8s;
+	transition: all ease .8s;
+	-webkit-transform: translateX(-100%);
+	-ms-transform: translateX(-100%);
+	-o-transform: translateX(-100%);
+	transform: translateX(-100%);
+	position: absolute;
+	z-index: 100;
+	text-align: center;
+	padding: 47px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.slideshow-right .hover_info{
+	-webkit-transform: translateX(100%);
+	-ms-transform: translateX(100%);
+	-o-transform: translateX(100%);
+	transform: translateX(100%);	
+}
+
+.article-preview.info .hover_info{
+	-webkit-transform: none;
+	-ms-transform: none;
+	-o-transform: none;
+	transform: none;
+}
+
+.one-third-block .article-preview{
+	-webkit-transition: all ease .4s;
+	-o-transition: all ease .4s;
+	transition: all ease .4s;
+	max-height: 100%;
+}
+
+.one-third-block .item-news{
+	height: 760px;
+}
+
+.article-preview:hover{
+	cursor: pointer;
+	opacity: .9;
+}
+
+.service-content-wrapper{
+	z-index: -10;
+}
+
+.desktop-opened{
+	z-index: 9;
+}
+
+.hover_info__title{
+	font-size: 36px;
+	line-height: 46px;
+	padding-bottom: 44px;
+	margin: 0;
+}
+
+.hover_info__text{
+	font-size: 24px;
+	line-height: 36px;
+	padding-bottom: 31px;
+    font-family: 'Lato-Regular';
+	/*padding: 0 47px 31px;*/
+}
+
+.hover_info__btn{
+	max-width: 250px;
+	font-size: 24px;
+	display: inline-block;
+	float: none;
+}
+
 @keyframes dissRight {
 	0% {  
 		opacity: 1;
@@ -142,6 +222,24 @@
 		transform: none;
 	 }
 }
+
+/*.desktop-opacity{
+	-webkit-animation: changing 1s ease;
+	-o-animation: changing 1s ease;
+	animation: changing 2s ease 1s;
+}
+
+@keyframes changing {
+	0% {  
+		transform: scale(.9, .9) translateX(-100%);
+	}
+	50%{
+		transform: scale(.9, .9)
+	}
+	100% {  
+		transform: none;
+	}
+}*/
 
 .opacity-false{
 	z-index: 2;
@@ -179,68 +277,42 @@ div.index-sliding-fr__pic{
 	display: none;
 }
 
-.hover_info{
-	height: 100%;
-	width: 100%;
-	background-color: #fcfcfc;
-	-webkit-transition: all ease .8s;
-	-o-transition: all ease .8s;
-	transition: all ease .8s;
-	-webkit-transform: translateX(-100%);
-	-ms-transform: translateX(-100%);
-	-o-transform: translateX(-100%);
-	transform: translateX(-100%);
-	position: relative;
-	z-index: 100;
-	text-align: center;
-	padding: 47px;
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
-	box-sizing: border-box;
+.team-content-wrapper{
+	height: 100vh;
 }
 
-.slideshow-right .hover_info{
-	-webkit-transform: translateX(100%);
-	-ms-transform: translateX(100%);
-	-o-transform: translateX(100%);
-	transform: translateX(100%);	
+.team-one-third-block{
+	height: 100vh;
 }
 
-.article-preview:hover .hover_info{
-	-webkit-transform: none;
-	-ms-transform: none;
-	-o-transform: none;
-	transform: none;
+@media screen and (max-width: 1890px) {
+	.one-third-block .item-news{
+		height: 620px;
+	}
+	.hover_info{
+		padding: 30px;
+	}
+	.hover_info__text{
+		font-size: 18px;
+		line-height: 1.7;
+	}
+	.hover_info__title{
+		font-size: 26px;
+		line-height: 1.6;
+		padding-bottom: 24px;
+	}
 }
 
-.service-content-wrapper{
-	z-index: -10;
-}
-
-.desktop-opened{
-	z-index: 9;
-}
-
-.hover_info__title{
-	font-size: 36px;
-	line-height: 46px;
-	padding-bottom: 44px;
-	margin: 0;
-}
-
-.hover_info__text{
-	font-size: 24px;
-	line-height: 36px;
-	padding-bottom: 31px;
-    font-family: 'Lato-Regular';
-	/*padding: 0 47px 31px;*/
-}
-
-.hover_info__btn{
-	max-width: 250px;
-	font-size: 24px;
-	display: inline-block;
-	float: none;
+@media screen and (max-width: 1320px) {
+	.hover_info{
+		padding: 20px 10px;
+	}
+	.hover_info__title{
+		font-size: 24px;
+	}
+	.hover_info__text{
+		font-size: 16px;
+	}
 }
 
 @media screen and (max-width: 1024px) {

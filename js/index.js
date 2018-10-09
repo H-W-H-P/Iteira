@@ -55,5 +55,4 @@ $(window).ready(function () {
         // autoPlaySpeed: [1, 1],
         displaceScale: [100, 70]
     });
-
 });

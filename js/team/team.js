@@ -153,8 +153,21 @@ $( function() {
 	$('.service-menu__subheader').on('click', function() {
 
 		//console.log($('.desktop-chosen'))
-	})
 
+	});
+
+	$('.article-preview').click(function (e) {
+		if ($(this).hasClass('info')) $(this).removeClass('info');
+		$('.article-preview').removeClass('info');
+        if (!$(this).hasClass('info')) $(this).addClass('info');
+        e.stopPropagation();
+    });
+
+    $(document).click(function () {
+    	$('.article-preview').removeClass('info');
+    });
+
+	})
 
 });
 

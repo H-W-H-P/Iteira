@@ -50,14 +50,16 @@
 	}
 	
 	/*Logo*/
-	.logo {
+	/*.logo {
 		display: none;
-	}
+	}*/
 
 	.logo-white {
-		display: block;
+		/*display: block;*/
 		width: 120px;
 		height: 70.32px;
+		margin-left: 10px;
+		margin-top: 10px;
 	}
 
 	/*Text main screen*/

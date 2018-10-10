@@ -92,3 +92,10 @@
 .header-control {
 	display: none;
 }
+
+
+@media screen and (min-width: 1601px) {
+    .item-news{
+        height: 750px;
+    }
+}

@@ -132,7 +132,7 @@
           TweenMax.to(mousePos, 0.4, {
               x: mousePosX,
               //y: currentMousePos.y,
-              intensite: (mousePosX - ancien_delta) * 10,
+              intensite: (mousePosX - ancien_delta) * 1,
               largeur: Math.abs(((mousePosX - ancien_delta) / 80) - 0.2),
               onUpdate: function () {
                   displacementSprite11.x = mousePos.x;

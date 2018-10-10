@@ -394,7 +394,7 @@ li {
 
 .social {
     float: left;
-    margin-left: 3.64vw;
+    margin-left: calc(1vw + 10px);
     width: 60px;
     height: 160px;
 }

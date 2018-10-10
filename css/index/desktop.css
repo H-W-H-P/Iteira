@@ -216,6 +216,14 @@ body {
     background-image: url('../../img/social/tel-w.svg');
 }
 
+.white .social__insta:hover {
+    background-image: url('../../img/social/insta-h.svg');
+}
+
+.white .social__tel:hover {
+    background-image: url('../../img/social/tel-h.svg')
+}
+
 
 /*.white-theme-arrows {
     background-image: url('../../img/arrow-bot_white.png');
@@ -241,4 +249,14 @@ body {
     color: #000;
 }
 
+.white .a-tan:hover{
+    color: #fff;
+}
 
+.white .a-black:hover {
+    color: tan;
+}
+
+.footer__desktop{
+    overflow: hidden;
+}

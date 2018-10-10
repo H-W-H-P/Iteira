@@ -435,6 +435,7 @@ input[type="submit"] {
     font-size: 17px;
 	display: block;
 	text-align: right;
+	z-index: -10;
 }
 
 

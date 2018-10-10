@@ -63,21 +63,18 @@ $(document).ready(function () {
 
     let timer;
     $('.write-massage').on('click', (EO) => {
+        EO.preventDefault();
         $('.address-main').addClass('animated fadeOut');
         setTimeout(()=>{
             $('.address-main').removeClass('animated fadeOut').addClass('class-hide');
-            $('.form').removeClass('class-hide').addClass('animated fadeIn class-show');
-            $('.bnt-prev-n').removeClass('class-hide').addClass('class-show-btn');
-           // $('.bnt-prev-n-2').removeClass('class-hide').addClass('class-show-btn-2');
+            $('.write-massage-and-thanks').removeClass('class-hide').addClass('form-a');
+            $('.form').addClass('animated fadeIn');
         },700);
-
-       
-
     });
 
     $('.send-massage').click(function (EO) {
         EO.preventDefault();
-
+        
         let trigger = true;
         let formValue = [];
 
@@ -90,7 +87,7 @@ $(document).ready(function () {
             }
         });
 
-       // if (!trigger) return false;
+       if (!trigger) return false;
 
         $('.input').each( (i)=> {
             formValue.push($('.input').eq(i).val());
@@ -98,21 +95,22 @@ $(document).ready(function () {
 
         $('.input').val('');
 
-        $('.form').addClass('animated fadeOut');
-        $('.form').removeClass('class-show ').addClass('class-hide');
+        //new
+        $('.form').removeClass('fadeIn').addClass('animated fadeOut');
+        $('.write-massage-and-thanks').removeClass('form-a');
         $('.about-thanks').removeClass('class-hide').addClass('class-show-flex');
         $('.about-thanks').addClass('animated slideInRight');
 
 
 
         timer = setTimeout(()=> {
-            $('.form').removeClass('class-show fadeOut').addClass('class-hide');
+            $('.form').removeClass('fadeOut');
             $('.address-main').removeClass('class-hide').addClass('animated fadeIn class-show');   
             $('.about-thanks').removeClass('class-show-flex').addClass('animated fadeOut class-hide');
             $('.bnt-prev-n').removeClass('class-show-btn').addClass('class-hide'); 
 
 
-        },400000000000);
+        },4000);
 
         setTimeout(()=> {
             $('.about-thanks').removeClass('fadeOut');
@@ -130,11 +128,16 @@ $(document).ready(function () {
 
     /*btn prev*/
     $('.bnt-prev-n').on('click', function(EO) {
-        clearTimeout(timer)
-        $('.form').removeClass('class-show fadeIn').addClass('animated fadeOut class-hide');
-        $('.about-thanks').removeClass('class-show-flex').addClass('animated fadeOut');
+        clearTimeout(timer);
+        $('.write-massage-and-thanks').removeClass('form-a').addClass('class-hide');
+
+
+        
+        $('.about-thanks').removeClass('class-show-flex').addClass('animated fadeOut class-hide');
+
+
         $('.address-main').removeClass('class-hide').addClass('animated fadeIn class-show');
-        $('.bnt-prev-n').removeClass('class-show-btn').addClass('class-hide');
+        
         setTimeout(() => {
             $('.form').removeClass('fadeOut');
         },400);
@@ -173,10 +176,13 @@ $(document).ready(function () {
         }
 
         if ($(target).hasClass('about-tab-adress')) {
+            $('.write-massage-and-thanks').removeClass('form-a').addClass('class-hide');
+
             $('.address-main').removeClass('class-hide').addClass('class-show');
-            $('.form').removeClass('class-show');
+            
+            
             $('.about-thanks').removeClass('class-show');
-            $('.bnt-prev-n').removeClass('class-show-btn').addClass('class-hide');
+           
         }
 
         let adress = $('.about-tab-adress').hasClass('active');
@@ -185,7 +191,7 @@ $(document).ready(function () {
 
         if (targetHasClass) return;
 
-         if (targetHasClass === adress) {
+        if (targetHasClass === adress) {
             $(target).addClass('active');
             $('.about-tab-map').removeClass('active');
         } else {
@@ -240,3 +246,4 @@ $(document).ready(function () {
 
 
 });
+

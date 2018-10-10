@@ -7,8 +7,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Iteira</title>
     <link href="../css/imports.css" rel="stylesheet">
-    <link rel="stylesheet" href="../css/about/about-fix.css">
-    <link rel="stylesheet" href="../css/about/about-mobile.css">
+    <link rel="stylesheet" href="../css/about/new_about.css">
+    <link rel="stylesheet" href="../css/about/new_about_mobile.css">
     <script src="http://api-maps.yandex.ru/2.0-stable/?load=package.standard&lang=ru-RU" type="text/javascript"></script>
 </head>
 
@@ -50,15 +50,14 @@
     
     <div class="main">
         <div class="inner">
+
             <div class="map" id="">
-                <div class="nav__elem envoke-order-btn menu-popup__btn about_envoke-order-btn">ЗАПИСАТЬСЯ</div>
+                <div  class="nav__elem envoke-order-btn menu-popup__btn about_envoke-order-btn">ЗАПИСАТЬСЯ</div>
                 <div id="map"></div>
-<!--
-                <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ac4c94cadd43e1d50a5b41f486f8bb1125f75dcb8e9e35ce98b420efc4f901758&amp;lang=ru_RU&amp;scroll=true;id=mymap"></script>
-  -->
 
             </div>
-            <div class="mobile-title">
+
+            <div class="mobile-title" >
                 <h1>О нас</h1>
                 <div class="about-mobile-tab">
                     <a href="#" class="about-tab about-tab-adress active">Адреса</a>
@@ -66,6 +65,7 @@
                 </div>
                 <div class="bnt-prev-n-2 animated fadeIn class-hide"></div>
             </div>  
+
             <div class="about-main-screen">   
                         
                 <div class="title-2" >
@@ -73,8 +73,9 @@
                 </div> 
 
                 <div class="wrap-main-form-thanks">
-                    <div class="bnt-prev-n class-hide" ></div>  
-                    <div class="address-main"> 
+                     
+
+                    <div class="address-main" > 
                         <div class="sensation">
                             <h2>Салон красоты &laquoИтейра Sensation&raquo</h2>
                             <div class="info-text">
@@ -102,40 +103,51 @@
                         </div>
                     </div>
 
+                    <div class="write-massage-and-thanks class-hide" >
+                        <div class="bnt-prev-n " ></div> 
                     
                     <div class="form about" >
-                        <form action="#" method="get" class="open">
+                        <form action="#" method="get" class="open" >
                             <div class="about-bnt-prev about-cancel " hidden></div>
                             <div class="group group_name">     
-                                <span class="danger">!</span> 
-                                <span class="dnager-text">введите имя</span> 
+                                <span class="danger" >!</span> 
+                                <span class="dnager-text" >введите имя</span> 
                                 <input type="text" required class="input" name="name">
                                 <label>Имя</label>
+                                <svg width="300%" height="100%" viewBox="0 0 1200 60" preserveAspectRatio="none" class="graphic graphic--nao">
+                                    <path d="M0,56.5c0,0,298.666,0,399.333,0C448.336,56.5,513.994,46,597,46c77.327,0,135,10.5,200.999,10.5c95.996,0,402.001,0,402.001,0"></path>
+                                </svg>
                             </div>
                             <div class="group group_tel">   
-                                <span class="danger">!</span> 
-                                <span class="dnager-text">введите номер</span>   
+                                <span class="danger" >!</span> 
+                                <span class="dnager-text" >введите номер</span>   
                                 <input type="tel" required class="input" name="tel">
                                 <label>Телефон</label>
+                                <svg width="300%" height="100%" viewBox="0 0 1200 60" preserveAspectRatio="none" class="graphic graphic--nao">
+                                    <path d="M0,56.5c0,0,298.666,0,399.333,0C448.336,56.5,513.994,46,597,46c77.327,0,135,10.5,200.999,10.5c95.996,0,402.001,0,402.001,0"></path>
+                                </svg>
                             </div>
                             <div class="group group_text">    
-                                <span class="danger">!</span>
-                                <span class="dnager-text">ваше сообщение</span>  
-                                <textarea name="name" id="" cols="30"  required class="input"></textarea>
+                                <span class="danger" >!</span>
+                                <span class="dnager-text" >ваше сообщение</span>  
+                                <textarea name="text" id="" cols="30"  required class="input"></textarea>
                                 <label>Сообщение</label>
+                                <svg width="300%" height="65%" viewBox="0 0 1200 60" preserveAspectRatio="none" class="graphic graphic--nao">
+                                    <path d="M0,56.5c0,0,298.666,0,399.333,0C448.336,56.5,513.994,46,597,46c77.327,0,135,10.5,200.999,10.5c95.996,0,402.001,0,402.001,0"></path>
+                                </svg>
                             </div>
                             <div class="about-btn send-massage">
                                 <input type="submit" class="nav__elem envoke-order-btn button--rayen button--border-thin button--text-thick" data-text="Отправить" value="Отправить"></input>
                             </div>
                         </form>
                     </div> 
-                    <div class="about-thanks ">
-                        <div class="bnt-prev about-cancel " hidden></div>
+                    <div class="about-thanks class-hide">
+                        <div class="bnt-prev about-cancel " ></div>
                         <h3> Спасибо</h3>
-                        <p>Ваше сообщение отправлено.</p>
+                        <p class="about-thanks-text">Ваше сообщение отправлено.</p>
                     </div>
                 </div>
-
+            </div>
             </div>
         </div> 
     </div>

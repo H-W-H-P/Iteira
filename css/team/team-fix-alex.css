@@ -160,14 +160,17 @@ span.nav__elem:after {
 .owl-carousel.owl-loaded {
 	display: none;
 }
-
+/*
 .page-team .service-content-wrapper {
     display: -webkit-flex;
     display: -moz-flex;
     display: -ms-flex;
     display: -o-flex;
     display: flex !important;
-}
+}*/
+
+
+
 
 .page-team .one-third-block {
 	width: 100%;
@@ -196,10 +199,11 @@ span.nav__elem:after {
 }
 
 .page-team .one-third-block-third.team-one-third-block .team-article-preview__h, .article-preview__h {
-    bottom: 7%;
+    bottom: 140px;
+    font-size: 46px;
 }
 
-.
+
 
 .service-content-wrapper .one-third-block-second .team-article-preview, .one-third-block-second a:first-child .team-article-preview {
     /* height: 70vh; */
@@ -208,38 +212,15 @@ span.nav__elem:after {
 
 .item-news {
     height: 760px;
-    width: 100%;
+   width: 100%;
     margin-bottom: 146px;
 }
 
-/*tabs*/
-.page-team .mobile-chosen {
-    color: #dedede;
-}
-
-.page-team .owl-item.active a{
-	color: #d2ab66;
-	font-size: 40px;
-}
 
 
-.menu-popup  {
-	display: none;
-}
-
-
-/*VISIBILYTI CONTROL*/
-.news-hide {
-	display: none;
-}
-
-.news-show {
-	display: block;
-}
-
-
-.header-control {
-	display: none;
+.one-third-block {
+    float: left;
+    width: 50% !important;
 }
 
 
@@ -248,7 +229,39 @@ span.nav__elem:after {
 
 
 
+@media only screen and (max-width : 1600px) {
+    .article-preview__tag {
+        height: 35.8px;
+        width: 200px;
+        font-size: 18px;
+    }
+/*
+    .page-team .one-third-block-second {
+        margin-top: 29px;
+    }
+*/
+    .team-content-item-order-btn {
+        font-size: 24px;
+    }
 
+    .one-third-block .item-news {
+        height: 550px;
+    }
+
+    .article-preview {
+        background-position: center;
+    }
+
+    .article-preview__tag {
+        height: 25.8px;
+        width: 170px;
+        font-size: 16px;
+    }
+
+    .article-preview__tag {
+        line-height: 25px;
+    }
+}
 
 
 
@@ -261,6 +274,15 @@ span.nav__elem:after {
         height: 562px;
         width: 100%;
         margin-bottom: 120px;
+    }
+
+    .page-team .one-third-block-third.team-one-third-block .team-article-preview__h, .article-preview__h {
+        bottom: 130px;
+        font-size: 44px;
+    }
+
+    .team-article-preview__date {
+        bottom: 15%;
     }
 }
 @media only screen and (max-width : 1280px) {
@@ -280,12 +302,12 @@ span.nav__elem:after {
         overflow-y: hidden;
     }
 
-    .article-preview__tag {
-        height: 30.8px;
-        width: 170px;
-        line-height: 28px;
-        font-size: 20px;
+    .page-team .one-third-block-third.team-one-third-block .team-article-preview__h, .article-preview__h {
+        bottom: 120px;
+        font-size: 39px;
     }
+
+    
 }
 @media only screen and (max-width : 1150px) {
     .page-team .service-menu__dash {
@@ -337,7 +359,7 @@ span.nav__elem:after {
         font-size: 70px;
     }
 
-    .news .news-block-header {
+     .news-block-header {
         width: 100%;
     }
 
@@ -388,6 +410,64 @@ span.nav__elem:after {
         top: 320px;
         height: calc(100vh - 257px);
     }
+
+    .page-team h1 span {
+        font-size: 60px;
+    }
+
+    .page-team .team-block-header {
+        line-height: .7;
+    }
+
+    .page-team .team-menu {
+        margin-top: 13px;
+    }
+
+    .team-menu-mobile {
+        margin-bottom: 9px;
+        width: 50%;
+        margin-left: 25%;
+    }
+
+    .article-preview__tag {
+        height: 35.8px;
+        width: 200px;
+        font-size: 18px;
+    }
+
+    .team-content-item-order-btn {
+        font-size: 24px;
+    }
+
+    .team-content-item-order-btn {
+        font-size: 20px;
+    }
+
+    .team-content-item-order-btn {
+        padding: 10px 15px;
+        bottom: 20px;
+    }
+
+    .team-article-preview__h {
+        font-size: 35px !important;
+    }
+
+    .team-article-preview__date {
+        font-size: 18px !important;
+        bottom: 6%;
+    }
+
+    .page-team .one-third-block-third.team-one-third-block .team-article-preview__h, .article-preview__h {
+        bottom: 22%;
+    }
+
+    .article-preview__tag {
+        height: 25.8px;
+        font-size: 16px;
+        line-height: 26px;
+    }
+
+
 
 
 

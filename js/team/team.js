@@ -167,7 +167,7 @@ $( function() {
     	$('.article-preview').removeClass('info');
     });
 
-	})
+	
 
 });
 

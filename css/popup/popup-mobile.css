@@ -59,6 +59,61 @@
         font-size: 54px !important;
     }
 
+    /**/
+    .popup-main .group_text {
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
+    .popup-main .group input, .popup-main textarea, select {
+        font-size: 20px;
+    }
+
+    .popup-main .group label {
+        font-size: 20px;
+    }
+
+    .popup-main textarea:focus ~ label, .popup-main textarea:valid ~ label {
+        top:7px;
+        left: 5px;
+      font-size:10px;
+      color:#d2ab66;
+    }
+
+    .popup-main input:focus ~ label, .popup-main input:valid ~ label {
+        top:6px;
+        left: 5px;
+      font-size:10px;
+    }
+
+    select {
+        font-size: 20px;
+        padding: 4px 10px 2px 0px;
+    }
+
+    .popup-main .group_text label {
+        top: 123px;
+    }
+
+    .group-remember span {
+        font-size: 16px;
+    }
+
+    .popup-main .group.warm .danger, .group-agreement.warm .danger {
+        width: 17px;
+        height: 17px;
+        font-size: 15px;
+        line-height: 19px;
+    }
+
+    .popup-main .group.warm .dnager-text {
+        font-size: 15px;
+    }
+
+
+
+
+
     
 }
 
@@ -194,7 +249,7 @@
         margin-bottom: 80px;
     }
 
-
+    
 
     
 
@@ -218,13 +273,7 @@
         margin-bottom: 50px;
     }
 
-    .popup-main .group input, .popup-main .group textarea, select {
-        margin-bottom: 30px;
-    }
-
-    .popup-main .group_text {
-        margin-top: 6vw;
-    }
+    
 }
 
 @media only screen and (max-width : 1200px) {
@@ -280,6 +329,18 @@
 
     .datepicker-here {
         padding-bottom: 21px;
+    }
+
+    .bnt-prev.active-pop-wrap:hover {
+      transform: initial;
+    }
+
+    .popup-main .cancel:hover {
+      transform: initial;
+    }
+
+    .popup-main .group_text {
+        margin-top: 0vw;
     }
 }
 
@@ -417,17 +478,33 @@
         background-color: #fff;
     }
 
-    .popup-main .group input, .group textarea {
-        font-size: 16px;
-        padding: 9px 10px 2px 5px;
-        margin-bottom: 40px;
+    /**/
+    .popup-main .group label {
+        font-size: 18px;
     }
 
-   .popup-main .group label {
-        font-size: 16px;
-        left: 5px;
-        top: -1px;
+    select {
+        font-size: 18px;
+        margin-bottom: 30px;
     }
+
+    .popup-main textarea {
+        height: 70px;
+    }
+
+    .popup-main .group_text label {
+        top: 67px;
+    }
+
+    .popup-main .popup-send {
+        margin-bottom: 10px;
+    }
+
+    .group-agreement span {
+        font-size: 14px;
+    }
+
+    
 
     /*thenks*/
     .small-screen {
@@ -774,21 +851,15 @@
         width: 85%;
     }
 
-    .popup-main .contact-info {
-        width: 100%;
-    }
-
     .popup-main .datepicker-here {
         padding-bottom: 0;
     }
 
-    .popup-main .group label {
-        top: 11px;
+    .popup-main .contact-info {
+        width: 100%;
+        margin-top: -31px;
     }
 
-   .popup-main .group textarea + label {
-        top: 100px;
-    }
 
     .popup-main .nav__elem {
         font-size: 18px;
@@ -803,35 +874,64 @@
         padding: 10px 18px 7px;
     }
 
-    .popup-main .group-agreement span {
+    
+   
+   /**/
+   .popup-main .group.group_name {
+        margin-bottom: 0px;
+    }
+
+    .popup-main .group input{
+        padding: 4px 10px 11px 5px;
+    }
+
+    .group-remember span {
+        font-size: 12px;
+    }
+
+    .popup-main .group textarea{
+        margin-bottom: 5px;
+    }
+
+    .group-agreement a {
         font-size: 14px;
     }
 
-    .popup-main .group-agreement .label {
-        margin-left: 11px;
+    .popup-main .group-remember {
+        padding-top: 0px;
     }
 
-    .popup-main .group textarea {
-        padding: 40px 10px 2px 5px;
+    .popup-main .group_text {
+        margin-bottom: 20px;
     }
 
-    .popup-main textarea:valid ~ label {
-        top: 22px !important;
-    }
-
-   .popup-main  textarea:focus ~ label, textarea:valid ~ label {
-        top:10px;
-    }
-
-  .popup-main  form .nav__elem {
+    .popup-main form .nav__elem {
         font-size: 18px;
     }
 
-   .popup-main  select {
-        font-size: 18px;
-        padding: 10px 10px 1px 5px;
-        margin-bottom: 41px;
+    .title-main .title-change {
+        margin-top: 17px;
     }
+
+    .popup-main textarea {
+        height: 110px;
+    }
+
+    .popup-main .group_text label {
+        top: 106px;
+    }
+
+
+
+    .popup-main .prev-txt {
+        font-size: 18px;
+        letter-spacing: 1.8px;
+    }
+
+
+
+    
+
 
     /*thanks*/
     .wrap-thanks h2 {
@@ -955,7 +1055,7 @@
         margin-bottom: 19px;
     }
 
-    .popup-main .group textarea, select {
+    select {
         margin-bottom: 47px;
     }
     .popup-main .about-btn {
@@ -966,12 +1066,9 @@
 	    margin-bottom: 37px;
 	}
 
-	.popup-main select {
-	    padding: 0px 10px 1px 5px;
-	    margin-bottom: 37px;
-	}
 
-	.popup-main .group textarea, select {
+
+	select {
 	    margin-bottom: 39px;
 	}
 }

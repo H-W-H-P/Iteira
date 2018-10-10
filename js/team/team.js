@@ -14,7 +14,6 @@ $( function() {
 			vertical: true,
 			infinite: false,
 			speed: 800,
-			// verticalSwiping: true,
 			cssEase: 'cubic-bezier(.17, 0, .58, 1)'
 
 		});
@@ -24,7 +23,6 @@ $( function() {
 			vertical: true,		
 			infinite: false,
 			speed: 800,
-			// verticalSwiping: true,
 			cssEase: 'cubic-bezier(.69, .01, .58, 1)'
 
 		});
@@ -155,6 +153,7 @@ $( function() {
 	$('.service-menu__subheader').on('click', function() {
 
 		//console.log($('.desktop-chosen'))
+
 	});
 
 	$('.article-preview').click(function (e) {
@@ -167,5 +166,8 @@ $( function() {
     $(document).click(function () {
     	$('.article-preview').removeClass('info');
     });
+
+	})
+
 });
 

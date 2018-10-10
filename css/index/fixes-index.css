@@ -28,10 +28,11 @@
     position: absolute;
     width: 80%;
     left: 0;
-    width: 100%;
+    width: 96%;
     height: 2px;
     background-color: #d2ab66;
-    bottom: 25px;
+    /*bottom: 25px;*/
+    bottom: -10px;
     transform: scaleX(0);
     transform-origin: calc(100% + 10px) 0;
     transition: transform .35s ease-out;
@@ -47,7 +48,7 @@
     float: left;
     width: 180px;
     height: 105.48px;
-    display: none;
+    /*display: none;*/
 }
 
 

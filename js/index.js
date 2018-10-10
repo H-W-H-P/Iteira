@@ -20,15 +20,23 @@ $(window).ready(function () {
 
 
     function slideChanging (counter) {
-        $('body').removeClass('white');
         $('.index-sliding-fr').removeClass('opacity-true').addClass('opacity-false');
-        $('.index-sliding-fr').eq(counter).addClass('opacity-true').removeClass('opacity-false');
-        if ($('.opacity-true[data-theme="dark"]').length) {
-            $('body').addClass('white');
-        }
+        $('.index-sliding-fr').eq(counter).addClass('opacity-true').removeClass('opacity-false');            
         if ($(window).width() > 1024) {
+            setTimeout(function() { 
+                $('body').removeClass('white');
+                if ($('.opacity-true[data-theme="dark"]').length) {
+                    $('body').addClass('white');
+                }
+            }, 1000);
             boolCount = false;
             setSlideTimeout(3000);
+        }
+        if ($(window).width() < 1024) {
+            $('body').removeClass('white');
+            if ($('.opacity-true[data-theme="dark"]').length) {
+                $('body').addClass('white');
+            }
         }
         $('.numbChange').html(counter + 1);
     }
@@ -53,6 +61,6 @@ $(window).ready(function () {
         displacementImage: '../img/dmaps/2048x2048/ripple.jpg',
         // autoPlay: true,
         // autoPlaySpeed: [1, 1],
-        displaceScale: [100, 70]
+        displaceScale: [30, 30]
     });
 });

@@ -98,12 +98,12 @@ window.onload = function() {
            
 
             for (let i = 0; i < mobileOnlys.length; i++) {
-                mobileOnlys[i].style.display = 'inline-block';
+               // mobileOnlys[i].style.display = 'inline-block';
             }
         } else {
             subheader = document.querySelectorAll('.service-menu__subheader');
             for (let i = 0; i < mobileOnlys.length; i++) {
-                mobileOnlys[i].style.display = 'none';
+               // mobileOnlys[i].style.display = 'none';
             }
         }
         if (!curSub) {
@@ -137,6 +137,13 @@ window.onload = function() {
                     }
                     subheader[i].classList.add('desktop-chosen');;
                     content[i].classList.add('desktop-opened');
+
+                    //SLICK
+                    let openItem =  $(subheader[i]).parent().find(subheader[i]).index();
+                    $('.slideshow-left').slick('slickGoTo', 0);
+                    $('.slideshow-right').slick('slickGoTo', 0);
+
+                    
                     backupContent = content[i];
                     setTimeout(() => {
                         backupContent.classList.add('desktop-opacity');

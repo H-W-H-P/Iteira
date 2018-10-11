@@ -10,7 +10,7 @@ $( function() {
 
 	function initSclick() {
 		slide_2 = $('.slideshow-right').slick({
-			swipe: true,
+			
 			vertical: true,
 			infinite: false,
 			speed: 800,
@@ -19,7 +19,7 @@ $( function() {
 		});
 
 		slide_1 = $('.slideshow-left').slick({
-			swipe: true,
+			
 			vertical: true,		
 			infinite: false,
 			speed: 800,
@@ -51,7 +51,7 @@ $( function() {
 			//$('.body-info').attr('data-left', 'fff');
 			//$('.desktop-chosen').data('left', `${indexItemLeft}`);
 
-		console.log($('.desktop-chosen'));
+		//console.log($('.desktop-chosen'));
 		//console.log()
 		
 
@@ -170,5 +170,5 @@ $( function() {
     $('.page-team .article-preview .envoke-order-btn').click(function () {
     	
     });
-});
+
 

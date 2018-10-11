@@ -1,3 +1,9 @@
+/*popup*/
+@import url('../js/scroll/jquery.mCustomScrollbar.min.css');
+@import url('../js/popup/air-picker/dist/css/datepicker.css');
+@import url('../css/owl.carousel.min.css');
+@import url('../css/owl.theme.default.min.css');
+
 @import url('fonts.css');
 @import url('../css/animate.css');
 @import url('all.css');
@@ -15,5 +21,9 @@
 @import url('index/fixes-index.css');
 @import url('index/fixes-mobile-index.css');
 @import url('animations.css');
+
+
+
+/*popup*/
 @import url('../css/popup/popup.css');
 @import url('../css/popup/popup-mobile.css');

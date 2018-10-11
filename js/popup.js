@@ -1,8 +1,13 @@
 $(document).ready(function () {
-	let owl = $('.owl-carousel').owlCarousel({
-	    margin:10,
-	    nav:true,
+
+	let owlMobNav = $('.owl-carousel').owlCarousel({
+	    margin: 10,
+	    nav: false,
 	    items: 1
+	});
+
+	owlMobNav.on('changed.owl.carousel', function(event) {
+		console.log(event.item.index)
 	});
 
 	//servic

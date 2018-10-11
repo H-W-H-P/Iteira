@@ -290,6 +290,26 @@ div.index-sliding-fr__pic{
 	height: 100vh;
 }
 
+/*//widget*/
+
+.widget_night_wrapper{
+    background-color: #f6f6f6 !important;
+}
+#itc-widget-title,
+#itc-widget-timer,
+.widget_night_wrapper .cbk-link-btn{
+    color: #000 !important;
+}
+
+#itc-widget-container .itc_form button{
+    background-color: #d2ab66 !important;
+    border-radius: 0 !important;
+}
+
+.widget_night_wrapper{
+    width: 30% !important;
+}
+
 @media screen and (max-width: 1890px) {
 	.one-third-block .item-news{
 		height: 620px;

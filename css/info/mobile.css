@@ -28,6 +28,9 @@
         text-decoration: none;
         cursor: pointer;
     }
+    .body-info .nav-menu__text{
+        color: #0e0e0e;        
+    }
     .nav-menu__text {
         position: relative;
         color: #0e0e0e;

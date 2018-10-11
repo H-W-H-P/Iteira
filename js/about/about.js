@@ -1,5 +1,7 @@
 $(document).ready(function () {
 
+    $('.input[name="tel"]').mask('(00) 000 00 00');
+
     function validate (_this, trigger) {
         var ck_name = /^[А-Яа-яA-Za-z\s]{1,20}$/;
         var ck_text = /^[А-Яа-яA-Za-z0-9,.!?\s]{1,5000}$/;

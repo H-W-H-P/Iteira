@@ -167,7 +167,8 @@ $( function() {
     	$('.article-preview').removeClass('info');
     });
 
-	
+    $('.page-team .article-preview .envoke-order-btn').click(function () {
+    	
+    });
 
-});
 

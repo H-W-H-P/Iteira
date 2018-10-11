@@ -94,7 +94,7 @@
 
 @media screen and (max-width: 1024px) {
     .block-header-big {
-        margin-top: 5vh;
+        margin-top: 40vh;
     }
 }
 
@@ -145,6 +145,7 @@
     .main-frame1 .block-header,
     .main-frame2 .block-header {
         font-size: 7vw;
+        margin-top: 40vh;
     }
     .block-header-big {
         margin-left: 0;
@@ -163,7 +164,7 @@
         color: #000;
     }
     .endymed-header {
-        margin-top: 15vw;
+        margin-top: 40vw;
         bottom: 33vw;
     }
     .dash-rotate{
@@ -249,6 +250,14 @@
     overflow: hidden;
 }
 
+.block-header__item2{
+    padding-left: 140px;
+}
+
+.block-header__item3{
+    padding-left: 70px;
+}
+
 @media screen and (max-width: 1440px) {
     .service-content th{
         font-size: 28px;
@@ -257,6 +266,13 @@
 }
 
 @media screen and (max-width: 1023px) {
+    .block-header__item{
+        padding-left: 0;
+        text-align: center;
+    }
+    .block-header:not(.endymed-header) .block-header__item{
+        display: inline;
+    }
     .service-content-wrapper{
         width: auto;
     }
@@ -380,5 +396,10 @@
     }
     .body-service{
         height: auto;
+    }
+    .block-header-big,
+    .main-frame1 .block-header,
+    .main-frame2 .block-header{
+        margin-top: 30vh;
     }
 }

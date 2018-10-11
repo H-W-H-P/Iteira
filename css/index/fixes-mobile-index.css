@@ -190,17 +190,31 @@
 		overflow: hidden;
 	}
 
-	/*social btn*/
-	.social__insta {background-image: url('../../img/social/insta-w.svg');transition: all .4s ease;}
-
-	.social__insta:hover {
-		background-image: url('../../img/social/insta-w.svg');
+	.social__insta:hover:before {
+	    opacity: 0; 
 	}
-	.social__tel {background-image: url('../../img/social/tel-w.svg');}
-
-	.social__tel:hover {
-		background-image: url('../../img/social/tel-w.svg');
+	.social__tel:hover:before {
+	    opacity: 0;
 	}
+
+	.social__insta:hover:after {
+	    opacity: 1;
+	}
+	.social__tel:hover:after {
+	    opacity: 1;
+	}
+
+	.social__insta:after {
+	    background-image: url('../../img/social/insta-w.svg');
+	}
+	.social__tel:after {
+	    background-image: url('../../img/social/tel-w.svg');
+	}
+
+
+
+
+	
 }
 
 @media only screen and (orientation:landscape) and (max-width:900px) {

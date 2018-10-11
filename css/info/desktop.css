@@ -409,21 +409,74 @@ li {
 }
 
 .social__insta {
-    background-image: url('../../img/social/insta.svg');
     margin-bottom: 20px;
+    position: relative;
+    opacity: 1;
+    transition: all .4s ease; 
 }
 
-.social__insta:hover {
+.social__insta:after, .social__insta:before, .social__tel:after, .social__tel:before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 1;
+}
+
+.social__insta:after {
+    background-image: url('../../img/social/insta.svg');
+}
+
+.social__insta:before {
     background-image: url('../../img/social/insta-h.svg');
 }
 
-.social__tel {
-    background-image: url('../../img/social/tel.svg')
+
+.social__insta:hover:after {
+    opacity: 0;
+    transition: all .4s ease; 
 }
 
-.social__tel:hover {
-    background-image: url('../../img/social/tel-h.svg')
+.social__insta:hover:before {
+    opacity: 1;
+    transition: all .4s ease; 
 }
+
+.white .social__insta:after {
+    background-image: url('../../img/social/insta-w.svg');
+}
+.white .social__tel:after {
+    background-image: url('../../img/social/tel-w.svg');
+}
+
+
+/**/
+.social__tel:after {
+    background-image: url('../../img/social/tel.svg');
+}
+
+.social__tel:before {
+    background-image: url('../../img/social/tel-h.svg');
+}
+
+.social__tel:hover:after {
+    opacity: 0;
+    transition: all .4s ease; 
+}
+
+.social__tel:hover:before {
+    opacity: 1;
+    transition: all .4s ease; 
+}
+
+
+
+/*social btn hover*/
+
+
 
 .copyright {
     width: 100vw;

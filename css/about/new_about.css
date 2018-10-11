@@ -142,6 +142,7 @@ body {
 	text-transform: uppercase;
 	font-weight: 300;
   	font-style: normal;
+  	border: none;
 }
 
 .about-btn .button--rayen::before {

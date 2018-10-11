@@ -71,11 +71,6 @@ window.onload = function() {
 
                 $('.service-content-wrapper').eq(count).addClass('desktop-opened desktop-opacity');
 
-                
-
-                
-
-
             })
 
             owlProd.on('changed.owl.carousel', function(event) {

@@ -170,5 +170,5 @@ $( function() {
     $('.page-team .article-preview .envoke-order-btn').click(function () {
     	
     });
-
+});
 

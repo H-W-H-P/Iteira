@@ -1,4 +1,6 @@
 $(document).ready(function () {
+
+	$('.input[name="tel"]').mask('(00) 000 0000');
 	
 	let owl = $('.owl-carousel').owlCarousel({
 	    margin:10,
@@ -6,9 +8,15 @@ $(document).ready(function () {
 	    items: 1
 	});
 
-	//servic
+	//service
 	$('.service-menu__subheader').on('click', function(EO) {
 		$(this).next('div').toggle();
+		if ($(this).hasClass('minus')) {
+			$('.service-menu__subheader').removeClass('minus');
+		} else {
+			$('.service-menu__subheader').removeClass('minus');
+			$(this).addClass('minus');
+		}
 	});
 
 	//Calender
@@ -83,7 +91,7 @@ $(document).ready(function () {
 	function validate (_this, trigger) {
 	    var ck_name = /^[А-Яа-яA-Za-z\s]{1,20}$/;
 	      var ck_text = /^[А-Яа-яA-Za-z0-9,.!?\s]{1,5000}$/;
-	      var ck_tel = /\(?([0-9]{3})\)?([ .-]?)([0-9]{3})\2([0-9]{4})/;
+	      var ck_tel = /\(?([0-9]{2})\)?([ .-]?)([0-9]{3})\2([0-9]{4})/;
 	      var ck_number = /^\d+$/;
 	      var ck_date = /^(\d{1,2}).(\d{1,2}).(\d{2}|\d{4})$/;
 	      var ck_email = /^([\w-]+(?:\.[\w-]+)*)@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$/i;
@@ -268,7 +276,7 @@ $(document).ready(function () {
 		let _this = this;
 		let trigger = true;
 
-	    $('.group .input').each(function( index ) {
+	    $('.group input.input').each(function( index ) {
 	    	
 	      let _this = this;
 	     	

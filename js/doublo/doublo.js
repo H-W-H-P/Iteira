@@ -10,7 +10,7 @@ $( function() {
 
 	function initSclick() {
 		slide_2 = $('.slideshow-right').slick({
-			
+			swipe: true,
 			vertical: true,
 			infinite: false,
 			speed: 800,
@@ -19,7 +19,7 @@ $( function() {
 		});
 
 		slide_1 = $('.slideshow-left').slick({
-			
+			swipe: true,
 			vertical: true,		
 			infinite: false,
 			speed: 800,
@@ -39,7 +39,7 @@ $( function() {
 		event = event || window.event;
 		event.preventDefault();
 
-		let chilItemLengLeft = $(`.desktop-opened .${nameSlide1}`).find('.item').length;
+		let chilItemLengLeft = $(`.${nameSlide1}`).find('.items').length;
 		chilItemLengLeft--;
 		activeSlick_1 = $('.slideshow-left .slick-active').index();
 
@@ -51,13 +51,13 @@ $( function() {
 			//$('.body-info').attr('data-left', 'fff');
 			//$('.desktop-chosen').data('left', `${indexItemLeft}`);
 
-		//console.log($('.desktop-chosen'));
+		console.log($('.desktop-chosen'));
 		//console.log()
 		
 
 
 
-		let chilItemLengRight = $(`.desktop-opened .${nameSlide2}`).find('.item').length;
+		let chilItemLengRight = $(`.${nameSlide2}`).find('.items').length;
 		chilItemLengRight--;
 		activeSlick_2 = $('.slideshow-right .slick-active').index();
 		
@@ -86,7 +86,7 @@ $( function() {
 	}
 
 	
-	$('.service-content-wrapper').on('mousewheel', function(e) {
+	$('.wrap-from-slider').on('mousewheel', function(e) {
 		let event = e;
 		setMouseWonSlidshow( event, 'slideshow-left', 'slideshow-right');
 	});
@@ -104,7 +104,7 @@ $( function() {
 				$('.slideshow-right').slick('unslick');
 				slide_1.slick('unslick');
 				slide_2.slick('unslick');
-				$('.service-content-wrapper').off();
+				$('.wrap-from-slider').off();
 				stateResize = 1;
 				stateSclick = false;
 			} 
@@ -114,7 +114,7 @@ $( function() {
 				$('.slideshow-right').slick('unslick');
 				slide_1.slick('unslick');
 				slide_2.slick('unslick');
-				$('.service-content-wrapper').off();
+				$('.wrap-from-slider').off();
 				stateResize = 1;
 				stateSclick = false;
 				loadres = 0;
@@ -130,7 +130,7 @@ $( function() {
 					return;
 				} 
 
-				$('.service-content-wrapper').on('mousewheel', function(e) {
+				$('.wrap-from-slider').on('mousewheel', function(e) {
 					let event = e;
 					setMouseWonSlidshow( event, 'slideshow-left', 'slideshow-right');
 				});
@@ -153,22 +153,8 @@ $( function() {
 	$('.service-menu__subheader').on('click', function() {
 
 		//console.log($('.desktop-chosen'))
+	})
 
-	});
 
-	$('.article-preview').click(function (e) {
-		if ($(this).hasClass('info')) $(this).removeClass('info');
-		$('.article-preview').removeClass('info');
-        if (!$(this).hasClass('info')) $(this).addClass('info');
-        e.stopPropagation();
-    });
-
-    $(document).click(function () {
-    	$('.article-preview').removeClass('info');
-    });
-
-    // $('.page-team .article-preview .envoke-order-btn').click(function () {
-
-    // });
 });
 

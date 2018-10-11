@@ -1232,7 +1232,7 @@
 }
 
 
-path {
+.popup-main path {
   fill: white;
 }
 
@@ -1261,7 +1261,7 @@ path {
 }
 
 path {
-  fill: none !important;
+  fill: none ;
 }
 
 .popup-main textarea:focus ~ label, .popup-main textarea:valid ~ label {

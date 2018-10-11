@@ -230,8 +230,8 @@ input, textarea {
 	transition-timing-function: cubic-bezier(0,.25,.5,1);
 }
 
-path {
-	fill: none !important;
+.about path {
+	fill: none ;
 }
 
 .about .group_text .graphic--nao{

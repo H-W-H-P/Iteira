@@ -14,6 +14,11 @@
     display: flex !important;
 }*/
 
+.one-third-block {
+    float: left;
+    width: 50% !important;
+}
+
 .news .one-third-block {
 	width: 100%;
 }

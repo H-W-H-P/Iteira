@@ -223,9 +223,10 @@ $(document).ready(function () {
 		
 	}
 
-	
+	var $document = $('html, body');
 
 	$('.btn-popup').on('click', function(EO) {
+		$document.addClass('popUp');
 		EO.preventDefault();
 		$('.wrap-title').removeClass('hidden active-title').addClass('active-pop');
 		$('.title-change').eq(0).addClass('right');
@@ -348,6 +349,7 @@ $(document).ready(function () {
 
 
 	$('.cancel').on('click', function(EO) {
+		$document.removeClass('popUp');
 		$('.popup-main').removeClass('active-pop-wrap fadeIn').addClass('fadeOut');
 		$('.change-pop-up').removeClass('active-popup').addClass('hidden');
 		$('.bnt-prev').removeClass('active-pop-wrap').addClass('hidden');

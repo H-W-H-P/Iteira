@@ -2,6 +2,13 @@
 	overflow-y: auto;
 }
 
+html.popUp,
+body.popUp{
+  position: relative;
+  overflow: hidden;
+  height: 100vh;
+}
+
 .popup-main {
 	position: absolute;
 	top: 0;

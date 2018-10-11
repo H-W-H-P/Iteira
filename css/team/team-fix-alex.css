@@ -170,7 +170,7 @@ span.nav__elem:after {
     content: none;
 }
 
-.owl-carousel.owl-loaded {
+.page-team .owl-carousel.owl-loaded {
 	display: none;
 }
 /*

@@ -5,14 +5,14 @@
 .owl-carousel.owl-loaded {
 	display: none;
 }
-
+/*
 .news .service-content-wrapper {
     display: -webkit-flex;
     display: -moz-flex;
     display: -ms-flex;
     display: -o-flex;
     display: flex !important;
-}
+}*/
 
 .news .one-third-block {
 	width: 100%;
@@ -76,6 +76,13 @@
 
 .menu-popup  {
 	display: none;
+}
+
+
+/**/
+
+.news .team-article-preview__date {
+    bottom: 4%;
 }
 
 

@@ -98,12 +98,12 @@ window.onload = function() {
            
 
             for (let i = 0; i < mobileOnlys.length; i++) {
-                mobileOnlys[i].style.display = 'inline-block';
+               // mobileOnlys[i].style.display = 'inline-block';
             }
         } else {
             subheader = document.querySelectorAll('.service-menu__subheader');
             for (let i = 0; i < mobileOnlys.length; i++) {
-                mobileOnlys[i].style.display = 'none';
+               // mobileOnlys[i].style.display = 'none';
             }
         }
         if (!curSub) {

@@ -164,6 +164,13 @@
 	/*transform-origin: center;*/
 }
 
+.change-pop-up .article-preview:hover{
+	-webkit-transform: none;
+	-ms-transform: none;
+	-o-transform: none;
+	transform: none;
+}
+
 .service-content-wrapper{
 	z-index: -10;
 }

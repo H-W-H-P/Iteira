@@ -45,6 +45,7 @@ window.onload = function() {
 
 
 
+
             owlProd.on('changed.owl.carousel', function(event) {
                 
                 let indexItem = event.item.index;

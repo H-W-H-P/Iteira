@@ -41,7 +41,7 @@ $(document).ready(function () {
 
 		for (let i = dateDate; i <= 11; i++) {
 			
-			$('.item').eq(count).text(yearMonth[i]);
+			$('.datepicker-here .item').eq(count).text(yearMonth[i]);
 			count++;
 		}
 
@@ -49,7 +49,7 @@ $(document).ready(function () {
 		otherCount = otherCount - 9;
 		for (let i = otherCount; i <= dateDate; i++) {
 			
-			$('.item').eq(count).text(yearMonth[i]);
+			$('.datepicker-here .item').eq(count).text(yearMonth[i]);
 			count++;
 		}
 	}

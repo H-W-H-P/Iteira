@@ -36,7 +36,8 @@
     }
 
     .about-main-screen {
-        justify-content: initial;
+        /*justify-content: space-between;*/
+        margin-bottom: 80px;
     }
 
     /**/

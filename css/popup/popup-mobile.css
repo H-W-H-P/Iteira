@@ -346,7 +346,10 @@
 
 
 @media only screen and (max-width : 1023px) {
-
+    html.popUp, body.popUp{
+        overflow: visible;
+        height: auto;
+    }
     .popup-main {
         flex-direction: column;
         min-height: 100%;

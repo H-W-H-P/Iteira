@@ -76,27 +76,32 @@ $(document).ready(function () {
 
     $('.send-massage').click(function (EO) {
         EO.preventDefault();
-        
+       
         let trigger = true;
         let formValue = [];
 
-        $('.group').removeClass('warm');
-        $('.group .input').each(function( index ) {
+        $('.form.about .group').removeClass('warm');
+        $('.form.about .input').each(function( index ) {
             let _this = this;
+
             if (!validate(_this, trigger)) {
                 $(this).parent().addClass('warm');
                 trigger = false;
+
             }
         });
 
+        
+
        if (!trigger) return false;
 
-        $('.input').each( (i)=> {
+
+
+        $('.form.about .input').each( (i)=> {
             formValue.push($('.input').eq(i).val());
         });
 
-        $('.input').val('');
-
+        $('.form.about .input').val('');
         //new
         $('.form').removeClass('fadeIn').addClass('animated fadeOut');
         $('.write-massage-and-thanks').removeClass('form-a');
@@ -112,7 +117,7 @@ $(document).ready(function () {
             $('.bnt-prev-n').removeClass('class-show-btn').addClass('class-hide'); 
 
 
-        },4000);
+        },400000000);
 
         setTimeout(()=> {
             $('.about-thanks').removeClass('fadeOut');

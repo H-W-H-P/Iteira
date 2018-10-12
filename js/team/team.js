@@ -39,7 +39,7 @@ $( function() {
 		event = event || window.event;
 		event.preventDefault();
 
-		let chilItemLengLeft = $(`.desktop-opened .${nameSlide1}`).find('.item').length;
+		let chilItemLengLeft = $(`.desktop-opacity .${nameSlide1}`).find('.item').length;
 		chilItemLengLeft--;
 		activeSlick_1 = $('.slideshow-left .slick-active').index();
 
@@ -57,7 +57,7 @@ $( function() {
 
 
 
-		let chilItemLengRight = $(`.desktop-opened .${nameSlide2}`).find('.item').length;
+		let chilItemLengRight = $(`.desktop-opacity .${nameSlide2}`).find('.item').length;
 		chilItemLengRight--;
 		activeSlick_2 = $('.slideshow-right .slick-active').index();
 		

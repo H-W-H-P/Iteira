@@ -1542,4 +1542,24 @@ select {
   background-color: #fff !important;
 }
 /*class title control*/
+.datepicker-here .owl-prev:before,
+.datepicker-here .owl-next:before{
+  -webkit-transition: all ease .4s;
+  -o-transition: all ease .4s;
+  transition: all ease .4s;
+}
 
+.datepicker-here .owl-prev:hover:before,
+.datepicker-here .owl-next:hover:before{
+  -webkit-transform: scale(1.1, 1.1) rotate(90deg);
+  -ms-transform: scale(1.1, 1.1) rotate(90deg);
+  -o-transform: scale(1.1, 1.1) rotate(90deg);
+  transform: scale(1.1, 1.1) rotate(90deg);
+}
+
+.datepicker-here .owl-next:hover:before{
+  -webkit-transform: scale(1.1, 1.1) rotate(-90deg);
+  -ms-transform: scale(1.1, 1.1) rotate(-90deg);
+  -o-transform: scale(1.1, 1.1) rotate(-90deg);
+  transform: scale(1.1, 1.1) rotate(-90deg);
+}

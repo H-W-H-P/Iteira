@@ -21,6 +21,9 @@
 	.button--rayen:hover::before {
 	    transform: inherit;
 	}
+	.header__logo-link::after{
+		display: none;
+	}
 	.button--rayen:hover > span {
 	    transform: inherit;
 	}

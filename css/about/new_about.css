@@ -62,9 +62,19 @@ body {
     width: 33.33%;
     display: flex;
     flex-direction: column;
-   /* justify-content: space-between;*/
-    margin-bottom: 70px;
- 
+    justify-content: space-between;
+    /*margin-bottom: 70px;*/
+ 	margin-bottom: 37px;
+}
+
+.bnt-prev-n path{
+	-webkit-transition: all ease .4s;
+	-o-transition: all ease .4s;
+	transition: all ease .4s;
+}
+
+.bnt-prev-n:hover path{
+	fill: #d2ab66;
 }
 
 

@@ -194,7 +194,11 @@
     .title-main h2 {
         font-size: 55px;
     }
-
+    
+    .popup-main .cancel{
+        width: 20px;
+        height: 20px;
+    }
     
     /*prev*/
     .popup-main .prev-txt {
@@ -347,7 +351,7 @@
 
 @media only screen and (max-width : 1023px) {
     html.popUp, body.popUp{
-        overflow: visible;
+        overflow: visible !important;
         height: auto;
     }
     .popup-main {
@@ -365,6 +369,10 @@
         flex: 1;
         height: auto;
         min-height: 100%;
+    }
+
+    .popup-main path{
+        fill: #000;
     }
 
     /*title*/
@@ -593,8 +601,23 @@
     }
 
     .popup-main .cancel {
-        top: 55px;
+        top: 45px;
         right: 5%;
+    }
+    .nav-menu__text{
+        padding-right: calc(10px + 2vw);
+        padding-top: 6px;
+        display: inline-block;
+    }
+    .popup-main .service-menu__subheader{
+        display: -webkit-flex;
+        display: -moz-flex;
+        display: -ms-flex;
+        display: -o-flex;
+        display: flex;
+    }
+    .popUp .main-frame2, .popUp .main-frame1, .popUp .main-frame{
+        overflow: hidden;
     }
 }
 
@@ -602,6 +625,10 @@
     /*resirv*/
     .popup-main .service-content tr td:first-child div {
         display: none;
+    }
+
+    .nav-menu__text{
+        padding-top: 0;
     }
 
     .popup-main .service-content {
@@ -746,6 +773,8 @@
         width: 90%;
         max-width: 100%;
         padding: 10px 0px 10px 10px;
+        display: flex;
+        align-items: center;
     }
 
     .popup-main .service-menu__subheader p {
@@ -1056,6 +1085,7 @@
 
     .popup-main form .nav__elem {
         margin-bottom: 19px;
+        line-height: inherit;
     }
 
     select {

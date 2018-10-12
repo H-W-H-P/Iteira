@@ -8,15 +8,15 @@ $(document).ready(function () {
 	    items: 1
 	});
 	
-	// let owlMobNav = $('.owl-carousel.team-menu-mobile').owlCarousel({
-	//     margin:10,
-	//     nav: false,
-	//     items: 1
-	// });
+	let owlMobNav = $('.owl-carousel.team-menu-mobile').owlCarousel({
+	    margin:10,
+	    nav: false,
+	    items: 1
+	});
 
-	// owlMobNav.on('changed.owl.carousel', function(event) {
-	// 	console.log(event.item.index)
-	// });
+	owlMobNav.on('changed.owl.carousel', function(event) {
+		console.log(event.item.index)
+	});
 
 	//service
 	$('.service-menu__subheader').on('click', function(EO) {

@@ -17,8 +17,8 @@
 
 .team-content-wrapper {
     width: 100vw;
-    height: calc(100vh - 150px);
-    max-height: calc(100vh - 150px);
+    /*height: calc(100vh - 150px);*/
+    /*max-height: calc(100vh - 150px);*/
     top: 150px;
 }
 

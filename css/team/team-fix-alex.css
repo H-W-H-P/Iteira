@@ -376,10 +376,22 @@ span.nav__elem:after {
     .body-service-news {
         overflow-y: auto;
     }
+
 }
 @media only screen and (max-width : 1023px) {
     .header-control {
         display: block;
+    }
+    .page-team .owl-carousel.owl-loaded.team-menu-mobile {
+        display: block;
+    }
+
+    .desktop-opened{
+        display: none !important;
+    }
+        
+    .desktop-opacity{
+        display: block !important;
     }
 
     .owl-carousel.owl-loaded {

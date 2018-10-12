@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="pageserv-html">
 
 <head>
     <meta charset="UTF-8">
@@ -25,7 +25,7 @@
         <a>
             <div class="menu-popup__elem">Новости<br> и Акции</div>
         </a>
-        <div class="nav__elem envoke-order-btn menu-popup__btn">ЗАПИСАТЬСЯ</div>
+        <div class="nav__elem envoke-order-btn menu-popup__btn btn-popup">ЗАПИСАТЬСЯ</div>
     </div>
     <header class="header service-header">
         <a href='#'><img class="logo service-logo" src='../img/logo.svg'></a>
@@ -41,7 +41,7 @@
         </a>
     </header>
 
-    <main class="service-main">
+    <main class="service-main page-service-fu">
         <h1 class='block-header service-block-header'>
             Услуги
         </h1>
@@ -53,110 +53,270 @@
         <menu class='service-menu'>
             <h6 class="service-menu__header desktop-only">— Виды услуг</h6>
             <div>
-                <div class='service-menu__subheader desktop-chosen clearfix'>
+                <div class='service-menu__subheader desktop-chosen sliderCatCh clearfix' data-counter="0">
                     <p>Услуги парикмахеров-стилистов</p>
+                    <div class='service-menu__dash'></div>
+                    <div class='service-menu__dash'></div>
+                </div>
+                <div class="service-content-wrapper desktop-opened desktop-opacity">
+                    <table class="service-content clearfix">
+                        <tbody>     
+                            <tr>
+                                <th colspan="2">Уходовые процедуры</th>
+                            </tr>
+                            <tr class="btn-reserv" data-value="Алхимия">
+                                <td >Алхимия<br>
+                                    <div>до 25 см / 25-40 см / свыше 40 см</div>
+                                </td> 
+                                <td>
+                                    <span>130 - 170 BYN</span>
+                                    <span class="table-popup btn-popup">ЗАПИСАТЬСЯ</span>
+                                </td>
+                            </tr>
+                            <tr class="btn-reserv" data-value="Ламинирование">
+                                <td >Ламинирование<br>
+                                    <div>до 25 см / 25-40 см / свыше 40 см</div>
+                                </td> 
+                                <td>
+                                    <span>120 - 238 BYN</span>
+                                    <span class="table-popup">ЗАПИСАТЬСЯ</span>
+                                </td>
+                            </tr>
+                            <tr class="btn-reserv" data-value="CellophanesService">
+                                <td >Cellophanes-Service<br>
+                                    <div>до 25 см / 25-40 см / свыше 40 см</div>
+                                </td> 
+                                <td>
+                                    <span>135 - 242 BYN</span>
+                                    <span class="table-popup">ЗАПИСАТЬСЯ</span>
+                                </td>
+                            </tr>
+                            <tr data-service="Lebel">
+                                <td>Абсолютное счастье от Lebel<br>
+                                    <div>до 25 см / 25-40 см / свыше 40 см</div>
+                                </td> 
+                                <td>
+                                    <span>190 - 280 BYN</span>
+                                    <span class="table-popup">ЗАПИСАТЬСЯ</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Маска для биопилинга кожи головы<br>
+                                    <div>до 25 см / 25-40 см / свыше 40 см</div>
+                                </td> 
+                                <td>
+                                    <span>120 - 150 BYN</span>
+                                    <span class="table-popup">ЗАПИСАТЬСЯ</span>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <th colspan="2">Окрашивания</th>
+                            </tr>
+                            <tr>
+                                <td>Окрашивание в один тон<br>
+                                    <div>до 25 см / 25-40 см / свыше 40 см</div>
+                                </td> 
+                                <td>
+                                    <span>114 - 211 BYN</span>
+                                    <span class="table-popup">ЗАПИСАТЬСЯ</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Окрашивание корней до 2 см<br>
+                                    <div>до 25 см / 25-40 см / свыше 40 см</div>
+                                </td> 
+                                <td>
+                                    <span>96 BYN</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Сложное окрашивание<br>
+                                    <div>до 25 см / 25-40 см / свыше 40 см</div>
+                                </td> 
+                                <td>
+                                    <span>240 - 290 BYN</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Тонирование<br>
+                                    <div>до 25 см / 25-40 см / свыше 40 см</div>
+                                </td> 
+                                <td>
+                                    <span>98 - 125 BYN</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Gloss-Service<br>
+                                    <div>до 25 см / 25-40 см / свыше 40 см</div>
+                                </td> 
+                                <td>
+                                    <span>55 - 68 BYN</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Ультрамягкое блондирование<br>
+                                    <div>до 25 см / 25-40 см / свыше 40 см</div>
+                                </td> 
+                                <td>
+                                    <span>145 - 260 BYN</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Мелирование<br>
+                                    <div>до 25 см / 25-40 см / свыше 40 см</div>
+                                </td> 
+                                <td>
+                                    <span>125 - 190 BYN</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Локальное мелирование<br>
+                                    <div>до 25 см / 25-40 см / свыше 40 см</div>
+                                </td> 
+                                <td>
+                                    <span>81 - 115 BYN</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Прикорневое мелирование<br>
+                                    <div>до 25 см / 25-40 см / свыше 40 см</div>
+                                </td> 
+                                <td>
+                                    <span>145 BYN</span>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class='service-menu__subheader  sliderCatCh clearfix' data-counter="1">
+                    <p>Стрижки, выпрямления, завивки</p>
                     <div class='service-menu__dash'></div>
                     <div class='service-menu__dash'></div>
                 </div>
                 <div class="service-content-wrapper desktop-opened">
                     <table class="service-content clearfix">
-                        <tr>
-                            <th colspan="2">
-                                Уходовые процедуры1
+                        <tbody>     
+                            <tr>
+                                <th colspan="2">Уходовые процедуры2</th>
+                            </tr>
+                            <tr class="btn-reserv" data-value="Алхимия">
+                                <td >Алхимия<br>
+                                    <div>до 25 см / 25-40 см / свыше 40 см</div>
+                                </td> 
+                                <td>
+                                    <span>130 - 170 BYN</span>
+                                </td>
+                            </tr>
+                            <tr class="btn-reserv" data-value="Ламинирование">
+                                <td >Ламинирование<br>
+                                    <div>до 25 см / 25-40 см / свыше 40 см</div>
+                                </td> 
+                                <td>
+                                    <span>120 - 238 BYN</span>
+                                </td>
+                            </tr>
+                            <tr class="btn-reserv" data-value="CellophanesService">
+                                <td >Cellophanes-Service<br>
+                                    <div>до 25 см / 25-40 см / свыше 40 см</div>
+                                </td> 
+                                <td>
+                                    <span>135 - 242 BYN</span>
+                                </td>
+                            </tr>
+                            <tr data-service="Lebel">
+                                <td>Абсолютное счастье от Lebel<br>
+                                    <div>до 25 см / 25-40 см / свыше 40 см</div>
+                                </td> 
+                                <td>
+                                    <span>190 - 280 BYN</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Маска для биопилинга кожи головы<br>
+                                    <div>до 25 см / 25-40 см / свыше 40 см</div>
+                                </td> 
+                                <td>
+                                    <span>120 - 150 BYN</span>
+                                </td>
+                            </tr>
 
-                                <p>Сноска</p>
-                            </th>
-                        </tr>
-                        <tr>
-                            <td>Уход за волосами</td>
-                            <td>
-                                <span>315 руб. <p>комплекс</p></span>
-                                <span>ЗАПИСАТЬСЯ</span>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>Услуги косметолога</td>
-                            <td>
-                                <span>123 руб. <p>комплекс</p></span>
-                                <span>ЗАПИСАТЬСЯ</span>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td class='cursor-pointer'>
-                                Маникюр и педикюр<br>
-                                <div class='wrapped-content'>Визитная карточка каждой женщины - это ухоженные руки с отличным маникюром.</div>
-                            </td>
-                            <td>
-                                <span>315 руб. <p>комплекс</p></span>
-                                <span>ЗАПИСАТЬСЯ</span>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>Уход за волосами</td>
-                            <td>
-                                <span>145 руб. <p>комплекс</p></span>
-                                <span>ЗАПИСАТЬСЯ</span>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>Услуги косметолога</td>
-                            <td>
-                                <span>315 руб. <p>комплекс</p></span>
-                                <span>ЗАПИСАТЬСЯ</span>
-                            </td>
-                        </tr>
-                    </table>
-                </div>
-                <div class='service-menu__subheader  clearfix'>
-                    <p>Стрижки, выпрямления, завивки</p>
-                    <div class='service-menu__dash'></div>
-                    <div class='service-menu__dash'></div>
-                </div>
-                <div class="service-content-wrapper">
-                    <table class="service-content clearfix">
-                        <tr>
-                            <th colspan="2">Уходовые процедуры2
-                                <p>Сноска</p>
-                            </th>
-                        </tr>
-                        <tr>
-                            <td>Уход за волосами</td>
-                            <td>
-                                <span>315 руб. <p>комплекс</p></span>
-                                <span>ЗАПИСАТЬСЯ</span>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>Услуги косметолога</td>
-                            <td>
-                                <span>123 руб. <p>комплекс</p></span>
-                                <span>ЗАПИСАТЬСЯ</span>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td class='cursor-pointer'>
-                                Маникюр и педикюр<br>
-                                <div class='wrapped-content'>Визитная карточка каждой женщины - это ухоженные руки с отличным маникюром.</div>
-                            </td>
-                            <td>
-                                <span>315 руб. <p>комплекс</p></span>
-                                <span>ЗАПИСАТЬСЯ</span>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>Уход за волосами</td>
-                            <td>
-                                <span>145 руб. <p>комплекс</p></span>
-                                <span>ЗАПИСАТЬСЯ</span>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>Услуги косметолога</td>
-                            <td>
-                                <span>315 руб. <p>комплекс</p></span>
-                                <span>ЗАПИСАТЬСЯ</span>
-                            </td>
-                        </tr>
+                            <tr>
+                                <th colspan="2">Окрашивания</th>
+                            </tr>
+                            <tr>
+                                <td>Окрашивание в один тон<br>
+                                    <div>до 25 см / 25-40 см / свыше 40 см</div>
+                                </td> 
+                                <td>
+                                    <span>114 - 211 BYN</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Окрашивание корней до 2 см<br>
+                                    <div>до 25 см / 25-40 см / свыше 40 см</div>
+                                </td> 
+                                <td>
+                                    <span>96 BYN</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Сложное окрашивание<br>
+                                    <div>до 25 см / 25-40 см / свыше 40 см</div>
+                                </td> 
+                                <td>
+                                    <span>240 - 290 BYN</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Тонирование<br>
+                                    <div>до 25 см / 25-40 см / свыше 40 см</div>
+                                </td> 
+                                <td>
+                                    <span>98 - 125 BYN</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Gloss-Service<br>
+                                    <div>до 25 см / 25-40 см / свыше 40 см</div>
+                                </td> 
+                                <td>
+                                    <span>55 - 68 BYN</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Ультрамягкое блондирование<br>
+                                    <div>до 25 см / 25-40 см / свыше 40 см</div>
+                                </td> 
+                                <td>
+                                    <span>145 - 260 BYN</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Мелирование<br>
+                                    <div>до 25 см / 25-40 см / свыше 40 см</div>
+                                </td> 
+                                <td>
+                                    <span>125 - 190 BYN</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Локальное мелирование<br>
+                                    <div>до 25 см / 25-40 см / свыше 40 см</div>
+                                </td> 
+                                <td>
+                                    <span>81 - 115 BYN</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Прикорневое мелирование<br>
+                                    <div>до 25 см / 25-40 см / свыше 40 см</div>
+                                </td> 
+                                <td>
+                                    <span>145 BYN</span>
+                                </td>
+                            </tr>
+                        </tbody>
                     </table>
                 </div>
                 <div class='service-menu__subheader  clearfix'>
@@ -164,51 +324,135 @@
                     <div class='service-menu__dash'></div>
                     <div class='service-menu__dash'></div>
                 </div>
-                <div class="service-content-wrapper ">
+                <div class="service-content-wrapper desktop-opened">
                     <table class="service-content clearfix">
-                        <tr>
-                            <th colspan="2">Уходовые процедуры3
-                                <p>Сноска</p>
-                            </th>
-                        </tr>
-                        <tr>
-                            <td>Уход за волосами</td>
-                            <td>
-                                <span>315 руб. <p>комплекс</p></span>
-                                <span>ЗАПИСАТЬСЯ</span>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>Услуги косметолога</td>
-                            <td>
-                                <span>123 руб. <p>комплекс</p></span>
-                                <span>ЗАПИСАТЬСЯ</span>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td class='cursor-pointer'>
-                                Маникюр и педикюр<br>
-                                <div class='wrapped-content'>Визитная карточка каждой женщины - это ухоженные руки с отличным маникюром.</div>
-                            </td>
-                            <td>
-                                <span>315 руб. <p>комплекс</p></span>
-                                <span>ЗАПИСАТЬСЯ</span>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>Уход за волосами</td>
-                            <td>
-                                <span>145 руб. <p>комплекс</p></span>
-                                <span>ЗАПИСАТЬСЯ</span>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>Услуги косметолога</td>
-                            <td>
-                                <span>315 руб. <p>комплекс</p></span>
-                                <span>ЗАПИСАТЬСЯ</span>
-                            </td>
-                        </tr>
+                        <tbody>     
+                            <tr>
+                                <th colspan="2">Уходовые процедуры</th>
+                            </tr>
+                            <tr class="btn-reserv" data-value="Алхимия">
+                                <td >Алхимия<br>
+                                    <div>до 25 см / 25-40 см / свыше 40 см</div>
+                                </td> 
+                                <td>
+                                    <span>130 - 170 BYN</span>
+                                    <span class="table-popup btn-popup">ЗАПИСАТЬСЯ</span>
+                                </td>
+                            </tr>
+                            <tr class="btn-reserv" data-value="Ламинирование">
+                                <td >Ламинирование<br>
+                                    <div>до 25 см / 25-40 см / свыше 40 см</div>
+                                </td> 
+                                <td>
+                                    <span>120 - 238 BYN</span>
+                                    <span class="table-popup">ЗАПИСАТЬСЯ</span>
+                                </td>
+                            </tr>
+                            <tr class="btn-reserv" data-value="CellophanesService">
+                                <td >Cellophanes-Service<br>
+                                    <div>до 25 см / 25-40 см / свыше 40 см</div>
+                                </td> 
+                                <td>
+                                    <span>135 - 242 BYN</span>
+                                    <span class="table-popup">ЗАПИСАТЬСЯ</span>
+                                </td>
+                            </tr>
+                            <tr data-service="Lebel">
+                                <td>Абсолютное счастье от Lebel<br>
+                                    <div>до 25 см / 25-40 см / свыше 40 см</div>
+                                </td> 
+                                <td>
+                                    <span>190 - 280 BYN</span>
+                                    <span class="table-popup">ЗАПИСАТЬСЯ</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Маска для биопилинга кожи головы<br>
+                                    <div>до 25 см / 25-40 см / свыше 40 см</div>
+                                </td> 
+                                <td>
+                                    <span>120 - 150 BYN</span>
+                                    <span class="table-popup">ЗАПИСАТЬСЯ</span>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <th colspan="2">Окрашивания</th>
+                            </tr>
+                            <tr>
+                                <td>Окрашивание в один тон<br>
+                                    <div>до 25 см / 25-40 см / свыше 40 см</div>
+                                </td> 
+                                <td>
+                                    <span>114 - 211 BYN</span>
+                                    <span class="table-popup">ЗАПИСАТЬСЯ</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Окрашивание корней до 2 см<br>
+                                    <div>до 25 см / 25-40 см / свыше 40 см</div>
+                                </td> 
+                                <td>
+                                    <span>96 BYN</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Сложное окрашивание<br>
+                                    <div>до 25 см / 25-40 см / свыше 40 см</div>
+                                </td> 
+                                <td>
+                                    <span>240 - 290 BYN</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Тонирование<br>
+                                    <div>до 25 см / 25-40 см / свыше 40 см</div>
+                                </td> 
+                                <td>
+                                    <span>98 - 125 BYN</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Gloss-Service<br>
+                                    <div>до 25 см / 25-40 см / свыше 40 см</div>
+                                </td> 
+                                <td>
+                                    <span>55 - 68 BYN</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Ультрамягкое блондирование<br>
+                                    <div>до 25 см / 25-40 см / свыше 40 см</div>
+                                </td> 
+                                <td>
+                                    <span>145 - 260 BYN</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Мелирование<br>
+                                    <div>до 25 см / 25-40 см / свыше 40 см</div>
+                                </td> 
+                                <td>
+                                    <span>125 - 190 BYN</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Локальное мелирование<br>
+                                    <div>до 25 см / 25-40 см / свыше 40 см</div>
+                                </td> 
+                                <td>
+                                    <span>81 - 115 BYN</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Прикорневое мелирование<br>
+                                    <div>до 25 см / 25-40 см / свыше 40 см</div>
+                                </td> 
+                                <td>
+                                    <span>145 BYN</span>
+                                </td>
+                            </tr>
+                        </tbody>
                     </table>
                 </div>
                 <div class='service-menu__subheader  clearfix'>
@@ -218,49 +462,133 @@
                 </div>
                 <div class="service-content-wrapper ">
                     <table class="service-content clearfix">
-                        <tr>
-                            <th colspan="2">Уходовые процедуры4
-                                <p>Сноска</p>
-                            </th>
-                        </tr>
-                        <tr>
-                            <td>Уход за волосами</td>
-                            <td>
-                                <span>315 руб. <p>комплекс</p></span>
-                                <span>ЗАПИСАТЬСЯ</span>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>Услуги косметолога</td>
-                            <td>
-                                <span>123 руб. <p>комплекс</p></span>
-                                <span>ЗАПИСАТЬСЯ</span>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td class='cursor-pointer'>
-                                Маникюр и педикюр<br>
-                                <div class='wrapped-content'>Визитная карточка каждой женщины - это ухоженные руки с отличным маникюром.</div>
-                            </td>
-                            <td>
-                                <span>315 руб. <p>комплекс</p></span>
-                                <span>ЗАПИСАТЬСЯ</span>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>Уход за волосами</td>
-                            <td>
-                                <span>145 руб. <p>комплекс</p></span>
-                                <span>ЗАПИСАТЬСЯ</span>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>Услуги косметолога</td>
-                            <td>
-                                <span>315 руб. <p>комплекс</p></span>
-                                <span>ЗАПИСАТЬСЯ</span>
-                            </td>
-                        </tr>
+                        <tbody>     
+                            <tr>
+                                <th colspan="2">Уходовые процедуры</th>
+                            </tr>
+                            <tr class="btn-reserv" data-value="Алхимия">
+                                <td >Алхимия<br>
+                                    <div>до 25 см / 25-40 см / свыше 40 см</div>
+                                </td> 
+                                <td>
+                                    <span>130 - 170 BYN</span>
+                                    <span class="table-popup btn-popup">ЗАПИСАТЬСЯ</span>
+                                </td>
+                            </tr>
+                            <tr class="btn-reserv" data-value="Ламинирование">
+                                <td >Ламинирование<br>
+                                    <div>до 25 см / 25-40 см / свыше 40 см</div>
+                                </td> 
+                                <td>
+                                    <span>120 - 238 BYN</span>
+                                    <span class="table-popup">ЗАПИСАТЬСЯ</span>
+                                </td>
+                            </tr>
+                            <tr class="btn-reserv" data-value="CellophanesService">
+                                <td >Cellophanes-Service<br>
+                                    <div>до 25 см / 25-40 см / свыше 40 см</div>
+                                </td> 
+                                <td>
+                                    <span>135 - 242 BYN</span>
+                                    <span class="table-popup">ЗАПИСАТЬСЯ</span>
+                                </td>
+                            </tr>
+                            <tr data-service="Lebel">
+                                <td>Абсолютное счастье от Lebel<br>
+                                    <div>до 25 см / 25-40 см / свыше 40 см</div>
+                                </td> 
+                                <td>
+                                    <span>190 - 280 BYN</span>
+                                    <span class="table-popup">ЗАПИСАТЬСЯ</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Маска для биопилинга кожи головы<br>
+                                    <div>до 25 см / 25-40 см / свыше 40 см</div>
+                                </td> 
+                                <td>
+                                    <span>120 - 150 BYN</span>
+                                    <span class="table-popup">ЗАПИСАТЬСЯ</span>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <th colspan="2">Окрашивания</th>
+                            </tr>
+                            <tr>
+                                <td>Окрашивание в один тон<br>
+                                    <div>до 25 см / 25-40 см / свыше 40 см</div>
+                                </td> 
+                                <td>
+                                    <span>114 - 211 BYN</span>
+                                    <span class="table-popup">ЗАПИСАТЬСЯ</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Окрашивание корней до 2 см<br>
+                                    <div>до 25 см / 25-40 см / свыше 40 см</div>
+                                </td> 
+                                <td>
+                                    <span>96 BYN</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Сложное окрашивание<br>
+                                    <div>до 25 см / 25-40 см / свыше 40 см</div>
+                                </td> 
+                                <td>
+                                    <span>240 - 290 BYN</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Тонирование<br>
+                                    <div>до 25 см / 25-40 см / свыше 40 см</div>
+                                </td> 
+                                <td>
+                                    <span>98 - 125 BYN</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Gloss-Service<br>
+                                    <div>до 25 см / 25-40 см / свыше 40 см</div>
+                                </td> 
+                                <td>
+                                    <span>55 - 68 BYN</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Ультрамягкое блондирование<br>
+                                    <div>до 25 см / 25-40 см / свыше 40 см</div>
+                                </td> 
+                                <td>
+                                    <span>145 - 260 BYN</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Мелирование<br>
+                                    <div>до 25 см / 25-40 см / свыше 40 см</div>
+                                </td> 
+                                <td>
+                                    <span>125 - 190 BYN</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Локальное мелирование<br>
+                                    <div>до 25 см / 25-40 см / свыше 40 см</div>
+                                </td> 
+                                <td>
+                                    <span>81 - 115 BYN</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Прикорневое мелирование<br>
+                                    <div>до 25 см / 25-40 см / свыше 40 см</div>
+                                </td> 
+                                <td>
+                                    <span>145 BYN</span>
+                                </td>
+                            </tr>
+                        </tbody>
                     </table>
                 </div>
                 <div class='service-menu__subheader  clearfix'>
@@ -1477,17 +1805,24 @@
 
 
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-    <script src="../js/jquery.mask.min.js"></script>   
+    
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
-    <script src="../js/service.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.12/jquery.mousewheel.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.js"></script>
+    <!-- <script src="../js/service.js"></script> -->
+    <script src="../js/team/team.js"></script>
+
+
     <script src="../js/mobile-nav-menu.js"></script>
 
 
-     <script src="../js/popup/air-picker/dist/js/datepicker.min.js"></script>
+    <script src="../js/popup/air-picker/dist/js/datepicker.min.js"></script>
     <script src="../js/owl.carousel.min.js"></script>
     
     
-    <script src="../js/popup/popup.js"></script>
+     <script src="../js/popup/popup.js"></script>
+     <script src="../js/jquery.mask.min.js"></script>   
     <!-- scroll-->
 
     <script src="../js/scroll/jquery.mCustomScrollbar.concat.min.js"></script>

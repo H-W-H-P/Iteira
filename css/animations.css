@@ -600,8 +600,13 @@ div.index-sliding-fr__pic{
 	    left: auto;
 	    opacity: 1;
 	    transform: rotate(90deg);
+	    -webkit-transition: all ease .4s;
+	    -o-transition: all ease .4s;
+	    transition: all ease .4s;
 	}
-
+	.page-service-fu .minus .service-menu__dash:last-child{
+		opacity: 0;
+	}
 }
 
 @media screen and (max-width: 768px) {

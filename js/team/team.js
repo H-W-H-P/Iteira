@@ -221,19 +221,18 @@ $( function() {
 
 
     
-    let togle_serv = $('.page-service-fu .service-menu__subheader');
+    let $togle_serv = $('.page-service-fu .sliderCatCh');
 
-    $(togle_serv).on('click', function() {
-    	let openorclose = $('.page-service-fu .service-menu__subheader').next('div').toggle()
-    //	$('.page-service-fu .service-menu__subheader').next('div').toggle();
-
-    	// if (openorclose) {
-    	// 	$('.page-service-fu .service-menu__subheader').next('div').removeClass('desktop-opacity');
-    	// 	$('.page-service-fu .service-menu__dash:last-child').addClass('open-hover')
-    	// } else {
-    	// 	$('.page-service-fu .service-menu__subheader').next('div').removeClass('desktop-opened').addClass('desktop-opacity');
-    	// }
+    $togle_serv.on('click', function() {
+    	if ($(this).hasClass('minus')) $(this).next('div').removeClass('desktop-opacity');
     });
+
+    function checkWidth() {
+    	if ($(window).width() < 1024) $('.page-service-fu .service-content-wrapper').removeClass('desktop-opacity');
+    }
+    
+    checkWidth();
+    $(window).resize(checkWidth);
 
 });
 

@@ -6,19 +6,22 @@
     <meta name="viewport" content="width=device-width, user-scalable=no">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Iteira</title>
-    <link href="../css/owl.carousel.min.css" rel="stylesheet">
-    <link href="../css/owl.theme.default.min.css" rel="stylesheet">
-    <link href="../css/imports.css" rel="stylesheet">
-    <link href="../css/team/tablet-fix.css" rel="stylesheet">
-
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css">
 
-    <link rel="stylesheet" href="../css/news/new-fix-al.css">
-    <link rel="stylesheet" href="../css/news/news-mobile-fix.css">
+    <link href="../css/owl.carousel.min.css" rel="stylesheet">
+    <link href="../css/owl.theme.default.min.css" rel="stylesheet">
+
+
+    <link href="../css/imports.css" rel="stylesheet">
+    <link href="../css/team/tablet-fix.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/news/news-bg.css">
+    <link rel="stylesheet" href="../css/team/team-fix-alex.css">
+
+
 </head>
 
-<body class='body-info body-service body-service-news' data-left="">
+<body class='body-info body-service page-news'>
     <div class="menu-popup closed mobile-only">
         <a class="closure" href='#'></a>
         <a>
@@ -33,13 +36,12 @@
         <a>
             <div class="menu-popup__elem">Новости<br> и Акции</div>
         </a>
-        <div class="nav__elem envoke-order-btn menu-popup__btn btn-popup">ЗАПИСАТЬСЯ</div>
+        <div class="nav__elem envoke-order-btn menu-popup__btn">ЗАПИСАТЬСЯ</div>
     </div>
-    <header class="header service-header header-news">
-        <a href='#' class="header__logo-link">
-            <img class="logo" src='../img/logo.svg'>
-        </a>
+    <header class="header service-header">
+        <a href='#' class="header__logo-link"><img class="logo service-logo" src='../img/logo.svg'></a>
         <nav class="nav desktop-only">
+
             <a href="#" class=" btn-popup nav__elem envoke-order-btn button--rayen button--border-thin button--text-thick" data-text="ЗАПИСАТЬСЯ"><span>ЗАПИСАТЬСЯ</span></a>
             <a href="#" class="nav__elem nav__black">УСЛУГИ</a>
             <a href="#" class="nav__elem nav__black">КОМАНДА</a>
@@ -51,19 +53,21 @@
         </a>
     </header>
 
-    <main class="service-main news">
-        <h1 class='block-header service-block-header team-block-header news-block-header clearfix'>
-            <span>Новости</span> <br> <span>и Акции</span>
+    <main class="service-main page-team page-news-fun">
+        <h1 class='block-header service-block-header team-block-header'>
+            <span>Наша</span> <br> <span>Команда</span>
         </h1>
         <div class='index-slider service-slider team-slider desktop-only'>
             <div class='index-slider__prev index-slider__arrow'></div>
             <div class='index-slider__dash'></div>
             <div class='index-slider__next index-slider__arrow'></div>
         </div>
-        <menu class='service-menu team-menu'>
+
+
+            <menu class='service-menu team-menu'>
             <div>
                 <div class='team-menu-mobile owl-carousel mobile-only'>
-                    <a href='#' class='team-menu-mobile__item mobile-chosen' data-hash=''>Акция</a>
+                    <a href='#' class='team-menu-mobile__item' data-hash=''>Акции</a>
                     <a href='#' class='team-menu-mobile__item' data-hash=''>Здоровье</a>
                     <a href='#' class='team-menu-mobile__item' data-hash=''>Красота</a>
                     <a href='#' class='team-menu-mobile__item' data-hash=''>Полезное</a>
@@ -71,92 +75,93 @@
                 <h6 class="service-menu__header team-menu__header desktop-only">— Категории </h6>
                 <div>
 
-                    <div class='service-menu__subheader team-menu__subheader desktop-chosen clearfix desktop-only'>
+                    <div data-counter="0" class='service-menu__subheader team-menu__subheader desktop-chosen sliderCatCh clearfix desktop-only'>
                         <p>Акции</p>
                         <div class='service-menu__dash team-menu__dash'></div>
                         <div class='service-menu__dash team-menu__dash'></div>
                     </div>
-                    <div class="service-content-wrapper team-content-wrapper desktop-opened desktop-opacity  wrap-action">   
+
+                    <div class="service-content-wrapper team-content-wrapper desktop-opened desktop-opacity wrap-action">   
                         <div class='one-third-block one-third-block-second team-one-third-block clearfix'>                         
-                        	<div class="slideshow">
-                        		<div class="slider slideshow-left">
-                        			<div class="item">
-                        				<a href='#' class="item-news">
-			                                <div class='article-preview team-article-preview legs-article clearfix '>
-			                                    <div class="article-preview__tag article-preview__tag-2">1Акция</div>
-			                                    <h4 class="article-preview__h team-article-preview__h news-article-preview__h">ПОДАРОЧНЫЕ<br>ПРЕДЛОЖЕНИЯ</h4>
-			                                    <span class="article-preview__date team-article-preview__date news-article-preview__date">15 Марта 2018</span>
-			                                </div>
-			                            </a>
-                        			</div>
-                        			<div class="item">
-                        				<a href='#' class="item-news">
-			                                <div class='article-preview team-article-preview legs-article clearfix'>
-			                                    <div class="article-preview__tag article-preview__tag-2">2Акция</div>
-			                                    <h4 class="article-preview__h team-article-preview__h news-article-preview__h">ПОДАРОЧНЫЕ<br>ПРЕДЛОЖЕНИЯ</h4>
-			                                    <span class="article-preview__date team-article-preview__date news-article-preview__date">15 Марта 2018</span>
-			                                </div>
-			                            </a>
-                        			</div>
-                        			<div class="item" >
-                        				<a href='#' class="item-news">
-			                                <div class='article-preview team-article-preview legs-article clearfix'>
-			                                    <div class="article-preview__tag article-preview__tag-2">3Акция</div>
-			                                    <h4 class="article-preview__h team-article-preview__h news-article-preview__h">ПОДАРОЧНЫЕ<br>ПРЕДЛОЖЕНИЯ</h4>
-			                                    <span class="article-preview__date team-article-preview__date news-article-preview__date">15 Марта 2018</span>
-			                                </div>
-			                            </a>
-                        			</div>
-                        			<div class="item" >
-                        				<a href='#' class="item-news">
-			                                <div class='article-preview team-article-preview legs-article clearfix'>
-			                                    <div class="article-preview__tag article-preview__tag-2">4Акция</div>
-			                                    <h4 class="article-preview__h team-article-preview__h news-article-preview__h">ПОДАРОЧНЫЕ<br>ПРЕДЛОЖЕНИЯ</h4>
-			                                    <span class="article-preview__date team-article-preview__date news-article-preview__date">15 Марта 2018</span>
-			                                </div>
-			                            </a>
-                        			</div>
-                        		</div>
-                        	</div>
+                            <div class="slideshow">
+                                <div class="slider slideshow-left">
+                                    <div class="item">
+                                        <div class="item-news">
+                                            <div class='article-preview team-article-preview bender-image clearfix bender-white-5'>
+                                                <div class="article-preview__tag clearfix">0акция</div>
+                                                <h4 class="article-preview__h team-article-preview__h">Программа<br>По Коррекции</h4>
+                                                <span class="article-preview__date team-article-preview__date">Ведущий колорист</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="item-news">
+                                            <div class='article-preview team-article-preview bender-image clearfix bender-white-5'>
+                                                <div class="article-preview__tag clearfix">1акция</div>
+                                                <h4 class="article-preview__h team-article-preview__h">ОЛЕСЯ<br>БЕНДЕР</h4>
+                                                <span class="article-preview__date team-article-preview__date">Ведущий колорист</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item" >
+                                        <div class="item-news">
+                                            <div class='article-preview team-article-preview bender-image clearfix bender-white-5'>
+                                                <div class="article-preview__tag clearfix">акция</div>
+                                                <h4 class="article-preview__h team-article-preview__h">ОЛЕСЯ<br>БЕНДЕР</h4>
+                                                <span class="article-preview__date team-article-preview__date">Ведущий колорист</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item" >
+                                        <div class="item-news">
+                                            <div class='article-preview team-article-preview bender-image clearfix bender-white-5'>
+                                                <div class="article-preview__tag clearfix">акция</div>
+                                                <h4 class="article-preview__h team-article-preview__h">ОЛЕСЯ<br>БЕНДЕР</h4>
+                                                <span class="article-preview__date team-article-preview__date">Ведущий колорист</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                         <div class='one-third-block one-third-block-third team-one-third-block clearfix'>
-                        	<div class="slideshow">
-                        		<div class="slider slideshow-right">
-                        			<div class="item">
-                        				<a href='#' class="item-news">
-			                                <div class='article-preview team-article-preview legs-article clearfix'>
-			                                    <div class="article-preview__tag article-preview__tag-2">1Акция</div>
-			                                    <h4 class="article-preview__h team-article-preview__h news-article-preview__h">ПОДАРОЧНЫЕ<br>ПРЕДЛОЖЕНИЯ</h4>
-			                                    <span class="article-preview__date team-article-preview__date news-article-preview__date">15 Марта 2018</span>
-			                                </div>
-			                            </a>
-                        			</div>
-                        			<div class="item">
-                        				<a href='#' class="item-news">
-			                                <div class='article-preview team-article-preview legs-article clearfix'>
-			                                    <div class="article-preview__tag article-preview__tag-2">2Акция</div>
-			                                    <h4 class="article-preview__h team-article-preview__h news-article-preview__h">ПОДАРОЧНЫЕ<br>ПРЕДЛОЖЕНИЯ</h4>
-			                                    <span class="article-preview__date team-article-preview__date news-article-preview__date">15 Марта 2018</span>
-			                                </div>
-			                            </a>
-                        			</div>
-                        			<div class="item">
-                        				<a href='#' class="item-news">
-			                                <div class='article-preview team-article-preview legs-article clearfix'>
-			                                    <div class="article-preview__tag article-preview__tag-2">3Акция</div>
-			                                    <h4 class="article-preview__h team-article-preview__h news-article-preview__h">ПОДАРОЧНЫЕ<br>ПРЕДЛОЖЕНИЯ</h4>
-			                                    <span class="article-preview__date team-article-preview__date news-article-preview__date">15 Марта 2018</span>
-			                                </div>
-			                            </a>
-                        			</div>
-                        			
-                        		</div>
-                        	</div>
+                            <div class="slideshow">
+                                <div class="slider slideshow-right">
+                                    <div class="item">
+                                        <div class="item-news">
+                                            <div class='article-preview team-article-preview bender-image clearfix bender-white-5'>
+                                                <div class="article-preview__tag clearfix">акция</div>
+                                                <h4 class="article-preview__h team-article-preview__h">ОЛЕСЯ<br>БЕНДЕР</h4>
+                                                <span class="article-preview__date team-article-preview__date">Ведущий колорист</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="item-news">
+                                            <div class='article-preview team-article-preview bender-image clearfix bender-white-5'>
+                                                <div class="article-preview__tag clearfix">Акция</div>
+                                                <h4 class="article-preview__h team-article-preview__h">ОЛЕСЯ<br>БЕНДЕР</h4>
+                                                <span class="article-preview__date team-article-preview__date">Ведущий колорист</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="item-news">
+                                            <div class='article-preview team-article-preview bender-image clearfix bender-white-5'>
+                                                <div class="article-preview__tag clearfix">Акция</div>
+                                                <h4 class="article-preview__h team-article-preview__h">ОЛЕСЯ<br>БЕНДЕР</h4>
+                                                <span class="article-preview__date team-article-preview__date">Ведущий колорист</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                            </div>
                         </div>
                     </div>
 
 
-                    <div class='service-menu__subheader team-menu__subheader desktop-only clearfix'>
+                    <div data-counter="1" class='service-menu__subheader team-menu__subheader desktop-only sliderCatCh clearfix'>
                         <p>Здоровье</p>
                         <div class='service-menu__dash team-menu__dash'></div>
                         <div class='service-menu__dash team-menu__dash'></div>
@@ -164,84 +169,84 @@
                     <div class="service-content-wrapper team-content-wrapper desktop-opened wrap-health wrap-entry">
                         <div class='one-third-block one-third-block-second team-one-third-block clearfix'>
                            <div class="slideshow">
-                        		<div class="slider slideshow-left">
-                        			<div class="item">
-                        				<a href='#' class="item-news">
-			                                <div class='article-preview team-article-preview legs-article clearfix '>
-			                                    <div class="article-preview__tag article-preview__tag-2">Здоровье</div>
-			                                    <h4 class="article-preview__h team-article-preview__h news-article-preview__h">ПОДАРОЧНЫЕ<br>ПРЕДЛОЖЕНИЯ</h4>
-			                                    <span class="article-preview__date team-article-preview__date news-article-preview__date">15 Марта 2018</span>
-			                                </div>
-			                            </a>
-                        			</div>
-                        			<div class="item">
-                        				<a href='#' class="item-news">
-			                                <div class='article-preview team-article-preview legs-article clearfix'>
-			                                    <div class="article-preview__tag article-preview__tag-2">2Акция</div>
-			                                    <h4 class="article-preview__h team-article-preview__h news-article-preview__h">ПОДАРОЧНЫЕ<br>ПРЕДЛОЖЕНИЯ</h4>
-			                                    <span class="article-preview__date team-article-preview__date news-article-preview__date">15 Марта 2018</span>
-			                                </div>
-			                            </a>
-                        			</div>
-                        			<div class="item" >
-                        				<a href='#' class="item-news">
-			                                <div class='article-preview team-article-preview legs-article clearfix'>
-			                                    <div class="article-preview__tag article-preview__tag-2">3Акция</div>
-			                                    <h4 class="article-preview__h team-article-preview__h news-article-preview__h">ПОДАРОЧНЫЕ<br>ПРЕДЛОЖЕНИЯ</h4>
-			                                    <span class="article-preview__date team-article-preview__date news-article-preview__date">15 Марта 2018</span>
-			                                </div>
-			                            </a>
-                        			</div>
-                        			<div class="item" >
-                        				<a href='#' class="item-news">
-			                                <div class='article-preview team-article-preview legs-article clearfix'>
-			                                    <div class="article-preview__tag article-preview__tag-2">4Акция</div>
-			                                    <h4 class="article-preview__h team-article-preview__h news-article-preview__h">ПОДАРОЧНЫЕ<br>ПРЕДЛОЖЕНИЯ</h4>
-			                                    <span class="article-preview__date team-article-preview__date news-article-preview__date">15 Марта 2018</span>
-			                                </div>
-			                            </a>
-                        			</div>
-                        		</div>
-                        	</div>
+                                <div class="slider slideshow-left">
+                                    <div class="item">
+                                        <div class="item-news">
+                                            <div class='article-preview team-article-preview bender-image clearfix bender-white-5'>
+                                                <div class="article-preview__tag clearfix">Акция</div>
+                                                <h4 class="article-preview__h team-article-preview__h">Колористка<br>БЕНДЕР</h4>
+                                                <span class="article-preview__date team-article-preview__date">Ведущий колорист</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="item-news">
+                                            <div class='article-preview team-article-preview bender-image clearfix bender-white-5'>
+                                                <div class="article-preview__tag clearfix">Акция</div>
+                                                <h4 class="article-preview__h team-article-preview__h">ОЛЕСЯ<br>БЕНДЕР</h4>
+                                                <span class="article-preview__date team-article-preview__date">Ведущий колорист</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item" >
+                                        <div class="item-news">
+                                            <div class='article-preview team-article-preview bender-image clearfix bender-white-5'>
+                                                <div class="article-preview__tag clearfix">Акция</div>
+                                                <h4 class="article-preview__h team-article-preview__h">ОЛЕСЯ<br>БЕНДЕР</h4>
+                                                <span class="article-preview__date team-article-preview__date">Ведущий колорист</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item" >
+                                        <div class="item-news">
+                                            <div class='article-preview team-article-preview bender-image clearfix bender-white-5'>
+                                                <div class="article-preview__tag clearfix">Акция</div>
+                                                <h4 class="article-preview__h team-article-preview__h">ОЛЕСЯ<br>БЕНДЕР</h4>
+                                                <span class="article-preview__date team-article-preview__date">Ведущий колорист</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                         <div class='one-third-block one-third-block-third team-one-third-block clearfix'>
                            <div class="slideshow">
-                        		<div class="slider slideshow-right">
-                        			<div class="item">
-                        				<a href='#' class="item-news">
-			                                <div class='article-preview team-article-preview legs-article clearfix'>
-			                                    <div class="article-preview__tag article-preview__tag-2">1Акция</div>
-			                                    <h4 class="article-preview__h team-article-preview__h news-article-preview__h">ПОДАРОЧНЫЕ<br>ПРЕДЛОЖЕНИЯ</h4>
-			                                    <span class="article-preview__date team-article-preview__date news-article-preview__date">15 Марта 2018</span>
-			                                </div>
-			                            </a>
-                        			</div>
-                        			<div class="item">
-                        				<a href='#' class="item-news">
-			                                <div class='article-preview team-article-preview legs-article clearfix'>
-			                                    <div class="article-preview__tag article-preview__tag-2">2Акция</div>
-			                                    <h4 class="article-preview__h team-article-preview__h news-article-preview__h">ПОДАРОЧНЫЕ<br>ПРЕДЛОЖЕНИЯ</h4>
-			                                    <span class="article-preview__date team-article-preview__date news-article-preview__date">15 Марта 2018</span>
-			                                </div>
-			                            </a>
-                        			</div>
-                        			<div class="item">
-                        				<a href='#' class="item-news">
-			                                <div class='article-preview team-article-preview legs-article clearfix'>
-			                                    <div class="article-preview__tag article-preview__tag-2">3Акция</div>
-			                                    <h4 class="article-preview__h team-article-preview__h news-article-preview__h">ПОДАРОЧНЫЕ<br>ПРЕДЛОЖЕНИЯ</h4>
-			                                    <span class="article-preview__date team-article-preview__date news-article-preview__date">15 Марта 2018</span>
-			                                </div>
-			                            </a>
-                        			</div>
-                        			
-                        		</div>
-                        	</div>
+                                <div class="slider slideshow-right">
+                                    <div class="item">
+                                        <div class="item-news">
+                                            <div class='article-preview team-article-preview bender-image clearfix bender-white-5'>
+                                                <div class="article-preview__tag clearfix">Платонова, 1Б</div>
+                                                <h4 class="article-preview__h team-article-preview__h">ОЛЕСЯ<br>БЕНДЕР</h4>
+                                                <span class="article-preview__date team-article-preview__date">Ведущий колорист</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="item-news">
+                                            <div class='article-preview team-article-preview bender-image clearfix bender-white-5'>
+                                                <div class="article-preview__tag clearfix">Платонова, 1Б</div>
+                                                <h4 class="article-preview__h team-article-preview__h">ОЛЕСЯ<br>БЕНДЕР</h4>
+                                                <span class="article-preview__date team-article-preview__date">Ведущий колорист</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="item-news">
+                                            <div class='article-preview team-article-preview bender-image clearfix bender-white-5'>
+                                                <div class="article-preview__tag clearfix">Платонова, 1Б</div>
+                                                <h4 class="article-preview__h team-article-preview__h">ОЛЕСЯ<br>БЕНДЕР</h4>
+                                                <span class="article-preview__date team-article-preview__date">Ведущий колорист</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                            </div>
                         </div>
                     </div>
 
 
-                    <div class='service-menu__subheader team-menu__subheader desktop-only clearfix'>
+                    <div data-counter="2" class='service-menu__subheader team-menu__subheader desktop-only sliderCatCh clearfix'>
                         <p>Красота</p>
                         <div class='service-menu__dash team-menu__dash'></div>
                         <div class='service-menu__dash team-menu__dash'></div>
@@ -249,181 +254,183 @@
                     <div class="service-content-wrapper team-content-wrapper desktop-opened wrap-beauty wrap-entry">           
                         <div class='one-third-block one-third-block-second team-one-third-block clearfix'>
                             <div class="slideshow">
-                        		<div class="slider slideshow-left">
-                        			<div class="item">
-                        				<a href='#' class="item-news">
-			                                <div class='article-preview team-article-preview legs-article clearfix '>
-			                                    <div class="article-preview__tag article-preview__tag-2">Красота</div>
-			                                    <h4 class="article-preview__h team-article-preview__h news-article-preview__h">ПОДАРОЧНЫЕ<br>ПРЕДЛОЖЕНИЯ</h4>
-			                                    <span class="article-preview__date team-article-preview__date news-article-preview__date">15 Марта 2018</span>
-			                                </div>
-			                            </a>
-                        			</div>
-                        			<div class="item">
-                        				<a href='#' class="item-news">
-			                                <div class='article-preview team-article-preview legs-article clearfix'>
-			                                    <div class="article-preview__tag article-preview__tag-2">2Акция</div>
-			                                    <h4 class="article-preview__h team-article-preview__h news-article-preview__h">ПОДАРОЧНЫЕ<br>ПРЕДЛОЖЕНИЯ</h4>
-			                                    <span class="article-preview__date team-article-preview__date news-article-preview__date">15 Марта 2018</span>
-			                                </div>
-			                            </a>
-                        			</div>
-                        			<div class="item" >
-                        				<a href='#' class="item-news">
-			                                <div class='article-preview team-article-preview legs-article clearfix'>
-			                                    <div class="article-preview__tag article-preview__tag-2">3Акция</div>
-			                                    <h4 class="article-preview__h team-article-preview__h news-article-preview__h">ПОДАРОЧНЫЕ<br>ПРЕДЛОЖЕНИЯ</h4>
-			                                    <span class="article-preview__date team-article-preview__date news-article-preview__date">15 Марта 2018</span>
-			                                </div>
-			                            </a>
-                        			</div>
-                        			<div class="item" >
-                        				<a href='#' class="item-news">
-			                                <div class='article-preview team-article-preview legs-article clearfix'>
-			                                    <div class="article-preview__tag article-preview__tag-2">4Акция</div>
-			                                    <h4 class="article-preview__h team-article-preview__h news-article-preview__h">ПОДАРОЧНЫЕ<br>ПРЕДЛОЖЕНИЯ</h4>
-			                                    <span class="article-preview__date team-article-preview__date news-article-preview__date">15 Марта 2018</span>
-			                                </div>
-			                            </a>
-                        			</div>
-                        		</div>
-                        	</div>
+                                <div class="slider slideshow-left">
+                                    <div class="item">
+                                        <div class="item-news">
+                                            <div class='article-preview team-article-preview bender-image clearfix bender-white-5'>
+                                                <div class="article-preview__tag article-preview__tag-2">Немига, 5</div>
+                                                <h4 class="article-preview__h team-article-preview__h">ОЛЕСЯ<br>БЕНДЕР</h4>
+                                                <span class="article-preview__date team-article-preview__date">Ведущий колорист</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="item-news">
+                                            <div class='article-preview team-article-preview bender-image clearfix bender-white-5'>
+                                                <div class="article-preview__tag clearfix">Платонова, 1Б</div>
+                                                <h4 class="article-preview__h team-article-preview__h">ОЛЕСЯ<br>БЕНДЕР</h4>
+                                                <span class="article-preview__date team-article-preview__date">Ведущий колорист</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item" >
+                                        <div class="item-news">
+                                            <div class='article-preview team-article-preview bender-image clearfix bender-white-5'>
+                                                <div class="article-preview__tag clearfix">Платонова, 1Б</div>
+                                                <h4 class="article-preview__h team-article-preview__h">ОЛЕСЯ<br>БЕНДЕР</h4>
+                                                <span class="article-preview__date team-article-preview__date">Ведущий колорист</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item" >
+                                        <div class="item-news">
+                                            <div class='article-preview team-article-preview bender-image clearfix bender-white-5'>
+                                                <div class="article-preview__tag clearfix">Платонова, 1Б</div>
+                                                <h4 class="article-preview__h team-article-preview__h">ОЛЕСЯ<br>БЕНДЕР</h4>
+                                                <span class="article-preview__date team-article-preview__date">Ведущий колорист</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                         <div class='one-third-block one-third-block-third team-one-third-block clearfix'>
                            <div class="slideshow">
-                        		<div class="slider slideshow-right">
-                        			<div class="item">
-                        				<a href='#' class="item-news">
-			                                <div class='article-preview team-article-preview legs-article clearfix'>
-			                                    <div class="article-preview__tag article-preview__tag-2">Акция</div>
-			                                    <h4 class="article-preview__h team-article-preview__h news-article-preview__h">ПОДАРОЧНЫЕ<br>ПРЕДЛОЖЕНИЯ</h4>
-			                                    <span class="article-preview__date team-article-preview__date news-article-preview__date">15 Марта 2018</span>
-			                                </div>
-			                            </a>
-                        			</div>
-                        			<div class="item">
-                        				<a href='#' class="item-news">
-			                                <div class='article-preview team-article-preview legs-article clearfix'>
-			                                    <div class="article-preview__tag article-preview__tag-2">Акция</div>
-			                                    <h4 class="article-preview__h team-article-preview__h news-article-preview__h">ПОДАРОЧНЫЕ<br>ПРЕДЛОЖЕНИЯ</h4>
-			                                    <span class="article-preview__date team-article-preview__date news-article-preview__date">15 Марта 2018</span>
-			                                </div>
-			                            </a>
-                        			</div>
-                        			<div class="item">
-                        				<a href='#' class="item-news">
-			                                <div class='article-preview team-article-preview legs-article clearfix'>
-			                                    <div class="article-preview__tag article-preview__tag-2">Акция</div>
-			                                    <h4 class="article-preview__h team-article-preview__h news-article-preview__h">ПОДАРОЧНЫЕ<br>ПРЕДЛОЖЕНИЯ</h4>
-			                                    <span class="article-preview__date team-article-preview__date news-article-preview__date">15 Марта 2018</span>
-			                                </div>
-			                            </a>
-                        			</div>
-                        			
-                        		</div>
-                        	</div>
+                                <div class="slider slideshow-right">
+                                    <div class="item">
+                                        <div class="item-news">
+                                            <div class='article-preview team-article-preview bender-image clearfix bender-white-5'>
+                                                <div class="article-preview__tag clearfix">Платонова, 1Б</div>
+                                                <h4 class="article-preview__h team-article-preview__h">ОЛЕСЯ<br>БЕНДЕР</h4>
+                                                <span class="article-preview__date team-article-preview__date">Ведущий колорист</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="item-news">
+                                            <div class='article-preview team-article-preview bender-image clearfix bender-white-5'>
+                                                <div class="article-preview__tag clearfix">Платонова, 1Б</div>
+                                                <h4 class="article-preview__h team-article-preview__h">ОЛЕСЯ<br>БЕНДЕР</h4>
+                                                <span class="article-preview__date team-article-preview__date">Ведущий колорист</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="item-news">
+                                            <div class='article-preview team-article-preview bender-image clearfix bender-white-5'>
+                                                <div class="article-preview__tag article-preview__tag-2">Немига, 5</div>
+                                                <h4 class="article-preview__h team-article-preview__h">ОЛЕСЯ<br>БЕНДЕР</h4>
+                                                <span class="article-preview__date team-article-preview__date">Ведущий колорист</span>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                            </div>
                         </div>
                     </div>
 
-
-                    <div class='service-menu__subheader team-menu__subheader desktop-only clearfix'>
+                     <div data-counter="2" class='service-menu__subheader team-menu__subheader desktop-only sliderCatCh clearfix'>
                         <p>Полезное</p>
                         <div class='service-menu__dash team-menu__dash'></div>
                         <div class='service-menu__dash team-menu__dash'></div>
                     </div>
-                    <div class="service-content-wrapper team-content-wrapper desktop-opened wrap-useful wrap-entry">                      
+                    <div class="service-content-wrapper team-content-wrapper desktop-opened wrap-beauty wrap-entry">           
                         <div class='one-third-block one-third-block-second team-one-third-block clearfix'>
-                           <div class="slideshow">
-                        		<div class="slider slideshow-left">
-                        			<div class="item">
-                        				<a href='#' class="item-news">
-			                                <div class='article-preview team-article-preview legs-article clearfix '>
-			                                    <div class="article-preview__tag article-preview__tag-2">Полезное</div>
-			                                    <h4 class="article-preview__h team-article-preview__h news-article-preview__h">ПОДАРОЧНЫЕ<br>ПРЕДЛОЖЕНИЯ</h4>
-			                                    <span class="article-preview__date team-article-preview__date news-article-preview__date">15 Марта 2018</span>
-			                                </div>
-			                            </a>
-                        			</div>
-                        			<div class="item">
-                        				<a href='#' class="item-news">
-			                                <div class='article-preview team-article-preview legs-article clearfix'>
-			                                    <div class="article-preview__tag article-preview__tag-2">2Акция</div>
-			                                    <h4 class="article-preview__h team-article-preview__h news-article-preview__h">ПОДАРОЧНЫЕ<br>ПРЕДЛОЖЕНИЯ</h4>
-			                                    <span class="article-preview__date team-article-preview__date news-article-preview__date">15 Марта 2018</span>
-			                                </div>
-			                            </a>
-                        			</div>
-                        			<div class="item" >
-                        				<a href='#' class="item-news">
-			                                <div class='article-preview team-article-preview legs-article clearfix'>
-			                                    <div class="article-preview__tag article-preview__tag-2">3Акция</div>
-			                                    <h4 class="article-preview__h team-article-preview__h news-article-preview__h">ПОДАРОЧНЫЕ<br>ПРЕДЛОЖЕНИЯ</h4>
-			                                    <span class="article-preview__date team-article-preview__date news-article-preview__date">15 Марта 2018</span>
-			                                </div>
-			                            </a>
-                        			</div>
-                        			<div class="item" >
-                        				<a href='#' class="item-news">
-			                                <div class='article-preview team-article-preview legs-article clearfix'>
-			                                    <div class="article-preview__tag article-preview__tag-2">4Акция</div>
-			                                    <h4 class="article-preview__h team-article-preview__h news-article-preview__h">ПОДАРОЧНЫЕ<br>ПРЕДЛОЖЕНИЯ</h4>
-			                                    <span class="article-preview__date team-article-preview__date news-article-preview__date">15 Марта 2018</span>
-			                                </div>
-			                            </a>
-                        			</div>
-                        		</div>
-                        	</div>
+                            <div class="slideshow">
+                                <div class="slider slideshow-left">
+                                    <div class="item">
+                                        <div class="item-news">
+                                            <div class='article-preview team-article-preview bender-image clearfix bender-white-5'>
+                                                <div class="article-preview__tag article-preview__tag-2">Полезное</div>
+                                                <h4 class="article-preview__h team-article-preview__h">ОЛЕСЯ<br>БЕНДЕР</h4>
+                                                <span class="article-preview__date team-article-preview__date">Ведущий колорист</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="item-news">
+                                            <div class='article-preview team-article-preview bender-image clearfix bender-white-5'>
+                                                <div class="article-preview__tag clearfix">Платонова, 1Б</div>
+                                                <h4 class="article-preview__h team-article-preview__h">ОЛЕСЯ<br>БЕНДЕР</h4>
+                                                <span class="article-preview__date team-article-preview__date">Ведущий колорист</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item" >
+                                        <div class="item-news">
+                                            <div class='article-preview team-article-preview bender-image clearfix bender-white-5'>
+                                                <div class="article-preview__tag clearfix">Платонова, 1Б</div>
+                                                <h4 class="article-preview__h team-article-preview__h">ОЛЕСЯ<br>БЕНДЕР</h4>
+                                                <span class="article-preview__date team-article-preview__date">Ведущий колорист</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item" >
+                                        <div class="item-news">
+                                            <div class='article-preview team-article-preview bender-image clearfix bender-white-5'>
+                                                <div class="article-preview__tag clearfix">Платонова, 1Б</div>
+                                                <h4 class="article-preview__h team-article-preview__h">ОЛЕСЯ<br>БЕНДЕР</h4>
+                                                <span class="article-preview__date team-article-preview__date">Ведущий колорист</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                         <div class='one-third-block one-third-block-third team-one-third-block clearfix'>
-                            <div class="slideshow">
-                        		<div class="slider slideshow-right">
-                        			<div class="item">
-                        				<a href='#' class="item-news">
-			                                <div class='article-preview team-article-preview legs-article clearfix'>
-			                                    <div class="article-preview__tag article-preview__tag-2">Акция</div>
-			                                    <h4 class="article-preview__h team-article-preview__h news-article-preview__h">ПОДАРОЧНЫЕ<br>ПРЕДЛОЖЕНИЯ</h4>
-			                                    <span class="article-preview__date team-article-preview__date news-article-preview__date">15 Марта 2018</span>
-			                                </div>
-			                            </a>
-                        			</div>
-                        			<div class="item">
-                        				<a href='#' class="item-news">
-			                                <div class='article-preview team-article-preview legs-article clearfix'>
-			                                    <div class="article-preview__tag article-preview__tag-2">Акция</div>
-			                                    <h4 class="article-preview__h team-article-preview__h news-article-preview__h">ПОДАРОЧНЫЕ<br>ПРЕДЛОЖЕНИЯ</h4>
-			                                    <span class="article-preview__date team-article-preview__date news-article-preview__date">15 Марта 2018</span>
-			                                </div>
-			                            </a>
-                        			</div>
-                        			<div class="item">
-                        				<a href='#' class="item-news">
-			                                <div class='article-preview team-article-preview legs-article clearfix'>
-			                                    <div class="article-preview__tag article-preview__tag-2">Акция</div>
-			                                    <h4 class="article-preview__h team-article-preview__h news-article-preview__h">ПОДАРОЧНЫЕ<br>ПРЕДЛОЖЕНИЯ</h4>
-			                                    <span class="article-preview__date team-article-preview__date news-article-preview__date">15 Марта 2018</span>
-			                                </div>
-			                            </a>
-                        			</div>
-                        			
-                        		</div>
-                        	</div>
+                           <div class="slideshow">
+                                <div class="slider slideshow-right">
+                                    <div class="item">
+                                        <div class="item-news">
+                                            <div class='article-preview team-article-preview bender-image clearfix bender-white-5'>
+                                                <div class="article-preview__tag clearfix">Платонова, 1Б</div>
+                                                <h4 class="article-preview__h team-article-preview__h">ОЛЕСЯ<br>БЕНДЕР</h4>
+                                                <span class="article-preview__date team-article-preview__date">Ведущий колорист</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="item-news">
+                                            <div class='article-preview team-article-preview bender-image clearfix bender-white-5'>
+                                                <div class="article-preview__tag clearfix">Платонова, 1Б</div>
+                                                <h4 class="article-preview__h team-article-preview__h">ОЛЕСЯ<br>БЕНДЕР</h4>
+                                                <span class="article-preview__date team-article-preview__date">Ведущий колорист</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="item-news">
+                                            <div class='article-preview team-article-preview bender-image clearfix bender-white-5'>
+                                                <div class="article-preview__tag article-preview__tag-2">Немига, 5</div>
+                                                <h4 class="article-preview__h team-article-preview__h">ОЛЕСЯ<br>БЕНДЕР</h4>
+                                                <span class="article-preview__date team-article-preview__date">Ведущий колорист</span>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                            </div>
                         </div>
                     </div>
+
+
+                    
                 </div>
             </div>
         </menu>
 
 
 
-  
-        
 
     </main>
 
 
         <!-- Popup -->
 
-        <div class="popup-main hidden ">     
+        <div class="popup-main hidden " >     
             <div class="bar-title ">
                 <div class="bnt-prev ">
                     <div class="prev-abbout"></div>
@@ -451,7 +458,9 @@
                     </div>
                 </div>
             </div>
+
             <div class="bar-popup">
+
                 <div class="change-pop-up change-service hidden" data-popup="1">
                      <menu class='service-menu'>    
                         <div>
@@ -1108,30 +1117,32 @@
                         </div>
                     </menu>
                 </div>
+
+                
                 <div class="change-pop-up change-master hidden" id="mcs_container" data-mcs-theme="dark" data-popup="2">
                     <a href='#' class="btn-reserv" data-value="ОЛЕСЯ">
-                        <div class='article-preview team-article-preview bender-image clearfix bender-white-4'>
+                        <div class='article-preview team-article-preview bender-image clearfix '>
                             <div class="article-preview__tag article-preview__tag-2">Немига, 5</div>
                         </div>
                         <h4 class="article-preview__h team-article-preview__h">ОЛЕСЯ<br>БЕНДЕР</h4>
                         <span class="article-preview__date team-article-preview__date">Ведущий колорист</span>
                     </a>
                     <a href='#' class="btn-reserv" data-value="БЕНДЕР">
-                        <div class='article-preview team-article-preview bender-image clearfix bender-white-4'>
+                        <div class='article-preview team-article-preview bender-image clearfix '>
                             <div class="article-preview__tag article-preview__tag-2">Немига, 5</div>
                         </div>
                         <h4 class="article-preview__h team-article-preview__h">ОЛЕСЯ<br>БЕНДЕР</h4>
                         <span class="article-preview__date team-article-preview__date">Ведущий колорист</span>
                     </a>
                     <a href='#' class="btn-reserv">
-                        <div class='article-preview team-article-preview bender-image clearfix bender-white-4'>
+                        <div class='article-preview team-article-preview bender-image clearfix '>
                             <div class="article-preview__tag article-preview__tag-2">Немига, 5</div>
                         </div>
                         <h4 class="article-preview__h team-article-preview__h">ОЛЕСЯ<br>БЕНДЕР</h4>
                         <span class="article-preview__date team-article-preview__date">Ведущий колорист</span>
                     </a>
                     <a href='#' class="btn-reserv">
-                        <div class='article-preview team-article-preview bender-image clearfix bender-white-4'>
+                        <div class='article-preview team-article-preview bender-image clearfix '>
                             <div class="article-preview__tag article-preview__tag-2">Немига, 5</div>
                         </div>
                         <h4 class="article-preview__h team-article-preview__h">ОЛЕСЯ<br>БЕНДЕР</h4>
@@ -1139,16 +1150,17 @@
                     </a>
                      
                 </div>
+
                 <div class="change-pop-up calender-wrap hidden"  data-popup="3">                 
                     <div class="datepicker-here animated fadeIn">
                         <div class="owl-carousel owl-theme">
                             <div data-number="1" class="item"><h4>1</h4></div>
                             <div data-number="2" class="item"><h4>2</h4></div>
                             <div data-number="3" class="item"><h4>3</h4></div>
-
                         </div>
                     </div>                  
                 </div>
+
                 <div class="change-pop-up change-time hidden" data-popup="4">
                     <div class="part-day part-day-morning">
                         <h3>Утро</h3>
@@ -1169,6 +1181,7 @@
                         </a>
                     </div>
                 </div>
+
                 <div class="change-pop-up contact-info   hidden"  data-popup="5">
                     <div class="form-wrap">
                         <form action="#" method="get" class="open">                         
@@ -1231,7 +1244,8 @@
                             </div>
                         </form>
                     </div>              
-                </div>   
+                </div>  
+
                 <div class="change-pop-up contact-thanks hidden">
                     <div class="wrap-thanks">
                         <div class="full-screen">
@@ -1258,28 +1272,30 @@
 
 
 
-
-
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <script src="../js/jquery.mask.min.js"></script>   
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.12/jquery.mousewheel.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.js"></script>
 
-    <script src="../js/owl.carousel.min.js"></script>
-    <script src="../js/news/news-slide.js"></script>
 
+    
+    <script src="../js/owl.carousel.min.js"></script>
+<!--
+    <script src="../js/scroll.js"></script>
+
+
+    
+-->
+
+    <script src="../js/team.js"></script>
     <script src="../js/mobile-nav-menu.js"></script>
 
+    <script src="../js/team/team.js"></script>
 
-	
-    
-    <script src="../js/news/news.js"></script>
-            
-
+    <!-- from popUp -->
     <script src="../js/popup/air-picker/dist/js/datepicker.min.js"></script>
     <script src="../js/owl.carousel.min.js"></script>
     <script src="../js/popup/popup.js"></script>
-
     <!-- scroll-->
 
     <script src="../js/scroll/jquery.mCustomScrollbar.concat.min.js"></script>
@@ -1290,7 +1306,6 @@
             });
         });
     </script>
-
 
 </body>
 

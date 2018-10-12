@@ -1,0 +1,13 @@
+
+
+/*My*/
+
+
+.page-news-fun .slideshow-right .article-preview {
+background-image:  linear-gradient(rgba(0, 0, 0, .2), rgba(0, 0, 0, .2)), url('../../img/info/alike/_correction-programm.png');
+}
+
+.page-news-fun .slideshow-left .article-preview {
+	background-image: linear-gradient(rgba(0, 0, 0, .2), rgba(0, 0, 0, .2)), url('../../img/info/alike/_gift-offers.jpg');
+}
+

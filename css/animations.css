@@ -393,3 +393,55 @@ div.index-sliding-fr__pic{
 		margin: 0 !important;
 	}
 }
+
+
+
+
+
+
+/*=======================================================================================================
+  =================================================FIX alex======================================================
+  ======================================================================================================= */
+
+/*page news*/
+
+.page-news-fun .team-article-preview__date {
+    bottom: 24px;
+}
+
+ .page-news-fun.page-team .one-third-block-third.team-one-third-block .team-article-preview__h,  .page-news-fun.page-team .article-preview__h {
+    bottom: 51px;
+    font-size: 46px;
+}
+
+
+@media screen and (max-width: 1600px) {
+	 .page-news-fun.page-team .one-third-block-third.team-one-third-block .team-article-preview__h,  .page-news-fun.page-team .article-preview__h {
+	    bottom: 14%;
+	    font-size: 46px;
+	}
+}
+
+@media screen and (max-width: 1366px) {
+	 .page-news-fun.page-team .one-third-block-third.team-one-third-block .team-article-preview__h,  .page-news-fun.page-team .article-preview__h {
+	    bottom: 14%;
+	    font-size: 46px;
+	}
+}
+
+@media screen and (max-width: 1023px) {
+	 .page-news-fun .team-article-preview__date {
+	    bottom: 0%;
+	}
+}
+
+
+@media screen and (max-width: 768px) {
+	.page-news-fun.page-team .one-third-block {
+   		float: left;
+	}
+
+	.page-team .one-third-block {
+   		float: left;
+	}
+}

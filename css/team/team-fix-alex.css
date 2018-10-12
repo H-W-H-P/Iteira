@@ -290,8 +290,8 @@ span.nav__elem:after {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        padding-right: 8%;
-        padding-left: 8%;
+        padding-right: 14%;
+        padding-left: 14%;
     }
 
     .page-team .item a {

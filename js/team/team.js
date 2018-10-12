@@ -13,6 +13,7 @@ $( function() {
 			
 			vertical: true,
 			infinite: false,
+			touchMove: false,
 			speed: 800,
 			cssEase: 'cubic-bezier(.17, 0, .58, 1)'
 
@@ -22,6 +23,7 @@ $( function() {
 			
 			vertical: true,		
 			infinite: false,
+			touchMove: false,
 			speed: 800,
 			cssEase: 'cubic-bezier(.69, .01, .58, 1)'
 
@@ -161,6 +163,11 @@ $( function() {
 		$('.article-preview').removeClass('info');
         if (!$(this).hasClass('info')) $(this).addClass('info');
         e.stopPropagation();
+    });
+
+    $('.hover_info').click(function (e) {
+    	e.stopPropagation();
+    	$('.article-preview.info').removeClass('info');
     });
 
     $(document).click(function () {

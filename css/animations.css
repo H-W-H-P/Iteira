@@ -420,6 +420,26 @@ div.index-sliding-fr__pic{
     font-size: 46px;
 }
 
+.popup-main .contact-info path{
+	fill: none;
+}
+
+.page-about-fu.body-info:before {
+	content: none;
+}
+
+.map .nav__elem {
+    line-height: 20px;
+}
+
+.page-news .team-block-header {
+    width: 34vw;
+}
+
+
+
+
+
 
 @media screen and (max-width: 1600px) {
 	 .page-news-fun.page-team .one-third-block-third.team-one-third-block .team-article-preview__h,  .page-news-fun.page-team .article-preview__h {
@@ -450,4 +470,9 @@ div.index-sliding-fr__pic{
 	.page-team .one-third-block {
    		float: left;
 	}
+
+	.page-news .team-block-header {
+	    width: 100%;
+	}
 }
+

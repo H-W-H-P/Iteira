@@ -220,7 +220,6 @@ $( function() {
 
 
 
-    
     let $togle_serv = $('.page-service-fu .sliderCatCh');
 
     $togle_serv.on('click', function() {

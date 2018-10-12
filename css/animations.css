@@ -565,6 +565,11 @@ div.index-sliding-fr__pic{
 }
 */
 
+.page-service-fu .service-content {
+	bottom: 0;
+	top: 0;
+}
+
 @media screen and (max-width: 1023px) {
 
 	.menu-popup__btn, .menu-popup__btn.envoke-order-btn {

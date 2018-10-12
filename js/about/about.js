@@ -90,7 +90,7 @@ $(document).ready(function () {
 
             }
         });
-
+        $('.bnt-prev-n').removeClass('class-show-btn').addClass('class-hide'); 
         
 
        if (!trigger) return false;

@@ -233,7 +233,11 @@ $(document).ready(function () {
 
 	let counter2 = 0;
 	function textChange(val) {
-		
+		console.log(counter2)
+		if ((master != 0) && (counter2 == 1)) {
+			counter2++
+		}
+
 		if (val > counter2) {
 			$('.title-change').eq(counter2).removeClass('right');
 			$('.title-change').eq(val).addClass('right');

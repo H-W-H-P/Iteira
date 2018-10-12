@@ -88,7 +88,7 @@ $( function() {
 	}
 
 	
-	$('.service-content-wrapper').on('mousewheel', function(e) {
+	$('body:not(.service_only) .service-content-wrapper').on('mousewheel', function(e) {
 		let event = e;
 		setMouseWonSlidshow( event, 'slideshow-left', 'slideshow-right');
 	});

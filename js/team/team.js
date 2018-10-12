@@ -220,8 +220,18 @@ $( function() {
 
 
 
+    let $togle_serv = $('.page-service-fu .sliderCatCh');
+
+    $togle_serv.on('click', function() {
+    	if ($(this).hasClass('minus')) $(this).next('div').removeClass('desktop-opacity');
+    });
+
+    function checkWidth() {
+    	if ($(window).width() < 1024) $('.page-service-fu .service-content-wrapper').removeClass('desktop-opacity');
+    }
     
- 
+    checkWidth();
+    $(window).resize(checkWidth);
 
 });
 

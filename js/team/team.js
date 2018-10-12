@@ -216,5 +216,24 @@ $( function() {
         $('.sliderCatCh').removeClass('desktop-chosen')
         $('.sliderCatCh').eq(dataCounter).addClass('desktop-chosen');
     }
+
+
+
+
+    
+    let togle_serv = $('.page-service-fu .service-menu__subheader');
+
+    $(togle_serv).on('click', function() {
+    	let openorclose = $('.page-service-fu .service-menu__subheader').next('div').toggle()
+    //	$('.page-service-fu .service-menu__subheader').next('div').toggle();
+
+    	// if (openorclose) {
+    	// 	$('.page-service-fu .service-menu__subheader').next('div').removeClass('desktop-opacity');
+    	// 	$('.page-service-fu .service-menu__dash:last-child').addClass('open-hover')
+    	// } else {
+    	// 	$('.page-service-fu .service-menu__subheader').next('div').removeClass('desktop-opened').addClass('desktop-opacity');
+    	// }
+    });
+
 });
 

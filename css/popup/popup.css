@@ -1112,7 +1112,7 @@ body.popUp{
 
 
 .full-screen {
-  background: url(../../img/index/frames/2nd.jpg) no-repeat center center / cover;
+  background: url(../../img/bg-popup.jpg) no-repeat center center / cover;
   height: 100%;
   width: 100%;
   position: relative;

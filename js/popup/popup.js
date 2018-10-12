@@ -309,7 +309,7 @@ $(document).ready(function () {
 		let _this = this;
 		let trigger = true;
 
-	    $('.group input.input').each(function( index ) {
+	    $('.popup-main .group .input').each(function( index ) {
 	    	
 	      let _this = this;
 	     	
@@ -404,6 +404,13 @@ $(document).ready(function () {
 		setTimeout(() => {
 			$('.popup-main').removeClass('fadeOut').addClass('hidden');
 		},500);
+
+		let manuPopUp = $('.menu-popup').hasClass('opened');
+
+		if (manuPopUp) {
+			$('.menu-popup').removeClass('opened').addClass('closed');
+		}
+		
 	});
 
 

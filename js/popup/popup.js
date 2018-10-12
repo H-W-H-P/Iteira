@@ -171,7 +171,7 @@ $(document).ready(function () {
 	let counterTitle = 0;
 	
 /*popup control*/
-	function viwe(_this, _2this, _calenderVal) {	
+	function viwe(_this, _2this, _calenderVal) {
 
 		let dataValue = $(_this).data('value');
 		let parent = $(_this).closest('.change-pop-up');
@@ -188,6 +188,11 @@ $(document).ready(function () {
 			dataValue = _calenderVal;
 		}
 		$('.form-hidden-content .hidden-input').eq(parentNum).val(dataValue);
+
+		if ((master != 0) && (counterTitle == 0)) {
+			counterTitle++;
+		}
+
 
 		if (_this) {
 			$('.change-pop-up').eq(counterTitle).removeClass('active-popup');
@@ -228,7 +233,11 @@ $(document).ready(function () {
 
 	let counter2 = 0;
 	function textChange(val) {
-		
+		console.log(counter2)
+		if ((master != 0) && (counter2 == 1)) {
+			counter2++
+		}
+
 		if (val > counter2) {
 			$('.title-change').eq(counter2).removeClass('right');
 			$('.title-change').eq(val).addClass('right');
@@ -242,17 +251,31 @@ $(document).ready(function () {
 	}
 
 	var $document = $('html, body');
+	var master = '0';
 
 	$('.btn-popup').on('click', function(EO) {
-		$document.addClass('popUp');
 		EO.preventDefault();
+		openPopUp();
+	});
+
+	$('.concMastBtn').click(function (e) {
+		master = $(this).data('master');
+		openPopUp(master);
+		$('.hidden-input.input-value').eq(1).val(master);
+    });
+
+	function openPopUp (master) {
+		$document.addClass('popUp');
 		$('.wrap-title').removeClass('hidden active-title').addClass('active-pop');
 		$('.title-change').eq(0).addClass('right');
 		$('.popup-main').removeClass('hidden').addClass('active-pop-wrap animated fadeIn');
 		$('.change-service').removeClass('hidden').addClass('active-popup');
 		$('.bnt-prev').removeClass('active-pop').addClass('hidden');
 		counterTitle = 0;
-	});
+		// if (master) {
+		// 	console.log('heh')
+		// }
+	}
 
 	$('.btn-reserv').on('click', function() {
 		let _this = this;
@@ -344,6 +367,8 @@ $(document).ready(function () {
 		
 		$('.bnt-prev').removeClass('active-pop-wrap').addClass('hidden');
 
+		master = '0';
+
 	});
 
 
@@ -375,6 +400,7 @@ $(document).ready(function () {
 		$('.wrap-title').removeClass('active-title');
 		let countCalender = 0;
 		counter2 = 0;
+		master = '0';
 		setTimeout(() => {
 			$('.popup-main').removeClass('fadeOut').addClass('hidden');
 		},500);

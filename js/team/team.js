@@ -156,7 +156,7 @@ $( function() {
 
 	});
 
-	$('.article-preview').click(function (e) {
+	$('.one-third-block .article-preview').click(function (e) {
 		if ($(this).hasClass('info')) $(this).removeClass('info');
 		$('.article-preview').removeClass('info');
         if (!$(this).hasClass('info')) $(this).addClass('info');
@@ -167,8 +167,47 @@ $( function() {
     	$('.article-preview').removeClass('info');
     });
 
-    // $('.page-team .article-preview .envoke-order-btn').click(function () {
+    $('.concMastBtn').click(function (e) {
+    	e.preventDefault();
+    	e.stopPropagation();
+    	$('.article-preview').removeClass('info');
+    });
 
-    // });
+    var dataCounter = 0;
+    var maxCounter = $('.sliderCatCh').length;
+
+    let owlMobNav = $('.owl-carousel.team-menu-mobile').owlCarousel({
+        margin:10,
+        nav: false,
+        items: 1
+    });
+
+    $('.sliderCatCh').click(function () {
+        dataCounter = $(this).data('counter');
+        sliding(dataCounter);
+    });
+
+    $('.index-slider__arrow').click(function () {
+        if ($(this).hasClass('index-slider__prev')) {
+            dataCounter--;
+            if (dataCounter <= 0) dataCounter = 0
+        } else {
+            dataCounter++;
+            if (dataCounter >= maxCounter) dataCounter = maxCounter-1
+        }
+        sliding(dataCounter);
+    });
+
+    owlMobNav.on('changed.owl.carousel', function(event) {
+        dataCounter = event.item.index;
+        sliding(dataCounter);
+    });
+
+    function sliding(dataCounter) {
+        $('.service-content-wrapper').removeClass('desktop-opacity');
+        $('.service-content-wrapper').eq(dataCounter).addClass('desktop-opacity');
+        $('.sliderCatCh').removeClass('desktop-chosen')
+        $('.sliderCatCh').eq(dataCounter).addClass('desktop-chosen');
+    }
 });
 

@@ -383,6 +383,12 @@ div.index-sliding-fr__pic{
 	.index-slider{
 		z-index: 2;
 	}
+	.article-preview:hover{
+		-webkit-transform: none;
+		-ms-transform: none;
+		-o-transform: none;
+		transform: none;
+	}
 }
 
 @media screen and (max-width: 767px){

@@ -1319,8 +1319,8 @@ path {
 }
 
 .popup-main textarea:focus ~ label, .popup-main textarea:valid ~ label {
-    top:10px;
-    left: 5px;
+  top:7px;
+  left: 5px;
   font-size:14px;
   color:#d2ab66;
 }

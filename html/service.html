@@ -10,7 +10,7 @@
     <link href="../css/imports.css" rel="stylesheet">
 </head>
 
-<body class='body-info body-service service_only'>
+<body class='body-info body-service service_only body-service-fu'>
     <div class="menu-popup closed mobile-only">
         <a class="closure" href='#'></a>
         <a>
@@ -28,7 +28,10 @@
         <div class="nav__elem envoke-order-btn menu-popup__btn btn-popup">ЗАПИСАТЬСЯ</div>
     </div>
     <header class="header service-header">
-        <a href='#'><img class="logo service-logo" src='../img/logo.svg'></a>
+         <a href='#' class="header__logo-link">
+                <img class="logo" src='../img/logo.svg'>
+                <img src="../img/logo-white.svg" alt="logo-white" class="logo-white">
+            </a>
         <nav class="nav desktop-only">
             <a href="#" class=" btn-popup nav__elem envoke-order-btn button--rayen button--border-thin button--text-thick" data-text="ЗАПИСАТЬСЯ"><span>ЗАПИСАТЬСЯ</span></a>
             <a href="#" class="nav__elem nav__black">УСЛУГИ</a>
@@ -57,7 +60,7 @@
 
                     <p>Услуги парикмахеров-стилистов</p>
                     <div class='service-menu__dash'></div>
-                    <div class='service-menu__dash'></div>
+                    <div class='service-menu__dash ohx2'></div>
                 </div>
                 <div class="service-content-wrapper desktop-opened desktop-opacity">
                     <table class="service-content clearfix">
@@ -65,16 +68,16 @@
                             <tr>
                                 <th colspan="2">Уходовые процедуры</th>
                             </tr>
-                            <tr class="btn-reserv" data-value="Алхимия">
+                            <tr class="btn-popup-service" data-value="Алхимия">
                                 <td >Алхимия<br>
                                     <div>до 25 см / 25-40 см / свыше 40 см</div>
                                 </td> 
                                 <td>
                                     <span>130 - 170 BYN</span>
-                                    <span class="table-popup btn-popup">ЗАПИСАТЬСЯ</span>
+                                    <span class="table-popup">ЗАПИСАТЬСЯ</span>
                                 </td>
                             </tr>
-                            <tr class="btn-reserv" data-value="Ламинирование">
+                            <tr class="btn-popup-servicep" data-value="Ламинирование">
                                 <td >Ламинирование<br>
                                     <div>до 25 см / 25-40 см / свыше 40 см</div>
                                 </td> 
@@ -83,13 +86,13 @@
                                     <span class="table-popup">ЗАПИСАТЬСЯ</span>
                                 </td>
                             </tr>
-                            <tr class="btn-reserv" data-value="CellophanesService">
+                            <tr class="btn-popup-service" data-value="CellophanesService">
                                 <td >Cellophanes-Service<br>
                                     <div>до 25 см / 25-40 см / свыше 40 см</div>
                                 </td> 
                                 <td>
                                     <span>135 - 242 BYN</span>
-                                    <span class="table-popup">ЗАПИСАТЬСЯ</span>
+                                    <span class="table-popup ">ЗАПИСАТЬСЯ</span>
                                 </td>
                             </tr>
                             <tr data-service="Lebel">
@@ -193,7 +196,7 @@
                 <div class='service-menu__subheader  sliderCatCh clearfix' data-counter="1">
                     <p>Стрижки, выпрямления, завивки</p>
                     <div class='service-menu__dash'></div>
-                    <div class='service-menu__dash'></div>
+                    <div class='service-menu__dash ohx2'></div>
                 </div>
                 <div class="service-content-wrapper desktop-opened">
                     <table class="service-content clearfix">
@@ -1005,7 +1008,7 @@
                         <div class='service-menu__subheader desktop-chosen clearfix'>
                             <p>Услуги парикмахеров-стилистов</p>
                             <div class='service-menu__dash'></div>
-                            <div class='service-menu__dash'></div>
+                            <div class='service-menu__dash ohx2'></div>
                         </div>
                         <div class="toggle-box">
                             <table class="service-content clearfix">
@@ -1135,7 +1138,7 @@
                         <div class='service-menu__subheader desktop-chosen clearfix'>
                             <p>Make up, Brow & Lashes-сервисы</p>
                             <div class='service-menu__dash'></div>
-                            <div class='service-menu__dash'></div>
+                            <div class='service-menu__dash ohx2'></div>
                         </div>
                         <div class="toggle-box">
                             <table class="service-content clearfix">
@@ -1265,7 +1268,7 @@
                         <div class='service-menu__subheader desktop-chosen clearfix'>
                             <p>Make up, Brow & Lashes-сервисы</p>
                             <div class='service-menu__dash'></div>
-                            <div class='service-menu__dash'></div>
+                            <div class='service-menu__dash ohx2'></div>
                         </div>
                         <div class="toggle-box">
                             <table class="service-content clearfix">
@@ -1758,11 +1761,11 @@
                             </select>
                         </div>
                         <div class="form-hidden-content">
-                            <input type="text" class="hidden-input input-value" data-value="">
-                            <input type="text" class="hidden-input input-value" data-value="">
-                            <input type="text" class="hidden-input input-value" data-value="" >
-                            <input type="text" class="hidden-input input-value" data-value="">
-                            <input type="text" class="hidden-input data-manth" data-value="">
+                            <input type="text" class="hidden-input input-value input-servic" data-value="">
+                            <input type="text" class="hidden-input input-value input-master" data-value="">
+                            <input type="text" class="hidden-input input-value input-time" data-value="" >
+                            <input type="text" class="hidden-input input-value input-day" data-value="">
+                            <input type="text" class="hidden-input input-value input-month" data-value="">
                         </div>
                         <div class="group-agreement">
                             <label>

@@ -21,12 +21,15 @@ $(document).ready(function () {
 	//service
 	$('.service-menu__subheader').on('click', function(EO) {
 		$(this).next('div').toggle();
-		if ($(this).hasClass('minus')) {
-			$('.service-menu__subheader').removeClass('minus');
-		} else {
-			$('.service-menu__subheader').removeClass('minus');
-			$(this).addClass('minus');
-		}
+		// if ($(this).hasClass('minus')) {
+		// 	$('.service-menu__subheader').removeClass('minus');
+		// } else {
+		// 	$('.service-menu__subheader').removeClass('minus');
+		// 	$(this).addClass('minus');
+		// }
+		$(this).toggleClass('minus');
+		$(this).find('.service-menu__dash:last-child').toggleClass('ohx ohx2');
+
 	});
 
 	//Calender
@@ -75,8 +78,7 @@ $(document).ready(function () {
 
 	owl.on('changed.owl.carousel', function(event) {
 		var count = $('.active .item').data('number');
-		
-
+	
 		if (event.item.index === monthCounter) return;
 		if (monthCounter >= event.item.index) {
 			datepicker.prev();
@@ -172,7 +174,7 @@ $(document).ready(function () {
 	
 /*popup control*/
 	function viwe(_this, _2this, _calenderVal) {
-
+		
 		let dataValue = $(_this).data('value');
 		let parent = $(_this).closest('.change-pop-up');
 		parentNum = $(parent).index();
@@ -187,7 +189,7 @@ $(document).ready(function () {
 		if (_calenderVal) {
 			dataValue = _calenderVal;
 		}
-		$('.form-hidden-content .hidden-input').eq(parentNum).val(dataValue);
+		//$('.form-hidden-content .hidden-input').eq(parentNum).val(dataValue);
 
 		if ((master != 0) && (counterTitle == 0)) {
 			counterTitle++;
@@ -202,19 +204,16 @@ $(document).ready(function () {
 			$('.change-pop-up').eq(counterTitle).removeClass('active-popup').addClass('hidden');
 			counterTitle--;
 			$('.change-pop-up').eq(counterTitle).removeClass('hidden').addClass('active-popup');
-			
 		}
 
 		if (counterTitle === 6) {
 			//$('.contact-thanks').removeClass('animated');
 			if ($(window).width() <= 1023) {
-
 				$('.wrap-title').removeClass('active-pop').addClass('active-title');
 				return;
 			} else {
 
 			}
-
 		}
 
 		textChange(counterTitle);
@@ -233,7 +232,7 @@ $(document).ready(function () {
 
 	let counter2 = 0;
 	function textChange(val) {
-		console.log(counter2)
+		//console.log(counter2)
 		if ((master != 0) && (counter2 == 1)) {
 			counter2++
 		}
@@ -258,10 +257,35 @@ $(document).ready(function () {
 		openPopUp();
 	});
 
+	///////////////////////////////////////////////////////service click on table span
+	$('.btn-popup-service').on('click', function() {
+		openPopUp();
+		$('.title-change').eq(1).addClass('right');
+		$('.title-change').eq(0).removeClass('right');
+		//let master = $(this).data('master');
+		let master = $('.change-master');
+		
+		viwe(this, true);
+		$('.change-service').removeClass('active-popup').addClass('hidden');
+
+		let dataValue = $(this).closest('tr').data('value');
+		console.log(dataValue)
+		$('.form-hidden-content .input-servic').val(dataValue);
+	});
+
+
+
+
+
+
+	/////////////////////////////////////////////////////
+
 	$('.concMastBtn').click(function (e) {
 		master = $(this).data('master');
 		openPopUp(master);
 		$('.hidden-input.input-value').eq(1).val(master);
+		let _this = this;
+		writeValueInHideInput(_this, 2);
     });
 
 	function openPopUp (master) {
@@ -277,12 +301,36 @@ $(document).ready(function () {
 		// }
 	}
 
+	let hideinp = 0;
+	function writeValueInHideInput(box, tuning) {
+		let parentThis =  $(box).closest('.change-pop-up');
+		let numberPop = $(parentThis).data('popup');
+		let dataValue = $(box).data('value');
+
+		if (tuning) {
+			numberPop = tuning;
+		}
+
+		switch (numberPop) {
+			case 1: 
+				$('.form-hidden-content .input-servic').val(dataValue);
+			break;
+			case 2: 
+				$('.form-hidden-content .input-master').val(dataValue);
+			break;
+			case 4: 
+				$('.form-hidden-content .input-time').val(dataValue);
+			break;
+		}
+	}
+
 	$('.btn-reserv').on('click', function() {
 		let _this = this;
 		$('html, body').animate({
 	        scrollTop: $(".title-main").offset().top
 	    }, 70);
 		viwe(_this, true);
+		writeValueInHideInput(_this);
 		return false;
 	});
 
@@ -293,11 +341,15 @@ $(document).ready(function () {
 		}
 
 		let targetValue = $(EO.target).data('date');
+		targetValue = `${targetValue}-день`;
 		let dateMonth = $('.datepicker--cell-day').eq(10).data('month');
-		$('.data-manth').val(dateMonth);
-		let _this = this;
+		dateMonth = `${dateMonth}-месяц`;
+		$('.input-month').val(dateMonth);
+		$('.input-day').val(targetValue);
 
+		let _this = this;
 		viwe(_this, 1, targetValue);
+
 	});
 
 
@@ -332,20 +384,14 @@ $(document).ready(function () {
 		let inputValue = $('.open .input-value').get();
 		let valueArr = [];
 
+
 		inputValue.forEach((value, key) => {
-			
-			if ($(value).hasClass('checkbox')) {
-				return;
-			}
 			valueArr[key] = $(value).val();
 		});
 
-		valueArr.push($('.data-manth').val());
-		
-
-		$('.open .input-value').val('');
 		console.log(valueArr)
 
+		$('.open')[0].reset();
 
 		function call(data) {
 			let msg = JSON.parse(data);
@@ -426,8 +472,5 @@ $(document).ready(function () {
 
 
 });
-
-
-
 
 

@@ -456,6 +456,8 @@ input[type="submit"] {
 	display: block;
 }
 
+
+
 .class-hide {
 	display: none !important;
 }
@@ -475,6 +477,13 @@ input[type="submit"] {
 /*VISIBILITY TAB*/
 .class-tab-show {
 	display: block;
+}
+
+@media only screen and (min-width: 1023px) {
+	.class-tab-show {
+	    display: flex;
+	}
+
 }
 
 .class-tab-hide {

@@ -293,9 +293,6 @@
     .no_font{
         /*font-family: italica;*/
     }
-    .service-menu__subheader p{
-        font-family: 'Lato-Regular';
-    }
     .desktop-opened{
         opacity: 1;
     }

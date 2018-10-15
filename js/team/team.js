@@ -1,6 +1,3 @@
-
-
-
 $( function() {
 
 
@@ -36,7 +33,7 @@ $( function() {
 	let activeSlick_1;
 	let activeSlick_2;
 
-
+	//let minus = true;
 	function setMouseWonSlidshow (event, nameSlide1, nameSlide2) {
 		event = event || window.event;
 		event.preventDefault();
@@ -48,13 +45,15 @@ $( function() {
 		let indexItemLeft =   $('.slideshow-left .slick-active').index();
 		let indexItemRight =  $('.slideshow-right .slick-active').index();
 		
-		let activeItemStr = `${indexItemLeft}-${indexItemRight}`;
+		//let activeItemStr = `${indexItemLeft}-${indexItemRight}`;
 
 			//$('.body-info').attr('data-left', 'fff');
 			//$('.desktop-chosen').data('left', `${indexItemLeft}`);
 
 		//console.log($('.desktop-chosen'));
 		//console.log()
+
+
 		
 
 
@@ -62,6 +61,53 @@ $( function() {
 		let chilItemLengRight = $(`.desktop-opacity .${nameSlide2}`).find('.item').length;
 		chilItemLengRight--;
 		activeSlick_2 = $('.slideshow-right .slick-active').index();
+
+
+		////////////////////////debounce////////////////////////////////////////////////////////
+		// let plus = true;
+		
+		// function s() {
+		// 	minus = false;
+		// 	function d() {
+		// 		minus = true;
+		// 	}
+		// 	setTimeout(d, 2000);
+		// };
+
+		// $('body').on('mousewheel', function(EO) {
+		// 	if (plus && minus === true) {
+		// 		console.log('he');
+		// 		s();
+		// 		return;
+		// 	} 
+
+		// 	if ( !plus && minus === true) {
+		// 		console.log('boo');
+		// 		s();
+		// 	}
+		// });
+
+		// if (event.deltaY < 0 && minus === true) {
+		// 	console.log('hear')
+		// 	s();
+		// 	let rightBool = activeSlick_1 >= chilItemLengLeft;
+		// 	let leftBool = activeSlick_2 >= chilItemLengRight;
+
+		// 	if (!rightBool) {
+		// 		slide_1.slick('slickNext');
+		// 	}
+		// 	if (!leftBool) {
+		// 		slide_2.slick('slickNext');				
+		// 	}	
+			
+
+		// 	return;
+		// }
+
+
+
+
+		//////////////////////////////////////////////////////////////////////////////
 		
 
 		if (event.deltaX > 0 || event.deltaY < 0) {
@@ -223,15 +269,82 @@ $( function() {
     let $togle_serv = $('.page-service-fu .sliderCatCh');
 
     $togle_serv.on('click', function() {
-    	if ($(this).hasClass('minus')) $(this).next('div').removeClass('desktop-opacity');
+
+    	if ($(window).width() < 1024) {
+    		if ($(this).hasClass('minus')) {
+    			$(this).next('div').toggleClass('desktop-opacity');
+    			return;
+    		}
+    	}
+
+    	if ($(this).hasClass('minus')) {
+    		if ( $(this).next('div').hasClass('desktop-opacity')) {
+    			return;
+    		} else {
+    			$(this).next('div').toggleClass('desktop-opacity');
+    		}	    
+    	}	
     });
 
+
+
+    let count = 0;
     function checkWidth() {
-    	if ($(window).width() < 1024) $('.page-service-fu .service-content-wrapper').removeClass('desktop-opacity');
+    	
+    	if ($(window).width() < 1024) {
+    		if (count) return;
+    		count = 1;
+    		$('.page-service-fu .service-content-wrapper').removeClass('desktop-opacity');
+    		$('.page-service-fu .sliderCatCh').removeClass('minus');
+
+    	} else {
+    		count = 0;
+    		let stateOpened = false;
+    		$('.page-service-fu .desktop-opened').each( (key, value) => {
+    			if ($(value).hasClass('desktop-opacity')) {
+    				$('.page-service-fu .sliderCatCh').removeClass('minus desktop-chosen');
+    				$('.page-service-fu .sliderCatCh').eq(key).addClass('desktop-chosen');
+    				stateOpened = true;
+    			}
+    		});
+    		if (!stateOpened) {
+    			count = 0;
+    			$('.page-service-fu .sliderCatCh').removeClass('minus desktop-chosen');
+    			$('.page-service-fu .sliderCatCh').eq(0).addClass('desktop-chosen');
+    			$('.page-service-fu .desktop-opened').eq(0).addClass('desktop-opacity ')
+    		}
+
+    	}
     }
     
+
     checkWidth();
     $(window).resize(checkWidth);
 
 });
 
+// let g = 0;
+// let plus = true;
+// let minus = true;
+
+
+// function s() {
+// 	minus = false;
+// 	function d() {
+// 		minus = true;
+// 	}
+// 	setTimeout(d, 1000);
+// }s();
+
+// $('body').on('mousewheel', function(EO) {
+// 	if (plus && minus === true) {
+// 		console.log('he');
+// 		s();
+// 		return;
+// 	} 
+
+// 	if ( !plus && minus === true) {
+// 		console.log('boo');
+// 		s();
+// 	}
+// });

@@ -24,7 +24,7 @@ span.nav__elem:after {
     left: 50%;
     transform: translate(-50%);
     font-size: 26px;
-    padding-top: 17px;
+    padding-top: 19px;
     padding-bottom: 17px;
 }
 
@@ -366,6 +366,10 @@ span.nav__elem:after {
         font-size: 18px;
     }
 
+    .hover_info__btn {
+        max-width: 170px;
+    }
+
     
 }
 @media only screen and (max-width : 1150px) {
@@ -611,7 +615,7 @@ span.nav__elem:after {
 
     .page-team .article-preview__tag {
         margin-top: 7px;
-        line-height: 22px;
+        line-height: 23px;
     }
 
     .team-article-preview .article-preview__tag {
@@ -661,6 +665,16 @@ span.nav__elem:after {
 
     .page-team .nav__elem {
         padding: 14px 41px 12px 41px;
+    }
+
+
+    .hover_info__btn {
+        max-width: 250px;
+        font-size: 24px;
+    }
+
+    .page-team .hover_info__btn.nav__elem {
+        padding: 13px 25px 13px 24px;
     }
 
 
@@ -791,6 +805,10 @@ span.nav__elem:after {
     .page-team .nav__elem {
         letter-spacing: 1.2px;
         padding: 12px 27px 11px 27px;
+    }
+
+    .page-team .hover_info__btn.nav__elem {
+        padding: 13px 20px 9px;
     }
 
     

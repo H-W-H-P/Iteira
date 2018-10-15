@@ -67,11 +67,16 @@ $(document).ready(function () {
     $('.write-massage').on('click', (EO) => {
         EO.preventDefault();
         $('.address-main').addClass('animated fadeOut');
+
         setTimeout(()=>{
             $('.address-main').removeClass('animated fadeOut').addClass('class-hide');
             $('.write-massage-and-thanks').removeClass('class-hide').addClass('form-a');
             $('.form').addClass('animated fadeIn');
         },700);
+
+        setTimeout(() => {
+            $('.form').removeClass('fadeIn');
+        },1000);
     });
 
     $('.send-massage').click(function (EO) {
@@ -103,7 +108,7 @@ $(document).ready(function () {
 
         $('.form.about .input').val('');
         //new
-        $('.form').removeClass('fadeIn').addClass('animated fadeOut');
+        $('.form').addClass(' fadeOut');
         $('.write-massage-and-thanks').removeClass('form-a');
         $('.about-thanks').removeClass('class-hide').addClass('class-show-flex');
         $('.about-thanks').addClass('animated slideInRight');
@@ -117,7 +122,7 @@ $(document).ready(function () {
             $('.bnt-prev-n').removeClass('class-show-btn').addClass('class-hide'); 
 
 
-        },400000000000);
+        },4000);
 
         setTimeout(()=> {
             $('.about-thanks').removeClass('fadeOut');

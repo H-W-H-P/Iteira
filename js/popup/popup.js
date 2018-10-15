@@ -20,15 +20,17 @@ $(document).ready(function () {
 
 	//service
 	$('.service-menu__subheader').on('click', function(EO) {
-		$(this).next('div').toggle();
-		// if ($(this).hasClass('minus')) {
-		// 	$('.service-menu__subheader').removeClass('minus');
-		// } else {
-		// 	$('.service-menu__subheader').removeClass('minus');
-		// 	$(this).addClass('minus');
-		// }
-		$(this).toggleClass('minus');
-		$(this).find('.service-menu__dash:last-child').toggleClass('ohx ohx2');
+		$('.toggle-box').hide();
+		$(this).next('div').show();
+		if ($(this).hasClass('minus')) {
+			$('.service-menu__subheader').removeClass('minus');
+			$(this).next('div').hide();
+		} else {
+			$('.service-menu__subheader').removeClass('minus');
+			$(this).addClass('minus');
+		}
+		// $(this).toggleClass('minus');
+		// $(this).find('.service-menu__dash:last-child').toggleClass('ohx ohx2');
 
 	});
 

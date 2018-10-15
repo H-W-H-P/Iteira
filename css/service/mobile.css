@@ -44,7 +44,7 @@
         color: #0e0e0e;
         font-family: 'PlayfairDisplay-Bold';
     }
-    .service-menu__dash {
+   /* .service-menu__dash {
         position: absolute;
         float: right;
         margin: 0 0 0 15px;
@@ -53,7 +53,7 @@
         right: 20px;
         left: auto;
         transform: translateY(-50%);
-    }
+    }*/
     .service-content-wrapper {
         width: 100vw;
         height: auto;

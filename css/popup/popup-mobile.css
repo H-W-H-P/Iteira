@@ -789,12 +789,6 @@
         font-size: 18px;
     }
 
-    .popup-main .service-menu__dash {
-        width: 19px;
-        background-color: #0e0e0e;
-        height: 0.6px;
-    }
-
     .popup-main .service-content tr td:first-child {
         padding-right: 0;
     }

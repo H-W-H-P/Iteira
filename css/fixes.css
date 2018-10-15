@@ -270,9 +270,9 @@
         padding-left: 0;
         text-align: center;
     }
-    .block-header:not(.endymed-header) .block-header__item{
+   /* .block-header:not(.endymed-header) .block-header__item{
         display: inline;
-    }
+    }*/
     .service-content-wrapper{
         width: auto;
     }

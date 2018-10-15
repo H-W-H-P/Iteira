@@ -51,8 +51,6 @@ $( function() {
 			//$('.body-info').attr('data-left', 'fff');
 			//$('.desktop-chosen').data('left', `${indexItemLeft}`);
 
-		console.log($('.desktop-chosen'));
-		//console.log()
 		
 
 

@@ -117,7 +117,7 @@ $(document).ready(function () {
             $('.bnt-prev-n').removeClass('class-show-btn').addClass('class-hide'); 
 
 
-        },400000000);
+        },400000000000);
 
         setTimeout(()=> {
             $('.about-thanks').removeClass('fadeOut');

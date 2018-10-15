@@ -147,12 +147,7 @@
 		clear: initial;
 	}
 
-	.slider-style  .article-preview__tag {
-	    height: 36px;
-	    width: 170px;
-	    font-size: 18px;
-	    line-height: 34px;
-	}
+	
 
 	.one-third-block .team-article-preview {
 	    height: 100% !important;
@@ -171,9 +166,7 @@
         width: 100% !important;
 	}
 
-	.block-header {
-	    font-size: 60px;
-	}
+	
 
 	.section-alike {
 	    top: 120px;

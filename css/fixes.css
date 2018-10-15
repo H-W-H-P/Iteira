@@ -399,4 +399,8 @@
     .main-frame2 .block-header{
         margin-top: 30vh;
     }
+    .calender-wrap{
+        overflow: visible;
+        overflow-x: hidden;
+    }
 }

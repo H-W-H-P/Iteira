@@ -904,9 +904,9 @@
       margin-bottom: 20px;
     }
 
-    /*.popup-main .envoke-order-btn {
+    .popup-main .envoke-order-btn {
         padding: 10px 18px 7px;
-    }*/
+    }
 
     
    
@@ -1106,4 +1106,10 @@
 	select {
 	    margin-bottom: 39px;
 	}
+}
+
+@media screen and (max-width: 340px) {
+    .popup-main .owl-item.active{
+        font-size: 30px !important;
+    }
 }

@@ -74,4 +74,6 @@ $(window).ready(function () {
         // autoPlaySpeed: [1, 1],
         displaceScale: [30, 30]
     });
+
+    $('#itc-widget-btn').addClass('social__tel');
 });

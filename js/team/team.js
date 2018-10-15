@@ -11,9 +11,20 @@ $( function() {
 			vertical: true,
 			infinite: false,
 			touchMove: false,
+			swipe: false,
 			speed: 800,
-			cssEase: 'cubic-bezier(.17, 0, .58, 1)'
-
+			cssEase: 'cubic-bezier(.17, 0, .58, 1)',
+			  responsive: [
+			    {
+			      breakpoint: 1025,
+			      settings: {
+					vertical: true,
+					verticalSwiping: true,
+			        touchMove: true,
+			        swipe: true
+			      }
+			    }
+		    ]
 		});
 
 		slide_1 = $('.slideshow-left').slick({
@@ -21,9 +32,22 @@ $( function() {
 			vertical: true,		
 			infinite: false,
 			touchMove: false,
+			// vertical: true,
+			// verticalSwiping: true,
 			speed: 800,
-			cssEase: 'cubic-bezier(.69, .01, .58, 1)'
-
+			swipe: false,
+			cssEase: 'cubic-bezier(.69, .01, .58, 1)',
+			  responsive: [
+			    {
+			      breakpoint: 1025,
+			      settings: {
+					vertical: true,
+					verticalSwiping: true,
+			        touchMove: true,
+			        swipe: true
+			      }
+			    }
+		    ]
 		});
 	}
 

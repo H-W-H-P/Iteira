@@ -75,14 +75,12 @@
 
     .popup-main textarea:focus ~ label, .popup-main textarea:valid ~ label {
         top:7px;
-        left: 5px;
       font-size:10px;
       color:#d2ab66;
     }
 
     .popup-main input:focus ~ label, .popup-main input:valid ~ label {
         top:6px;
-        left: 5px;
       font-size:10px;
     }
 
@@ -110,11 +108,34 @@
         font-size: 15px;
     }
 
+}
 
 
+@media only screen and (max-width : 1600px) {
+    .part-day h3 {
+        font-size: 60px;
+    }
 
+    .title-main h2 {
+        font-size: 46px;
+    }
 
-    
+    .title-main .title-change {
+        width: 100%;
+    }
+
+    [data-title="6"] h2 {
+        width: 100%;
+    }
+
+    [data-title="6"] p {
+        width: 100%;
+        font-size: 27px;
+    }
+
+    .popup-main .owl-carousel {
+        margin-bottom: 80px;
+    }
 }
 
 @media only screen and (max-width : 1400px) {
@@ -1003,7 +1024,7 @@
 
     .popup-main .owl-prev:after {
         top: 7px;
-        right: -30px;
+        right: -27px;
         width: 22px;
         height: 1px;
     }

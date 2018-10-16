@@ -628,6 +628,15 @@ body.popUp{
 }
 
 /*Calender*/
+.datepicker--cell.-disabled- {
+    cursor: default;
+    color: #cccc;
+}
+
+.datepicker--days {
+  font-family: 'Lato-Regular';
+}
+
 .popup-main .service-content tr td:last-child span:last-child:hover {
   opacity: 1 !important;
 }
@@ -904,6 +913,19 @@ body.popUp{
 
 
 /*==================Form*/
+button {
+  border: none;
+  border: transparent;
+}
+
+select {
+  border: none;
+  border-radius: 0;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
 
 .popup-main .form-wrap {
   display: -webkit-flex;
@@ -1023,9 +1045,8 @@ body.popUp{
 	bottom: 2px;
 	left: 2px;
 	background: #d2ab66;
-	border-radius: 2px;
+	border-radius: 0px;
 }
-
 
 
 
@@ -1370,14 +1391,14 @@ path {
 
 .popup-main textarea:focus ~ label, .popup-main textarea:valid ~ label {
   top:7px;
-  left: 5px;
+  left: 0px;
   font-size:14px;
   color:#d2ab66;
 }
 
 .popup-main input:focus ~ label, .popup-main input:valid ~ label {
     top:6px;
-    left: 5px;
+    left: 0px;
   font-size:14px;
   color:#d2ab66;
 }
@@ -1391,7 +1412,7 @@ path {
 
 .popup-main .group input, .popup-main textarea, select {
   font-size:24px;
-  padding:4px 10px 9px 5px;
+  padding:4px 10px 9px 0px;
   margin-bottom: 5px;
   display:block;
   width:100%;

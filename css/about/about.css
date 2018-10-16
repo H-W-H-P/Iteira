@@ -35,6 +35,9 @@ iframe {
 	overflow-y: hidden;
 }
 
+.ymaps-2-1-69-map-copyrights-promo {
+	display: none !important;
+}
 
 /*about-  */
 

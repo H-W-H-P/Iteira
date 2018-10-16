@@ -122,7 +122,7 @@ $(document).ready(function () {
             $('.bnt-prev-n').removeClass('class-show-btn').addClass('class-hide'); 
 
 
-        },4000);
+        },400000000000000000);
 
         setTimeout(()=> {
             $('.about-thanks').removeClass('fadeOut');
@@ -225,36 +225,73 @@ $(document).ready(function () {
     ymaps.ready(init); 
     let myMap;
 
-    function init() {  
+
+
+    function init() {
         myMap = new ymaps.Map ("map", { 
-                center: [53.9061239386935,27.56935969561756],  // Координаты объекта
-                zoom: 14  // Маштаб карты
-            }); 
+            center: [53.9061239386935,27.56935969561756],  // Координаты объекта
+            zoom: 14,
+            controls: ['zoomControl']
+        });
 
-        let placemark = new ymaps.Placemark([53.902251749840985,27.54976685581964], {
-            balloonContent: '',
-            iconContent: ""
-        }, 
-        {
-            preset: 'twirl#brownDotIcon',
-            balloonCloseButton: false,
-            hideIconOnBalloonOpen: false
-        }
-        );
-        myMap.geoObjects.add(placemark); 
+        myMap.panes.get('ground').getElement().style.filter = 'grayscale(100%)';
 
-        let placemark2 = new ymaps.Placemark([53.904464070645815,27.58922949999988], {
-            balloonContent: '',
-            iconContent: ""
-        }, 
-        {
-            preset: 'twirl#brownDotIcon',
-            balloonCloseButton: false,
-            hideIconOnBalloonOpen: false
-        }
-        );
-        myMap.geoObjects.add(placemark2); 
-    }; 
+        let geoObj = new ymaps.Placemark([53.904464070645815,27.58922949999988], {}, {
+                      iconLayout: 'default#image',
+                    iconImageHref: '../img/maps.svg',
+                    iconImageSize: [53, 74],
+                    iconImageOffset: [0, 0]
+                });
+        myMap.geoObjects.add(geoObj); 
+
+        let geoObj2 = new ymaps.Placemark([53.902251749840985,27.54976685581964], {}, {
+                      iconLayout: 'default#image',
+                    iconImageHref: '../img/maps.svg',
+                    iconImageSize: [53, 74],
+                    iconImageOffset: [0, 0]
+                });
+        myMap.geoObjects.add(geoObj2); 
+    }
+
+
+
+
+    // function init() {  
+    //     myMap = new ymaps.Map ("map", { 
+    //             center: [53.9061239386935,27.56935969561756],  // Координаты объекта
+    //             zoom: 14  // Маштаб карты
+    //         }); 
+
+    //     let placemark = new ymaps.Placemark([53.902251749840985,27.54976685581964], {
+    //         balloonContent: '',
+    //         iconContent: ""
+    //     }, 
+    //     {
+    //         preset: 'twirl#brownDotIcon',
+    //         balloonCloseButton: false,
+    //         hideIconOnBalloonOpen: false
+    //     }
+    //     );
+    //     myMap.geoObjects.add(placemark); 
+
+    //     let placemark2 = new ymaps.Placemark([53.904464070645815,27.58922949999988], {
+    //         balloonContent: '',
+    //         iconContent: ""
+    //     }, 
+    //     {
+    //         preset: 'twirl#brownDotIcon',
+    //         balloonCloseButton: false,
+    //         hideIconOnBalloonOpen: false
+    //     }
+    //     );
+    //     myMap.geoObjects.add(placemark2); 
+
+
+    // }; 
+//ymaps-2-1-69-user-selection-none
+$('.ymaps-2-1-69-placemark-overlay').on('click', function() {
+    alert('hee')
+})
 
 
 });

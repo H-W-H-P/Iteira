@@ -88,9 +88,9 @@
     display: none;
 }
 
-.copyright a {
+/*.copyright a {
     transition: all .4s ease;
-}
+}*/
 
 .copyright a:hover {
     transition: all .4s ease;

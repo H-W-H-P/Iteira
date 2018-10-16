@@ -32,6 +32,7 @@
       options.textColor           = options.hasOwnProperty('textColor') ? options.textColor : '#fff';
       options.displacementCenter  = options.hasOwnProperty('displacementCenter') ? options.displacementCenter : false;
       options.dispatchPointerOver = options.hasOwnProperty('dispatchPointerOver') ? options.dispatchPointerOver : false;
+      options.small = options.hasOwnProperty('small') ? options.small : false;
       
 
 
@@ -75,7 +76,8 @@
       this.initPixi = function() {
 
         // Add canvas to the HTML
-        document.getElementById("canv_wr").appendChild( renderer.view );
+        if (options.small) document.getElementById("canv_wr_small").appendChild( renderer.view );
+        else document.getElementById("canv_wr").appendChild( renderer.view );
   
 
         // Add child container to the main container 
@@ -108,14 +110,50 @@
         var mousePosX = 0;
         var ancien_delta = 0;
         var windHeight = $(window).height();
+        var winWidth = $(window).width();
 
-        $( document ).on( "mousemove", function( event ) {
-          // console.log($(window).height())
-          windHeight = $(window).height();
-          mousePosX = event.pageX + 250;
-          if ($(window).height() > 900) mousePosX = event.pageX + 150;
-          easeing();
+        $(window).resize(function () {
+          winWidth = $(window).width();
         });
+
+        // $( document ).on( "mousemove", function( event ) {
+        //   // console.log($(window).height())
+        //   windHeight = $(window).height();
+        //   mousePosX = event.pageX + 250;
+        //   if ($(window).height() > 900) mousePosX = event.pageX + 150;
+        //   if ($('.canv_wr_info').length) mousePosX = event.pageX;
+        //   easeing();
+        // });
+
+        if ($('.canv_wr_info').length) {
+          $( document ).on( "mousemove", function( event ) {
+            // console.log($.contains( $('.main-frame'), $(event.target.parentElement) ))
+            if ($(event.target).closest('.main-frame').length) {
+              mousePosX = event.pageX;
+              if (winWidth < 1900) {
+                mousePosX = event.pageX*1920/$(window).width() - 20;
+              }
+              if (winWidth < 1400) {
+                mousePosX = event.pageX*1920/$(window).width() - 100;
+              }
+            }
+            if ($(event.target.parentElement).hasClass('canv_wr_info_small')) {
+              mousePosX = event.pageX*1.6;
+              if (winWidth < 1440) {
+                // mousePosX = event.pageX;
+                mousePosX = event.pageX*1920/$(window).width();
+              }
+            }
+            easeing();
+          });
+        } else {
+          $( document ).on( "mousemove", function( event ) {
+            windHeight = $(window).height();
+            mousePosX = event.pageX + 250;
+            if ($(window).height() > 900) mousePosX = event.pageX + 150;
+            easeing();
+          });
+        }
 
         $(document).mouseleave(function () {
           easeing();
@@ -129,10 +167,10 @@
           mousePos.intensite = displacementFilter11.scale.x;
           mousePos.largeur = displacementSprite11.scale.x;          
 
-          TweenMax.to(mousePos, 0.4, {
+          TweenMax.to(mousePos, 0.6, {
               x: mousePosX,
               //y: currentMousePos.y,
-              intensite: (mousePosX - ancien_delta) * 1,
+              intensite: (mousePosX - ancien_delta) * 10,
               largeur: Math.abs(((mousePosX - ancien_delta) / 80) - 0.2),
               onUpdate: function () {
                   displacementSprite11.x = mousePos.x;
@@ -270,7 +308,7 @@
          },onUpdate: function() {
           
             if ( options.wacky === true ) {
-              displacementSprite.rotation += baseTimeline.progress() * 1;      
+              displacementSprite.rotation += baseTimeline.progress() * 0.1;      
               displacementSprite.scale.set( baseTimeline.progress() * 19 );
             }
       

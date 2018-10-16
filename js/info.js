@@ -11,27 +11,47 @@ videoBlock.addEventListener('click', function(event) {
     }, 500)
 });
 
-//slider-soprano control
-/*let slider = document.querySelector('.section-alike');
-let articlePreviewSecond = document.querySelectorAll('.one-third-block-second .article-preview');
-let articlePreviewThird = document.querySelectorAll('.one-third-block-third .article-preview');
-for (let i = 0; i < articlePreviewSecond.length; i++) {
-    articlePreviewSecond[i].style.bottom = '0';
-};
-for (let i = 0; i < articlePreviewThird.length; i++) {
-    articlePreviewThird[i].style.bottom = '0';
-};
-let sliderHandler = function(event) {
-    event.preventDefault();
-    slider.removeEventListener('wheel', sliderHandler);
-    for (let i = 0; i < articlePreviewSecond.length; i++) {
-        articlePreviewSecond[i].style.bottom = 'calc(' + articlePreviewSecond[i].style.bottom + ' + calc(57.585vw + 60px))';
+function renderStart() {
+    if ($(window).width() >= 1024) {
+        var spriteImages    = document.querySelectorAll( '.slide-item__image' );
+        var spriteImagesSrc = [];
+
+        for ( var i = 0; i < spriteImages.length; i++ ) {
+            var img = spriteImages[i];
+            spriteImagesSrc.push( img.getAttribute('src' ) );
+        }
+
+        var initCanvasSlideshow = new CanvasSlideshow({
+            sprites: spriteImagesSrc,
+            // displacementImage: '../img/index/frames/gradient_large.png',
+            displacementImage: '../img/dmaps/2048x2048/ripple.jpg',
+            // autoPlay: true,
+            // autoPlaySpeed: [1, 1],
+            displaceScale: [400, 70]
+        });
     }
-    for (let i = 0; i < articlePreviewThird.length; i++) {
-        articlePreviewThird[i].style.bottom = 'calc(' + articlePreviewThird[i].style.bottom + ' + calc(57.585vw + 60px))';
-    }
-    setTimeout(function() {
-        slider.addEventListener('wheel', sliderHandler);
-    }, 1000);
 }
-slider.addEventListener('wheel', sliderHandler);*/
+renderStart();
+
+function renderStartLitle() {
+    if ($(window).width() >= 1024) {
+        var spriteImages    = document.querySelectorAll( '.slide-item__image_litle' );
+        var spriteImagesSrc = [];
+
+        for ( var i = 0; i < spriteImages.length; i++ ) {
+            var img = spriteImages[i];
+            spriteImagesSrc.push( img.getAttribute('src' ) );
+        }
+
+        var initCanvasSlideshow2 = new CanvasSlideshow({
+            sprites: spriteImagesSrc,
+            small: true,
+            // displacementImage: '../img/index/frames/gradient_large.png',
+            displacementImage: '../img/dmaps/2048x2048/ripple.jpg',
+            // autoPlay: true,
+            // autoPlaySpeed: [1, 1],
+            displaceScale: [400, 70]
+        });
+    }
+}
+renderStartLitle();

@@ -223,13 +223,16 @@ $(document).ready(function () {
 
 
     ymaps.ready(init); 
-    let myMap;
+    // let myMap;
 
     function init() {  
-        myMap = new ymaps.Map ("map", { 
-                center: [53.9061239386935,27.56935969561756],  // Координаты объекта
-                zoom: 14  // Маштаб карты
-            }); 
+        var myMap = new ymaps.Map ("map", { 
+            center: [53.9061239386935,27.56935969561756],  // Координаты объекта
+            zoom: 14,
+            controls: []
+        }); 
+
+        myMap.panes.get('ground').getElement().style.filter = 'grayscale(100%)';
 
         let placemark = new ymaps.Placemark([53.902251749840985,27.54976685581964], {
             balloonContent: '',

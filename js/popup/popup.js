@@ -471,6 +471,10 @@ $(document).ready(function () {
 
 
 
+	$(".service-menu__subheader p").each(function () {
+	    $(this).html( $(this).html().replace(/&amp;/g,"<span class='amper'>&</span>") );
+	});
+
 
 
 });

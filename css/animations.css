@@ -55,6 +55,16 @@
 }
 
 
+.main_page,
+.main_page .wrapper{
+	min-height: 600px;
+}
+
+.index-slider__prev:hover,
+.index-slider__next:hover{
+	background-image: url(../img/arrow-bot-yell.png);
+}
+
 .main_page canvas{
 	transform-origin: right;
 	z-index: 1;
@@ -610,12 +620,37 @@ select#itc-widget-code{
     top: 7px;
 }
 
+#canv_wr.canv_wr_info{
+	right: 0;
+}
 
+#canv_wr.canv_wr_info canvas{
+	width: 100% !important;
+	height: 100% !important;
+}
 
-.ohx {
-	animation-duration: .5s;
-	animation-name: mymove;
- /* animation-iteration-count: infinite;*/
+.image_inv{
+	position: absolute;
+	z-index: -100;
+}
+
+.amper{
+	font-family: 'Lato-Regular';
+}
+
+#canv_wr_small{
+	width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+#canv_wr_small canvas{
+	width: 100% !important;
+	height: 100% !important;	
+}
+
+.pic-n-text__pic{
+	overflow: hidden;
 }
 
 @keyframes mymove {

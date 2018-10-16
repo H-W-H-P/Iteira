@@ -15,8 +15,7 @@
     <link rel="stylesheet" href="../css/about/new_about_mobile.css">
     <link href="../css/imports.css" rel="stylesheet">
 
-    <!-- <script src="http://api-maps.yandex.ru/2.0-stable/?load=package.standard&lang=ru-RU" type="text/javascript"></script> -->
-    
+
     <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
     
 
@@ -88,12 +87,12 @@
 
                     <div class="address-main" > 
                         <div class="sensation">
-                            <h2>Салон красоты &laquoИтейра Sensation&raquo</h2>
+                            <h2>Салон красоты <br> &laquoИтейра Sensation&raquo</h2>
                             <div class="info-text">
                                 <p class="address">Платонова, 1Б</p>
                                 <div class="phone-all">
-                                    <p class="phone">+375 (29) 608 09 12</p>
-                                    <p class="phone">+375 (33) 666 69 12</p>
+                                    <a class="phone" href="tel:+375296080912">+375 (29) 608 09 12</a>
+                                    <a class="phone" href="tel:+375336666912">+375 (33) 666 69 12</a>
                                 </div>
                                 <div class="work-wrapp">
                                     <p class="work-thime">пн-сб 8.00-22.00,</p>
@@ -102,11 +101,12 @@
                             </div> 
                         </div>
                         <div class="metropol">
-                            <h2>Салон красоты &laquoИтейра Metropol&raquo</h2>
+                            <h2>Салон красоты <br> &laquoИтейра Metropol&raquo</h2>
                             <div class="info-text">
                                 <p class="address">Немига, 5/Революционная, 30</p>
-                                <p class="phone-all">+375 (44) 590 30 30</p>
-                                <p class="work-thime">пн-сб 8.00-21.00</p>
+                                <a class="phone phone-all" href="tel:+375445903030">+375 (44) 590 30 30</a>
+                                
+                                <p class="work-thime">пн-вс 8.00-21.00</p>
                             </div>
                         </div>
                         <div class="about-btn write-massage">
@@ -129,7 +129,7 @@
                             <div class="group group_name">     
                                 <span class="danger" >!</span> 
                                 <span class="dnager-text" >введите имя</span> 
-                                <input type="text" required class="input" name="name">
+                                <input type="text" required class="input" name="name" autocomplete="off">
                                 <label>Имя</label>
                                 <svg width="300%" height="100%" viewBox="0 0 1200 60" preserveAspectRatio="none" class="graphic graphic--nao">
                                     <path d="M0,56.5c0,0,298.666,0,399.333,0C448.336,56.5,513.994,46,597,46c77.327,0,135,10.5,200.999,10.5c95.996,0,402.001,0,402.001,0"></path>
@@ -138,7 +138,7 @@
                             <div class="group group_tel">   
                                 <span class="danger" >!</span> 
                                 <span class="dnager-text" >введите номер</span>   
-                                <input type="tel" required class="input" name="tel">
+                                <input type="tel" required class="input" name="tel" autocomplete="off">
                                 <label>Телефон</label>
                                 <svg width="300%" height="100%" viewBox="0 0 1200 60" preserveAspectRatio="none" class="graphic graphic--nao">
                                     <path d="M0,56.5c0,0,298.666,0,399.333,0C448.336,56.5,513.994,46,597,46c77.327,0,135,10.5,200.999,10.5c95.996,0,402.001,0,402.001,0"></path>
@@ -160,7 +160,7 @@
                     </div> 
                     <div class="about-thanks class-hide">
                         <div class="bnt-prev about-cancel " ></div>
-                        <h3> Спасибо</h3>
+                        <h3> Спасибо!</h3>
                         <p class="about-thanks-text">Ваше сообщение отправлено.</p>
                     </div>
                 </div>
@@ -957,11 +957,11 @@
                                 </select>
                             </div>
                             <div class="form-hidden-content">
-                                <input type="text" class="hidden-input input-value" data-value="">
-                                <input type="text" class="hidden-input input-value" data-value="">
-                                <input type="text" class="hidden-input input-value" data-value="" >
-                                <input type="text" class="hidden-input input-value" data-value="">
-                                <input type="text" class="hidden-input data-manth" data-value="">
+                                <input type="text" class="hidden-input input-value input-servic" data-value="">
+                                <input type="text" class="hidden-input input-value input-master" data-value="">
+                                <input type="text" class="hidden-input input-value input-time" data-value="" >
+                                <input type="text" class="hidden-input input-value input-day" data-value="">
+                                <input type="text" class="hidden-input input-value input-month" data-value="">
                             </div>
                             <div class="group-agreement">
                                 <label>
@@ -975,7 +975,7 @@
                                </div>
                            </div>
                             <div class="about-btn send-massage popup-send" >
-                                <input type="submit" class="nav__elem envoke-order-btn button--rayen button--border-thin button--text-thick" data-text="Записаться" value="записаться">
+                                <button type="submit" class="nav__elem envoke-order-btn button--rayen button--border-thin button--text-thick" data-text="Записаться">Записаться</button>
                             </div>
                         </form>
                     </div>              

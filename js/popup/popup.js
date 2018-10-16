@@ -41,7 +41,7 @@ $(document).ready(function () {
 	    }
 	}).data('datepicker');
 
-
+	datepicker.update('minDate', new Date());
 
 
 
@@ -341,6 +341,12 @@ $(document).ready(function () {
 		if (EO.target.className === 'datepicker--day-name') {
 			return;
 		}
+
+		if ($(EO.target).hasClass('-disabled-')) {
+			return;
+		}
+
+
 
 		let targetValue = $(EO.target).data('date');
 		targetValue = `${targetValue}-день`;

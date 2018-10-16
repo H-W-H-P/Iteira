@@ -92,6 +92,14 @@
         font-size: 70px;
     }
 
+    .about-thanks p {
+        width: 80%;
+        margin: 0 auto;
+        margin-top: 13px;
+    }
+
+
+    
 
 }
 
@@ -247,16 +255,26 @@
 	.sensation, .metropol {
 		width: 100%;
     }
+
+
     
+    
+
     .about-main-screen h2 {
-        font-size: 24px;
+        font-size: 30px;
         height: 60px;
-        margin-bottom: 20px;
+        margin-bottom: 30px;
         margin-top: 20px;
     }
 
+    
+
     .about-main-screen p {
-        font-size: 14px;
+        font-size: 18px;
+    }
+
+    .address {
+        margin-top: 25px;
     }
 
     .address-main {
@@ -317,9 +335,7 @@
         margin-top: 26px;
     }
 
-    .address {
-        margin-top: 10px;
-    }
+    
 
     .about-main-screen h2 {
         margin-bottom: 0px;
@@ -353,7 +369,34 @@
     
 }
 
+@media only screen and (max-width : 375px) {
+    .address {
+        margin-top: 10px;
+    }
 
+    .about-main-screen h2 {
+        font-size: 24px;
+        height: 60px;
+        margin-bottom: 20px;
+        margin-top: 20px;
+    }
+
+    .about-main-screen p {
+        font-size: 14px;
+    }
+
+    .address-main {
+        margin-bottom: 7px;
+    }
+
+    .sensation {
+        margin-bottom: 20px;
+    }
+
+    .mobile-title {
+        padding-bottom: 20px;
+    }
+}
 
 
 

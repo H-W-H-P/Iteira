@@ -1,3 +1,44 @@
+
+@media only screen and (max-width:1600px) {
+    .body-service-fu .service-slider {
+        left: 30vw;
+        top: 350px;
+    }
+
+    .service-block-header {
+        margin-left: 15vw;
+    }
+}
+
+@media only screen and (max-width:1250px) {
+    .body-service-fu  .index-slider__prev,  .body-service-fu  .index-slider__next {
+        height: 42px;
+    }
+
+    .body-service-fu .index-slider {
+        width: 40px;
+        height: 170px;
+    }
+
+    .body-service-fu .service-slider {
+        left: 29vw;
+    }
+
+    .service-block-header {
+        margin-left: 18vw;
+        font-size: 80px;
+        margin: calc(105.48px + 7vh) 0 0 15vw;
+    }
+
+    .service-menu {
+        margin-top: 200px;
+    }
+
+
+}
+
+
+
 @media only screen and (max-width:1023px) {
     body {
         overflow-y: auto;

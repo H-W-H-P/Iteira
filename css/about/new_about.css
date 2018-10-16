@@ -120,6 +120,17 @@ body {
  	letter-spacing: 1.4px;
 }
 
+.phone{
+	font-size: 16px;
+	text-align: center;
+	font-family: 'Lato-Regular';
+	line-height: 1.2;
+ 	letter-spacing: 1.4px;
+ 	text-decoration: none;
+ 	color: inherit;
+ 	display: block;
+}
+
 .info-text {
 	margin-top: 16px;
 	margin-bottom: 40px;
@@ -145,7 +156,7 @@ body {
 .about-btn .nav__elem  {
 	width: 100%;
 	height: 67px;
-	line-height: 67px;
+	line-height: 72px;
 	padding: 0;
 	margin: 0 auto;
 	font-size: 25px;
@@ -191,7 +202,7 @@ form {
 
 input, textarea {
 	font-size:24px;
-	padding:4px 10px 9px 5px;
+	padding:4px 10px 9px 0px;
 	margin-bottom: 5px;
 	display:block;
 	width:100%;
@@ -215,7 +226,9 @@ input, textarea {
 	transition:0.2s ease all; 
 	-moz-transition:0.2s ease all; 
 	-webkit-transition:0.2s ease all;
-	font-family: Arial;
+	font-family: "Lato-Regular";
+	font-style: normal;
+ 	font-stretch: normal;
 	color:#d2ab66;
 	pointer-events:none;
 }
@@ -259,15 +272,15 @@ input, textarea {
 }
 
 .about textarea:focus ~ label, .about textarea:valid ~ label {
-    top:10px;
-    left: 5px;
+    top:2px;
+    left: 0px;
 	font-size:14px;
 	color:#d2ab66;
 }
   
 .about input:focus ~ label, .about input:valid ~ label {
-    top:6px;
-    left: 5px;
+    top:2px;
+    left: 0px;
 	font-size:14px;
 	color:#d2ab66;
 }
@@ -447,7 +460,31 @@ input[type="submit"] {
 	display: block;
 	text-align: right;
 	z-index: -10;
+	font-family: "Lato-Regular";
 }
+
+
+
+
+
+/*==========================================================================
+============================================================================
+==============================================================================*/
+.page-about-fu .nav__black {
+    text-shadow: initial;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

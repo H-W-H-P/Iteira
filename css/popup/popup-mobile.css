@@ -1129,8 +1129,27 @@
 	}
 }
 
-@media screen and (max-width: 340px) {
-    .popup-main .owl-item.active{
+
+@media only screen and (max-width: 320px) {
+    .popup-main .owl-item.active {
         font-size: 30px !important;
+        line-height: 50px;
     }
-}
+
+    .bar-title {
+        height: 180px;
+    }
+
+    .popup-main .owl-carousel {
+        margin-bottom: 0px;
+    }
+
+    .title-main h2 {
+        font-size: 35px;
+    }
+
+    .part-day h3 {
+        margin-bottom: 20px;
+    }
+} 
+

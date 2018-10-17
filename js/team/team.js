@@ -69,70 +69,11 @@ $( function() {
 		let indexItemLeft =   $('.slideshow-left .slick-active').index();
 		let indexItemRight =  $('.slideshow-right .slick-active').index();
 		
-		//let activeItemStr = `${indexItemLeft}-${indexItemRight}`;
-
-			//$('.body-info').attr('data-left', 'fff');
-			//$('.desktop-chosen').data('left', `${indexItemLeft}`);
-
-		//console.log($('.desktop-chosen'));
-		//console.log()
-
-
-		
-
-
 
 		let chilItemLengRight = $(`.desktop-opacity .${nameSlide2}`).find('.item').length;
 		chilItemLengRight--;
 		activeSlick_2 = $('.slideshow-right .slick-active').index();
 
-
-		////////////////////////debounce////////////////////////////////////////////////////////
-		// let plus = true;
-		
-		// function s() {
-		// 	minus = false;
-		// 	function d() {
-		// 		minus = true;
-		// 	}
-		// 	setTimeout(d, 2000);
-		// };
-
-		// $('body').on('mousewheel', function(EO) {
-		// 	if (plus && minus === true) {
-		// 		console.log('he');
-		// 		s();
-		// 		return;
-		// 	} 
-
-		// 	if ( !plus && minus === true) {
-		// 		console.log('boo');
-		// 		s();
-		// 	}
-		// });
-
-		// if (event.deltaY < 0 && minus === true) {
-		// 	console.log('hear')
-		// 	s();
-		// 	let rightBool = activeSlick_1 >= chilItemLengLeft;
-		// 	let leftBool = activeSlick_2 >= chilItemLengRight;
-
-		// 	if (!rightBool) {
-		// 		slide_1.slick('slickNext');
-		// 	}
-		// 	if (!leftBool) {
-		// 		slide_2.slick('slickNext');				
-		// 	}	
-			
-
-		// 	return;
-		// }
-
-
-
-
-		//////////////////////////////////////////////////////////////////////////////
-		
 
 		if (event.deltaX > 0 || event.deltaY < 0) {
 			let rightBool = activeSlick_1 >= chilItemLengLeft;
@@ -157,11 +98,19 @@ $( function() {
 		};
 	}
 
-	
+
+
+
+
+
 	$('body:not(.service_only) .service-content-wrapper').on('mousewheel', function(e) {
 		let event = e;
 		setMouseWonSlidshow( event, 'slideshow-left', 'slideshow-right');
+
 	});
+
+
+	
 
 
 
@@ -345,30 +294,21 @@ $( function() {
     checkWidth();
     $(window).resize(checkWidth);
 
+
+
+
+
+    //////////////////////////////////////////// Handel
+   // $('.products-right-bar #prods').html('');
+   //let parsC = JSON.parse(tableReserveFromLocal);
+
+   // let handelScript = $('#table-servic-template-1').html();
+    //let template = Handlebars.compile(productsAll);
+
+   //let html = template(parsC[name]);
+
+
+
 });
 
-// let g = 0;
-// let plus = true;
-// let minus = true;
 
-
-// function s() {
-// 	minus = false;
-// 	function d() {
-// 		minus = true;
-// 	}
-// 	setTimeout(d, 1000);
-// }s();
-
-// $('body').on('mousewheel', function(EO) {
-// 	if (plus && minus === true) {
-// 		console.log('he');
-// 		s();
-// 		return;
-// 	} 
-
-// 	if ( !plus && minus === true) {
-// 		console.log('boo');
-// 		s();
-// 	}
-// });

@@ -273,7 +273,7 @@ span.nav__elem:after {
 
     .page-team .nav__elem {
         letter-spacing: 1.2px;
-       padding: 10px 25px 10px 24px;
+       
     }
 
     .hover_info__text {
@@ -298,9 +298,9 @@ span.nav__elem:after {
         margin: 0 auto;
     }
 
-    .hover_info__btn {
+    /*.hover_info__btn {
         max-width: 200px;
-    }
+    }*/
 }
 
 
@@ -663,20 +663,6 @@ span.nav__elem:after {
         font-size: 18px;
     }
 
-    .page-team .nav__elem {
-        padding: 14px 41px 12px 41px;
-    }
-
-
-    .hover_info__btn {
-        max-width: 250px;
-        font-size: 24px;
-    }
-
-    .page-team .hover_info__btn.nav__elem {
-        padding: 13px 25px 13px 24px;
-    }
-
 
 
 
@@ -797,14 +783,11 @@ span.nav__elem:after {
         margin: 0 auto;
     }
 
-    .hover_info__btn {
-        max-width: 162px;
-        font-size: 18px;
-    }
+    
 
     .page-team .nav__elem {
         letter-spacing: 1.2px;
-        padding: 12px 27px 11px 27px;
+        padding: 13px 27px 11px 27px;
     }
 
     .page-team .hover_info__btn.nav__elem {

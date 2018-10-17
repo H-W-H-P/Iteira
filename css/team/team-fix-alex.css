@@ -451,7 +451,10 @@ span.nav__elem:after {
     }
 
     .service-content-wrapper {
-        overflow: initial;
+        /*overflow: initial;*/
+        max-height: initial;
+        overflow-x: hidden;
+        /*display: block !important;*/
     }
 
     .one-third-block {
@@ -699,6 +702,11 @@ span.nav__elem:after {
     .page-team h1 span {
         float: none;
         font-size: 42px;
+        display: block;
+    }
+
+    .page-team .team-block-header{
+        line-height: .5;
     }
 
     .nav-menu__text {

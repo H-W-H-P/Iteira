@@ -58,22 +58,27 @@ $(window).ready(function () {
         }, time);
     }
 
-    var spriteImages    = document.querySelectorAll( '.slide-item__image' );
-    var spriteImagesSrc = [];
+    function renderStart() {
+        if ($(window).width() >= 1024) {
+            var spriteImages    = document.querySelectorAll( '.slide-item__image' );
+            var spriteImagesSrc = [];
 
-    for ( var i = 0; i < spriteImages.length; i++ ) {
-        var img = spriteImages[i];
-        spriteImagesSrc.push( img.getAttribute('src' ) );
+            for ( var i = 0; i < spriteImages.length; i++ ) {
+                var img = spriteImages[i];
+                spriteImagesSrc.push( img.getAttribute('src' ) );
+            }
+
+            var initCanvasSlideshow = new CanvasSlideshow({
+                sprites: spriteImagesSrc,
+                // displacementImage: '../img/index/frames/gradient_large.png',
+                displacementImage: '../img/dmaps/2048x2048/ripple.jpg',
+                // autoPlay: true,
+                // autoPlaySpeed: [1, 1],
+                displaceScale: [400, 70]
+            });
+        }
     }
-
-    var initCanvasSlideshow = new CanvasSlideshow({
-        sprites: spriteImagesSrc,
-        // displacementImage: '../img/index/frames/gradient_large.png',
-        displacementImage: '../img/dmaps/2048x2048/ripple.jpg',
-        // autoPlay: true,
-        // autoPlaySpeed: [1, 1],
-        displaceScale: [30, 30]
-    });
+    renderStart();
 
     $('#itc-widget-btn').addClass('social__tel');
 });

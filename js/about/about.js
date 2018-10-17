@@ -223,7 +223,8 @@ $(document).ready(function () {
 
 
     ymaps.ready(init); 
-    let myMap;
+    // let myMap;
+
 
 
 
@@ -244,6 +245,11 @@ $(document).ready(function () {
                 });
         myMap.geoObjects.add(geoObj); 
 
+        geoObj.events.add('click', function () {
+            removeClassPin();
+            $('.sensation').addClass('active');
+        });
+
         let geoObj2 = new ymaps.Placemark([53.902251749840985,27.54976685581964], {}, {
                       iconLayout: 'default#image',
                     iconImageHref: '../img/maps.svg',
@@ -251,48 +257,21 @@ $(document).ready(function () {
                     iconImageOffset: [0, 0]
                 });
         myMap.geoObjects.add(geoObj2); 
+
+        geoObj2.events.add('click', function () {
+            removeClassPin();
+            $('.metropol').addClass('active');
+        });
     }
 
-
-
-
-    // function init() {  
-    //     myMap = new ymaps.Map ("map", { 
-    //             center: [53.9061239386935,27.56935969561756],  // Координаты объекта
-    //             zoom: 14  // Маштаб карты
-    //         }); 
-
-    //     let placemark = new ymaps.Placemark([53.902251749840985,27.54976685581964], {
-    //         balloonContent: '',
-    //         iconContent: ""
-    //     }, 
-    //     {
-    //         preset: 'twirl#brownDotIcon',
-    //         balloonCloseButton: false,
-    //         hideIconOnBalloonOpen: false
-    //     }
-    //     );
-    //     myMap.geoObjects.add(placemark); 
-
-    //     let placemark2 = new ymaps.Placemark([53.904464070645815,27.58922949999988], {
-    //         balloonContent: '',
-    //         iconContent: ""
-    //     }, 
-    //     {
-    //         preset: 'twirl#brownDotIcon',
-    //         balloonCloseButton: false,
-    //         hideIconOnBalloonOpen: false
-    //     }
-    //     );
-    //     myMap.geoObjects.add(placemark2); 
-
-
-    // }; 
-//ymaps-2-1-69-user-selection-none
-$('.ymaps-2-1-69-placemark-overlay').on('click', function() {
-    alert('hee')
-})
-
+    function removeClassPin() {
+        $('.sensation').removeClass('active');
+        $('.metropol').removeClass('active');
+        setTimeout(function() {
+            $('.sensation').removeClass('active');
+            $('.metropol').removeClass('active');
+        }, 5000);
+    }
 
 });
 

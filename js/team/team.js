@@ -170,13 +170,6 @@ $( function() {
 
 	$(window).resize(changeResize);
 
-
-	$('.service-menu__subheader').on('click', function() {
-
-		//console.log($('.desktop-chosen'))
-
-	});
-
 	$('.one-third-block .article-preview').click(function (e) {
 		if ($(this).hasClass('info')) $(this).removeClass('info');
 		$('.article-preview').removeClass('info');

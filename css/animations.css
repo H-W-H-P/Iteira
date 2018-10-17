@@ -27,6 +27,46 @@
 	/*position: static;*/
 }
 
+.address-main .address::after{
+	content: "";
+    position: absolute;
+    width: 100%;
+    /* width: 100%; */
+    left: 0;
+    height: 2px;
+    background-color: #d2ab66;
+    /* left: 25px; */
+    bottom: -5px;
+    transform: scaleX(0);
+    transform-origin: calc(100% + 10px) 0;
+    transition: transform .35s ease-out;
+}
+
+.address-main{
+	text-align: center;
+}
+
+.address-main h2,
+.address-main .address{
+	-webkit-transition: all ease .4s;
+	-o-transition: all ease .4s;
+	transition: all ease .4s;
+}
+
+.address-main .address{
+	position: relative;
+	display: inline-block;
+}
+
+.active h2{
+	color: #d2ab66
+}
+
+.active .address::after{
+	transform: scaleX(1);
+    transform-origin: -10px 0;
+}
+
 .one-third-block-third a:first-child .team-article-preview{
 	margin-top: 0;
 }
@@ -54,6 +94,16 @@
 	text-shadow: 1px 1px 0px rgba(255, 255, 255, 1);
 }
 
+
+.main_page,
+.main_page .wrapper{
+	min-height: 600px;
+}
+
+.index-slider__prev:hover,
+.index-slider__next:hover{
+	background-image: url(../img/arrow-bot-yell.png);
+}
 
 .main_page canvas{
 	transform-origin: right;
@@ -152,6 +202,7 @@
 
 .one-third-block .item-news{
 	height: 760px;
+	max-height: calc(100vh - 230px);
 }
 
 .article-preview:hover{
@@ -302,7 +353,16 @@ div.index-sliding-fr__pic{
 }
 
 .team-content-wrapper{
-	height: 100vh;
+	transition: all ease .6s;
+    height: 100vh;
+    transform: translateX(100%);
+}
+
+.desktop-opacity{
+	-webkit-transform: none;
+	-ms-transform: none;
+	-o-transform: none;
+	transform: none;
 }
 
 .team-one-third-block{
@@ -494,6 +554,9 @@ select#itc-widget-code{
 		margin-top: 300px;
 		font-size: 45px;
 		bottom: 200px;
+	}
+	.one-third-block .item-news{
+		max-height: initial;
 	}
 }
 
@@ -743,14 +806,38 @@ select#itc-widget-code{
     top: 7px;
 }
 
-/*.page-team-fun {
-	overflow-y: initial;
-}*/
+#canv_wr.canv_wr_info{
+	right: 0;
+}
 
-.ohx {
-	animation-duration: .5s;
-	animation-name: mymove;
- /* animation-iteration-count: infinite;*/
+#canv_wr.canv_wr_info canvas{
+	width: 100% !important;
+	height: 100% !important;
+}
+
+
+.image_inv{
+	position: absolute;
+	z-index: -100;
+}
+
+.amper{
+	font-family: 'Lato-Regular';
+}
+
+#canv_wr_small{
+	width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+#canv_wr_small canvas{
+	width: 100% !important;
+	height: 100% !important;	
+}
+
+.pic-n-text__pic{
+	overflow: hidden;
 }
 
 @keyframes mymove {

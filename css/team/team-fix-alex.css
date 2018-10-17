@@ -454,7 +454,6 @@ span.nav__elem:after {
         /*overflow: initial;*/
         max-height: initial;
         overflow-x: hidden;
-        /*display: block !important;*/
     }
 
     .one-third-block {

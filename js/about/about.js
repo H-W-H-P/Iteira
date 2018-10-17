@@ -245,6 +245,11 @@ $(document).ready(function () {
                 });
         myMap.geoObjects.add(geoObj); 
 
+        geoObj.events.add('click', function () {
+            removeClassPin();
+            $('.sensation').addClass('active');
+        });
+
         let geoObj2 = new ymaps.Placemark([53.902251749840985,27.54976685581964], {}, {
                       iconLayout: 'default#image',
                     iconImageHref: '../img/maps.svg',
@@ -252,13 +257,21 @@ $(document).ready(function () {
                     iconImageOffset: [0, 0]
                 });
         myMap.geoObjects.add(geoObj2); 
+
+        geoObj2.events.add('click', function () {
+            removeClassPin();
+            $('.metropol').addClass('active');
+        });
     }
 
-    $('.ymaps-2-1-69-placemark-overlay').on('click', function() {
-        alert('hee')
-    });
-
-
+    function removeClassPin() {
+        $('.sensation').removeClass('active');
+        $('.metropol').removeClass('active');
+        setTimeout(function() {
+            $('.sensation').removeClass('active');
+            $('.metropol').removeClass('active');
+        }, 5000);
+    }
 
 });
 

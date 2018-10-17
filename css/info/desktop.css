@@ -521,7 +521,7 @@ li {
     background-image: url('../../img/info/image2.jpg')
 }
 
-.logo-white {
+/*.logo-white {
     background-image: url('../../img/logo-white.png');
 }
 
@@ -529,7 +529,7 @@ li {
     .logo-white {
         background-image: url('../../img/logo.png');
     }
-}
+}*/
 
 .section-main li {
     line-height: 1.7em;

@@ -585,10 +585,69 @@ select#itc-widget-code{
 
 
 
+/*.popUp main, .popUp header{
+	filter: blur(3px);
+}
+*/
+.popUp .service-content-wrapper, .popUp header{
+	filter: blur(3px);
+}
 
 /*=======================================================================================================
   =================================================FIX alex======================================================
   ======================================================================================================= */
+
+.-disabled- {
+	font-family: 'Lato-Regular' !important;
+}
+
+/*BTN*/
+/*<div class="sim-button button8"><span>Записаться</span></div>*/
+.button8{
+	-webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	-o-transition: all 0.5s;
+	transition: all 0.5s;
+	
+	position: relative;	
+}
+.button8 a{
+	color: rgba(51,51,51,1);
+	text-decoration: none;
+	display: block;
+}
+.button8 span{
+	z-index: 2;	
+	display: block;
+	position: relative;
+	width: 100%;
+	height: 100%;	
+}
+.button8::before{
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 0%;
+	height: 100%;
+	z-index: 1;	
+	background-color: #be9753;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	-o-transition: all 0.3s;
+	transition: all 0.3s;
+
+}
+.button8:hover::before{
+	width: 100%;
+}
+@media screen and (max-width: 1023px) {
+	.button8:hover::before{
+		content: none;
+	}
+}
+
+
 /*logo*/
 /*.active-pop-wrap:after {
 	position: absolute;
@@ -613,6 +672,44 @@ select#itc-widget-code{
 }
 
 
+
+
+/*team btn*/
+
+.page-team .nav__elem, .page-team .hover_info a{
+	width: 250px;
+    height: 54px;
+    font-size: 24px;
+    padding-top: 15px;
+}
+@media only screen and (max-width: 1366px) {
+	.page-team .nav__elem, .page-team .hover_info a{
+		width: 190px;
+	    height: 44px;
+	    font-size: 20px;
+	    padding: 10px 10px 10px 10px;
+	}
+}
+@media only screen and (max-width: 768px) {
+	.page-team .nav__elem, .page-team .hover_info a{
+		width: 250px;
+	    height: 54px;
+	    font-size: 24px;
+	    padding-top: 15px;
+	}
+}
+
+@media only screen and (max-width: 480px) {
+	.page-team .nav__elem, .page-team .hover_info a{
+		width: 190px;
+	    height: 44px;
+	    padding-top: 15px;
+	    font-size: 18px;
+	    letter-spacing: 1.8px;
+  		padding: 14px 27px 14px 27px;
+	}
+
+}
 
 /*page news*/
 
@@ -839,6 +936,9 @@ select#itc-widget-code{
 }
 
 @media screen and (max-width: 1023px) {
+	.nav__elem::after {
+		content: none;
+	}
 	.nav-menu__text {
 	    padding-top: 18px !important;
 	}
@@ -966,6 +1066,10 @@ select#itc-widget-code{
 	.page-team-fun .team-block-header, .page-news .team-block-header {
 	    margin-top: 77px;
 	}
+
+	.main_page .envoke-order-btn {
+	    padding: 12px 20px 9px;
+	}
 }
 
 
@@ -1031,6 +1135,10 @@ select#itc-widget-code{
 }
 
 @media screen and (max-width: 768px) {
+	.other-page-info .envoke-order-btn{
+    	padding: 12px 20px 9px;
+	}
+
 
 	.logo {
 	    margin-left: 10px !important;
@@ -1142,6 +1250,10 @@ select#itc-widget-code{
 /*new index*/
 
 @media only screen and (max-width: 480px) {
+	
+	.about .group_text label {
+	    top: 78px;
+	}
 	.nav-menu__text {
 	    padding-top: 0px !important;
 	}
@@ -1248,6 +1360,11 @@ select#itc-widget-code{
 }
 
 @media only screen and (max-width: 375px) {
+
+	.about-btn .nav__elem {
+
+	    line-height: 46px;
+	}
 	.index-sliding-fr__text {
 	    max-width: 90%;
 	}
@@ -1271,7 +1388,7 @@ select#itc-widget-code{
 	
 
 	.mobile-title {
-	    padding-bottom: 35px;
+	    padding-bottom: 20px;
 	}
 
 	.map .nav__elem {

@@ -87,13 +87,16 @@
 }
 
 .nav__black{
-	text-shadow: 1px 1px 0px rgba(255, 255, 255, 1);
+	text-shadow: none;
 }
 
 .nav__black:hover{
-	text-shadow: 1px 1px 0px rgba(255, 255, 255, 1);
+	text-shadow: none;
 }
 
+.white .nav__black{
+	color: #fff;
+}
 
 .main_page,
 .main_page .wrapper{
@@ -1411,7 +1414,7 @@ select#itc-widget-code{
 
 	.page-news-fun .team-article-preview__date {
 	    font-size: 14px !important;
-	    bottom: -3%;
+	    /*bottom: -3%;*/
 	}
 
 	.page-news-fun.page-team h1 {

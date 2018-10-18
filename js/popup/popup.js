@@ -29,9 +29,17 @@ $(document).ready(function () {
 			$('.service-menu__subheader').removeClass('minus');
 			$(this).addClass('minus');
 		}
-		// $(this).toggleClass('minus');
-		// $(this).find('.service-menu__dash:last-child').toggleClass('ohx ohx2');
-
+		var $this = $(this);
+		console.log($this.offset().top)
+		var topMargin = $('.service-menu').offset().top;
+		// $('.service-menu > div').css('min-height', 2000);
+		$('.service-menu').scrollTop(0);
+		$('.service-menu').scrollTop($this.offset().top - topMargin);
+		// $('.service-menu').animate({ scrollTop: $this.offset().top - topMargin}, 1000);
+		// setTimeout(function() {
+		// 	$('.service-menu').animate({ scrollTop: $this.offset().top - topMargin}, 1000);
+		// }, 100);
+		
 	});
 
 	//Calender

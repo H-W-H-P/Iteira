@@ -684,6 +684,20 @@ span.nav__elem:after {
 
     .page-team .service-content-wrapper {
         width: 100%;
+        top: 0;
+        /*position: relative;*/
+        position: absolute;
+        display: block !important;
+        opacity: 0;
+    }
+
+    .service-menu > div > div:nth-child(3){
+        position: relative;
+    }
+
+    .page-team .service-content-wrapper.desktop-opacity{
+        position: relative;
+        opacity: 1;
     }
 
     .body-service-news{
@@ -751,7 +765,11 @@ span.nav__elem:after {
     }
 
     .page-team .team-article-preview__date {
-            margin-bottom: 50px;
+        margin-bottom: 50px;
+    }
+
+    .page-news-fun.page-team .team-article-preview__date{
+        margin-bottom: 34px;
     }
 
     .one-third-block .item-news {

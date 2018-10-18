@@ -24,10 +24,10 @@
         margin-bottom: 10px;
     }
 
-    .about-btn {
+   /* .about-btn {
         width: 190px;
         height: 44px;
-    }
+    }*/
 
     .about-btn .nav__elem {
         height: 44px;
@@ -66,7 +66,7 @@
     }
 
     .about .group_text svg {
-        height: 35% !important;
+        height: 29% !important;
     }
 
     /**/
@@ -204,9 +204,7 @@
         margin-top: 35px;
     }
 
-    .about .group_text label {
-        top: 76px;
-    }
+
 
     .about textarea {
         height: 78px;
@@ -217,6 +215,10 @@
 
     .about-thanks .about-thanks-text {
         font-size: 27px;
+    }
+
+    .about .group_text label {
+        top: 78px;
     }
 
     
@@ -299,9 +301,15 @@
     .about-btn .nav__elem {
         font-size: 18px;
     }
+
+    
 }
 
 @media only screen and (max-width : 480px) {
+    .about-main-screen {
+        min-height: 425px;
+    }
+
     .mobile-title h1 {
         font-size: 42px;
         margin-bottom: 7%;
@@ -377,7 +385,7 @@
     .about-main-screen h2 {
         font-size: 24px;
         height: 60px;
-        margin-bottom: 20px;
+        margin-bottom: 7px;
         margin-top: 20px;
     }
 
@@ -386,7 +394,11 @@
     }
 
     .address-main {
-        margin-bottom: 7px;
+        margin-bottom: 0px;
+    }
+
+    .about-main-screen {
+        min-height: 423px;
     }
 
     .sensation {
@@ -396,6 +408,18 @@
     .mobile-title {
         padding-bottom: 20px;
     }
+}
+
+@media only screen and (max-width : 360px) {
+    .about-btn {
+        height: auto;
+    }
+
+    #map {
+        margin-top: 15px;
+    }
+
+
 }
 
 

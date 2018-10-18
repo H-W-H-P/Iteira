@@ -144,7 +144,6 @@ $( function() {
 			return
 							
 		} else {
-
 			if (stateResize) {
 				if (stateSclick) {
 					stateResize = 0;
@@ -156,8 +155,9 @@ $( function() {
 					setMouseWonSlidshow( event, 'slideshow-left', 'slideshow-right');
 				});
 
-				initSclick();
 				stateResize = 0;
+				initSclick();
+				
 				stateSclick = true;				
 			}
 

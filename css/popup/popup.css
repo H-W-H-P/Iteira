@@ -950,7 +950,7 @@ select {
 
 .popup-main form .nav__elem {
   text-transform: uppercase;
-  font-size: 20px;
+  
 }
 
 .popup-main input[type="submit"] {
@@ -1054,11 +1054,11 @@ select {
 .title-main h2 {
   font-size: 90px;
   width: 100%;
-  font-family: "PlayfairDisplay-Bold";
+  font-family: "PlayfairDisplay";
   font-weight: normal;
   font-style: normal;
   font-stretch: normal;
-  line-height: 1.2;
+  line-height: 0.89;
   letter-spacing: normal;
   text-align: center;
   width: 500px;
@@ -1068,6 +1068,7 @@ select {
 
 [data-title="6"] h2 {
   width: 100%;
+  font-family: "PlayfairDisplay-Regular";
 }
 
 .title-main p {

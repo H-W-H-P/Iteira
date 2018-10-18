@@ -182,12 +182,13 @@ $(document).ready(function () {
     $('.about-mobile-tab').on('click', (EO) => {
         EO.preventDefault()
         let target = EO.target;
-
+        changeZoomMap();
         if (target.tagName != 'A') {
             return;
         }
 
         if ($(target).hasClass('about-tab-adress')) {
+            
             $('.write-massage-and-thanks').removeClass('form-a').addClass('class-hide');
 
             $('.address-main').removeClass('class-hide').addClass('class-show');
@@ -223,26 +224,26 @@ $(document).ready(function () {
 
 
     ymaps.ready(init); 
-    // let myMap;
-
-
-
+    let myMap;
+    let geoObj;
+    let geoObj2;
 
     function init() {
         myMap = new ymaps.Map ("map", { 
-            center: [53.9061239386935,27.56935969561756],  // Координаты объекта
-            zoom: 14,
+            center: [53.908045017531684,27.569931829993273],  // Координаты объекта
+            zoom: 14.5,
             controls: ['zoomControl']
         });
 
         myMap.panes.get('ground').getElement().style.filter = 'grayscale(100%)';
 
-        let geoObj = new ymaps.Placemark([53.904464070645815,27.58922949999988], {}, {
-                      iconLayout: 'default#image',
+        geoObj = new ymaps.Placemark([53.904464070645815,27.58922949999988], {}, {
+                    iconLayout: 'default#image',
                     iconImageHref: '../img/maps.svg',
                     iconImageSize: [53, 74],
-                    iconImageOffset: [0, 0]
-                });
+                    iconImageOffset: [0, 0],
+                }
+                );
         myMap.geoObjects.add(geoObj); 
 
         geoObj.events.add('click', function () {
@@ -250,8 +251,8 @@ $(document).ready(function () {
             $('.sensation').addClass('active');
         });
 
-        let geoObj2 = new ymaps.Placemark([53.902251749840985,27.54976685581964], {}, {
-                      iconLayout: 'default#image',
+        geoObj2 = new ymaps.Placemark([53.902251749840985,27.54976685581964], {}, {
+                    iconLayout: 'default#image',
                     iconImageHref: '../img/maps.svg',
                     iconImageSize: [53, 74],
                     iconImageOffset: [0, 0]
@@ -267,11 +268,41 @@ $(document).ready(function () {
     function removeClassPin() {
         $('.sensation').removeClass('active');
         $('.metropol').removeClass('active');
+
+        if ($(window).width() < 690) {
+            $('.about-tab-map').removeClass('active');
+            $('.about-tab-adress').addClass('active');
+            $('.map').addClass('animated fadeOut');
+            
+
+            setTimeout(function() {
+                $('.map').removeClass('active animated fadeOut');
+                $('.about-main-screen').removeClass('class-tab-hide');
+            }, 700);
+
+
+        }
+
+
+
         setTimeout(function() {
             $('.sensation').removeClass('active');
             $('.metropol').removeClass('active');
         }, 5000);
     }
+
+    $(window).resize(changeZoomMap);
+
+    function changeZoomMap() {
+        if ($(window).width() < 1400) {
+           myMap.setZoom(13.5, {duration: 500});
+        }
+        if ($(window).width() < 768) {
+            myMap.setZoom(12.5, {duration: 500});
+        }
+    }
+
+
 
 });
 

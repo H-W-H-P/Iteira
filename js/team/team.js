@@ -198,7 +198,7 @@ $( function() {
     });
 
     var dataCounter = 0;
-
+	var maxCounter = $('.sliderCatCh').length;
     let owlMobNav = $('.owl-carousel.team-menu-mobile').owlCarousel({
         margin:10,
         nav: false,
@@ -213,10 +213,10 @@ $( function() {
     $('.index-slider__arrow').click(function () {
         if ($(this).hasClass('index-slider__prev')) {
             dataCounter--;
-            if (dataCounter <= 0) dataCounter = 0
+            if (dataCounter <= 0) dataCounter = 0;
         } else {
             dataCounter++;
-            if (dataCounter >= maxCounter) dataCounter = maxCounter-1
+            if (dataCounter >= maxCounter) dataCounter = maxCounter-1;
         }
         sliding(dataCounter);
     });

@@ -532,9 +532,19 @@
       background-color: inherit;
     }
     .change-time {
-        align-self: flex-start;
-        margin-top: 32px;
+        align-self: center !important;
+        margin-top: 0px !important;
     }
+
+    .bar-popup {
+        min-height: 508px;
+    }
+
+    .bar-title  {
+        min-height: 260px;
+    }
+
+    
 
     .part-day h3 {
         width: 90%;
@@ -856,6 +866,10 @@
 
 @media only screen and (max-width : 480px) {
 
+    .bar-popup {
+        min-height: 308px;
+    }
+
     /*title*/
     .wrap-title {
         width: 80%;
@@ -969,7 +983,7 @@
     }
 
     .popup-main .article-preview__h {
-        bottom: 60px;
+        bottom: 50px;
     }
 
     /*time*/
@@ -1301,6 +1315,10 @@
 
     .part-day h3 {
         margin-bottom: 20px;
+    }
+
+    .bar-popup {
+        min-height: 378px;
     }
 } 
 

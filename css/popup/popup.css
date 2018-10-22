@@ -188,7 +188,7 @@ body.popUp{
 ===================================*/
 /*hover*/
 .change-service .btn-reserv:hover, .change-service .btn-reserv:hover span{
-  background-color: #fff !important;
+  background-color: #ffffff78 !important;
   transition: all .5s ease;
 }
 .btn-reserv {
@@ -609,7 +609,7 @@ body.popUp{
 }
 
 .popup-main .article-preview__h {
-  bottom: 60px
+  bottom: 50px
 }
 
 .bender-image {
@@ -1054,7 +1054,7 @@ select {
 .title-main h2 {
   font-size: 90px;
   width: 100%;
-  font-family: "PlayfairDisplay";
+  font-family: "PlayfairDisplay-Regular";
   font-weight: normal;
   font-style: normal;
   font-stretch: normal;
@@ -1634,4 +1634,38 @@ select {
   -ms-transform: scale(1.1, 1.1) rotate(-90deg);
   -o-transform: scale(1.1, 1.1) rotate(-90deg);
   transform: scale(1.1, 1.1) rotate(-90deg);
+}
+
+[data-title="6"] p {
+  font-size: 50px;
+  margin-top: 40px;
+}
+
+.popup-main .group_text svg {
+  height: 51%;
+}
+
+@media only screen and (max-width : 1200px) {
+  .popup-main .group_text svg {
+      height: 47%;
+  }
+}
+
+
+.bg-transparent {
+  background-color: transparent !important;
+}
+
+.bar-popup.barber-bot a.btn-reserv {
+  margin-bottom: 18px;
+}
+
+@media only screen and (max-width : 1023px) {
+.bar-popup.barber-bot  a.btn-reserv {
+    margin-bottom: 18px;
+  }
+
+  .bg-transparent {
+    background-color: initial !important;
+  }
 }

@@ -23,11 +23,11 @@
 
 
 .slider-style .team-article-preview__date {
-    bottom: 7%;
+    bottom: 20px;
 }
 
 .slider-style .article-preview__h {
-    bottom: 11%;
+    bottom: 5%;
 }
 
 .slider-style .one-third-block-second, .slider-style .one-third-block-third {
@@ -45,16 +45,12 @@
 
 
 
-
-
-
-
 @media only screen and (max-width : 1600px) {
 	.slider-style .one-third-block .item-news {
 	    height: 550px;
 	}
 
-    .article-preview__tag {
+    .page-other .article-preview__tag {
         height: 25.8px;
         width: 170px;
         font-size: 16px;
@@ -177,7 +173,7 @@
 	    display: flex;
 	    flex-direction: column;
 	    margin-top: 0;
-	    top: -29px;
+	    top: -62px;
 	}
 
 	.slider-style .team-article-preview__h {

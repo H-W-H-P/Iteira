@@ -63,8 +63,9 @@ $( function() {
 		event.preventDefault();
 
 		let chilItemLengLeft = $(`.desktop-opacity .${nameSlide1}`).find('.item').length;
+
 		chilItemLengLeft--;
-		activeSlick_1 = $('.slideshow-left .slick-active').index();
+		activeSlick_1 = $('.desktop-opacity .slideshow-left .slick-active').index();
 
 		let indexItemLeft =   $('.slideshow-left .slick-active').index();
 		let indexItemRight =  $('.slideshow-right .slick-active').index();
@@ -72,10 +73,14 @@ $( function() {
 
 		let chilItemLengRight = $(`.desktop-opacity .${nameSlide2}`).find('.item').length;
 		chilItemLengRight--;
-		activeSlick_2 = $('.slideshow-right .slick-active').index();
+		activeSlick_2 = $('.desktop-opacity .slideshow-right .slick-active').index();
+
+
+		console.log(activeSlick_1)
 
 
 		if (event.deltaX > 0 || event.deltaY < 0) {
+
 			let rightBool = activeSlick_1 >= chilItemLengLeft;
 			let leftBool = activeSlick_2 >= chilItemLengRight;
 
@@ -193,7 +198,6 @@ $( function() {
     });
 
     var dataCounter = 0;
-    var maxCounter = $('.sliderCatCh').length;
 
     let owlMobNav = $('.owl-carousel.team-menu-mobile').owlCarousel({
         margin:10,

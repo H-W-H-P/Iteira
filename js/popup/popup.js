@@ -184,6 +184,9 @@ $(document).ready(function () {
 	
 /*popup control*/
 	function viwe(_this, _2this) {
+
+
+
 		let parent = $(_this).closest('.change-pop-up');
 		parentNum = $(parent).index();
 		parent.removeClass('active-popup').addClass('hidden');
@@ -222,6 +225,8 @@ $(document).ready(function () {
 		} else {
 			$('.bnt-prev').removeClass('active-pop-wrap').addClass('hidden');
 		}
+
+		scrollControl();
 		
 
 	}
@@ -232,6 +237,7 @@ $(document).ready(function () {
 	$('.btn-popup').on('click', function(EO) {
 		EO.preventDefault();
 		openPopUp();
+		scrollControl();
 	});
 
 	///////////////////////////////////////////////////////service click on table span
@@ -434,6 +440,7 @@ $(document).ready(function () {
 		$('.bnt-prev').removeClass('active-pop-wrap').addClass('hidden');
 		$('.title-change').removeClass('right');
 		$('.wrap-title').removeClass('active-title');
+		$('html').css('overflow-y', 'visible');
 		let countCalender = 0;
 		counter2 = 0;
 		master = '0';
@@ -453,6 +460,7 @@ $(document).ready(function () {
 
 	$('.bnt-prev').on('click', function() {
 		viwe();
+
 	});
 
 
@@ -462,6 +470,47 @@ $(document).ready(function () {
 	$(".service-menu__subheader p").each(function () {
 	    $(this).html( $(this).html().replace(/&amp;/g,"<span class='amper'>&</span>") );
 	});
+
+
+
+	// 
+	$(window).resize(scrollControl);
+
+	function scrollControl() {
+		
+		if ( $(window).width() <= 1023 ) {
+			$("#mcs_containe").mCustomScrollbar("destroy");
+
+			if ($('.change-master').hasClass('active-popup')) {
+				$('.bar-popup').removeClass('bg-transparent barber-bot');
+				$('.change-master').removeClass('bg-transparent');
+				$('#mCSB_1_container ').removeClass('bg-transparent');
+			}
+	
+			
+
+		} else {
+
+			$("#mcs_container").mCustomScrollbar({
+				scrollInertia:500
+			});
+
+			if ($('.change-master').hasClass('active-popup')) {
+				$('.bar-popup').addClass('bg-transparent barber-bot');
+				$('.change-master').addClass('bg-transparent');
+				$('#mCSB_1_container').addClass('bg-transparent');
+			} else {
+				$('.bar-popup').removeClass('bg-transparent barber-bot');
+				$('.change-master').removeClass('bg-transparent');
+				$('#mCSB_1_container ').removeClass('bg-transparent');
+			}
+			
+
+		}
+
+
+	}
+	scrollControl();
 
 
 

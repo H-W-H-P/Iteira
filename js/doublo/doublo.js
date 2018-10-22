@@ -95,10 +95,8 @@ $( function() {
 	let stateSclick = true;
 	let loadres = 1;
 	function changeResize()	{
-		// console.log($(window).width())
-		if ( $(window).width() <= 1007 ) {
+		if ( $(window).width() <= 1023 ) {
 			if (!stateResize) {
-				console.log('h1')
 				$('.slideshow-left').slick('unslick');
 				$('.slideshow-right').slick('unslick');
 				slide_1.slick('unslick');
@@ -109,7 +107,6 @@ $( function() {
 			} 
 
 			if (loadres) {
-				console.log('h2')
 				$('.slideshow-left').slick('unslick');
 				$('.slideshow-right').slick('unslick');
 				slide_1.slick('unslick');

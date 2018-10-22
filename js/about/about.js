@@ -67,8 +67,10 @@ $(document).ready(function () {
     $('.write-massage').on('click', (EO) => {
         EO.preventDefault();
         $('.address-main').addClass('animated fadeOut');
+        
 
         setTimeout(()=>{
+            $('.bnt-prev-n').removeClass('class-hide');
             $('.address-main').removeClass('animated fadeOut').addClass('class-hide');
             $('.write-massage-and-thanks').removeClass('class-hide').addClass('form-a');
             $('.form').addClass('animated fadeIn');
@@ -95,12 +97,12 @@ $(document).ready(function () {
 
             }
         });
-        $('.bnt-prev-n').removeClass('class-show-btn').addClass('class-hide'); 
+        
         
 
        if (!trigger) return false;
 
-
+        $('.bnt-prev-n').removeClass('class-show-btn').addClass('class-hide'); 
 
         $('.form.about .input').each( (i)=> {
             formValue.push($('.input').eq(i).val());
@@ -115,14 +117,12 @@ $(document).ready(function () {
 
 
 
-        timer = setTimeout(()=> {
+        timer = setTimeout(() => {
             $('.form').removeClass('fadeOut');
             $('.address-main').removeClass('class-hide').addClass('animated fadeIn class-show');   
             $('.about-thanks').removeClass('class-show-flex').addClass('animated fadeOut class-hide');
             $('.bnt-prev-n').removeClass('class-show-btn').addClass('class-hide'); 
-
-
-        },400000000000000000);
+        },4000);
 
         setTimeout(()=> {
             $('.about-thanks').removeClass('fadeOut');
@@ -142,14 +142,8 @@ $(document).ready(function () {
     $('.bnt-prev-n').on('click', function(EO) {
         clearTimeout(timer);
         $('.write-massage-and-thanks').removeClass('form-a').addClass('class-hide');
-
-
-        
         $('.about-thanks').removeClass('class-show-flex').addClass('animated fadeOut class-hide');
-
-
         $('.address-main').removeClass('class-hide').addClass('animated fadeIn class-show');
-        
         setTimeout(() => {
             $('.form').removeClass('fadeOut');
         },400);
@@ -160,7 +154,6 @@ $(document).ready(function () {
 
 
     $(window).resize(function(EO) {
-        
         if ( $(window).width() >= 690 ) {
             if ($('.map ').hasClass('active')) {
                 $('.about-main-screen').removeClass('class-tab-hide');
@@ -174,7 +167,6 @@ $(document).ready(function () {
                 $('.about-main-screen').removeClass('class-tab-show').addClass('class-tab-hide');
             } 
         }
-
     });
 
     //======== Toogle Map-Address
@@ -182,20 +174,15 @@ $(document).ready(function () {
     $('.about-mobile-tab').on('click', (EO) => {
         EO.preventDefault()
         let target = EO.target;
-        changeZoomMap();
         if (target.tagName != 'A') {
             return;
         }
+        changeZoomMap();
 
         if ($(target).hasClass('about-tab-adress')) {
-            
             $('.write-massage-and-thanks').removeClass('form-a').addClass('class-hide');
-
-            $('.address-main').removeClass('class-hide').addClass('class-show');
-            
-            
+            $('.address-main').removeClass('class-hide').addClass('class-show animated fadeIn');
             $('.about-thanks').removeClass('class-show');
-           
         }
 
         let adress = $('.about-tab-adress').hasClass('active');
@@ -213,11 +200,11 @@ $(document).ready(function () {
         }
 
         if (!adress) {
-            $('.about-main-screen').removeClass('class-tab-hide').addClass('class-tab-show');
+            $('.about-main-screen').removeClass('class-tab-hide').addClass('class-tab-show animated fadeIn');
             $('.map').removeClass('active');
         } else {
               $('.about-main-screen').removeClass('class-tab-show').addClass('class-tab-hide');
-              $('.map').addClass('active');
+              $('.map').addClass('active  animated fadeIn');
         }   
     });
 
@@ -236,6 +223,7 @@ $(document).ready(function () {
         });
 
         myMap.panes.get('ground').getElement().style.filter = 'grayscale(100%)';
+        myMap.behaviors.disable('scrollZoom');
 
         geoObj = new ymaps.Placemark([53.904464070645815,27.58922949999988], {}, {
                     iconLayout: 'default#image',
@@ -263,6 +251,7 @@ $(document).ready(function () {
             removeClassPin();
             $('.metropol').addClass('active');
         });
+        changeZoomMap();
     }
 
     function removeClassPin() {
@@ -274,16 +263,11 @@ $(document).ready(function () {
             $('.about-tab-adress').addClass('active');
             $('.map').addClass('animated fadeOut');
             
-
             setTimeout(function() {
                 $('.map').removeClass('active animated fadeOut');
                 $('.about-main-screen').removeClass('class-tab-hide');
             }, 700);
-
-
         }
-
-
 
         setTimeout(function() {
             $('.sensation').removeClass('active');
@@ -294,11 +278,15 @@ $(document).ready(function () {
     $(window).resize(changeZoomMap);
 
     function changeZoomMap() {
-        if ($(window).width() < 1400) {
-           myMap.setZoom(13.5, {duration: 500});
-        }
-        if ($(window).width() < 768) {
-            myMap.setZoom(12.5, {duration: 500});
+        let width = $(window).width();
+        if ( (width < 1400) && (width > 768) ) {
+           myMap.setZoom(13.5, {duration: 0});
+        } else if  ( (width < 768) && (width > 480) ) {
+            myMap.setZoom(13.5, {duration: 0});
+        } else if (width  < 480) {
+            myMap.setZoom(12.5, {duration: 0});
+        } else {
+            myMap.setZoom(14.5, {duration: 0});
         }
     }
 

@@ -121,7 +121,7 @@ body {
 }
 
 .phone{
-	font-size: 16px;
+	font-size: 20px;
 	text-align: center;
 	font-family: 'Lato-Regular';
 	line-height: 1.2;
@@ -132,7 +132,7 @@ body {
 }
 
 .info-text {
-	margin-top: 16px;
+	margin-top: 5px;
 	margin-bottom: 40px;
 }
 
@@ -151,6 +151,8 @@ body {
 	width: 250px;
 	height: 67px;
 	overflow: hidden;
+	position: relative;
+    z-index: 600;
 }
 
 .about-btn .nav__elem  {
@@ -302,7 +304,9 @@ input, textarea {
     position: relative;
 }
 
-
+.ymaps-2-1-69-copyright__content {
+	display: none !important;
+}
 
 
 /*brn-cancel*/
@@ -432,6 +436,13 @@ input[type="submit"] {
 	text-align: center;
 }
 
+.about .group_text.warm .danger {
+    bottom: 11px;
+}
+
+
+
+
 .about .group.warm  .graphic--nao , .group.warm  .graphic--nao {
 	stroke: #e86464;
 }
@@ -463,7 +474,9 @@ input[type="submit"] {
 	font-family: "Lato-Regular";
 }
 
-
+.about .group_text.warm .dnager-text {
+    bottom: 9px;
+}
 
 
 

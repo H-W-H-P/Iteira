@@ -5,6 +5,9 @@
         font-size: 90px;
     }
 
+
+
+
     .about-main-screen h2 {
         font-size: 24px;
         height: 60px;
@@ -37,7 +40,8 @@
 
     .about-main-screen {
         /*justify-content: space-between;*/
-        margin-bottom: 80px;
+        /*margin-bottom: 80px;*/
+        margin-bottom: 37px;
     }
 
     /**/
@@ -102,7 +106,26 @@
     
 
 }
+@media only screen and (max-width: 1600px) {
+        .about .group_text.warm .danger {
+    bottom: 7px;
+}
 
+.about .group_text.warm .dnager-text {
+    bottom: 7px;
+}
+
+.about .group_text label {
+    top: 131px;
+}
+.about .group.warm .dnager-text {
+    font-size: 15px;
+}
+
+.phone {
+    font-size: 16px;
+}
+}
 
 @media only screen and (max-width: 1023px) {
     .logo {
@@ -152,7 +175,7 @@
     .mobile-title {
 		display: block;
 		order: -1;
-		padding-top: 74px;
+		padding-top: 107px;
     }
 
     .about-mobile-tab {
@@ -192,7 +215,7 @@
     .about-main-screen h2 {
         font-size: 30px;
         height: 60px;
-        margin-bottom: 40px;
+        margin-bottom: 20px;
         margin-top: 20px;
     }
 
@@ -225,13 +248,34 @@
 
 }
 
+@media only screen and (max-width : 768px) {
+    .about-btn {
+        height: 44px;
+    }
 
+    .about .group.warm .danger {
+        padding-right: 1px;
+    }
+
+    .phone {
+        font-size: 16px;
+    }
+}
 
 @media only screen and (max-width : 690px) {
     .map {
 		display: none;
 		min-height: 400px;
     }
+
+    .mobile-title h1 {
+        margin-bottom: 27px;
+    }
+
+    .map.active {
+        margin-top: 27px;
+    }
+
 
     .about-mobile-tab {
 		display: block;
@@ -265,7 +309,7 @@
     .about-main-screen h2 {
         font-size: 30px;
         height: 60px;
-        margin-bottom: 30px;
+        margin-bottom: 10px;
         margin-top: 20px;
     }
 
@@ -280,7 +324,11 @@
     }
 
     .address-main {
-        margin-bottom: 20px;
+        margin-bottom: 0px;
+    }
+
+    .about-main-screen {
+        margin-bottom: 0px;
     }
 
     .form {
@@ -294,13 +342,42 @@
 		height: 44px;
 		line-height: 22px;
         font-size: 18px;
-        position: fixed;
-        bottom: 8%;
+        position: absolute;
+        bottom: 3%;
     }
     
     .about-btn .nav__elem {
         font-size: 18px;
     }
+
+    .about-main-screen {
+        min-height: 491px;
+       height: 525px;
+    }
+
+    .about textarea {
+        height: 249px;
+        margin-top: 15px;
+    }
+
+    .about .group_text svg {
+        height: 26% !important;
+    }
+
+    .about .group_text label {
+        top: 262px;
+    }
+
+    .about textarea:focus ~ label, .about textarea:valid ~ label {
+        top: 20px;
+    }
+
+    .map, .map.active {
+        height: 498px;
+        min-height: 498px;
+    }
+
+
 
     
 }
@@ -328,7 +405,7 @@
     }
 
     .mobile-title {
-        padding-top: 79px;
+        padding-top: 88px;
     }
 
     .mobile-title {
@@ -343,7 +420,9 @@
         margin-top: 26px;
     }
 
-    
+    .map.active {
+        margin-top: 0;
+    }
 
     .about-main-screen h2 {
         margin-bottom: 0px;
@@ -356,7 +435,8 @@
     }
 
     .about-main-screen h2 {
-        margin-top: 10px;
+       /* margin-top: 10px;*/
+        margin-top: 5px;
         width: 100%;
     }    
 
@@ -374,6 +454,34 @@
         margin-bottom: 55px;
     }
 
+    #map {
+        margin-top: 24px;
+    }
+
+    .map, .map.active {
+        height: 510px;
+        min-height: 541px;
+    }
+
+    .map .nav__elem {
+        bottom: 5%;
+    }
+
+    .main {
+        margin-bottom: 5px;
+    }
+
+
+    
+    .about-main-screen {
+        min-height: 491px;
+        height: 525px;
+    }
+
+    .page-about-fu .social {
+        margin: 0px 0 0 50%;
+    }
+
     
 }
 
@@ -382,11 +490,20 @@
         margin-top: 10px;
     }
 
+    .map, .map.active {
+    height: 485px;
+    min-height: 481px;
+}
+
     .about-main-screen h2 {
         font-size: 24px;
         height: 60px;
-        margin-bottom: 7px;
+        margin-bottom: 0px;
         margin-top: 20px;
+    }
+
+    .info-text {
+        margin-bottom: 23px;
     }
 
     .about-main-screen p {
@@ -408,6 +525,10 @@
     .mobile-title {
         padding-bottom: 20px;
     }
+
+ 
+
+
 }
 
 @media only screen and (max-width : 360px) {
@@ -421,29 +542,4 @@
 
 
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

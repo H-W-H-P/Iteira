@@ -30,16 +30,12 @@ $(document).ready(function () {
 			$(this).addClass('minus');
 		}
 		var $this = $(this);
-		console.log($this.offset().top)
-		var topMargin = $('.service-menu').offset().top;
-		// $('.service-menu > div').css('min-height', 2000);
-		$('.service-menu').scrollTop(0);
-		$('.service-menu').scrollTop($this.offset().top - topMargin);
-		// $('.service-menu').animate({ scrollTop: $this.offset().top - topMargin}, 1000);
-		// setTimeout(function() {
-		// 	$('.service-menu').animate({ scrollTop: $this.offset().top - topMargin}, 1000);
-		// }, 100);
-		
+		if (!$this.closest('.popup-main').length) $('html').animate({ scrollTop: $this.offset().top}, 500);
+		else {			
+			var topMargin = $('.service-menu').offset().top;
+			$('.service-menu').scrollTop(0);
+			$('.service-menu').scrollTop($this.offset().top - topMargin - 10);
+		}		
 	});
 
 	//Calender

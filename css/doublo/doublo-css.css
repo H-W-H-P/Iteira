@@ -206,12 +206,13 @@
     }
 
     .slider-style .team-article-preview__h {
-	    font-size: 24px !important;
+	    font-size: 35px !important;
+	    bottom: 12%;
 	}
 
 	.slider-style .team-article-preview__date {
 	    bottom: -15%;
-	    font-size: 14px !important;
+	    font-size: 17px !important;
 	}
 
 	.slider-style .one-third-block-third {
@@ -221,7 +222,17 @@
 
 }
 
+@media only screen and (max-width : 375px) {
+	.slider-style .team-article-preview__h {
+	    font-size: 24px !important;
+	    bottom: 12%;
+	}
 
+	.slider-style .team-article-preview__date {
+	    font-size: 14px !important;
+	}
+
+}
 
 
 
